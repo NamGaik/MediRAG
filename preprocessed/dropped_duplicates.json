@@ -1,0 +1,90 @@
+[
+  {
+    "Patient_ID": "P002",
+    "Month": "Month_3",
+    "Source_Quality": "Degraded",
+    "HbA1c": 5.5,
+    "FBS": 75.0,
+    "PPBS": 92.0,
+    "LDL": 63.0,
+    "HDL": 66.0,
+    "Triglycerides": 137.0
+  },
+  {
+    "Patient_ID": "P007",
+    "Month": "Month_3",
+    "Source_Quality": "Degraded",
+    "HbA1c": 4.8,
+    "FBS": 80.0,
+    "PPBS": 103.0,
+    "LDL": 79.0,
+    "HDL": 53.0,
+    "Triglycerides": 147.0
+  },
+  {
+    "Patient_ID": "P013",
+    "Month": "Month_2",
+    "Source_Quality": "Degraded",
+    "HbA1c": null,
+    "FBS": 109.0,
+    "PPBS": null,
+    "LDL": 112.0,
+    "HDL": 44.0,
+    "Triglycerides": 195.0
+  },
+  {
+    "Patient_ID": "P016",
+    "Month": "Month_3",
+    "Source_Quality": "Degraded",
+    "HbA1c": 5.9,
+    "FBS": 119.0,
+    "PPBS": 192.0,
+    "LDL": 122.0,
+    "HDL": 47.0,
+    "Triglycerides": 167.0
+  },
+  {
+    "Patient_ID": "P018",
+    "Month": "Month_3",
+    "Source_Quality": "Degraded",
+    "HbA1c": 61.0,
+    "FBS": 106.0,
+    "PPBS": 149.0,
+    "LDL": 117.0,
+    "HDL": 51.0,
+    "Triglycerides": null
+  },
+  {
+    "Patient_ID": "P020",
+    "Month": "Month_3",
+    "Source_Quality": "Degraded",
+    "HbA1c": 5.9,
+    "FBS": 114.0,
+    "PPBS": 193.0,
+    "LDL": null,
+    "HDL": 45.0,
+    "Triglycerides": 155.0
+  },
+  {
+    "Patient_ID": "P023",
+    "Month": "Month_3",
+    "Source_Quality": "Degraded",
+    "HbA1c": 6.7,
+    "FBS": 139.0,
+    "PPBS": 171.0,
+    "LDL": 89.0,
+    "HDL": 50.0,
+    "Triglycerides": 206.0
+  },
+  {
+    "Patient_ID": "P048",
+    "Month": "Month_3",
+    "Source_Quality": "Degraded",
+    "HbA1c": 9.0,
+    "FBS": 162.0,
+    "PPBS": 223.0,
+    "LDL": 165.0,
+    "HDL": 35.0,
+    "Triglycerides": 217.0
+  }
+]

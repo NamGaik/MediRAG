@@ -1,0 +1,12 @@
+{
+  "model": "claude-sonnet-5",
+  "temperature": 0,
+  "max_tokens": 800,
+  "top_k": 5,
+  "configs": [
+    "plain_llm",
+    "standard_rag",
+    "full_system",
+    "full_system_corrective"
+  ]
+}

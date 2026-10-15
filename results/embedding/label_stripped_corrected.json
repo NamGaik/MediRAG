@@ -1,0 +1,27 @@
+{
+  "_produced_by": "phase_d_2_label_check.py",
+  "_saved_at": "2026-10-05T09:00:50",
+  "_notes": "Table I check (c) with classification AND overall-status text removed",
+  "results": {
+    "MiniLM_same_patient_inclusive": {
+      "agree": 144,
+      "n": 150,
+      "rate": 0.96
+    },
+    "MiniLM_cross_patient": {
+      "agree": 86,
+      "n": 150,
+      "rate": 0.5733
+    },
+    "Bio_ClinicalBERT_same_patient_inclusive": {
+      "agree": 141,
+      "n": 150,
+      "rate": 0.94
+    },
+    "Bio_ClinicalBERT_cross_patient": {
+      "agree": 138,
+      "n": 150,
+      "rate": 0.92
+    }
+  }
+}

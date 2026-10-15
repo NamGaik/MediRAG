@@ -1,0 +1,6 @@
+{
+  "verifier_faithful_count": 6,
+  "verifier_hallucinated_count": 1,
+  "verifier_not_verifiable_count": 18,
+  "verifier_faithful_rate": 0.857
+}

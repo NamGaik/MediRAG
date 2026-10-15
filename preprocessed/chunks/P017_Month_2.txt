@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P017 (Male, age 47) -- Month 2.
+
+HbA1c: 6.3% (Classification: Prediabetic).
+Fasting Blood Sugar (FBS): 121.0 mg/dL (Classification: Prediabetic).
+Post-Prandial Blood Sugar (PPBS): 142.0 mg/dL (Classification: Prediabetic).
+LDL Cholesterol: 110.0 mg/dL (Classification: Borderline).
+HDL Cholesterol: 43.0 mg/dL (Classification: Normal).
+Triglycerides: 170.0 mg/dL (Classification: Borderline).
+
+Overall Glycemic Status: Prediabetic.

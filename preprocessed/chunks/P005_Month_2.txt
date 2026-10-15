@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P005 (Male, age 45) -- Month 2.
+
+HbA1c: 4.7% (Classification: Normal).
+Fasting Blood Sugar (FBS): 93.0 mg/dL (Classification: Normal).
+Post-Prandial Blood Sugar (PPBS): 99.0 mg/dL (Classification: Normal).
+LDL Cholesterol: 73.0 mg/dL (Classification: Optimal).
+HDL Cholesterol: 61.0 mg/dL (Classification: Normal).
+Triglycerides: 116.0 mg/dL (Classification: Normal).
+
+Overall Glycemic Status: Normal.

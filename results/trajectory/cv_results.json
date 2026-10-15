@@ -1,0 +1,61 @@
+{
+  "_produced_by": "phase_j_1_trajectory_model.py",
+  "_saved_at": "2026-10-03T11:34:49",
+  "_notes": "Table II: GRU vs persistence, patient-grouped 5-fold CV",
+  "results": {
+    "setup": {
+      "num_samples": 100,
+      "num_patients": 50,
+      "num_folds": 5,
+      "split": "GroupKFold by Patient_ID",
+      "predict_change": true,
+      "epochs": 60,
+      "hidden_size": 16,
+      "learning_rate": 0.005
+    },
+    "gru": {
+      "HbA1c(%)_MAE": {
+        "mean": 0.47643429040908813,
+        "std": 0.11037059128284454
+      },
+      "FBS (mg/dL)_MAE": {
+        "mean": 13.93498706817627,
+        "std": 3.268113136291504
+      },
+      "PPBS (mg/dL)_MAE": {
+        "mean": 19.7935733795166,
+        "std": 2.9343061447143555
+      },
+      "risk_accuracy": {
+        "mean": 0.9400000000000001,
+        "std": 0.05830951894845301
+      },
+      "risk_macro_f1": {
+        "mean": 0.9327253487253486,
+        "std": 0.06683374064668787
+      }
+    },
+    "persistence_baseline": {
+      "HbA1c(%)_MAE": {
+        "mean": 0.5,
+        "std": 0.11519552022218704
+      },
+      "FBS (mg/dL)_MAE": {
+        "mean": 15.079999923706055,
+        "std": 2.1720035076141357
+      },
+      "PPBS (mg/dL)_MAE": {
+        "mean": 19.880001068115234,
+        "std": 2.2121481895446777
+      },
+      "risk_accuracy": {
+        "mean": 0.96,
+        "std": 0.07999999999999999
+      },
+      "risk_macro_f1": {
+        "mean": 0.9555555555555555,
+        "std": 0.08888888888888888
+      }
+    }
+  }
+}

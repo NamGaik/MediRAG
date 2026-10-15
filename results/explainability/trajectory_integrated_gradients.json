@@ -1,0 +1,36 @@
+{
+  "_produced_by": "phase_k_explainability.py",
+  "_saved_at": "2026-10-03T11:45:55",
+  "_notes": "Fig. 8 and Section 4.6",
+  "results": {
+    "P032": {
+      "patient_id": "P032",
+      "target": "HbA1c(%)",
+      "unit": "%",
+      "predicted_value": 7.393313831845766,
+      "baseline_value": 6.9324930918178715,
+      "completeness_gap": -2.1961218178356697e-08,
+      "predict_change": true,
+      "attributions": {
+        "Month t-2 / HbA1c(%)": 0.023243986657915872,
+        "Month t-2 / FBS (mg/dL)": 0.002726197510570444,
+        "Month t-2 / PPBS (mg/dL)": -0.003949757688060686,
+        "Month t-1 / HbA1c(%)": 0.4131818286800751,
+        "Month t-1 / FBS (mg/dL)": 0.015096109806551263,
+        "Month t-1 / PPBS (mg/dL)": 0.010522348467178987
+      }
+    },
+    "cohort": {
+      "num_patients": 50,
+      "max_completeness_gap": 0.00018278321889846278,
+      "mean_abs_attribution": {
+        "Month t-2 / HbA1c(%)": 0.09140399985185865,
+        "Month t-2 / FBS (mg/dL)": 0.021310274952916586,
+        "Month t-2 / PPBS (mg/dL)": 0.04007466141871249,
+        "Month t-1 / HbA1c(%)": 1.1042863948885888,
+        "Month t-1 / FBS (mg/dL)": 0.18551761980933446,
+        "Month t-1 / PPBS (mg/dL)": 0.054568313812608675
+      }
+    }
+  }
+}

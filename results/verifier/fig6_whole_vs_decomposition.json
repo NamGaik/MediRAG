@@ -1,0 +1,19 @@
+{
+  "_produced_by": "generate_Chart_verifier_comparison.py",
+  "_saved_at": "2026-10-03T12:23:34",
+  "_notes": "Fig. 6, final verifier, recomputed on saved full_system answers",
+  "results": {
+    "total_answers": 25,
+    "answers_with_context": 16,
+    "whole_answer": {
+      "faithful": 2,
+      "n": 16,
+      "rate": 0.125
+    },
+    "decomposition": {
+      "faithful": 6,
+      "n": 7,
+      "rate": 0.8571428571428571
+    }
+  }
+}

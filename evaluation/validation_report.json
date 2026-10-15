@@ -1,0 +1,16 @@
+[
+  {
+    "query": "How has my HbA1c changed across visits?",
+    "checked_mentions": 1,
+    "issues_found": 0,
+    "issues": [],
+    "status": "PASSED"
+  },
+  {
+    "query": "What does my latest fasting blood sugar result mean?",
+    "checked_mentions": 1,
+    "issues_found": 0,
+    "issues": [],
+    "status": "PASSED"
+  }
+]

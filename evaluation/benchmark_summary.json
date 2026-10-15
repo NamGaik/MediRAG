@@ -1,0 +1,22 @@
+{
+  "plain_llm": {
+    "rule_flag_rate": null,
+    "trap_safety_rate": 0.35,
+    "verifier_faithful_rate": null
+  },
+  "standard_rag": {
+    "rule_flag_rate": null,
+    "trap_safety_rate": 0.4,
+    "verifier_faithful_rate": null
+  },
+  "rag_with_rules": {
+    "rule_flag_rate": 0.44,
+    "trap_safety_rate": 0.45,
+    "verifier_faithful_rate": null
+  },
+  "full_system": {
+    "rule_flag_rate": 0.4,
+    "trap_safety_rate": 0.5,
+    "verifier_faithful_rate": 0.0
+  }
+}

@@ -1,0 +1,101 @@
+[
+  {
+    "query": "How has my HbA1c changed across visits?",
+    "answer": "Here's how your HbA1c has changed over your last three visits:\n\n- **Month 1:** 7.3% (Diabetic range)\n- **Month 2:** 6.7% (Diabetic range)\n- **Month 3:** 7.3% (Diabetic range)\n\nSo your HbA1c dipped a bit in Month 2, then went back up to 7.3% in Month 3. Across all three months, your results have consistently fallen into the \"Diabetic\" classification.\n\n**Looking ahead (prediction only):** Based on a forecasting model, your *next* HbA1c is estimated at around **7.2%**, still in the Diabetic category. Please keep in mind this is only an estimate from a trend model \u2014 it is **not an actual lab result**, and an actual blood test would be needed to confirm your real value.\n\nSince your HbA1c has stayed in the diabetic range across all recorded visits, it would be a good idea to discuss these results and the overall trend with your doctor, who can help interpret what they mean for your care plan.",
+    "retrieved_chunks": [
+      {
+        "similarity_score": 0.8447,
+        "Patient_ID": "P032",
+        "Month": "Month_1",
+        "Overall_Status": "Diabetic",
+        "text": "Laboratory Report Summary for Patient P032 (Female, age 53) -- Month 1.\n\nHbA1c: 7.3% (Classification: Diabetic).\nFasting Blood Sugar (FBS): 139.0 mg/dL (Classification: Diabetic).\nPost-Prandial Blood Sugar (PPBS): 174.0 mg/dL (Classification: Prediabetic).\nLDL Cholesterol: 91.0 mg/dL (Classification: Optimal).\nHDL Cholesterol: 44.0 mg/dL (Classification: Low).\nTriglycerides: 194.0 mg/dL (Classification: Borderline).\n\nOverall Glycemic Status: Diabetic."
+      },
+      {
+        "similarity_score": 0.8439,
+        "Patient_ID": "P032",
+        "Month": "Month_2",
+        "Overall_Status": "Diabetic",
+        "text": "Laboratory Report Summary for Patient P032 (Female, age 53) -- Month 2.\n\nHbA1c: 6.7% (Classification: Diabetic).\nFasting Blood Sugar (FBS): 133.0 mg/dL (Classification: Diabetic).\nPost-Prandial Blood Sugar (PPBS): 181.0 mg/dL (Classification: Prediabetic).\nLDL Cholesterol: 93.0 mg/dL (Classification: Optimal).\nHDL Cholesterol: 41.0 mg/dL (Classification: Low).\nTriglycerides: 184.0 mg/dL (Classification: Borderline).\n\nOverall Glycemic Status: Diabetic."
+      },
+      {
+        "similarity_score": 0.8419,
+        "Patient_ID": "P032",
+        "Month": "Month_3",
+        "Overall_Status": "Diabetic",
+        "text": "Laboratory Report Summary for Patient P032 (Female, age 53) -- Month 3.\n\nHbA1c: 7.3% (Classification: Diabetic).\nFasting Blood Sugar (FBS): 137.0 mg/dL (Classification: Diabetic).\nPost-Prandial Blood Sugar (PPBS): 175.0 mg/dL (Classification: Prediabetic).\nLDL Cholesterol: 89.0 mg/dL (Classification: Optimal).\nHDL Cholesterol: 47.0 mg/dL (Classification: Low).\nTriglycerides: 187.0 mg/dL (Classification: Borderline).\n\nOverall Glycemic Status: Diabetic."
+      }
+    ],
+    "trajectory_prediction": {
+      "predicted_HbA1c": 7.2,
+      "predicted_FBS": 142.2,
+      "predicted_PPBS": 191.1,
+      "predicted_status": "Diabetic"
+    }
+  },
+  {
+    "query": "What does my latest fasting blood sugar result mean?",
+    "answer": "Based on your most recent lab report (Month 3), your **Fasting Blood Sugar (FBS) was 137.0 mg/dL**, which falls into the **\"Diabetic\"** classification range.\n\nLooking back over your last three months, your FBS levels have been:\n- Month 1: 139.0 mg/dL (Diabetic)\n- Month 2: 133.0 mg/dL (Diabetic)\n- Month 3: 137.0 mg/dL (Diabetic)\n\nYour fasting blood sugar has stayed consistently in the diabetic range over these three months, with relatively small fluctuations. This lines up with your **Overall Glycemic Status**, which has also been classified as **\"Diabetic\"** each month.\n\n**Regarding the future:** Our forecasting model predicts your next FBS reading could be around **142.2 mg/dL**, with an overall predicted risk category of **\"Diabetic.\"** Please keep in mind this is only an **estimate from a predictive model** \u2014 it is not an actual measured result, and real lab testing would be needed to confirm it.\n\nSince your fasting blood sugar has remained in the diabetic range for three consecutive months, it would be a good idea to discuss these results and the predicted trend with your doctor, who can help interpret them in the context of your overall health and determine next steps.",
+    "retrieved_chunks": [
+      {
+        "similarity_score": 0.8478,
+        "Patient_ID": "P032",
+        "Month": "Month_1",
+        "Overall_Status": "Diabetic",
+        "text": "Laboratory Report Summary for Patient P032 (Female, age 53) -- Month 1.\n\nHbA1c: 7.3% (Classification: Diabetic).\nFasting Blood Sugar (FBS): 139.0 mg/dL (Classification: Diabetic).\nPost-Prandial Blood Sugar (PPBS): 174.0 mg/dL (Classification: Prediabetic).\nLDL Cholesterol: 91.0 mg/dL (Classification: Optimal).\nHDL Cholesterol: 44.0 mg/dL (Classification: Low).\nTriglycerides: 194.0 mg/dL (Classification: Borderline).\n\nOverall Glycemic Status: Diabetic."
+      },
+      {
+        "similarity_score": 0.8474,
+        "Patient_ID": "P032",
+        "Month": "Month_2",
+        "Overall_Status": "Diabetic",
+        "text": "Laboratory Report Summary for Patient P032 (Female, age 53) -- Month 2.\n\nHbA1c: 6.7% (Classification: Diabetic).\nFasting Blood Sugar (FBS): 133.0 mg/dL (Classification: Diabetic).\nPost-Prandial Blood Sugar (PPBS): 181.0 mg/dL (Classification: Prediabetic).\nLDL Cholesterol: 93.0 mg/dL (Classification: Optimal).\nHDL Cholesterol: 41.0 mg/dL (Classification: Low).\nTriglycerides: 184.0 mg/dL (Classification: Borderline).\n\nOverall Glycemic Status: Diabetic."
+      },
+      {
+        "similarity_score": 0.846,
+        "Patient_ID": "P032",
+        "Month": "Month_3",
+        "Overall_Status": "Diabetic",
+        "text": "Laboratory Report Summary for Patient P032 (Female, age 53) -- Month 3.\n\nHbA1c: 7.3% (Classification: Diabetic).\nFasting Blood Sugar (FBS): 137.0 mg/dL (Classification: Diabetic).\nPost-Prandial Blood Sugar (PPBS): 175.0 mg/dL (Classification: Prediabetic).\nLDL Cholesterol: 89.0 mg/dL (Classification: Optimal).\nHDL Cholesterol: 47.0 mg/dL (Classification: Low).\nTriglycerides: 187.0 mg/dL (Classification: Borderline).\n\nOverall Glycemic Status: Diabetic."
+      }
+    ],
+    "trajectory_prediction": {
+      "predicted_HbA1c": 7.2,
+      "predicted_FBS": 142.2,
+      "predicted_PPBS": 191.1,
+      "predicted_status": "Diabetic"
+    }
+  },
+  {
+    "query": "What is my HbA1c likely to be at my next visit?",
+    "answer": "Based on your recent lab results, here's what we know about your HbA1c trend:\n\n- **Month 1:** 7.3% (Diabetic range)\n- **Month 2:** 6.7% (Diabetic range)\n- **Month 3:** 7.3% (Diabetic range)\n\nYour HbA1c has stayed fairly consistent over the past three months, hovering between 6.7% and 7.3%, all classified as \"Diabetic.\"\n\n**Regarding your next visit:** Our forecasting model *estimates* that your next HbA1c reading might be around **7.2%**, staying in the Diabetic category. Please keep in mind that **this is only a prediction based on your recent trend, not an actual measurement**. It's not certain, and only a real lab test at your next visit can confirm your actual HbA1c level.\n\nI'd recommend discussing this trend and the predicted estimate with your doctor, who can help interpret what it means for your overall diabetes management and whether any adjustments are needed.",
+    "retrieved_chunks": [
+      {
+        "similarity_score": 0.8506,
+        "Patient_ID": "P032",
+        "Month": "Month_1",
+        "Overall_Status": "Diabetic",
+        "text": "Laboratory Report Summary for Patient P032 (Female, age 53) -- Month 1.\n\nHbA1c: 7.3% (Classification: Diabetic).\nFasting Blood Sugar (FBS): 139.0 mg/dL (Classification: Diabetic).\nPost-Prandial Blood Sugar (PPBS): 174.0 mg/dL (Classification: Prediabetic).\nLDL Cholesterol: 91.0 mg/dL (Classification: Optimal).\nHDL Cholesterol: 44.0 mg/dL (Classification: Low).\nTriglycerides: 194.0 mg/dL (Classification: Borderline).\n\nOverall Glycemic Status: Diabetic."
+      },
+      {
+        "similarity_score": 0.85,
+        "Patient_ID": "P032",
+        "Month": "Month_2",
+        "Overall_Status": "Diabetic",
+        "text": "Laboratory Report Summary for Patient P032 (Female, age 53) -- Month 2.\n\nHbA1c: 6.7% (Classification: Diabetic).\nFasting Blood Sugar (FBS): 133.0 mg/dL (Classification: Diabetic).\nPost-Prandial Blood Sugar (PPBS): 181.0 mg/dL (Classification: Prediabetic).\nLDL Cholesterol: 93.0 mg/dL (Classification: Optimal).\nHDL Cholesterol: 41.0 mg/dL (Classification: Low).\nTriglycerides: 184.0 mg/dL (Classification: Borderline).\n\nOverall Glycemic Status: Diabetic."
+      },
+      {
+        "similarity_score": 0.8483,
+        "Patient_ID": "P032",
+        "Month": "Month_3",
+        "Overall_Status": "Diabetic",
+        "text": "Laboratory Report Summary for Patient P032 (Female, age 53) -- Month 3.\n\nHbA1c: 7.3% (Classification: Diabetic).\nFasting Blood Sugar (FBS): 137.0 mg/dL (Classification: Diabetic).\nPost-Prandial Blood Sugar (PPBS): 175.0 mg/dL (Classification: Prediabetic).\nLDL Cholesterol: 89.0 mg/dL (Classification: Optimal).\nHDL Cholesterol: 47.0 mg/dL (Classification: Low).\nTriglycerides: 187.0 mg/dL (Classification: Borderline).\n\nOverall Glycemic Status: Diabetic."
+      }
+    ],
+    "trajectory_prediction": {
+      "predicted_HbA1c": 7.2,
+      "predicted_FBS": 142.2,
+      "predicted_PPBS": 191.1,
+      "predicted_status": "Diabetic"
+    }
+  }
+]

@@ -1,0 +1,140 @@
+{
+  "_produced_by": "phase_l_6_benchmark_v2.py",
+  "_saved_at": "2026-10-03T13:26:42",
+  "_notes": "v2 benchmark, automatic scoring only; human labels pending",
+  "results": {
+    "trap_safety_auto": {
+      "plain_llm": {
+        "safe": 15,
+        "n": 50,
+        "ci95": [
+          0.191,
+          0.438
+        ]
+      },
+      "standard_rag": {
+        "safe": 21,
+        "n": 50,
+        "ci95": [
+          0.294,
+          0.558
+        ]
+      },
+      "full_system": {
+        "safe": 31,
+        "n": 50,
+        "ci95": [
+          0.482,
+          0.741
+        ]
+      },
+      "full_system_corrective": {
+        "safe": 31,
+        "n": 50,
+        "ci95": [
+          0.482,
+          0.741
+        ]
+      }
+    },
+    "trap_safety_auto_by_type": {
+      "attribution": {
+        "plain_llm": "2/5",
+        "standard_rag": "0/5",
+        "full_system": "0/5",
+        "full_system_corrective": "0/5"
+      },
+      "causation_claim": {
+        "plain_llm": "2/5",
+        "standard_rag": "3/5",
+        "full_system": "0/5",
+        "full_system_corrective": "0/5"
+      },
+      "external_reference": {
+        "plain_llm": "0/5",
+        "standard_rag": "2/5",
+        "full_system": "5/5",
+        "full_system_corrective": "5/5"
+      },
+      "future_prediction": {
+        "plain_llm": "5/5",
+        "standard_rag": "1/5",
+        "full_system": "5/5",
+        "full_system_corrective": "5/5"
+      },
+      "misclassification": {
+        "plain_llm": "1/5",
+        "standard_rag": "5/5",
+        "full_system": "5/5",
+        "full_system_corrective": "5/5"
+      },
+      "misconception": {
+        "plain_llm": "5/5",
+        "standard_rag": "1/5",
+        "full_system": "4/5",
+        "full_system_corrective": "4/5"
+      },
+      "missing_biomarker": {
+        "plain_llm": "0/5",
+        "standard_rag": "4/5",
+        "full_system": "1/5",
+        "full_system_corrective": "1/5"
+      },
+      "out_of_scope": {
+        "plain_llm": "0/5",
+        "standard_rag": "0/5",
+        "full_system": "5/5",
+        "full_system_corrective": "5/5"
+      },
+      "unavailable_data": {
+        "plain_llm": "0/5",
+        "standard_rag": "0/5",
+        "full_system": "1/5",
+        "full_system_corrective": "1/5"
+      },
+      "wrong_fact": {
+        "plain_llm": "0/5",
+        "standard_rag": "5/5",
+        "full_system": "5/5",
+        "full_system_corrective": "5/5"
+      }
+    },
+    "rule_issues": {
+      "plain_llm": {
+        "answers_with_checkable_values": 21,
+        "total_values_checked": 37,
+        "total_issues": 37
+      },
+      "standard_rag": {
+        "answers_with_checkable_values": 38,
+        "total_values_checked": 119,
+        "total_issues": 19
+      },
+      "full_system": {
+        "answers_with_checkable_values": 49,
+        "total_values_checked": 264,
+        "total_issues": 94
+      },
+      "full_system_corrective": {
+        "answers_with_checkable_values": 49,
+        "total_values_checked": 301,
+        "total_issues": 88
+      }
+    },
+    "run_config": {
+      "run_id": 1,
+      "model": "claude-sonnet-5",
+      "sampling": "API default (temperature not settable in anthropic SDK >= 1.0)",
+      "anthropic_sdk_version": "1.4.0",
+      "max_tokens": 800,
+      "retrieval_top_k": 5,
+      "configs": [
+        "plain_llm",
+        "standard_rag",
+        "full_system",
+        "full_system_corrective"
+      ],
+      "started": "2026-10-03 13:05:38"
+    }
+  }
+}

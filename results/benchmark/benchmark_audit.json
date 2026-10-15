@@ -1,0 +1,85 @@
+{
+  "_produced_by": "phase_l_4_audit_benchmark.py",
+  "_saved_at": "2026-10-03T12:10:09",
+  "_notes": "Counts and CIs behind Table IV, Table V and Fig. 6",
+  "results": {
+    "queries_evaluated": {
+      "category_a": 5,
+      "category_c": 20
+    },
+    "trap_safety": {
+      "plain_llm": {
+        "safe": 7,
+        "n": 20,
+        "rate": 0.35,
+        "ci95": [
+          0.181,
+          0.567
+        ]
+      },
+      "standard_rag": {
+        "safe": 8,
+        "n": 20,
+        "rate": 0.4,
+        "ci95": [
+          0.219,
+          0.613
+        ]
+      },
+      "rag_with_rules": {
+        "safe": 9,
+        "n": 20,
+        "rate": 0.45,
+        "ci95": [
+          0.258,
+          0.658
+        ]
+      },
+      "full_system": {
+        "safe": 10,
+        "n": 20,
+        "rate": 0.5,
+        "ci95": [
+          0.299,
+          0.701
+        ]
+      }
+    },
+    "rule_flags": {
+      "plain_llm": {
+        "flagged": 6,
+        "n": 25
+      },
+      "standard_rag": {
+        "flagged": 7,
+        "n": 25
+      },
+      "rag_with_rules": {
+        "flagged": 11,
+        "n": 25
+      },
+      "full_system": {
+        "flagged": 10,
+        "n": 25
+      }
+    },
+    "verifier_claim_decomposition_answers": {
+      "faithful": 6,
+      "hallucinated": 1,
+      "not_verifiable": 18,
+      "missing": 0
+    },
+    "verifier_whole_answer_answers": {
+      "faithful": 0,
+      "hallucinated": 16,
+      "not_verifiable": 0,
+      "missing": 9
+    },
+    "verifier_claims": {
+      "checked": 27,
+      "skipped_no_single_chunk": 0,
+      "corrections_excluded": 3,
+      "checked_and_labelled_faithful": 26
+    }
+  }
+}

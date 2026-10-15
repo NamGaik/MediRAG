@@ -1,0 +1,95 @@
+{
+  "_produced_by": "phase_i_2_verifier_audit.py",
+  "_saved_at": "2026-10-03T11:55:45",
+  "_notes": "Table III audit: both-class metrics, per-type accuracy, leakage, out-of-template test",
+  "results": {
+    "split": {
+      "total_pairs": 3600,
+      "train": 2880,
+      "validation": 720
+    },
+    "leakage": {
+      "val_examples_whose_report_chunk_is_in_train": 1.0,
+      "val_examples_whose_statement_also_appears_in_train": 0.9888888888888889,
+      "pairs_with_truncated_HbA1c_marker": 600
+    },
+    "validation": {
+      "n": 720,
+      "accuracy": 0.9791666666666666,
+      "confusion": {
+        "hallucinated_caught": 528,
+        "hallucinated_missed": 12,
+        "faithful_wrongly_flagged": 3,
+        "faithful_accepted": 177
+      },
+      "faithful_class": {
+        "precision": 0.9365079365079365,
+        "recall": 0.9833333333333333,
+        "f1": 0.959349593495935,
+        "n": 180
+      },
+      "hallucinated_class": {
+        "precision": 0.9943502824858758,
+        "recall": 0.9777777777777777,
+        "f1": 0.9859943977591037,
+        "n": 540
+      },
+      "macro_f1": 0.9726719956275194
+    },
+    "validation_by_type": {
+      "fabricated_clause": {
+        "n": 182,
+        "accuracy": 1.0
+      },
+      "faithful": {
+        "n": 180,
+        "accuracy": 0.9833333333333333
+      },
+      "wrong_label": {
+        "n": 177,
+        "accuracy": 0.9378531073446328
+      },
+      "wrong_value": {
+        "n": 181,
+        "accuracy": 0.994475138121547
+      }
+    },
+    "stress_test": {
+      "n": 180,
+      "accuracy": 0.8833333333333333,
+      "confusion": {
+        "hallucinated_caught": 105,
+        "hallucinated_missed": 15,
+        "faithful_wrongly_flagged": 6,
+        "faithful_accepted": 54
+      },
+      "faithful_class": {
+        "precision": 0.782608695652174,
+        "recall": 0.9,
+        "f1": 0.8372093023255814,
+        "n": 60
+      },
+      "hallucinated_class": {
+        "precision": 0.9459459459459459,
+        "recall": 0.875,
+        "f1": 0.9090909090909091,
+        "n": 120
+      },
+      "macro_f1": 0.8731501057082452
+    },
+    "stress_test_by_type": {
+      "new_fabricated_clause": {
+        "n": 60,
+        "accuracy": 0.7666666666666667
+      },
+      "paraphrased_faithful": {
+        "n": 60,
+        "accuracy": 0.9
+      },
+      "paraphrased_wrong_value": {
+        "n": 60,
+        "accuracy": 0.9833333333333333
+      }
+    }
+  }
+}

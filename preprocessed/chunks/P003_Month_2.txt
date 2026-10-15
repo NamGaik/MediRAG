@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P003 (Male, age 41) -- Month 2.
+
+HbA1c: 4.9% (Classification: Normal).
+Fasting Blood Sugar (FBS): 84.0 mg/dL (Classification: Normal).
+Post-Prandial Blood Sugar (PPBS): 124.0 mg/dL (Classification: Normal).
+LDL Cholesterol: 81.0 mg/dL (Classification: Optimal).
+HDL Cholesterol: 63.0 mg/dL (Classification: Normal).
+Triglycerides: 79.0 mg/dL (Classification: Normal).
+
+Overall Glycemic Status: Normal.

@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P006 (Female, age 31) -- Month 3.
+
+HbA1c: 5.3% (Classification: Normal).
+Fasting Blood Sugar (FBS): 80.0 mg/dL (Classification: Normal).
+Post-Prandial Blood Sugar (PPBS): 116.0 mg/dL (Classification: Normal).
+LDL Cholesterol: 69.0 mg/dL (Classification: Optimal).
+HDL Cholesterol: 55.0 mg/dL (Classification: Normal).
+Triglycerides: 121.0 mg/dL (Classification: Normal).
+
+Overall Glycemic Status: Normal.

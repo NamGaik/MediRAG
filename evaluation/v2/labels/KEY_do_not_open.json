@@ -1,0 +1,949 @@
+{
+  "run_id": 1,
+  "key": {
+    "T001": {
+      "query_id": "T028",
+      "config": "full_system"
+    },
+    "T002": {
+      "query_id": "T008",
+      "config": "plain_llm"
+    },
+    "T003": {
+      "query_id": "T015",
+      "config": "plain_llm"
+    },
+    "T004": {
+      "query_id": "T048",
+      "config": "standard_rag"
+    },
+    "T005": {
+      "query_id": "T041",
+      "config": "full_system_corrective"
+    },
+    "T006": {
+      "query_id": "T032",
+      "config": "full_system"
+    },
+    "T007": {
+      "query_id": "T050",
+      "config": "full_system"
+    },
+    "T008": {
+      "query_id": "T028",
+      "config": "plain_llm"
+    },
+    "T009": {
+      "query_id": "T049",
+      "config": "standard_rag"
+    },
+    "T010": {
+      "query_id": "T030",
+      "config": "full_system"
+    },
+    "T011": {
+      "query_id": "T020",
+      "config": "standard_rag"
+    },
+    "T012": {
+      "query_id": "T004",
+      "config": "standard_rag"
+    },
+    "T013": {
+      "query_id": "T002",
+      "config": "full_system"
+    },
+    "T014": {
+      "query_id": "T013",
+      "config": "full_system"
+    },
+    "T015": {
+      "query_id": "T040",
+      "config": "standard_rag"
+    },
+    "T016": {
+      "query_id": "T036",
+      "config": "full_system_corrective"
+    },
+    "T017": {
+      "query_id": "T003",
+      "config": "full_system"
+    },
+    "T018": {
+      "query_id": "T009",
+      "config": "plain_llm"
+    },
+    "T019": {
+      "query_id": "T033",
+      "config": "standard_rag"
+    },
+    "T020": {
+      "query_id": "T046",
+      "config": "standard_rag"
+    },
+    "T021": {
+      "query_id": "T003",
+      "config": "standard_rag"
+    },
+    "T022": {
+      "query_id": "T036",
+      "config": "standard_rag"
+    },
+    "T023": {
+      "query_id": "T044",
+      "config": "full_system"
+    },
+    "T024": {
+      "query_id": "T041",
+      "config": "plain_llm"
+    },
+    "T025": {
+      "query_id": "T012",
+      "config": "full_system_corrective"
+    },
+    "T026": {
+      "query_id": "T018",
+      "config": "plain_llm"
+    },
+    "T027": {
+      "query_id": "T005",
+      "config": "full_system"
+    },
+    "T028": {
+      "query_id": "T013",
+      "config": "standard_rag"
+    },
+    "T029": {
+      "query_id": "T033",
+      "config": "full_system"
+    },
+    "T030": {
+      "query_id": "T046",
+      "config": "full_system"
+    },
+    "T031": {
+      "query_id": "T035",
+      "config": "standard_rag"
+    },
+    "T032": {
+      "query_id": "T014",
+      "config": "plain_llm"
+    },
+    "T033": {
+      "query_id": "T004",
+      "config": "plain_llm"
+    },
+    "T034": {
+      "query_id": "T049",
+      "config": "full_system"
+    },
+    "T035": {
+      "query_id": "T005",
+      "config": "plain_llm"
+    },
+    "T036": {
+      "query_id": "T042",
+      "config": "plain_llm"
+    },
+    "T037": {
+      "query_id": "T042",
+      "config": "full_system"
+    },
+    "T038": {
+      "query_id": "T029",
+      "config": "plain_llm"
+    },
+    "T039": {
+      "query_id": "T006",
+      "config": "full_system"
+    },
+    "T040": {
+      "query_id": "T024",
+      "config": "plain_llm"
+    },
+    "T041": {
+      "query_id": "T050",
+      "config": "full_system_corrective"
+    },
+    "T042": {
+      "query_id": "T017",
+      "config": "standard_rag"
+    },
+    "T043": {
+      "query_id": "T004",
+      "config": "full_system"
+    },
+    "T044": {
+      "query_id": "T015",
+      "config": "standard_rag"
+    },
+    "T045": {
+      "query_id": "T030",
+      "config": "standard_rag"
+    },
+    "T046": {
+      "query_id": "T022",
+      "config": "full_system_corrective"
+    },
+    "T047": {
+      "query_id": "T014",
+      "config": "full_system"
+    },
+    "T048": {
+      "query_id": "T014",
+      "config": "standard_rag"
+    },
+    "T049": {
+      "query_id": "T031",
+      "config": "plain_llm"
+    },
+    "T050": {
+      "query_id": "T032",
+      "config": "plain_llm"
+    },
+    "T051": {
+      "query_id": "T019",
+      "config": "plain_llm"
+    },
+    "T052": {
+      "query_id": "T046",
+      "config": "plain_llm"
+    },
+    "T053": {
+      "query_id": "T039",
+      "config": "full_system"
+    },
+    "T054": {
+      "query_id": "T044",
+      "config": "full_system_corrective"
+    },
+    "T055": {
+      "query_id": "T013",
+      "config": "full_system_corrective"
+    },
+    "T056": {
+      "query_id": "T012",
+      "config": "plain_llm"
+    },
+    "T057": {
+      "query_id": "T010",
+      "config": "plain_llm"
+    },
+    "T058": {
+      "query_id": "T022",
+      "config": "full_system"
+    },
+    "T059": {
+      "query_id": "T011",
+      "config": "plain_llm"
+    },
+    "T060": {
+      "query_id": "T016",
+      "config": "standard_rag"
+    },
+    "T061": {
+      "query_id": "T015",
+      "config": "full_system"
+    },
+    "T062": {
+      "query_id": "T024",
+      "config": "standard_rag"
+    },
+    "T063": {
+      "query_id": "T026",
+      "config": "standard_rag"
+    },
+    "T064": {
+      "query_id": "T039",
+      "config": "plain_llm"
+    },
+    "T065": {
+      "query_id": "T034",
+      "config": "standard_rag"
+    },
+    "T066": {
+      "query_id": "T022",
+      "config": "plain_llm"
+    },
+    "T067": {
+      "query_id": "T014",
+      "config": "full_system_corrective"
+    },
+    "T068": {
+      "query_id": "T035",
+      "config": "full_system"
+    },
+    "T069": {
+      "query_id": "T043",
+      "config": "full_system_corrective"
+    },
+    "T070": {
+      "query_id": "T025",
+      "config": "standard_rag"
+    },
+    "T071": {
+      "query_id": "T048",
+      "config": "plain_llm"
+    },
+    "T072": {
+      "query_id": "T002",
+      "config": "standard_rag"
+    },
+    "T073": {
+      "query_id": "T001",
+      "config": "standard_rag"
+    },
+    "T074": {
+      "query_id": "T011",
+      "config": "full_system_corrective"
+    },
+    "T075": {
+      "query_id": "T012",
+      "config": "full_system"
+    },
+    "T076": {
+      "query_id": "T045",
+      "config": "standard_rag"
+    },
+    "T077": {
+      "query_id": "T017",
+      "config": "plain_llm"
+    },
+    "T078": {
+      "query_id": "T023",
+      "config": "full_system_corrective"
+    },
+    "T079": {
+      "query_id": "T039",
+      "config": "standard_rag"
+    },
+    "T080": {
+      "query_id": "T037",
+      "config": "standard_rag"
+    },
+    "T081": {
+      "query_id": "T020",
+      "config": "full_system_corrective"
+    },
+    "T082": {
+      "query_id": "T013",
+      "config": "plain_llm"
+    },
+    "T083": {
+      "query_id": "T016",
+      "config": "plain_llm"
+    },
+    "T084": {
+      "query_id": "T021",
+      "config": "plain_llm"
+    },
+    "T085": {
+      "query_id": "T011",
+      "config": "standard_rag"
+    },
+    "T086": {
+      "query_id": "T020",
+      "config": "full_system"
+    },
+    "T087": {
+      "query_id": "T027",
+      "config": "standard_rag"
+    },
+    "T088": {
+      "query_id": "T024",
+      "config": "full_system_corrective"
+    },
+    "T089": {
+      "query_id": "T017",
+      "config": "full_system_corrective"
+    },
+    "T090": {
+      "query_id": "T047",
+      "config": "standard_rag"
+    },
+    "T091": {
+      "query_id": "T044",
+      "config": "standard_rag"
+    },
+    "T092": {
+      "query_id": "T006",
+      "config": "plain_llm"
+    },
+    "T093": {
+      "query_id": "T050",
+      "config": "standard_rag"
+    },
+    "T094": {
+      "query_id": "T036",
+      "config": "plain_llm"
+    },
+    "T095": {
+      "query_id": "T007",
+      "config": "plain_llm"
+    },
+    "T096": {
+      "query_id": "T018",
+      "config": "standard_rag"
+    },
+    "T097": {
+      "query_id": "T016",
+      "config": "full_system_corrective"
+    },
+    "T098": {
+      "query_id": "T041",
+      "config": "full_system"
+    },
+    "T099": {
+      "query_id": "T043",
+      "config": "plain_llm"
+    },
+    "T100": {
+      "query_id": "T005",
+      "config": "standard_rag"
+    },
+    "T101": {
+      "query_id": "T024",
+      "config": "full_system"
+    },
+    "T102": {
+      "query_id": "T036",
+      "config": "full_system"
+    },
+    "T103": {
+      "query_id": "T025",
+      "config": "full_system_corrective"
+    },
+    "T104": {
+      "query_id": "T039",
+      "config": "full_system_corrective"
+    },
+    "T105": {
+      "query_id": "T006",
+      "config": "standard_rag"
+    },
+    "T106": {
+      "query_id": "T028",
+      "config": "standard_rag"
+    },
+    "T107": {
+      "query_id": "T045",
+      "config": "full_system_corrective"
+    },
+    "T108": {
+      "query_id": "T047",
+      "config": "full_system_corrective"
+    },
+    "T109": {
+      "query_id": "T002",
+      "config": "plain_llm"
+    },
+    "T110": {
+      "query_id": "T030",
+      "config": "plain_llm"
+    },
+    "T111": {
+      "query_id": "T019",
+      "config": "full_system_corrective"
+    },
+    "T112": {
+      "query_id": "T019",
+      "config": "full_system"
+    },
+    "T113": {
+      "query_id": "T046",
+      "config": "full_system_corrective"
+    },
+    "T114": {
+      "query_id": "T021",
+      "config": "standard_rag"
+    },
+    "T115": {
+      "query_id": "T049",
+      "config": "plain_llm"
+    },
+    "T116": {
+      "query_id": "T038",
+      "config": "plain_llm"
+    },
+    "T117": {
+      "query_id": "T011",
+      "config": "full_system"
+    },
+    "T118": {
+      "query_id": "T020",
+      "config": "plain_llm"
+    },
+    "T119": {
+      "query_id": "T040",
+      "config": "full_system"
+    },
+    "T120": {
+      "query_id": "T015",
+      "config": "full_system_corrective"
+    },
+    "T121": {
+      "query_id": "T018",
+      "config": "full_system_corrective"
+    },
+    "T122": {
+      "query_id": "T049",
+      "config": "full_system_corrective"
+    },
+    "T123": {
+      "query_id": "T022",
+      "config": "standard_rag"
+    },
+    "T124": {
+      "query_id": "T032",
+      "config": "standard_rag"
+    },
+    "T125": {
+      "query_id": "T042",
+      "config": "full_system_corrective"
+    },
+    "T126": {
+      "query_id": "T038",
+      "config": "standard_rag"
+    },
+    "T127": {
+      "query_id": "T043",
+      "config": "full_system"
+    },
+    "T128": {
+      "query_id": "T038",
+      "config": "full_system_corrective"
+    },
+    "T129": {
+      "query_id": "T010",
+      "config": "full_system"
+    },
+    "T130": {
+      "query_id": "T037",
+      "config": "full_system"
+    },
+    "T131": {
+      "query_id": "T029",
+      "config": "full_system"
+    },
+    "T132": {
+      "query_id": "T008",
+      "config": "full_system"
+    },
+    "T133": {
+      "query_id": "T031",
+      "config": "full_system"
+    },
+    "T134": {
+      "query_id": "T035",
+      "config": "plain_llm"
+    },
+    "T135": {
+      "query_id": "T026",
+      "config": "full_system"
+    },
+    "T136": {
+      "query_id": "T027",
+      "config": "plain_llm"
+    },
+    "T137": {
+      "query_id": "T003",
+      "config": "plain_llm"
+    },
+    "T138": {
+      "query_id": "T023",
+      "config": "plain_llm"
+    },
+    "T139": {
+      "query_id": "T012",
+      "config": "standard_rag"
+    },
+    "T140": {
+      "query_id": "T034",
+      "config": "full_system"
+    },
+    "T141": {
+      "query_id": "T048",
+      "config": "full_system_corrective"
+    },
+    "T142": {
+      "query_id": "T021",
+      "config": "full_system_corrective"
+    },
+    "T143": {
+      "query_id": "T040",
+      "config": "plain_llm"
+    },
+    "T144": {
+      "query_id": "T048",
+      "config": "full_system"
+    },
+    "T145": {
+      "query_id": "T008",
+      "config": "standard_rag"
+    },
+    "T146": {
+      "query_id": "T025",
+      "config": "plain_llm"
+    },
+    "T147": {
+      "query_id": "T007",
+      "config": "standard_rag"
+    },
+    "T148": {
+      "query_id": "T050",
+      "config": "plain_llm"
+    },
+    "T149": {
+      "query_id": "T027",
+      "config": "full_system"
+    },
+    "T150": {
+      "query_id": "T026",
+      "config": "plain_llm"
+    },
+    "T151": {
+      "query_id": "T025",
+      "config": "full_system"
+    },
+    "T152": {
+      "query_id": "T019",
+      "config": "standard_rag"
+    },
+    "T153": {
+      "query_id": "T029",
+      "config": "standard_rag"
+    },
+    "T154": {
+      "query_id": "T016",
+      "config": "full_system"
+    },
+    "T155": {
+      "query_id": "T023",
+      "config": "standard_rag"
+    },
+    "T156": {
+      "query_id": "T047",
+      "config": "full_system"
+    },
+    "T157": {
+      "query_id": "T001",
+      "config": "full_system"
+    },
+    "T158": {
+      "query_id": "T034",
+      "config": "plain_llm"
+    },
+    "T159": {
+      "query_id": "T009",
+      "config": "standard_rag"
+    },
+    "T160": {
+      "query_id": "T021",
+      "config": "full_system"
+    },
+    "T161": {
+      "query_id": "T010",
+      "config": "standard_rag"
+    },
+    "T162": {
+      "query_id": "T007",
+      "config": "full_system"
+    },
+    "T163": {
+      "query_id": "T045",
+      "config": "plain_llm"
+    },
+    "T164": {
+      "query_id": "T001",
+      "config": "plain_llm"
+    },
+    "T165": {
+      "query_id": "T018",
+      "config": "full_system"
+    },
+    "T166": {
+      "query_id": "T033",
+      "config": "plain_llm"
+    },
+    "T167": {
+      "query_id": "T043",
+      "config": "standard_rag"
+    },
+    "T168": {
+      "query_id": "T037",
+      "config": "plain_llm"
+    },
+    "T169": {
+      "query_id": "T040",
+      "config": "full_system_corrective"
+    },
+    "T170": {
+      "query_id": "T042",
+      "config": "standard_rag"
+    },
+    "T171": {
+      "query_id": "T031",
+      "config": "standard_rag"
+    },
+    "T172": {
+      "query_id": "T041",
+      "config": "standard_rag"
+    },
+    "T173": {
+      "query_id": "T045",
+      "config": "full_system"
+    },
+    "T174": {
+      "query_id": "T044",
+      "config": "plain_llm"
+    },
+    "T175": {
+      "query_id": "T017",
+      "config": "full_system"
+    },
+    "T176": {
+      "query_id": "T009",
+      "config": "full_system"
+    },
+    "T177": {
+      "query_id": "T047",
+      "config": "plain_llm"
+    },
+    "T178": {
+      "query_id": "T038",
+      "config": "full_system"
+    },
+    "T179": {
+      "query_id": "T037",
+      "config": "full_system_corrective"
+    },
+    "T180": {
+      "query_id": "T023",
+      "config": "full_system"
+    },
+    "T181": {
+      "query_id": "T010",
+      "config": "full_system_corrective"
+    },
+    "P001": {
+      "query_id": "Q008",
+      "config": "full_system"
+    },
+    "P002": {
+      "query_id": "Q013",
+      "config": "plain_llm"
+    },
+    "P003": {
+      "query_id": "Q001",
+      "config": "full_system"
+    },
+    "P004": {
+      "query_id": "Q015",
+      "config": "plain_llm"
+    },
+    "P005": {
+      "query_id": "Q010",
+      "config": "full_system_corrective"
+    },
+    "P006": {
+      "query_id": "Q003",
+      "config": "full_system_corrective"
+    },
+    "P007": {
+      "query_id": "Q011",
+      "config": "standard_rag"
+    },
+    "P008": {
+      "query_id": "Q005",
+      "config": "standard_rag"
+    },
+    "P009": {
+      "query_id": "Q014",
+      "config": "standard_rag"
+    },
+    "P010": {
+      "query_id": "Q013",
+      "config": "standard_rag"
+    },
+    "P011": {
+      "query_id": "Q007",
+      "config": "standard_rag"
+    },
+    "P012": {
+      "query_id": "Q006",
+      "config": "full_system_corrective"
+    },
+    "P013": {
+      "query_id": "Q002",
+      "config": "full_system_corrective"
+    },
+    "P014": {
+      "query_id": "Q006",
+      "config": "plain_llm"
+    },
+    "P015": {
+      "query_id": "Q008",
+      "config": "standard_rag"
+    },
+    "P016": {
+      "query_id": "Q004",
+      "config": "standard_rag"
+    },
+    "P017": {
+      "query_id": "Q011",
+      "config": "plain_llm"
+    },
+    "P018": {
+      "query_id": "Q005",
+      "config": "plain_llm"
+    },
+    "P019": {
+      "query_id": "Q009",
+      "config": "full_system_corrective"
+    },
+    "P020": {
+      "query_id": "Q014",
+      "config": "plain_llm"
+    },
+    "P021": {
+      "query_id": "Q015",
+      "config": "full_system"
+    },
+    "P022": {
+      "query_id": "Q013",
+      "config": "full_system"
+    },
+    "P023": {
+      "query_id": "Q005",
+      "config": "full_system"
+    },
+    "P024": {
+      "query_id": "Q008",
+      "config": "plain_llm"
+    },
+    "P025": {
+      "query_id": "Q004",
+      "config": "full_system_corrective"
+    },
+    "P026": {
+      "query_id": "Q010",
+      "config": "standard_rag"
+    },
+    "P027": {
+      "query_id": "Q009",
+      "config": "plain_llm"
+    },
+    "P028": {
+      "query_id": "Q004",
+      "config": "full_system"
+    },
+    "P029": {
+      "query_id": "Q012",
+      "config": "standard_rag"
+    },
+    "P030": {
+      "query_id": "Q006",
+      "config": "standard_rag"
+    },
+    "P031": {
+      "query_id": "Q014",
+      "config": "full_system"
+    },
+    "P032": {
+      "query_id": "Q008",
+      "config": "full_system_corrective"
+    },
+    "P033": {
+      "query_id": "Q012",
+      "config": "plain_llm"
+    },
+    "P034": {
+      "query_id": "Q001",
+      "config": "standard_rag"
+    },
+    "P035": {
+      "query_id": "Q010",
+      "config": "plain_llm"
+    },
+    "P036": {
+      "query_id": "Q006",
+      "config": "full_system"
+    },
+    "P037": {
+      "query_id": "Q001",
+      "config": "full_system_corrective"
+    },
+    "P038": {
+      "query_id": "Q002",
+      "config": "plain_llm"
+    },
+    "P039": {
+      "query_id": "Q011",
+      "config": "full_system"
+    },
+    "P040": {
+      "query_id": "Q002",
+      "config": "full_system"
+    },
+    "P041": {
+      "query_id": "Q001",
+      "config": "plain_llm"
+    },
+    "P042": {
+      "query_id": "Q012",
+      "config": "full_system"
+    },
+    "P043": {
+      "query_id": "Q004",
+      "config": "plain_llm"
+    },
+    "P044": {
+      "query_id": "Q009",
+      "config": "full_system"
+    },
+    "P045": {
+      "query_id": "Q003",
+      "config": "standard_rag"
+    },
+    "P046": {
+      "query_id": "Q007",
+      "config": "plain_llm"
+    },
+    "P047": {
+      "query_id": "Q015",
+      "config": "standard_rag"
+    },
+    "P048": {
+      "query_id": "Q009",
+      "config": "standard_rag"
+    },
+    "P049": {
+      "query_id": "Q005",
+      "config": "full_system_corrective"
+    },
+    "P050": {
+      "query_id": "Q010",
+      "config": "full_system"
+    },
+    "P051": {
+      "query_id": "Q003",
+      "config": "plain_llm"
+    },
+    "P052": {
+      "query_id": "Q003",
+      "config": "full_system"
+    },
+    "P053": {
+      "query_id": "Q011",
+      "config": "full_system_corrective"
+    },
+    "P054": {
+      "query_id": "Q007",
+      "config": "full_system"
+    },
+    "P055": {
+      "query_id": "Q002",
+      "config": "standard_rag"
+    }
+  }
+}

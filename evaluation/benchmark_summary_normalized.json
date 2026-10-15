@@ -1,0 +1,26 @@
+{
+  "plain_llm": {
+    "avg_issue_rate": 1.0,
+    "coverage": 0.24,
+    "n_answers_with_claims": 6,
+    "n_total_answers": 25
+  },
+  "standard_rag": {
+    "avg_issue_rate": 0.31,
+    "coverage": 0.52,
+    "n_answers_with_claims": 13,
+    "n_total_answers": 25
+  },
+  "rag_with_rules": {
+    "avg_issue_rate": 0.615,
+    "coverage": 0.52,
+    "n_answers_with_claims": 13,
+    "n_total_answers": 25
+  },
+  "full_system": {
+    "avg_issue_rate": 0.501,
+    "coverage": 0.48,
+    "n_answers_with_claims": 12,
+    "n_total_answers": 25
+  }
+}

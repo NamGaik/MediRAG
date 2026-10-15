@@ -1,0 +1,393 @@
+{
+  "_produced_by": "phase_l_8_rescore_rules_v2.py",
+  "_saved_at": "2026-10-04T22:07:29",
+  "_notes": "Table V with forecast as context and reference thresholds separated",
+  "results": {
+    "before": {
+      "plain_llm": {
+        "coverage": 0.323,
+        "values_checked": 37,
+        "issues_by_type": {
+          "unverifiable_no_context": 37,
+          "misclassification": 0,
+          "possible_fabrication": 0
+        },
+        "real_issue_rate": 0.0
+      },
+      "standard_rag": {
+        "coverage": 0.585,
+        "values_checked": 119,
+        "issues_by_type": {
+          "misclassification": 3,
+          "possible_fabrication": 11,
+          "unverifiable_no_context": 5
+        },
+        "real_issue_rate": 0.118
+      },
+      "full_system": {
+        "coverage": 0.754,
+        "values_checked": 264,
+        "issues_by_type": {
+          "possible_fabrication": 84,
+          "misclassification": 5,
+          "unverifiable_no_context": 5
+        },
+        "real_issue_rate": 0.337
+      },
+      "full_system_corrective": {
+        "coverage": 0.754,
+        "values_checked": 301,
+        "issues_by_type": {
+          "possible_fabrication": 81,
+          "misclassification": 2,
+          "unverifiable_no_context": 5
+        },
+        "real_issue_rate": 0.276
+      }
+    },
+    "after": {
+      "plain_llm": {
+        "coverage": 0.323,
+        "values_checked": 37,
+        "issues_by_type": {
+          "unverifiable_no_context": 37,
+          "misclassification": 0,
+          "possible_fabrication": 0
+        },
+        "real_issue_rate": 0.0
+      },
+      "standard_rag": {
+        "coverage": 0.585,
+        "values_checked": 119,
+        "issues_by_type": {
+          "misclassification": 3,
+          "possible_fabrication": 6,
+          "reference_threshold": 5,
+          "unverifiable_no_context": 5
+        },
+        "real_issue_rate": 0.076
+      },
+      "full_system": {
+        "coverage": 0.754,
+        "values_checked": 264,
+        "issues_by_type": {
+          "possible_fabrication": 8,
+          "misclassification": 7,
+          "unverifiable_no_context": 5,
+          "reference_threshold": 2
+        },
+        "real_issue_rate": 0.057
+      },
+      "full_system_corrective": {
+        "coverage": 0.754,
+        "values_checked": 301,
+        "issues_by_type": {
+          "possible_fabrication": 4,
+          "misclassification": 5,
+          "reference_threshold": 2,
+          "unverifiable_no_context": 5
+        },
+        "real_issue_rate": 0.03
+      }
+    },
+    "remaining_flags": [
+      {
+        "query_id": "Q003",
+        "config": "standard_rag",
+        "type": "misclassification",
+        "biomarker": "FBS",
+        "value": 123.0,
+        "claimed_label": "Normal",
+        "snippet": " \u2192 107 \u2192 99 mg/dL, reaching \"Normal\" by Month 3), your post-meal readi"
+      },
+      {
+        "query_id": "Q004",
+        "config": "standard_rag",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 9.2,
+        "claimed_label": null,
+        "snippet": "%, this would represent a further increase compared to the available d"
+      },
+      {
+        "query_id": "Q004",
+        "config": "full_system",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 9.2,
+        "claimed_label": null,
+        "snippet": "% anywhere in the context I have available"
+      },
+      {
+        "query_id": "Q004",
+        "config": "full_system",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 7.0,
+        "claimed_label": "Diabetic",
+        "snippet": ".9% \u2192 8.0% \u2192 8.1%), and your overall glycemic status has consistently "
+      },
+      {
+        "query_id": "Q004",
+        "config": "full_system_corrective",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 9.2,
+        "claimed_label": null,
+        "snippet": "% you mentioned does not appear anywhere in your lab records that I ha"
+      },
+      {
+        "query_id": "Q005",
+        "config": "standard_rag",
+        "type": "misclassification",
+        "biomarker": "PPBS",
+        "value": 196.0,
+        "claimed_label": "Diabetic",
+        "snippet": " mg/dL \u2192 188 mg/dL \u2192 171 mg/dL, moving closer to (though still above) "
+      },
+      {
+        "query_id": "Q005",
+        "config": "full_system",
+        "type": "misclassification",
+        "biomarker": "TG",
+        "value": 2.0,
+        "claimed_label": "High",
+        "snippet": ") to \"High\" (Month 3) \u2014 this is a trend worth flagging to your doctor "
+      },
+      {
+        "query_id": "Q005",
+        "config": "full_system_corrective",
+        "type": "misclassification",
+        "biomarker": "TG",
+        "value": 193.0,
+        "claimed_label": "High",
+        "snippet": " and 192.0 mg/dL in Months 1 and 2) to \"High\" (206.0 mg/dL in Month 3)"
+      },
+      {
+        "query_id": "Q006",
+        "config": "standard_rag",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 9.0,
+        "claimed_label": null,
+        "snippet": "% or what that classification would mean"
+      },
+      {
+        "query_id": "Q006",
+        "config": "standard_rag",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 9.0,
+        "claimed_label": null,
+        "snippet": "%, I'd recommend discussing it directly with your healthcare provider,"
+      },
+      {
+        "query_id": "Q006",
+        "config": "full_system",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 9.0,
+        "claimed_label": null,
+        "snippet": "% anywhere in your reports"
+      },
+      {
+        "query_id": "Q006",
+        "config": "full_system",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 6.0,
+        "claimed_label": "Prediabetic",
+        "snippet": ".1% (Prediabetic)"
+      },
+      {
+        "query_id": "Q006",
+        "config": "full_system",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 9.0,
+        "claimed_label": null,
+        "snippet": "%, please share that with your doctor, since that's a different value "
+      },
+      {
+        "query_id": "Q006",
+        "config": "full_system_corrective",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 9.0,
+        "claimed_label": null,
+        "snippet": "% anywhere in your records"
+      },
+      {
+        "query_id": "Q006",
+        "config": "full_system_corrective",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 9.0,
+        "claimed_label": null,
+        "snippet": "%, it may be from a different report or test that isn't included in th"
+      },
+      {
+        "query_id": "Q008",
+        "config": "full_system",
+        "type": "misclassification",
+        "biomarker": "FBS",
+        "value": 123.3,
+        "claimed_label": "Diabetic",
+        "snippet": " mg/dL, and PPBS at about 177.1 mg/dL, with a predicted risk category "
+      },
+      {
+        "query_id": "Q008",
+        "config": "full_system",
+        "type": "misclassification",
+        "biomarker": "PPBS",
+        "value": 177.1,
+        "claimed_label": "Diabetic",
+        "snippet": " mg/dL, with a predicted risk category of Diabetic"
+      },
+      {
+        "query_id": "Q011",
+        "config": "full_system",
+        "type": "misclassification",
+        "biomarker": "TG",
+        "value": 1.0,
+        "claimed_label": "Borderline",
+        "snippet": "55.0 mg/dL -- classified as **Borderline**"
+      },
+      {
+        "query_id": "T011",
+        "config": "full_system",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 13.0,
+        "claimed_label": null,
+        "snippet": "% doesn't appear anywhere in the context I have"
+      },
+      {
+        "query_id": "T013",
+        "config": "full_system",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 4.6,
+        "claimed_label": null,
+        "snippet": "% in any of these months"
+      },
+      {
+        "query_id": "T014",
+        "config": "standard_rag",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 2.8,
+        "claimed_label": null,
+        "snippet": "% for P006 in any of the available months"
+      },
+      {
+        "query_id": "T014",
+        "config": "full_system_corrective",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 2.8,
+        "claimed_label": null,
+        "snippet": "% in your history"
+      },
+      {
+        "query_id": "T015",
+        "config": "standard_rag",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 4.7,
+        "claimed_label": null,
+        "snippet": "% for this patient in any of the months provided"
+      },
+      {
+        "query_id": "T015",
+        "config": "full_system",
+        "type": "possible_fabrication",
+        "biomarker": "HbA1c",
+        "value": 4.7,
+        "claimed_label": null,
+        "snippet": "% in any of the available reports"
+      },
+      {
+        "query_id": "T019",
+        "config": "standard_rag",
+        "type": "possible_fabrication",
+        "biomarker": "PPBS",
+        "value": 85.0,
+        "claimed_label": null,
+        "snippet": "\u201392 mg/dL**, as the rate of decline has slowed significantly between M"
+      },
+      {
+        "query_id": "T020",
+        "config": "full_system_corrective",
+        "type": "misclassification",
+        "biomarker": "PPBS",
+        "value": 164.6,
+        "claimed_label": "Diabetic",
+        "snippet": " mg/dL**, with an overall predicted risk category of **Diabetic**"
+      },
+      {
+        "query_id": "T024",
+        "config": "full_system",
+        "type": "misclassification",
+        "biomarker": "HbA1c",
+        "value": 6.1,
+        "claimed_label": "Diabetic",
+        "snippet": "%, FBS 129.0 mg/dL - Diabetic, PPBS 174.0 mg/dL - Prediabetic)"
+      },
+      {
+        "query_id": "T036",
+        "config": "full_system_corrective",
+        "type": "misclassification",
+        "biomarker": "FBS",
+        "value": 123.0,
+        "claimed_label": "Diabetic",
+        "snippet": " mg/dL, and post-prandial blood sugar of 169.4 mg/dL, with the risk ca"
+      },
+      {
+        "query_id": "T036",
+        "config": "full_system_corrective",
+        "type": "misclassification",
+        "biomarker": "PPBS",
+        "value": 169.4,
+        "claimed_label": "Diabetic",
+        "snippet": " mg/dL, with the risk category staying \"Diabetic"
+      },
+      {
+        "query_id": "T039",
+        "config": "full_system_corrective",
+        "type": "misclassification",
+        "biomarker": "PPBS",
+        "value": 175.2,
+        "claimed_label": "Diabetic",
+        "snippet": " mg/dL, continuing to fall in the \"Diabetic\" risk category \u2014 but pleas"
+      },
+      {
+        "query_id": "T043",
+        "config": "full_system",
+        "type": "misclassification",
+        "biomarker": "HbA1c",
+        "value": 6.3,
+        "claimed_label": "Diabetic",
+        "snippet": "%) to Month 3 (5.8%), and your Fasting Blood Sugar also dropped from 1"
+      },
+      {
+        "query_id": "T048",
+        "config": "standard_rag",
+        "type": "misclassification",
+        "biomarker": "TG",
+        "value": 155.0,
+        "claimed_label": "Normal",
+        "snippet": " mg/dL)** in Month 3, up from Normal readings in the prior two months"
+      },
+      {
+        "query_id": "T048",
+        "config": "full_system",
+        "type": "misclassification",
+        "biomarker": "TG",
+        "value": 130.0,
+        "claimed_label": "Borderline",
+        "snippet": "\u2013140 mg/dL), though Month 3 showed a **Borderline** reading of 155 mg/"
+      }
+    ]
+  }
+}

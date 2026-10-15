@@ -1,0 +1,1147 @@
+{
+  "patient_sequences": {
+    "P001": [
+      {
+        "HbA1c(%)": 5.2,
+        "FBS (mg/dL)": 72.0,
+        "PPBS (mg/dL)": 107.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 5.4,
+        "FBS (mg/dL)": 74.0,
+        "PPBS (mg/dL)": 128.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 5.1,
+        "FBS (mg/dL)": 90.0,
+        "PPBS (mg/dL)": 94.0,
+        "status": "Normal"
+      }
+    ],
+    "P002": [
+      {
+        "HbA1c(%)": 5.3,
+        "FBS (mg/dL)": 93.0,
+        "PPBS (mg/dL)": 124.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 4.8,
+        "FBS (mg/dL)": 84.0,
+        "PPBS (mg/dL)": 98.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 5.5,
+        "FBS (mg/dL)": 75.0,
+        "PPBS (mg/dL)": 92.0,
+        "status": "Normal"
+      }
+    ],
+    "P003": [
+      {
+        "HbA1c(%)": 4.6,
+        "FBS (mg/dL)": 74.0,
+        "PPBS (mg/dL)": 103.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 4.9,
+        "FBS (mg/dL)": 84.0,
+        "PPBS (mg/dL)": 124.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 4.8,
+        "FBS (mg/dL)": 73.0,
+        "PPBS (mg/dL)": 124.0,
+        "status": "Normal"
+      }
+    ],
+    "P004": [
+      {
+        "HbA1c(%)": 5.1,
+        "FBS (mg/dL)": 94.0,
+        "PPBS (mg/dL)": 131.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 5.2,
+        "FBS (mg/dL)": 80.0,
+        "PPBS (mg/dL)": 122.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 4.6,
+        "FBS (mg/dL)": 80.0,
+        "PPBS (mg/dL)": 95.0,
+        "status": "Normal"
+      }
+    ],
+    "P005": [
+      {
+        "HbA1c(%)": 5.0,
+        "FBS (mg/dL)": 80.0,
+        "PPBS (mg/dL)": 90.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 4.7,
+        "FBS (mg/dL)": 93.0,
+        "PPBS (mg/dL)": 99.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 4.9,
+        "FBS (mg/dL)": 95.0,
+        "PPBS (mg/dL)": 92.0,
+        "status": "Normal"
+      }
+    ],
+    "P006": [
+      {
+        "HbA1c(%)": 4.9,
+        "FBS (mg/dL)": 78.0,
+        "PPBS (mg/dL)": 111.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 5.4,
+        "FBS (mg/dL)": 84.0,
+        "PPBS (mg/dL)": 129.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 5.3,
+        "FBS (mg/dL)": 80.0,
+        "PPBS (mg/dL)": 116.0,
+        "status": "Normal"
+      }
+    ],
+    "P007": [
+      {
+        "HbA1c(%)": 4.7,
+        "FBS (mg/dL)": 83.0,
+        "PPBS (mg/dL)": 128.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 5.4,
+        "FBS (mg/dL)": 78.0,
+        "PPBS (mg/dL)": 102.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 4.8,
+        "FBS (mg/dL)": 80.0,
+        "PPBS (mg/dL)": 103.0,
+        "status": "Normal"
+      }
+    ],
+    "P008": [
+      {
+        "HbA1c(%)": 5.1,
+        "FBS (mg/dL)": 84.0,
+        "PPBS (mg/dL)": 95.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 4.9,
+        "FBS (mg/dL)": 72.0,
+        "PPBS (mg/dL)": 97.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 4.9,
+        "FBS (mg/dL)": 96.0,
+        "PPBS (mg/dL)": 106.0,
+        "status": "Normal"
+      }
+    ],
+    "P009": [
+      {
+        "HbA1c(%)": 5.1,
+        "FBS (mg/dL)": 94.0,
+        "PPBS (mg/dL)": 94.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 5.2,
+        "FBS (mg/dL)": 70.0,
+        "PPBS (mg/dL)": 123.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 5.2,
+        "FBS (mg/dL)": 91.0,
+        "PPBS (mg/dL)": 94.0,
+        "status": "Normal"
+      }
+    ],
+    "P010": [
+      {
+        "HbA1c(%)": 5.5,
+        "FBS (mg/dL)": 79.0,
+        "PPBS (mg/dL)": 96.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 4.9,
+        "FBS (mg/dL)": 74.0,
+        "PPBS (mg/dL)": 102.0,
+        "status": "Normal"
+      },
+      {
+        "HbA1c(%)": 4.9,
+        "FBS (mg/dL)": 77.0,
+        "PPBS (mg/dL)": 116.0,
+        "status": "Normal"
+      }
+    ],
+    "P011": [
+      {
+        "HbA1c(%)": 6.1,
+        "FBS (mg/dL)": 112.0,
+        "PPBS (mg/dL)": 151.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.3,
+        "FBS (mg/dL)": 126.0,
+        "PPBS (mg/dL)": 151.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 5.8,
+        "FBS (mg/dL)": 105.0,
+        "PPBS (mg/dL)": 155.0,
+        "status": "Prediabetic"
+      }
+    ],
+    "P012": [
+      {
+        "HbA1c(%)": 6.1,
+        "FBS (mg/dL)": 123.0,
+        "PPBS (mg/dL)": 184.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.3,
+        "FBS (mg/dL)": 107.0,
+        "PPBS (mg/dL)": 170.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.1,
+        "FBS (mg/dL)": 99.0,
+        "PPBS (mg/dL)": 189.0,
+        "status": "Prediabetic"
+      }
+    ],
+    "P013": [
+      {
+        "HbA1c(%)": 6.1,
+        "FBS (mg/dL)": 118.0,
+        "PPBS (mg/dL)": 187.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.1,
+        "FBS (mg/dL)": 109.0,
+        "PPBS (mg/dL)": 170.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.2,
+        "FBS (mg/dL)": 122.0,
+        "PPBS (mg/dL)": 193.0,
+        "status": "Prediabetic"
+      }
+    ],
+    "P014": [
+      {
+        "HbA1c(%)": 5.9,
+        "FBS (mg/dL)": 121.0,
+        "PPBS (mg/dL)": 185.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.2,
+        "FBS (mg/dL)": 125.0,
+        "PPBS (mg/dL)": 158.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 5.8,
+        "FBS (mg/dL)": 108.0,
+        "PPBS (mg/dL)": 161.0,
+        "status": "Prediabetic"
+      }
+    ],
+    "P015": [
+      {
+        "HbA1c(%)": 5.9,
+        "FBS (mg/dL)": 102.0,
+        "PPBS (mg/dL)": 155.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.1,
+        "FBS (mg/dL)": 100.0,
+        "PPBS (mg/dL)": 167.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 5.9,
+        "FBS (mg/dL)": 114.0,
+        "PPBS (mg/dL)": 185.0,
+        "status": "Prediabetic"
+      }
+    ],
+    "P016": [
+      {
+        "HbA1c(%)": 5.9,
+        "FBS (mg/dL)": 103.0,
+        "PPBS (mg/dL)": 154.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.2,
+        "FBS (mg/dL)": 117.0,
+        "PPBS (mg/dL)": 175.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 5.9,
+        "FBS (mg/dL)": 119.0,
+        "PPBS (mg/dL)": 192.0,
+        "status": "Prediabetic"
+      }
+    ],
+    "P017": [
+      {
+        "HbA1c(%)": 6.1,
+        "FBS (mg/dL)": 113.0,
+        "PPBS (mg/dL)": 182.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.3,
+        "FBS (mg/dL)": 121.0,
+        "PPBS (mg/dL)": 142.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 5.9,
+        "FBS (mg/dL)": 116.0,
+        "PPBS (mg/dL)": 161.0,
+        "status": "Prediabetic"
+      }
+    ],
+    "P018": [
+      {
+        "HbA1c(%)": 5.8,
+        "FBS (mg/dL)": 124.0,
+        "PPBS (mg/dL)": 176.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.0,
+        "FBS (mg/dL)": 99.0,
+        "PPBS (mg/dL)": 163.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.1,
+        "FBS (mg/dL)": 106.0,
+        "PPBS (mg/dL)": 149.0,
+        "status": "Prediabetic"
+      }
+    ],
+    "P019": [
+      {
+        "HbA1c(%)": 6.0,
+        "FBS (mg/dL)": 119.0,
+        "PPBS (mg/dL)": 166.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.0,
+        "FBS (mg/dL)": 118.0,
+        "PPBS (mg/dL)": 188.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.0,
+        "FBS (mg/dL)": 111.0,
+        "PPBS (mg/dL)": 166.0,
+        "status": "Prediabetic"
+      }
+    ],
+    "P020": [
+      {
+        "HbA1c(%)": 6.0,
+        "FBS (mg/dL)": 103.0,
+        "PPBS (mg/dL)": 189.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.2,
+        "FBS (mg/dL)": 106.0,
+        "PPBS (mg/dL)": 191.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 5.9,
+        "FBS (mg/dL)": 114.0,
+        "PPBS (mg/dL)": 193.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 5.7,
+        "FBS (mg/dL)": 119.0,
+        "PPBS (mg/dL)": 194.0,
+        "status": "Prediabetic"
+      }
+    ],
+    "P021": [
+      {
+        "HbA1c(%)": 6.1,
+        "FBS (mg/dL)": 122.0,
+        "PPBS (mg/dL)": 168.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.1,
+        "FBS (mg/dL)": 129.0,
+        "PPBS (mg/dL)": 174.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.2,
+        "FBS (mg/dL)": 118.0,
+        "PPBS (mg/dL)": 158.0,
+        "status": "Prediabetic"
+      }
+    ],
+    "P022": [
+      {
+        "HbA1c(%)": 5.9,
+        "FBS (mg/dL)": 115.0,
+        "PPBS (mg/dL)": 174.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.2,
+        "FBS (mg/dL)": 121.0,
+        "PPBS (mg/dL)": 165.0,
+        "status": "Prediabetic"
+      },
+      {
+        "HbA1c(%)": 6.2,
+        "FBS (mg/dL)": 106.0,
+        "PPBS (mg/dL)": 158.0,
+        "status": "Prediabetic"
+      }
+    ],
+    "P023": [
+      {
+        "HbA1c(%)": 7.1,
+        "FBS (mg/dL)": 143.0,
+        "PPBS (mg/dL)": 196.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 7.0,
+        "FBS (mg/dL)": 132.0,
+        "PPBS (mg/dL)": 188.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.7,
+        "FBS (mg/dL)": 139.0,
+        "PPBS (mg/dL)": 171.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P024": [
+      {
+        "HbA1c(%)": 6.8,
+        "FBS (mg/dL)": 131.0,
+        "PPBS (mg/dL)": 189.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.9,
+        "FBS (mg/dL)": 126.0,
+        "PPBS (mg/dL)": 186.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.9,
+        "FBS (mg/dL)": 138.0,
+        "PPBS (mg/dL)": 167.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P025": [
+      {
+        "HbA1c(%)": 7.3,
+        "FBS (mg/dL)": 130.0,
+        "PPBS (mg/dL)": 194.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 7.2,
+        "FBS (mg/dL)": 121.0,
+        "PPBS (mg/dL)": 170.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 7.3,
+        "FBS (mg/dL)": 138.0,
+        "PPBS (mg/dL)": 174.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 7.4,
+        "FBS (mg/dL)": 148.0,
+        "PPBS (mg/dL)": 176.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 7.4,
+        "FBS (mg/dL)": 148.0,
+        "PPBS (mg/dL)": 176.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P026": [
+      {
+        "HbA1c(%)": 7.2,
+        "FBS (mg/dL)": 131.0,
+        "PPBS (mg/dL)": 194.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.7,
+        "FBS (mg/dL)": 122.0,
+        "PPBS (mg/dL)": 156.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.9,
+        "FBS (mg/dL)": 125.0,
+        "PPBS (mg/dL)": 165.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P027": [
+      {
+        "HbA1c(%)": 7.1,
+        "FBS (mg/dL)": 139.0,
+        "PPBS (mg/dL)": 195.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 7.0,
+        "FBS (mg/dL)": 123.0,
+        "PPBS (mg/dL)": 187.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.5,
+        "FBS (mg/dL)": 123.0,
+        "PPBS (mg/dL)": 172.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P028": [
+      {
+        "HbA1c(%)": 6.9,
+        "FBS (mg/dL)": 125.0,
+        "PPBS (mg/dL)": 185.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.4,
+        "FBS (mg/dL)": 132.0,
+        "PPBS (mg/dL)": 183.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 7.2,
+        "FBS (mg/dL)": 140.0,
+        "PPBS (mg/dL)": 170.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P029": [
+      {
+        "HbA1c(%)": 6.7,
+        "FBS (mg/dL)": 140.0,
+        "PPBS (mg/dL)": 167.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.5,
+        "FBS (mg/dL)": 127.0,
+        "PPBS (mg/dL)": 190.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.8,
+        "FBS (mg/dL)": 123.0,
+        "PPBS (mg/dL)": 162.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P030": [
+      {
+        "HbA1c(%)": 7.2,
+        "FBS (mg/dL)": 139.0,
+        "PPBS (mg/dL)": 170.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.8,
+        "FBS (mg/dL)": 117.0,
+        "PPBS (mg/dL)": 169.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.6,
+        "FBS (mg/dL)": 137.0,
+        "PPBS (mg/dL)": 185.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P031": [
+      {
+        "HbA1c(%)": 7.3,
+        "FBS (mg/dL)": 127.0,
+        "PPBS (mg/dL)": 178.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.6,
+        "FBS (mg/dL)": 138.0,
+        "PPBS (mg/dL)": 191.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.6,
+        "FBS (mg/dL)": 121.0,
+        "PPBS (mg/dL)": 182.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P032": [
+      {
+        "HbA1c(%)": 7.3,
+        "FBS (mg/dL)": 139.0,
+        "PPBS (mg/dL)": 174.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.7,
+        "FBS (mg/dL)": 133.0,
+        "PPBS (mg/dL)": 181.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 7.3,
+        "FBS (mg/dL)": 137.0,
+        "PPBS (mg/dL)": 175.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 7.7,
+        "FBS (mg/dL)": 139.0,
+        "PPBS (mg/dL)": 171.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": null,
+        "FBS (mg/dL)": null,
+        "PPBS (mg/dL)": null,
+        "status": "Unknown"
+      },
+      {
+        "HbA1c(%)": null,
+        "FBS (mg/dL)": null,
+        "PPBS (mg/dL)": null,
+        "status": "Unknown"
+      },
+      {
+        "HbA1c(%)": null,
+        "FBS (mg/dL)": null,
+        "PPBS (mg/dL)": null,
+        "status": "Unknown"
+      },
+      {
+        "HbA1c(%)": null,
+        "FBS (mg/dL)": null,
+        "PPBS (mg/dL)": null,
+        "status": "Unknown"
+      },
+      {
+        "HbA1c(%)": null,
+        "FBS (mg/dL)": null,
+        "PPBS (mg/dL)": null,
+        "status": "Unknown"
+      },
+      {
+        "HbA1c(%)": null,
+        "FBS (mg/dL)": null,
+        "PPBS (mg/dL)": null,
+        "status": "Unknown"
+      },
+      {
+        "HbA1c(%)": null,
+        "FBS (mg/dL)": null,
+        "PPBS (mg/dL)": null,
+        "status": "Unknown"
+      },
+      {
+        "HbA1c(%)": null,
+        "FBS (mg/dL)": null,
+        "PPBS (mg/dL)": null,
+        "status": "Unknown"
+      },
+      {
+        "HbA1c(%)": null,
+        "FBS (mg/dL)": null,
+        "PPBS (mg/dL)": null,
+        "status": "Unknown"
+      },
+      {
+        "HbA1c(%)": null,
+        "FBS (mg/dL)": null,
+        "PPBS (mg/dL)": null,
+        "status": "Unknown"
+      },
+      {
+        "HbA1c(%)": null,
+        "FBS (mg/dL)": null,
+        "PPBS (mg/dL)": null,
+        "status": "Unknown"
+      },
+      {
+        "HbA1c(%)": null,
+        "FBS (mg/dL)": null,
+        "PPBS (mg/dL)": null,
+        "status": "Unknown"
+      },
+      {
+        "HbA1c(%)": null,
+        "FBS (mg/dL)": null,
+        "PPBS (mg/dL)": null,
+        "status": "Unknown"
+      },
+      {
+        "HbA1c(%)": null,
+        "FBS (mg/dL)": null,
+        "PPBS (mg/dL)": null,
+        "status": "Unknown"
+      },
+      {
+        "HbA1c(%)": 7.7,
+        "FBS (mg/dL)": 139.0,
+        "PPBS (mg/dL)": 171.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P033": [
+      {
+        "HbA1c(%)": 7.0,
+        "FBS (mg/dL)": 136.0,
+        "PPBS (mg/dL)": 195.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.8,
+        "FBS (mg/dL)": 121.0,
+        "PPBS (mg/dL)": 163.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.8,
+        "FBS (mg/dL)": 124.0,
+        "PPBS (mg/dL)": 178.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P034": [
+      {
+        "HbA1c(%)": 6.7,
+        "FBS (mg/dL)": 132.0,
+        "PPBS (mg/dL)": 163.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 7.0,
+        "FBS (mg/dL)": 131.0,
+        "PPBS (mg/dL)": 174.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.8,
+        "FBS (mg/dL)": 130.0,
+        "PPBS (mg/dL)": 190.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P035": [
+      {
+        "HbA1c(%)": 7.0,
+        "FBS (mg/dL)": 122.0,
+        "PPBS (mg/dL)": 166.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.6,
+        "FBS (mg/dL)": 127.0,
+        "PPBS (mg/dL)": 156.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 7.1,
+        "FBS (mg/dL)": 123.0,
+        "PPBS (mg/dL)": 185.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P036": [
+      {
+        "HbA1c(%)": 7.2,
+        "FBS (mg/dL)": 132.0,
+        "PPBS (mg/dL)": 166.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.4,
+        "FBS (mg/dL)": 134.0,
+        "PPBS (mg/dL)": 153.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 7.1,
+        "FBS (mg/dL)": 139.0,
+        "PPBS (mg/dL)": 160.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P037": [
+      {
+        "HbA1c(%)": 7.0,
+        "FBS (mg/dL)": 128.0,
+        "PPBS (mg/dL)": 196.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.5,
+        "FBS (mg/dL)": 122.0,
+        "PPBS (mg/dL)": 174.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.7,
+        "FBS (mg/dL)": 119.0,
+        "PPBS (mg/dL)": 159.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P038": [
+      {
+        "HbA1c(%)": 7.0,
+        "FBS (mg/dL)": 129.0,
+        "PPBS (mg/dL)": 192.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.7,
+        "FBS (mg/dL)": 138.0,
+        "PPBS (mg/dL)": 168.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 6.7,
+        "FBS (mg/dL)": 138.0,
+        "PPBS (mg/dL)": 174.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P039": [
+      {
+        "HbA1c(%)": 7.9,
+        "FBS (mg/dL)": 207.0,
+        "PPBS (mg/dL)": 247.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 8.0,
+        "FBS (mg/dL)": 205.0,
+        "PPBS (mg/dL)": 281.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 8.1,
+        "FBS (mg/dL)": 204.0,
+        "PPBS (mg/dL)": 275.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P040": [
+      {
+        "HbA1c(%)": 10.1,
+        "FBS (mg/dL)": 158.0,
+        "PPBS (mg/dL)": 288.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 7.7,
+        "FBS (mg/dL)": 243.0,
+        "PPBS (mg/dL)": 316.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 8.8,
+        "FBS (mg/dL)": 243.0,
+        "PPBS (mg/dL)": 230.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P041": [
+      {
+        "HbA1c(%)": 7.8,
+        "FBS (mg/dL)": 245.0,
+        "PPBS (mg/dL)": 245.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 9.7,
+        "FBS (mg/dL)": 188.0,
+        "PPBS (mg/dL)": 262.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 8.2,
+        "FBS (mg/dL)": 172.0,
+        "PPBS (mg/dL)": 276.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P042": [
+      {
+        "HbA1c(%)": 8.2,
+        "FBS (mg/dL)": 220.0,
+        "PPBS (mg/dL)": 259.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 10.5,
+        "FBS (mg/dL)": 186.0,
+        "PPBS (mg/dL)": 296.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 9.7,
+        "FBS (mg/dL)": 210.0,
+        "PPBS (mg/dL)": 276.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P043": [
+      {
+        "HbA1c(%)": 8.4,
+        "FBS (mg/dL)": 183.0,
+        "PPBS (mg/dL)": 211.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 9.7,
+        "FBS (mg/dL)": 187.0,
+        "PPBS (mg/dL)": 286.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 8.8,
+        "FBS (mg/dL)": 234.0,
+        "PPBS (mg/dL)": 243.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P044": [
+      {
+        "HbA1c(%)": 7.7,
+        "FBS (mg/dL)": 221.0,
+        "PPBS (mg/dL)": 203.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 10.6,
+        "FBS (mg/dL)": 189.0,
+        "PPBS (mg/dL)": 272.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 10.5,
+        "FBS (mg/dL)": 247.0,
+        "PPBS (mg/dL)": 274.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P045": [
+      {
+        "HbA1c(%)": 8.8,
+        "FBS (mg/dL)": 213.0,
+        "PPBS (mg/dL)": 229.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 10.4,
+        "FBS (mg/dL)": 189.0,
+        "PPBS (mg/dL)": 212.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 9.2,
+        "FBS (mg/dL)": 235.0,
+        "PPBS (mg/dL)": 261.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P046": [
+      {
+        "HbA1c(%)": 8.1,
+        "FBS (mg/dL)": 152.0,
+        "PPBS (mg/dL)": 251.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 9.8,
+        "FBS (mg/dL)": 241.0,
+        "PPBS (mg/dL)": 205.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 9.4,
+        "FBS (mg/dL)": 236.0,
+        "PPBS (mg/dL)": 229.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P047": [
+      {
+        "HbA1c(%)": 8.8,
+        "FBS (mg/dL)": 245.0,
+        "PPBS (mg/dL)": 273.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 10.7,
+        "FBS (mg/dL)": 216.0,
+        "PPBS (mg/dL)": 233.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 9.9,
+        "FBS (mg/dL)": 233.0,
+        "PPBS (mg/dL)": 246.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P048": [
+      {
+        "HbA1c(%)": 8.2,
+        "FBS (mg/dL)": 179.0,
+        "PPBS (mg/dL)": 209.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 9.9,
+        "FBS (mg/dL)": 231.0,
+        "PPBS (mg/dL)": 273.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 9.0,
+        "FBS (mg/dL)": 162.0,
+        "PPBS (mg/dL)": 223.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P049": [
+      {
+        "HbA1c(%)": 9.8,
+        "FBS (mg/dL)": 159.0,
+        "PPBS (mg/dL)": 208.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 9.5,
+        "FBS (mg/dL)": 165.0,
+        "PPBS (mg/dL)": 225.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 9.0,
+        "FBS (mg/dL)": 237.0,
+        "PPBS (mg/dL)": 263.0,
+        "status": "Diabetic"
+      }
+    ],
+    "P050": [
+      {
+        "HbA1c(%)": 10.3,
+        "FBS (mg/dL)": 219.0,
+        "PPBS (mg/dL)": 222.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 8.9,
+        "FBS (mg/dL)": 213.0,
+        "PPBS (mg/dL)": 259.0,
+        "status": "Diabetic"
+      },
+      {
+        "HbA1c(%)": 7.9,
+        "FBS (mg/dL)": 164.0,
+        "PPBS (mg/dL)": 214.0,
+        "status": "Diabetic"
+      }
+    ]
+  },
+  "new_patients": {
+    "U-001": {
+      "name": "Priya Sharma",
+      "age": 44,
+      "gender": "Female",
+      "password": "12344",
+      "history": [
+        {
+          "HbA1c(%)": 6.1,
+          "FBS (mg/dL)": 112.0,
+          "PPBS (mg/dL)": 152.0,
+          "status": "Prediabetic"
+        },
+        {
+          "HbA1c(%)": 5.7,
+          "FBS (mg/dL)": 102.0,
+          "PPBS (mg/dL)": 138.0,
+          "status": "Prediabetic"
+        },
+        {
+          "HbA1c(%)": 5.4,
+          "FBS (mg/dL)": 95.0,
+          "PPBS (mg/dL)": 129.0,
+          "status": "Normal"
+        }
+      ]
+    }
+  },
+  "next_new_patient_number": 2
+}

@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P044 (Female, age 64) -- Month 2.
+
+HbA1c: 10.6% (Classification: Diabetic).
+Fasting Blood Sugar (FBS): 189.0 mg/dL (Classification: Diabetic).
+Post-Prandial Blood Sugar (PPBS): 272.0 mg/dL (Classification: Diabetic).
+LDL Cholesterol: 139.0 mg/dL (Classification: High Risk).
+HDL Cholesterol: 32.0 mg/dL (Classification: Low).
+Triglycerides: 255.0 mg/dL (Classification: High).
+
+Overall Glycemic Status: Diabetic.

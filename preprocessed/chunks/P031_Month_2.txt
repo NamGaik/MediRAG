@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P031 (Male, age 60) -- Month 2.
+
+HbA1c: 6.6% (Classification: Diabetic).
+Fasting Blood Sugar (FBS): 138.0 mg/dL (Classification: Diabetic).
+Post-Prandial Blood Sugar (PPBS): 191.0 mg/dL (Classification: Prediabetic).
+LDL Cholesterol: 107.0 mg/dL (Classification: Borderline).
+HDL Cholesterol: 44.0 mg/dL (Classification: Normal).
+Triglycerides: 179.0 mg/dL (Classification: Borderline).
+
+Overall Glycemic Status: Diabetic.

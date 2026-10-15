@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P048 (Female, age 68) -- Month 1.
+
+HbA1c: 8.2% (Classification: Diabetic).
+Fasting Blood Sugar (FBS): 179.0 mg/dL (Classification: Diabetic).
+Post-Prandial Blood Sugar (PPBS): 209.0 mg/dL (Classification: Diabetic).
+LDL Cholesterol: 169.0 mg/dL (Classification: High Risk).
+HDL Cholesterol: 38.0 mg/dL (Classification: Low).
+Triglycerides: 217.0 mg/dL (Classification: High).
+
+Overall Glycemic Status: Diabetic.

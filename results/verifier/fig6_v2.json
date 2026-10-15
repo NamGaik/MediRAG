@@ -1,0 +1,23 @@
+{
+  "_produced_by": "generate_chart_fig6_v2.py",
+  "_saved_at": "2026-10-05T00:10:18",
+  "_notes": "Fig. 6 on the v2 benchmark (same run as Tables IV-V)",
+  "results": {
+    "config": "full_system",
+    "answers_with_context": 59,
+    "answers_without_context": 6,
+    "whole_answer": {
+      "faithful": 7,
+      "hallucinated": 52
+    },
+    "claim_level_answers": {
+      "faithful": 18,
+      "hallucinated": 9,
+      "not_verifiable": 32
+    },
+    "individual_claims": {
+      "faithful": 72,
+      "hallucinated": 11
+    }
+  }
+}

@@ -1,0 +1,778 @@
+{
+  "_produced_by": "phase_m_3_routed_verification.py",
+  "_saved_at": "2026-10-23T19:12:32",
+  "_notes": "U3: rule validator v3 + verifier override + ensemble vs author labels",
+  "results": {
+    "run_id": 1,
+    "rule_v1": {
+      "tp": 1,
+      "fp": 11,
+      "fn": 4,
+      "tn": 38,
+      "precision": 0.083,
+      "recall": 0.2,
+      "n": 54
+    },
+    "rule_v3": {
+      "tp": 1,
+      "fp": 4,
+      "fn": 4,
+      "tn": 45,
+      "precision": 0.2,
+      "recall": 0.2,
+      "n": 54
+    },
+    "verifier_v1": {
+      "tp": 2,
+      "fp": 8,
+      "fn": 0,
+      "tn": 20,
+      "precision": 0.2,
+      "recall": 1.0,
+      "n": 30
+    },
+    "verifier_routed": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 1,
+      "tn": 27,
+      "precision": 0.5,
+      "recall": 0.5,
+      "n": 30
+    },
+    "ensemble": {
+      "tp": 1,
+      "fp": 5,
+      "fn": 4,
+      "tn": 44,
+      "precision": 0.167,
+      "recall": 0.2,
+      "n": 54
+    },
+    "ablation": {
+      "without_F1": {
+        "tp": 1,
+        "fp": 8,
+        "fn": 4,
+        "tn": 41,
+        "precision": 0.111,
+        "recall": 0.2,
+        "n": 54
+      },
+      "without_F2": {
+        "tp": 1,
+        "fp": 5,
+        "fn": 4,
+        "tn": 44,
+        "precision": 0.167,
+        "recall": 0.2,
+        "n": 54
+      },
+      "without_F3": {
+        "tp": 1,
+        "fp": 6,
+        "fn": 4,
+        "tn": 43,
+        "precision": 0.143,
+        "recall": 0.2,
+        "n": 54
+      },
+      "with_F4": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 5,
+        "tn": 47,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n": 54
+      }
+    },
+    "verifier_claim_flags_overridden": 8,
+    "rule_v3_ignored_by_type": {
+      "forecast_label": 19,
+      "parse_artifact": 6,
+      "quoted_from_question": 9,
+      "unverifiable_no_context": 8
+    },
+    "rows": [
+      {
+        "label_id": "P001",
+        "query_id": "Q008",
+        "config": "full_system",
+        "error": false,
+        "rule_v1": true,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "not_verifiable",
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P002",
+        "query_id": "Q013",
+        "config": "plain_llm",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": null,
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P003",
+        "query_id": "Q001",
+        "config": "full_system",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P004",
+        "query_id": "Q015",
+        "config": "plain_llm",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": null,
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P005",
+        "query_id": "Q010",
+        "config": "full_system_corrective",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "not_verifiable",
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P006",
+        "query_id": "Q003",
+        "config": "full_system_corrective",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P007",
+        "query_id": "Q011",
+        "config": "standard_rag",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "hallucinated",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P008",
+        "query_id": "Q005",
+        "config": "standard_rag",
+        "error": true,
+        "rule_v1": true,
+        "rule_v3": true,
+        "rule_v3_issues": [
+          [
+            "misclassification",
+            "PPBS",
+            196.0
+          ]
+        ],
+        "verifier_v1": "hallucinated",
+        "verifier_routed": "hallucinated",
+        "ensemble": true
+      },
+      {
+        "label_id": "P009",
+        "query_id": "Q014",
+        "config": "standard_rag",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P010",
+        "query_id": "Q013",
+        "config": "standard_rag",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P011",
+        "query_id": "Q007",
+        "config": "standard_rag",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P012",
+        "query_id": "Q006",
+        "config": "full_system_corrective",
+        "error": false,
+        "rule_v1": true,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P013",
+        "query_id": "Q002",
+        "config": "full_system_corrective",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P014",
+        "query_id": "Q006",
+        "config": "plain_llm",
+        "error": true,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": null,
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P015",
+        "query_id": "Q008",
+        "config": "standard_rag",
+        "error": true,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "not_verifiable",
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P016",
+        "query_id": "Q004",
+        "config": "standard_rag",
+        "error": false,
+        "rule_v1": true,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P017",
+        "query_id": "Q011",
+        "config": "plain_llm",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": null,
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P018",
+        "query_id": "Q005",
+        "config": "plain_llm",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": null,
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P019",
+        "query_id": "Q009",
+        "config": "full_system_corrective",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "hallucinated",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P020",
+        "query_id": "Q014",
+        "config": "plain_llm",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": null,
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P021",
+        "query_id": "Q015",
+        "config": "full_system",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "hallucinated",
+        "verifier_routed": "hallucinated",
+        "ensemble": true
+      },
+      {
+        "label_id": "P022",
+        "query_id": "Q013",
+        "config": "full_system",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P023",
+        "query_id": "Q005",
+        "config": "full_system",
+        "error": false,
+        "rule_v1": true,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "hallucinated",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P024",
+        "query_id": "Q008",
+        "config": "plain_llm",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": null,
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P025",
+        "query_id": "Q004",
+        "config": "full_system_corrective",
+        "error": false,
+        "rule_v1": true,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P026",
+        "query_id": "Q010",
+        "config": "standard_rag",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "not_verifiable",
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P027",
+        "query_id": "Q009",
+        "config": "plain_llm",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": null,
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P028",
+        "query_id": "Q004",
+        "config": "full_system",
+        "error": false,
+        "rule_v1": true,
+        "rule_v3": true,
+        "rule_v3_issues": [
+          [
+            "possible_fabrication",
+            "HbA1c",
+            7.0
+          ]
+        ],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": true
+      },
+      {
+        "label_id": "P029",
+        "query_id": "Q012",
+        "config": "standard_rag",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P030",
+        "query_id": "Q006",
+        "config": "standard_rag",
+        "error": false,
+        "rule_v1": true,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "not_verifiable",
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P031",
+        "query_id": "Q014",
+        "config": "full_system",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P032",
+        "query_id": "Q008",
+        "config": "full_system_corrective",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "not_verifiable",
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P034",
+        "query_id": "Q001",
+        "config": "standard_rag",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P035",
+        "query_id": "Q010",
+        "config": "plain_llm",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": null,
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P036",
+        "query_id": "Q006",
+        "config": "full_system",
+        "error": false,
+        "rule_v1": true,
+        "rule_v3": true,
+        "rule_v3_issues": [
+          [
+            "possible_fabrication",
+            "HbA1c",
+            6.0
+          ]
+        ],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": true
+      },
+      {
+        "label_id": "P037",
+        "query_id": "Q001",
+        "config": "full_system_corrective",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P038",
+        "query_id": "Q002",
+        "config": "plain_llm",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": null,
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P039",
+        "query_id": "Q011",
+        "config": "full_system",
+        "error": false,
+        "rule_v1": true,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "hallucinated",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P040",
+        "query_id": "Q002",
+        "config": "full_system",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P041",
+        "query_id": "Q001",
+        "config": "plain_llm",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": null,
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P042",
+        "query_id": "Q012",
+        "config": "full_system",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P043",
+        "query_id": "Q004",
+        "config": "plain_llm",
+        "error": true,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": null,
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P044",
+        "query_id": "Q009",
+        "config": "full_system",
+        "error": true,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "hallucinated",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P045",
+        "query_id": "Q003",
+        "config": "standard_rag",
+        "error": false,
+        "rule_v1": true,
+        "rule_v3": true,
+        "rule_v3_issues": [
+          [
+            "misclassification",
+            "FBS",
+            123.0
+          ]
+        ],
+        "verifier_v1": "hallucinated",
+        "verifier_routed": "faithful",
+        "ensemble": true
+      },
+      {
+        "label_id": "P046",
+        "query_id": "Q007",
+        "config": "plain_llm",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": null,
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P047",
+        "query_id": "Q015",
+        "config": "standard_rag",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "not_verifiable",
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P048",
+        "query_id": "Q009",
+        "config": "standard_rag",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "hallucinated",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P049",
+        "query_id": "Q005",
+        "config": "full_system_corrective",
+        "error": false,
+        "rule_v1": true,
+        "rule_v3": true,
+        "rule_v3_issues": [
+          [
+            "misclassification",
+            "TG",
+            193.0
+          ]
+        ],
+        "verifier_v1": "not_verifiable",
+        "verifier_routed": "not_verifiable",
+        "ensemble": true
+      },
+      {
+        "label_id": "P050",
+        "query_id": "Q010",
+        "config": "full_system",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "not_verifiable",
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P051",
+        "query_id": "Q003",
+        "config": "plain_llm",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": null,
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P052",
+        "query_id": "Q003",
+        "config": "full_system",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P053",
+        "query_id": "Q011",
+        "config": "full_system_corrective",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "hallucinated",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      },
+      {
+        "label_id": "P054",
+        "query_id": "Q007",
+        "config": "full_system",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "not_verifiable",
+        "verifier_routed": "not_verifiable",
+        "ensemble": false
+      },
+      {
+        "label_id": "P055",
+        "query_id": "Q002",
+        "config": "standard_rag",
+        "error": false,
+        "rule_v1": false,
+        "rule_v3": false,
+        "rule_v3_issues": [],
+        "verifier_v1": "faithful",
+        "verifier_routed": "faithful",
+        "ensemble": false
+      }
+    ]
+  }
+}

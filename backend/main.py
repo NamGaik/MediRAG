@@ -61,10 +61,12 @@ else:
     print("[STARTUP] *** ANTHROPIC_API_KEY IS NOT SET *** -- /query will fail.")
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+# phase_*.py files live in pipeline/ after the repo reorganisation
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "pipeline")))
 
 from phase_ef_vectorDB import load_index, retrieve_top_k
 from phase_g_generation import generate_explanation
-from phase_j_trajectory_model import load_patient_sequences, predict_next_visit
+from phase_j_1_trajectory_model import load_patient_sequences, predict_next_visit
 from phase_i_neural_verifier import verify_answer_by_matched_chunks
 
 # -----------------------------

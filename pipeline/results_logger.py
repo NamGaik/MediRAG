@@ -15,7 +15,8 @@ import inspect
 import os
 from datetime import datetime
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+# results_logger.py now lives in pipeline/, so the project root is one level up
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESULTS_DIR = os.path.join(ROOT, "results")
 
 

@@ -1,0 +1,48 @@
+{
+  "_produced_by": "phase_m_6_cost_profile.py",
+  "_saved_at": "2026-10-23T19:12:33",
+  "_notes": "U6: token usage per configuration and checker latency",
+  "results": {
+    "run_id": 1,
+    "configs": {
+      "plain_llm": {
+        "answers": 65,
+        "mean_input_tokens": 22.6,
+        "mean_output_tokens": 381.5,
+        "mean_total_tokens": 404.2,
+        "answers_regenerated": 0,
+        "rule_validator_ms_p50": 0.06,
+        "rule_validator_ms_p95": 0.176
+      },
+      "standard_rag": {
+        "answers": 65,
+        "mean_input_tokens": 752.5,
+        "mean_output_tokens": 263.4,
+        "mean_total_tokens": 1015.9,
+        "answers_regenerated": 0,
+        "rule_validator_ms_p50": 0.081,
+        "rule_validator_ms_p95": 0.357
+      },
+      "full_system": {
+        "answers": 65,
+        "mean_input_tokens": 1686.6,
+        "mean_output_tokens": 430.2,
+        "mean_total_tokens": 2116.8,
+        "answers_regenerated": 0,
+        "rule_validator_ms_p50": 0.221,
+        "rule_validator_ms_p95": 0.615
+      },
+      "full_system_corrective": {
+        "answers": 65,
+        "mean_input_tokens": 1194.3,
+        "mean_output_tokens": 321.2,
+        "mean_total_tokens": 1515.6,
+        "answers_regenerated": 41,
+        "rule_validator_ms_p50": 0.293,
+        "rule_validator_ms_p95": 0.611,
+        "extra_tokens_over_full_system": 1515.6,
+        "mean_total_tokens_including_first_pass": 3632.4
+      }
+    }
+  }
+}

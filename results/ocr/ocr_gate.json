@@ -1,0 +1,52 @@
+{
+  "_produced_by": "phase_m_2_ocr_gate.py",
+  "_saved_at": "2026-10-23T19:12:33",
+  "_notes": "U2: OCR quality gate on saved OCR evaluation",
+  "results": {
+    "Clean": {
+      "fields": 900,
+      "correct_passed": 897,
+      "correct_flagged": 3,
+      "silent_error_rate_before": 0.0,
+      "silent_error_rate_after": 0.0,
+      "false_flag_rate_on_correct": 0.0033,
+      "wrong_value_examples": []
+    },
+    "Degraded": {
+      "fields": 120,
+      "missing_flagged": 63,
+      "correct_passed": 54,
+      "wrong_caught": 3,
+      "wrong_repaired_exactly": 2,
+      "silent_error_rate_before": 0.025,
+      "silent_error_rate_after": 0.0,
+      "false_flag_rate_on_correct": 0.0,
+      "wrong_value_examples": [
+        {
+          "file": "P013_Month_1_degraded.png",
+          "field": "HbA1c",
+          "truth": 6.1,
+          "ocr": "61",
+          "gate": "repaired_confirm",
+          "gate_value": 6.1
+        },
+        {
+          "file": "P018_Month_3_degraded.png",
+          "field": "HbA1c",
+          "truth": 6.1,
+          "ocr": "61",
+          "gate": "repaired_confirm",
+          "gate_value": 6.1
+        },
+        {
+          "file": "P038_Month_1_degraded.png",
+          "field": "FBS",
+          "truth": 129.0,
+          "ocr": "429",
+          "gate": "quarantined_jump",
+          "gate_value": 429.0
+        }
+      ]
+    }
+  }
+}

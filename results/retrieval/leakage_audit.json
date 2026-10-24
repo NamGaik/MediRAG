@@ -1,0 +1,41 @@
+{
+  "_produced_by": "phase_m_1_leakage_audit.py",
+  "_saved_at": "2026-10-24T08:57:25",
+  "_notes": "U1: cross-patient leakage, unrestricted vs patient-scoped top-5",
+  "results": {
+    "normal": {
+      "unrestricted": {
+        "queries": 59,
+        "leakage_at_5": 0.983,
+        "queries_with_any_leak": 1,
+        "own_chunk_recall": 0.028,
+        "latency_ms_p50": 91.2
+      },
+      "patient_scoped": {
+        "queries": 59,
+        "leakage_at_5": 0.0,
+        "queries_with_any_leak": 0,
+        "own_chunk_recall": 1.0,
+        "latency_ms_p50": 92.1
+      }
+    },
+    "adversarial": {
+      "unrestricted": {
+        "queries": 50,
+        "leakage_at_5": 0.98,
+        "queries_with_any_leak": 1,
+        "own_chunk_recall": 0.033,
+        "latency_ms_p50": 175.1,
+        "targeted_leak_rate": 0.14
+      },
+      "patient_scoped": {
+        "queries": 50,
+        "leakage_at_5": 0.0,
+        "queries_with_any_leak": 0,
+        "own_chunk_recall": 1.0,
+        "latency_ms_p50": 176.5,
+        "targeted_leak_rate": 0
+      }
+    }
+  }
+}

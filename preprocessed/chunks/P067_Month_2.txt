@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P067 (Female, age 32) -- Month 2.
+
+HbA1c: 5.2% (Classification: Normal).
+Fasting Blood Sugar (FBS): 83.0 mg/dL (Classification: Normal).
+Post-Prandial Blood Sugar (PPBS): 139.0 mg/dL (Classification: Normal).
+LDL Cholesterol: 101.0 mg/dL (Classification: Borderline).
+HDL Cholesterol: 57.0 mg/dL (Classification: Normal).
+Triglycerides: 107.0 mg/dL (Classification: Normal).
+
+Overall Glycemic Status: Normal.

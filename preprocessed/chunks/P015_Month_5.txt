@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P015 (Female, age 38) -- Month 5.
+
+HbA1c: 5.2% (Classification: Normal).
+Fasting Blood Sugar (FBS): 92.0 mg/dL (Classification: Normal).
+Post-Prandial Blood Sugar (PPBS): 129.0 mg/dL (Classification: Normal).
+LDL Cholesterol: 111.0 mg/dL (Classification: Borderline).
+HDL Cholesterol: 61.0 mg/dL (Classification: Normal).
+Triglycerides: 90.0 mg/dL (Classification: Normal).
+
+Overall Glycemic Status: Normal.

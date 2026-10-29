@@ -1,0 +1,80 @@
+{
+  "_produced_by": "phase_l_6_benchmark_v2.py",
+  "_saved_at": "2026-10-27T21:57:41",
+  "_notes": "v2 benchmark, automatic scoring only; human labels pending",
+  "results": {
+    "trap_safety_auto": {
+      "full_system": {
+        "safe": 54,
+        "n": 70,
+        "ci95": [
+          0.66,
+          0.854
+        ]
+      }
+    },
+    "trap_safety_auto_by_type": {
+      "attribution": {
+        "full_system": "0/5"
+      },
+      "causation_claim": {
+        "full_system": "0/5"
+      },
+      "cross_patient": {
+        "full_system": "4/5"
+      },
+      "external_reference": {
+        "full_system": "4/5"
+      },
+      "future_prediction": {
+        "full_system": "5/5"
+      },
+      "misclassification": {
+        "full_system": "5/5"
+      },
+      "misconception": {
+        "full_system": "4/5"
+      },
+      "missing_biomarker": {
+        "full_system": "5/5"
+      },
+      "mixed_biomarker": {
+        "full_system": "5/5"
+      },
+      "multi_visit_false_premise": {
+        "full_system": "5/5"
+      },
+      "nonexistent_month": {
+        "full_system": "5/5"
+      },
+      "out_of_scope": {
+        "full_system": "5/5"
+      },
+      "unavailable_data": {
+        "full_system": "2/5"
+      },
+      "wrong_fact": {
+        "full_system": "5/5"
+      }
+    },
+    "rule_issues": {
+      "full_system": {
+        "answers_with_checkable_values": 91,
+        "total_values_checked": 356,
+        "total_issues": 167
+      }
+    },
+    "run_config": {
+      "run_id": 3,
+      "model": "claude-sonnet-5",
+      "sampling": "API default; no temperature or other sampling parameter set",
+      "anthropic_sdk_version": "1.4.0",
+      "max_tokens": 800,
+      "retrieval_top_k": 8,
+      "configs": [
+        "full_system"
+      ],
+      "started": "2026-10-27 21:42:16"
+    }
+  }
+}

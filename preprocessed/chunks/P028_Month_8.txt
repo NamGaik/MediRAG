@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P028 (Female, age 35) -- Month 8.
+
+HbA1c: 4.9% (Classification: Normal).
+Fasting Blood Sugar (FBS): 73.0 mg/dL (Classification: Normal).
+Post-Prandial Blood Sugar (PPBS): 84.0 mg/dL (Classification: Normal).
+LDL Cholesterol: 74.0 mg/dL (Classification: Optimal).
+HDL Cholesterol: 67.0 mg/dL (Classification: Normal).
+Triglycerides: 109.0 mg/dL (Classification: Normal).
+
+Overall Glycemic Status: Normal.

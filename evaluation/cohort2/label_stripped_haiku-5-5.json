@@ -1,0 +1,1031 @@
+{
+ "C2Q001": {
+  "patient_id": "P014",
+  "trajectory_type": "diabetic_dyslipidemia",
+  "template": "q_trend",
+  "query_text": "Is my HbA1c improving over my visits?",
+  "reference": "HbA1c by month: 8.3, 8.5, 8.2, 8.8, 8.4, 8.7, 8.9, 8.8%. Month 8 is higher than Month 1.",
+  "query_id": "C2Q001",
+  "answer": "**No, your HbA1c has not clearly improved over your visits.** It started at 8.3% in Month 1 and was 8.8% in Month 8. It has moved up and down between about 8.2% and 8.9% without a steady downward trend. The lowest reading was 8.2% in Month 3, and the highest was 8.9% in Month 7. The Month 8 value is a little lower than the Month 7 peak, but it is still higher than the Month 1 value.\n\nFor reference, the laboratory classifies an HbA1c of 6.5% or higher as \"Diabetic.\" Every HbA1c value in your reports falls in that range, and your reports' overall glycemic status is also \"Diabetic.\"\n\nOur forecasting model estimates that your next HbA1c would be about 8.85%. This is a prediction, not a measured result, and it is only an estimate, not a certainty. Only a real lab test can confirm your actual value.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what the next steps should be.",
+  "usage": {
+   "input_tokens": 2971,
+   "output_tokens": 759
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 8.85,
+   "predicted_FBS": 171.4,
+   "predicted_PPBS": 251.6,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 8.3 (Diabetic); FBS 164.0 (Diabetic); PPBS 239.0 (Diabetic); LDL 180.0 (High Risk); HDL 31.0 (Low); TG 260.0 (High); Overall Diabetic\nM2: HbA1c 8.5 (Diabetic); FBS 160.0 (Diabetic); PPBS 247.0 (Diabetic); LDL 183.0 (High Risk); HDL 30.0 (Low); TG 270.0 (High); Overall Diabetic\nM3: HbA1c 8.2 (Diabetic); FBS 155.0 (Diabetic); PPBS 241.0 (Diabetic); LDL 186.0 (High Risk); HDL 31.0 (Low); TG 255.0 (High); Overall Diabetic\nM4: HbA1c 8.8 (Diabetic); FBS 184.0 (Diabetic); PPBS 290.0 (Diabetic); LDL 182.0 (High Risk); HDL 30.0 (Low); TG 291.0 (High); Overall Diabetic\nM5: HbA1c 8.4 (Diabetic); FBS 149.0 (Diabetic); PPBS 273.0 (Diabetic); LDL 191.0 (High Risk); HDL 29.0 (Low); TG 274.0 (High); Overall Diabetic\nM6: HbA1c 8.7 (Diabetic); FBS 180.0 (Diabetic); PPBS 252.0 (Diabetic); LDL 185.0 (High Risk); HDL 31.0 (Low); TG 277.0 (High); Overall Diabetic\nM7: HbA1c 8.9 (Diabetic); FBS 162.0 (Diabetic); PPBS 251.0 (Diabetic); LDL 182.0 (High Risk); HDL 32.0 (Low); TG 272.0 (High); Overall Diabetic\nM8: HbA1c 8.8 (Diabetic); FBS 169.0 (Diabetic); PPBS 258.0 (Diabetic); LDL 187.0 (High Risk); HDL 31.0 (Low); TG 291.0 (High); Overall Diabetic"
+ },
+ "C2Q002": {
+  "patient_id": "P081",
+  "trajectory_type": "diabetic_dyslipidemia",
+  "template": "q_fbs_change",
+  "query_text": "How did my fasting sugar change between Month 1 and Month 8?",
+  "reference": "FBS Month 1 208 mg/dL (Diabetic), Month 8 223 mg/dL (Diabetic); all months: 208, 213, 216, 221, 214, 229, 204, 223.",
+  "query_id": "C2Q002",
+  "answer": "Your fasting blood sugar went up by **15 mg/dL** from Month 1 (208.0 mg/dL) to Month 8 (223.0 mg/dL). The readings did not rise steadily. They moved up and down between months, reaching 229.0 mg/dL in Month 6 and dropping to 204.0 mg/dL in Month 7 before rising again to 223.0 mg/dL in Month 8.\n\nUnder this laboratory's reference ranges, a fasting blood sugar of 126 mg/dL or higher is classified as Diabetic. Every reading in this report, including both Month 1 and Month 8, falls in that range.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what steps may be appropriate.",
+  "usage": {
+   "input_tokens": 2980,
+   "output_tokens": 501
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 9.74,
+   "predicted_FBS": 222.8,
+   "predicted_PPBS": 295.6,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 9.4 (Diabetic); FBS 208.0 (Diabetic); PPBS 273.0 (Diabetic); LDL 179.0 (High Risk); HDL 34.0 (Low); TG 263.0 (High); Overall Diabetic\nM2: HbA1c 9.7 (Diabetic); FBS 213.0 (Diabetic); PPBS 282.0 (Diabetic); LDL 178.0 (High Risk); HDL 36.0 (Low); TG 255.0 (High); Overall Diabetic\nM3: HbA1c 9.6 (Diabetic); FBS 216.0 (Diabetic); PPBS 298.0 (Diabetic); LDL 176.0 (High Risk); HDL 36.0 (Low); TG 245.0 (High); Overall Diabetic\nM4: HbA1c 9.8 (Diabetic); FBS 221.0 (Diabetic); PPBS 278.0 (Diabetic); LDL 180.0 (High Risk); HDL 38.0 (Low); TG 253.0 (High); Overall Diabetic\nM5: HbA1c 9.6 (Diabetic); FBS 214.0 (Diabetic); PPBS 304.0 (Diabetic); LDL 183.0 (High Risk); HDL 34.0 (Low); TG 277.0 (High); Overall Diabetic\nM6: HbA1c 9.6 (Diabetic); FBS 229.0 (Diabetic); PPBS 300.0 (Diabetic); LDL 176.0 (High Risk); HDL 35.0 (Low); TG 264.0 (High); Overall Diabetic\nM7: HbA1c 9.5 (Diabetic); FBS 204.0 (Diabetic); PPBS 286.0 (Diabetic); LDL 185.0 (High Risk); HDL 35.0 (Low); TG 275.0 (High); Overall Diabetic\nM8: HbA1c 9.8 (Diabetic); FBS 223.0 (Diabetic); PPBS 287.0 (Diabetic); LDL 183.0 (High Risk); HDL 37.0 (Low); TG 263.0 (High); Overall Diabetic"
+ },
+ "C2Q003": {
+  "patient_id": "P087",
+  "trajectory_type": "diabetic_dyslipidemia",
+  "template": "q_status",
+  "query_text": "Has my overall status changed during these months?",
+  "reference": "Overall status by month: Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic. Changes: none.",
+  "query_id": "C2Q003",
+  "answer": "**No, your overall status has not changed.** Based on the reports for Months 1 through 8, your overall glycemic status was **Diabetic** in every month. The reports don't print these categories, so I applied the laboratory's reference ranges:\n\n- **HbA1c** ranged from 7.9% to 8.7%. The lab classifies 6.5% or higher as Diabetic.\n- **Fasting Blood Sugar** ranged from 142 to 170 mg/dL. The lab classifies 126 mg/dL or higher as Diabetic.\n\nBoth measures were in the Diabetic range every month, so the overall status stayed the same. Your numbers did vary from month to month. HbA1c was highest in Month 7 (8.7%) and lowest in Month 2 (7.9%).\n\nOur forecasting model estimates that your next risk category would also be Diabetic. This is a prediction, not a measured result, and it isn't a certainty. Only real lab testing can confirm it.\n\nPlease discuss these results and what they mean for you with your doctor.",
+  "usage": {
+   "input_tokens": 2969,
+   "output_tokens": 802
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 8.56,
+   "predicted_FBS": 161.3,
+   "predicted_PPBS": 237.2,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 8.0 (Diabetic); FBS 142.0 (Diabetic); PPBS 227.0 (Diabetic); LDL 157.0 (High Risk); HDL 31.0 (Low); TG 244.0 (High); Overall Diabetic\nM2: HbA1c 7.9 (Diabetic); FBS 159.0 (Diabetic); PPBS 220.0 (Diabetic); LDL 156.0 (High Risk); HDL 30.0 (Low); TG 236.0 (High); Overall Diabetic\nM3: HbA1c 8.2 (Diabetic); FBS 152.0 (Diabetic); PPBS 234.0 (Diabetic); LDL 159.0 (High Risk); HDL 34.0 (Low); TG 235.0 (High); Overall Diabetic\nM4: HbA1c 8.3 (Diabetic); FBS 170.0 (Diabetic); PPBS 237.0 (Diabetic); LDL 149.0 (High Risk); HDL 31.0 (Low); TG 224.0 (High); Overall Diabetic\nM5: HbA1c 8.4 (Diabetic); FBS 159.0 (Diabetic); PPBS 218.0 (Diabetic); LDL 145.0 (High Risk); HDL 32.0 (Low); TG 226.0 (High); Overall Diabetic\nM6: HbA1c 8.5 (Diabetic); FBS 157.0 (Diabetic); PPBS 226.0 (Diabetic); LDL 150.0 (High Risk); HDL 30.0 (Low); TG 238.0 (High); Overall Diabetic\nM7: HbA1c 8.7 (Diabetic); FBS 170.0 (Diabetic); PPBS 254.0 (Diabetic); LDL 156.0 (High Risk); HDL 29.0 (Low); TG 230.0 (High); Overall Diabetic\nM8: HbA1c 8.4 (Diabetic); FBS 158.0 (Diabetic); PPBS 229.0 (Diabetic); LDL 159.0 (High Risk); HDL 29.0 (Low); TG 214.0 (High); Overall Diabetic"
+ },
+ "C2Q004": {
+  "patient_id": "P007",
+  "trajectory_type": "diabetic_dyslipidemia",
+  "template": "q_latest_abnormal",
+  "query_text": "Which of my values in my latest report (Month 8) are outside the normal range?",
+  "reference": "Month 8 outside normal/optimal: HbA1c 8.9 (Diabetic), FBS 174 (Diabetic), PPBS 245 (Diabetic), LDL 175 (High Risk), HDL 42 (Low), TG 287 (High).",
+  "query_id": "C2Q004",
+  "answer": "Based on your Month 8 report, **all six values are outside the normal range** according to this laboratory's reference ranges:\n\n- **HbA1c: 8.9%**. Classified as **Diabetic** (6.5% or higher). Normal is below 5.7%.\n- **Fasting Blood Sugar: 174.0 mg/dL**. Classified as **Diabetic** (126 mg/dL or higher). Normal is below 100 mg/dL.\n- **Post-Prandial Blood Sugar: 245.0 mg/dL**. Classified as **Diabetic** (200 mg/dL or higher). Normal is below 140 mg/dL.\n- **LDL Cholesterol: 175.0 mg/dL**. Classified as **High Risk** (130 mg/dL or higher). Optimal is below 100 mg/dL.\n- **HDL Cholesterol: 42.0 mg/dL**. Classified as **Low**, since the reference for women is below 50 mg/dL.\n- **Triglycerides: 287.0 mg/dL**. Classified as **High** (200 mg/dL or higher). Normal is below 150 mg/dL.\n\nUnder the laboratory's rules, your overall glycemic status for Month 8 is **Diabetic**, because your HbA1c and fasting blood sugar both fall in the Diabetic range.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what next steps may be appropriate.",
+  "usage": {
+   "input_tokens": 2979,
+   "output_tokens": 868
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 9.05,
+   "predicted_FBS": 177.1,
+   "predicted_PPBS": 252.0,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 8.5 (Diabetic); FBS 167.0 (Diabetic); PPBS 218.0 (Diabetic); LDL 171.0 (High Risk); HDL 43.0 (Low); TG 283.0 (High); Overall Diabetic\nM2: HbA1c 8.3 (Diabetic); FBS 160.0 (Diabetic); PPBS 217.0 (Diabetic); LDL 158.0 (High Risk); HDL 41.0 (Low); TG 285.0 (High); Overall Diabetic\nM3: HbA1c 8.5 (Diabetic); FBS 165.0 (Diabetic); PPBS 225.0 (Diabetic); LDL 167.0 (High Risk); HDL 44.0 (Low); TG 280.0 (High); Overall Diabetic\nM4: HbA1c 8.4 (Diabetic); FBS 165.0 (Diabetic); PPBS 251.0 (Diabetic); LDL 164.0 (High Risk); HDL 44.0 (Low); TG 282.0 (High); Overall Diabetic\nM5: HbA1c 8.6 (Diabetic); FBS 148.0 (Diabetic); PPBS 218.0 (Diabetic); LDL 178.0 (High Risk); HDL 42.0 (Low); TG 285.0 (High); Overall Diabetic\nM6: HbA1c 8.8 (Diabetic); FBS 174.0 (Diabetic); PPBS 242.0 (Diabetic); LDL 177.0 (High Risk); HDL 42.0 (Low); TG 275.0 (High); Overall Diabetic\nM7: HbA1c 8.6 (Diabetic); FBS 176.0 (Diabetic); PPBS 233.0 (Diabetic); LDL 173.0 (High Risk); HDL 41.0 (Low); TG 285.0 (High); Overall Diabetic\nM8: HbA1c 8.9 (Diabetic); FBS 174.0 (Diabetic); PPBS 245.0 (Diabetic); LDL 175.0 (High Risk); HDL 42.0 (Low); TG 287.0 (High); Overall Diabetic"
+ },
+ "C2Q005": {
+  "patient_id": "P072",
+  "trajectory_type": "diabetic_dyslipidemia",
+  "template": "q_max_ppbs",
+  "query_text": "What was my highest post-meal sugar, and in which month?",
+  "reference": "Highest PPBS 288 mg/dL in Month 5 (Diabetic); all: 273, 275, 284, 247, 288, 281, 272, 261.",
+  "query_id": "C2Q005",
+  "answer": "Your highest post-meal blood sugar (PPBS) was **288 mg/dL, in Month 5**.\n\nFor context, the lab's reference ranges classify a PPBS of 200 mg/dL or higher as **Diabetic**. Every month in your report was at or above that level, with readings between 247 and 288 mg/dL. Please talk with your doctor about what these results mean for you.",
+  "usage": {
+   "input_tokens": 2976,
+   "output_tokens": 302
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 8.79,
+   "predicted_FBS": 187.3,
+   "predicted_PPBS": 258.8,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 9.0 (Diabetic); FBS 204.0 (Diabetic); PPBS 273.0 (Diabetic); LDL 185.0 (High Risk); HDL 41.0 (Low); TG 247.0 (High); Overall Diabetic\nM2: HbA1c 9.1 (Diabetic); FBS 210.0 (Diabetic); PPBS 275.0 (Diabetic); LDL 177.0 (High Risk); HDL 39.0 (Low); TG 238.0 (High); Overall Diabetic\nM3: HbA1c 9.1 (Diabetic); FBS 187.0 (Diabetic); PPBS 284.0 (Diabetic); LDL 179.0 (High Risk); HDL 39.0 (Low); TG 257.0 (High); Overall Diabetic\nM4: HbA1c 8.8 (Diabetic); FBS 194.0 (Diabetic); PPBS 247.0 (Diabetic); LDL 176.0 (High Risk); HDL 38.0 (Low); TG 256.0 (High); Overall Diabetic\nM5: HbA1c 9.2 (Diabetic); FBS 202.0 (Diabetic); PPBS 288.0 (Diabetic); LDL 174.0 (High Risk); HDL 37.0 (Low); TG 272.0 (High); Overall Diabetic\nM6: HbA1c 9.0 (Diabetic); FBS 205.0 (Diabetic); PPBS 281.0 (Diabetic); LDL 172.0 (High Risk); HDL 38.0 (Low); TG 264.0 (High); Overall Diabetic\nM7: HbA1c 9.0 (Diabetic); FBS 199.0 (Diabetic); PPBS 272.0 (Diabetic); LDL 174.0 (High Risk); HDL 39.0 (Low); TG 272.0 (High); Overall Diabetic\nM8: HbA1c 8.9 (Diabetic); FBS 190.0 (Diabetic); PPBS 261.0 (Diabetic); LDL 172.0 (High Risk); HDL 42.0 (Low); TG 275.0 (High); Overall Diabetic"
+ },
+ "C2Q006": {
+  "patient_id": "P039",
+  "trajectory_type": "diabetic_dyslipidemia",
+  "template": "q_ldl",
+  "query_text": "Has my LDL cholesterol been a concern across my visits?",
+  "reference": "LDL by month: 147, 153, 150, 144, 152, 147, 147, 148 mg/dL; classes seen: High Risk.",
+  "query_id": "C2Q006",
+  "answer": "Yes. Your LDL cholesterol was in the range the lab classifies as **High Risk** (130 mg/dL or higher) at every visit on record:\n\n- Month 1: 147 mg/dL\n- Month 2: 153 mg/dL\n- Month 3: 150 mg/dL\n- Month 4: 144 mg/dL\n- Month 5: 152 mg/dL\n- Month 6: 147 mg/dL\n- Month 7: 147 mg/dL\n- Month 8: 148 mg/dL\n\nYour readings stayed fairly steady, between 144 and 153 mg/dL, with no clear sustained rise or fall. The reports don't include any comment on what caused these results or what to do about them.\n\nFor background, LDL (\"low-density lipoprotein\") is often called \"bad\" cholesterol because it can build up in the walls of blood vessels over time. Doctors generally watch LDL levels because sustained high levels are linked to heart and blood vessel disease. Your doctor can explain what your numbers mean for you specifically and whether any follow-up is needed.",
+  "usage": {
+   "input_tokens": 2975,
+   "output_tokens": 610
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 9.04,
+   "predicted_FBS": 202.1,
+   "predicted_PPBS": 245.4,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 8.8 (Diabetic); FBS 200.0 (Diabetic); PPBS 255.0 (Diabetic); LDL 147.0 (High Risk); HDL 43.0 (Low); TG 318.0 (High); Overall Diabetic\nM2: HbA1c 9.2 (Diabetic); FBS 192.0 (Diabetic); PPBS 242.0 (Diabetic); LDL 153.0 (High Risk); HDL 42.0 (Low); TG 327.0 (High); Overall Diabetic\nM3: HbA1c 8.8 (Diabetic); FBS 189.0 (Diabetic); PPBS 242.0 (Diabetic); LDL 150.0 (High Risk); HDL 43.0 (Low); TG 316.0 (High); Overall Diabetic\nM4: HbA1c 8.8 (Diabetic); FBS 195.0 (Diabetic); PPBS 243.0 (Diabetic); LDL 144.0 (High Risk); HDL 42.0 (Low); TG 334.0 (High); Overall Diabetic\nM5: HbA1c 9.0 (Diabetic); FBS 200.0 (Diabetic); PPBS 242.0 (Diabetic); LDL 152.0 (High Risk); HDL 41.0 (Low); TG 314.0 (High); Overall Diabetic\nM6: HbA1c 9.1 (Diabetic); FBS 205.0 (Diabetic); PPBS 255.0 (Diabetic); LDL 147.0 (High Risk); HDL 39.0 (Low); TG 305.0 (High); Overall Diabetic\nM7: HbA1c 9.1 (Diabetic); FBS 203.0 (Diabetic); PPBS 270.0 (Diabetic); LDL 147.0 (High Risk); HDL 38.0 (Low); TG 304.0 (High); Overall Diabetic\nM8: HbA1c 9.1 (Diabetic); FBS 208.0 (Diabetic); PPBS 229.0 (Diabetic); LDL 148.0 (High Risk); HDL 39.0 (Low); TG 292.0 (High); Overall Diabetic"
+ },
+ "C2Q007": {
+  "patient_id": "P066",
+  "trajectory_type": "diabetic_dyslipidemia",
+  "template": "q_compare",
+  "query_text": "Compare my Month 4 and Month 8 HbA1c.",
+  "reference": "HbA1c Month 4 9.4% (Diabetic), Month 8 9.4% (Diabetic).",
+  "query_id": "C2Q007",
+  "answer": "**Your Month 4 and Month 8 HbA1c results were the same: 9.4% at both time points.** Your HbA1c did not change between these two tests.\n\nFor background, HbA1c is a blood test that reflects your average blood sugar over the past few months. Under this laboratory's reference ranges, 6.5% or higher is classified as Diabetic, so 9.4% falls in that range at both Month 4 and Month 8.\n\nYour HbA1c was also 9.4% at Month 4 and 9.3% at Month 6 and Month 7, so it has stayed in a similar range over this period. Please discuss these results with your doctor, who can explain what they mean for you and what the next steps are.",
+  "usage": {
+   "input_tokens": 2979,
+   "output_tokens": 431
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 9.42,
+   "predicted_FBS": 194.7,
+   "predicted_PPBS": 285.8,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 8.8 (Diabetic); FBS 186.0 (Diabetic); PPBS 253.0 (Diabetic); LDL 178.0 (High Risk); HDL 37.0 (Low); TG 309.0 (High); Overall Diabetic\nM2: HbA1c 8.9 (Diabetic); FBS 180.0 (Diabetic); PPBS 255.0 (Diabetic); LDL 186.0 (High Risk); HDL 36.0 (Low); TG 317.0 (High); Overall Diabetic\nM3: HbA1c 9.0 (Diabetic); FBS 188.0 (Diabetic); PPBS 253.0 (Diabetic); LDL 179.0 (High Risk); HDL 38.0 (Low); TG 291.0 (High); Overall Diabetic\nM4: HbA1c 9.4 (Diabetic); FBS 197.0 (Diabetic); PPBS 284.0 (Diabetic); LDL 184.0 (High Risk); HDL 36.0 (Low); TG 306.0 (High); Overall Diabetic\nM5: HbA1c 9.1 (Diabetic); FBS 197.0 (Diabetic); PPBS 248.0 (Diabetic); LDL 175.0 (High Risk); HDL 37.0 (Low); TG 306.0 (High); Overall Diabetic\nM6: HbA1c 9.3 (Diabetic); FBS 202.0 (Diabetic); PPBS 268.0 (Diabetic); LDL 178.0 (High Risk); HDL 37.0 (Low); TG 325.0 (High); Overall Diabetic\nM7: HbA1c 9.3 (Diabetic); FBS 195.0 (Diabetic); PPBS 289.0 (Diabetic); LDL 188.0 (High Risk); HDL 33.0 (Low); TG 318.0 (High); Overall Diabetic\nM8: HbA1c 9.4 (Diabetic); FBS 192.0 (Diabetic); PPBS 290.0 (Diabetic); LDL 179.0 (High Risk); HDL 34.0 (Low); TG 307.0 (High); Overall Diabetic"
+ },
+ "C2Q008": {
+  "patient_id": "P097",
+  "trajectory_type": "diabetic_fluctuating",
+  "template": "q_trend",
+  "query_text": "Is my HbA1c improving over my visits?",
+  "reference": "HbA1c by month: 8.9, 8.7, 7.8, 7.7, 8.2, 8.8, 8.5, 7.8%. Month 8 is lower than Month 1.",
+  "query_id": "C2Q008",
+  "answer": "**Partly, but the trend is not steady.** Your HbA1c went from 8.9% at Month 1 to 7.8% at Month 8, so the latest value is lower than the first. The path in between went up and down:\n\n- Month 1: 8.9%\n- Month 2: 8.7%\n- Month 3: 7.8%\n- Month 4: 7.7% (lowest reading)\n- Month 5: 8.2%\n- Month 6: 8.8% (highest reading after Month 1)\n- Month 7: 8.5%\n- Month 8: 7.8%\n\nYour HbA1c dropped to 7.7\u20137.8% at a few points, but it rose back to 8.8% at Month 6 before coming down again.\n\nUnder this laboratory's reference ranges, every HbA1c reading in your report (6.5% or higher) falls in the \"Diabetic\" category. Your overall glycemic status is also listed as Diabetic. The reports don't say anything more about what this means for you, so please talk with your doctor about these results and what they mean for your care.\n\nFor background, HbA1c is a blood test that reflects your average blood sugar over the past few months, which is why doctors track it over time rather than relying on a single reading.\n\n**Model estimate (not a measured result):** Our forecasting model estimates your next HbA1c would be about 7.8%. This is only a prediction based on your past trend, not a certainty, and it would need to be confirmed by an actual lab test.",
+  "usage": {
+   "input_tokens": 2973,
+   "output_tokens": 986
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 7.8,
+   "predicted_FBS": 173.9,
+   "predicted_PPBS": 219.5,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 8.9 (Diabetic); FBS 190.0 (Diabetic); PPBS 206.0 (Diabetic); LDL 141.0 (High Risk); HDL 43.0 (Low); TG 167.0 (Borderline); Overall Diabetic\nM2: HbA1c 8.7 (Diabetic); FBS 207.0 (Diabetic); PPBS 193.0 (Prediabetic); LDL 142.0 (High Risk); HDL 46.0 (Low); TG 158.0 (Borderline); Overall Diabetic\nM3: HbA1c 7.8 (Diabetic); FBS 160.0 (Diabetic); PPBS 200.0 (Diabetic); LDL 139.0 (High Risk); HDL 44.0 (Low); TG 157.0 (Borderline); Overall Diabetic\nM4: HbA1c 7.7 (Diabetic); FBS 156.0 (Diabetic); PPBS 226.0 (Diabetic); LDL 130.0 (High Risk); HDL 45.0 (Low); TG 155.0 (Borderline); Overall Diabetic\nM5: HbA1c 8.2 (Diabetic); FBS 160.0 (Diabetic); PPBS 236.0 (Diabetic); LDL 135.0 (High Risk); HDL 43.0 (Low); TG 141.0 (Normal); Overall Diabetic\nM6: HbA1c 8.8 (Diabetic); FBS 190.0 (Diabetic); PPBS 280.0 (Diabetic); LDL 130.0 (High Risk); HDL 45.0 (Low); TG 152.0 (Borderline); Overall Diabetic\nM7: HbA1c 8.5 (Diabetic); FBS 183.0 (Diabetic); PPBS 278.0 (Diabetic); LDL 131.0 (High Risk); HDL 43.0 (Low); TG 152.0 (Borderline); Overall Diabetic\nM8: HbA1c 7.8 (Diabetic); FBS 182.0 (Diabetic); PPBS 193.0 (Prediabetic); LDL 132.0 (High Risk); HDL 42.0 (Low); TG 154.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q009": {
+  "patient_id": "P019",
+  "trajectory_type": "diabetic_fluctuating",
+  "template": "q_fbs_change",
+  "query_text": "How did my fasting sugar change between Month 1 and Month 8?",
+  "reference": "FBS Month 1 173 mg/dL (Diabetic), Month 8 159 mg/dL (Diabetic); all months: 173, 173, 174, 149, 171, 169, 170, 159.",
+  "query_id": "C2Q009",
+  "answer": "Your fasting blood sugar (FBS) was **173.0 mg/dL in Month 1** and **159.0 mg/dL in Month 8**, a drop of **14 mg/dL** over that period.\n\nThe readings did not fall steadily. They ranged from 149.0 mg/dL (Month 4, the lowest) to 174.0 mg/dL (Month 3). Month 8 is lower than Month 1, but it is not the lowest value in the series.\n\nUsing this laboratory's reference ranges, both the Month 1 and Month 8 fasting values are in the **Diabetic** range (126 mg/dL or higher). Your reports do not print these labels, so this classification comes from the ranges provided.\n\nOur forecasting model estimates the next fasting blood sugar at about **162.1 mg/dL**. This is a prediction, not a measured result, and it may not be accurate. Only a real lab test can confirm your actual level.\n\nPlease discuss these results and what they mean for you with your doctor.",
+  "usage": {
+   "input_tokens": 2979,
+   "output_tokens": 729
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 9.18,
+   "predicted_FBS": 162.1,
+   "predicted_PPBS": 253.7,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 8.7 (Diabetic); FBS 173.0 (Diabetic); PPBS 263.0 (Diabetic); LDL 89.0 (Optimal); HDL 43.0 (Normal); TG 173.0 (Borderline); Overall Diabetic\nM2: HbA1c 9.0 (Diabetic); FBS 173.0 (Diabetic); PPBS 231.0 (Diabetic); LDL 102.0 (Borderline); HDL 42.0 (Normal); TG 176.0 (Borderline); Overall Diabetic\nM3: HbA1c 9.0 (Diabetic); FBS 174.0 (Diabetic); PPBS 277.0 (Diabetic); LDL 97.0 (Optimal); HDL 43.0 (Normal); TG 169.0 (Borderline); Overall Diabetic\nM4: HbA1c 8.6 (Diabetic); FBS 149.0 (Diabetic); PPBS 226.0 (Diabetic); LDL 99.0 (Optimal); HDL 44.0 (Normal); TG 182.0 (Borderline); Overall Diabetic\nM5: HbA1c 8.3 (Diabetic); FBS 171.0 (Diabetic); PPBS 246.0 (Diabetic); LDL 98.0 (Optimal); HDL 44.0 (Normal); TG 172.0 (Borderline); Overall Diabetic\nM6: HbA1c 8.5 (Diabetic); FBS 169.0 (Diabetic); PPBS 221.0 (Diabetic); LDL 100.0 (Borderline); HDL 44.0 (Normal); TG 164.0 (Borderline); Overall Diabetic\nM7: HbA1c 9.0 (Diabetic); FBS 170.0 (Diabetic); PPBS 251.0 (Diabetic); LDL 94.0 (Optimal); HDL 44.0 (Normal); TG 173.0 (Borderline); Overall Diabetic\nM8: HbA1c 9.1 (Diabetic); FBS 159.0 (Diabetic); PPBS 256.0 (Diabetic); LDL 91.0 (Optimal); HDL 46.0 (Normal); TG 168.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q010": {
+  "patient_id": "P054",
+  "trajectory_type": "diabetic_fluctuating",
+  "template": "q_status",
+  "query_text": "Has my overall status changed during these months?",
+  "reference": "Overall status by month: Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic. Changes: none.",
+  "query_id": "C2Q010",
+  "answer": "**No, your overall status stayed the same across all 8 months: it was \"Diabetic\" in every report.** Your lab doesn't print this label on the reports, so I applied the lab's rule: a status is Diabetic if HbA1c is 6.5% or higher or fasting blood sugar is 126 mg/dL or higher. Both measures were in the Diabetic range each month.\n\n- **HbA1c** (a measure of average blood sugar over about the past few months) ranged from 6.7% to 8.0%. It was highest in Months 3 and 8 (8.0%) and lowest in Month 1 (6.7%).\n- **Fasting blood sugar** ranged from 132 to 174 mg/dL. The lowest was in Month 6 (132 mg/dL), and it was above 126 mg/dL in every month.\n\nYour HbA1c and fasting values went up and down over the months, but neither moved into the Normal or Prediabetic range.\n\nBased on your trend, our forecasting model estimates your next HbA1c at about 8.11% and your next risk category as Diabetic. This is a prediction, not a measured result, and it isn't a certainty. Only new lab testing can confirm your current status.\n\nPlease discuss these results and what they mean for you with your doctor.",
+  "usage": {
+   "input_tokens": 2970,
+   "output_tokens": 980
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 8.11,
+   "predicted_FBS": 171.5,
+   "predicted_PPBS": 223.9,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 6.7 (Diabetic); FBS 171.0 (Diabetic); PPBS 165.0 (Prediabetic); LDL 139.0 (High Risk); HDL 43.0 (Low); TG 217.0 (High); Overall Diabetic\nM2: HbA1c 7.4 (Diabetic); FBS 156.0 (Diabetic); PPBS 217.0 (Diabetic); LDL 141.0 (High Risk); HDL 45.0 (Low); TG 204.0 (High); Overall Diabetic\nM3: HbA1c 8.0 (Diabetic); FBS 172.0 (Diabetic); PPBS 191.0 (Prediabetic); LDL 137.0 (High Risk); HDL 46.0 (Low); TG 211.0 (High); Overall Diabetic\nM4: HbA1c 7.8 (Diabetic); FBS 157.0 (Diabetic); PPBS 155.0 (Prediabetic); LDL 142.0 (High Risk); HDL 44.0 (Low); TG 212.0 (High); Overall Diabetic\nM5: HbA1c 7.1 (Diabetic); FBS 139.0 (Diabetic); PPBS 213.0 (Diabetic); LDL 130.0 (High Risk); HDL 39.0 (Low); TG 214.0 (High); Overall Diabetic\nM6: HbA1c 6.8 (Diabetic); FBS 132.0 (Diabetic); PPBS 188.0 (Prediabetic); LDL 127.0 (Borderline); HDL 43.0 (Low); TG 188.0 (Borderline); Overall Diabetic\nM7: HbA1c 7.5 (Diabetic); FBS 158.0 (Diabetic); PPBS 227.0 (Diabetic); LDL 129.0 (Borderline); HDL 45.0 (Low); TG 201.0 (High); Overall Diabetic\nM8: HbA1c 8.0 (Diabetic); FBS 174.0 (Diabetic); PPBS 204.0 (Diabetic); LDL 134.0 (High Risk); HDL 42.0 (Low); TG 177.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q011": {
+  "patient_id": "P099",
+  "trajectory_type": "diabetic_fluctuating",
+  "template": "q_latest_abnormal",
+  "query_text": "Which of my values in my latest report (Month 8) are outside the normal range?",
+  "reference": "Month 8 outside normal/optimal: HbA1c 8.2 (Diabetic), FBS 194 (Diabetic), PPBS 261 (Diabetic), LDL 126 (Borderline), HDL 44 (Low), TG 205 (High).",
+  "query_id": "C2Q011",
+  "answer": "All six values in your Month 8 report fall outside the lab's normal ranges:\n\n- **HbA1c: 8.2%** is in the **Diabetic** range (6.5% or higher).\n- **Fasting Blood Sugar: 194 mg/dL** is in the **Diabetic** range (126 mg/dL or higher).\n- **Post-Prandial Blood Sugar: 261 mg/dL** is in the **Diabetic** range (200 mg/dL or higher).\n- **LDL Cholesterol: 126 mg/dL** is **Borderline** (100-129 mg/dL). It is not in the optimal range, which is below 100 mg/dL.\n- **HDL Cholesterol: 44 mg/dL** is **Low**. For women, HDL below 50 mg/dL is classified as low.\n- **Triglycerides: 205 mg/dL** are **High** (200 mg/dL or higher).\n\nBased on the blood sugar results, your overall glycemic status for Month 8 is **Diabetic**.\n\nThese classifications come from the laboratory's reference ranges, not from the report itself. Please discuss these results with your doctor, who can explain what they mean for you and what steps, if any, are appropriate.",
+  "usage": {
+   "input_tokens": 2982,
+   "output_tokens": 842
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 8.23,
+   "predicted_FBS": 195.1,
+   "predicted_PPBS": 248.0,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 6.7 (Diabetic); FBS 135.0 (Diabetic); PPBS 176.0 (Prediabetic); LDL 120.0 (Borderline); HDL 41.0 (Low); TG 221.0 (High); Overall Diabetic\nM2: HbA1c 7.0 (Diabetic); FBS 148.0 (Diabetic); PPBS 200.0 (Diabetic); LDL 127.0 (Borderline); HDL 41.0 (Low); TG 229.0 (High); Overall Diabetic\nM3: HbA1c 8.0 (Diabetic); FBS 200.0 (Diabetic); PPBS 201.0 (Diabetic); LDL 123.0 (Borderline); HDL 41.0 (Low); TG 227.0 (High); Overall Diabetic\nM4: HbA1c 7.7 (Diabetic); FBS 132.0 (Diabetic); PPBS 185.0 (Prediabetic); LDL 126.0 (Borderline); HDL 42.0 (Low); TG 214.0 (High); Overall Diabetic\nM5: HbA1c 6.8 (Diabetic); FBS 134.0 (Diabetic); PPBS 162.0 (Prediabetic); LDL 126.0 (Borderline); HDL 43.0 (Low); TG 216.0 (High); Overall Diabetic\nM6: HbA1c 6.7 (Diabetic); FBS 120.0 (Prediabetic); PPBS 180.0 (Prediabetic); LDL 128.0 (Borderline); HDL 42.0 (Low); TG 216.0 (High); Overall Diabetic\nM7: HbA1c 7.9 (Diabetic); FBS 140.0 (Diabetic); PPBS 256.0 (Diabetic); LDL 124.0 (Borderline); HDL 46.0 (Low); TG 220.0 (High); Overall Diabetic\nM8: HbA1c 8.2 (Diabetic); FBS 194.0 (Diabetic); PPBS 261.0 (Diabetic); LDL 126.0 (Borderline); HDL 44.0 (Low); TG 205.0 (High); Overall Diabetic"
+ },
+ "C2Q012": {
+  "patient_id": "P045",
+  "trajectory_type": "diabetic_fluctuating",
+  "template": "q_max_ppbs",
+  "query_text": "What was my highest post-meal sugar, and in which month?",
+  "reference": "Highest PPBS 298 mg/dL in Month 2 (Diabetic); all: 202, 298, 235, 215, 217, 242, 240, 244.",
+  "query_id": "C2Q012",
+  "answer": "Your highest post-meal blood sugar (PPBS) was **298.0 mg/dL, measured in Month 2**.\n\nUsing this laboratory's reference ranges, a post-meal reading of 200 mg/dL or higher is classified as Diabetic. Your other post-meal readings ranged from 202 to 244 mg/dL across the other months, and all of them fall in that same range.\n\nPlease talk with your doctor about what these results mean for you.",
+  "usage": {
+   "input_tokens": 2974,
+   "output_tokens": 303
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 7.95,
+   "predicted_FBS": 147.1,
+   "predicted_PPBS": 215.3,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 7.8 (Diabetic); FBS 149.0 (Diabetic); PPBS 202.0 (Diabetic); LDL 126.0 (Borderline); HDL 49.0 (Low); TG 194.0 (Borderline); Overall Diabetic\nM2: HbA1c 8.5 (Diabetic); FBS 187.0 (Diabetic); PPBS 298.0 (Diabetic); LDL 132.0 (High Risk); HDL 52.0 (Normal); TG 182.0 (Borderline); Overall Diabetic\nM3: HbA1c 8.4 (Diabetic); FBS 170.0 (Diabetic); PPBS 235.0 (Diabetic); LDL 122.0 (Borderline); HDL 52.0 (Normal); TG 183.0 (Borderline); Overall Diabetic\nM4: HbA1c 7.6 (Diabetic); FBS 132.0 (Diabetic); PPBS 215.0 (Diabetic); LDL 125.0 (Borderline); HDL 50.0 (Normal); TG 193.0 (Borderline); Overall Diabetic\nM5: HbA1c 7.4 (Diabetic); FBS 171.0 (Diabetic); PPBS 217.0 (Diabetic); LDL 120.0 (Borderline); HDL 49.0 (Low); TG 185.0 (Borderline); Overall Diabetic\nM6: HbA1c 8.0 (Diabetic); FBS 157.0 (Diabetic); PPBS 242.0 (Diabetic); LDL 127.0 (Borderline); HDL 50.0 (Normal); TG 183.0 (Borderline); Overall Diabetic\nM7: HbA1c 8.6 (Diabetic); FBS 192.0 (Diabetic); PPBS 240.0 (Diabetic); LDL 126.0 (Borderline); HDL 47.0 (Low); TG 188.0 (Borderline); Overall Diabetic\nM8: HbA1c 8.1 (Diabetic); FBS 148.0 (Diabetic); PPBS 244.0 (Diabetic); LDL 120.0 (Borderline); HDL 50.0 (Normal); TG 188.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q013": {
+  "patient_id": "P042",
+  "trajectory_type": "diabetic_fluctuating",
+  "template": "q_ldl",
+  "query_text": "Has my LDL cholesterol been a concern across my visits?",
+  "reference": "LDL by month: 133, 132, 134, 130, 129, 127, 132, 133 mg/dL; classes seen: Borderline, High Risk.",
+  "query_id": "C2Q013",
+  "answer": "Yes, your LDL cholesterol has been above the lab's target range at most visits. Based on the lab's reference ranges, your readings were:\n\n| Month | LDL (mg/dL) | Lab classification |\n|---|---|---|\n| 1 | 133 | High Risk |\n| 2 | 132 | High Risk |\n| 3 | 134 | High Risk |\n| 4 | 130 | High Risk |\n| 5 | 129 | Borderline |\n| 6 | 127 | Borderline |\n| 7 | 132 | High Risk |\n| 8 | 133 | High Risk |\n\nYour readings stayed in a narrow range, between 127 and 134 mg/dL. You were classified as High Risk in 6 of the 8 months, and Borderline in months 5 and 6. None of your readings reached the \"Optimal\" level (below 100 mg/dL). Your most recent result, in Month 8, was 133 mg/dL, which is in the High Risk range.\n\nFor background, LDL cholesterol is often called \"bad\" cholesterol because high levels can contribute to the buildup of fatty deposits in blood vessels over time. Lab reference ranges help show whether a value is in a range that doctors generally want to monitor more closely.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what, if anything, should be done about them.",
+  "usage": {
+   "input_tokens": 2978,
+   "output_tokens": 742
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 8.81,
+   "predicted_FBS": 198.3,
+   "predicted_PPBS": 250.7,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 8.2 (Diabetic); FBS 171.0 (Diabetic); PPBS 191.0 (Prediabetic); LDL 133.0 (High Risk); HDL 38.0 (Low); TG 152.0 (Borderline); Overall Diabetic\nM2: HbA1c 7.9 (Diabetic); FBS 205.0 (Diabetic); PPBS 180.0 (Prediabetic); LDL 132.0 (High Risk); HDL 38.0 (Low); TG 168.0 (Borderline); Overall Diabetic\nM3: HbA1c 8.4 (Diabetic); FBS 167.0 (Diabetic); PPBS 237.0 (Diabetic); LDL 134.0 (High Risk); HDL 39.0 (Low); TG 144.0 (Normal); Overall Diabetic\nM4: HbA1c 8.9 (Diabetic); FBS 162.0 (Diabetic); PPBS 269.0 (Diabetic); LDL 130.0 (High Risk); HDL 38.0 (Low); TG 133.0 (Normal); Overall Diabetic\nM5: HbA1c 8.7 (Diabetic); FBS 193.0 (Diabetic); PPBS 215.0 (Diabetic); LDL 129.0 (Borderline); HDL 35.0 (Low); TG 133.0 (Normal); Overall Diabetic\nM6: HbA1c 7.9 (Diabetic); FBS 150.0 (Diabetic); PPBS 168.0 (Prediabetic); LDL 127.0 (Borderline); HDL 35.0 (Low); TG 137.0 (Normal); Overall Diabetic\nM7: HbA1c 8.1 (Diabetic); FBS 169.0 (Diabetic); PPBS 237.0 (Diabetic); LDL 132.0 (High Risk); HDL 39.0 (Low); TG 145.0 (Normal); Overall Diabetic\nM8: HbA1c 8.7 (Diabetic); FBS 199.0 (Diabetic); PPBS 236.0 (Diabetic); LDL 133.0 (High Risk); HDL 35.0 (Low); TG 150.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q014": {
+  "patient_id": "P008",
+  "trajectory_type": "diabetic_fluctuating",
+  "template": "q_compare",
+  "query_text": "Compare my Month 4 and Month 8 HbA1c.",
+  "reference": "HbA1c Month 4 8.2% (Diabetic), Month 8 7.5% (Diabetic).",
+  "query_id": "C2Q014",
+  "answer": "**Your HbA1c went down from Month 4 to Month 8.**\n\n- **Month 4:** 8.2%\n- **Month 8:** 7.5%\n\nThat is a drop of 0.7 percentage points. Under this laboratory's reference ranges, both results fall in the **Diabetic** category (6.5% or higher), so the value is lower at Month 8 but still in that range.\n\nFor background, HbA1c is a blood test that reflects your average blood sugar level over the previous two to three months. A lower number means your average blood sugar has come down, but any change should be reviewed with your doctor, who can explain what it means for your overall care.",
+  "usage": {
+   "input_tokens": 2975,
+   "output_tokens": 438
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 7.4,
+   "predicted_FBS": 171.2,
+   "predicted_PPBS": 218.7,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 6.9 (Diabetic); FBS 155.0 (Diabetic); PPBS 201.0 (Diabetic); LDL 107.0 (Borderline); HDL 48.0 (Low); TG 200.0 (High); Overall Diabetic\nM2: HbA1c 7.0 (Diabetic); FBS 129.0 (Diabetic); PPBS 181.0 (Prediabetic); LDL 109.0 (Borderline); HDL 49.0 (Low); TG 192.0 (Borderline); Overall Diabetic\nM3: HbA1c 7.9 (Diabetic); FBS 183.0 (Diabetic); PPBS 198.0 (Prediabetic); LDL 105.0 (Borderline); HDL 48.0 (Low); TG 208.0 (High); Overall Diabetic\nM4: HbA1c 8.2 (Diabetic); FBS 170.0 (Diabetic); PPBS 236.0 (Diabetic); LDL 104.0 (Borderline); HDL 54.0 (Normal); TG 204.0 (High); Overall Diabetic\nM5: HbA1c 8.0 (Diabetic); FBS 137.0 (Diabetic); PPBS 227.0 (Diabetic); LDL 105.0 (Borderline); HDL 53.0 (Normal); TG 195.0 (Borderline); Overall Diabetic\nM6: HbA1c 7.2 (Diabetic); FBS 135.0 (Diabetic); PPBS 219.0 (Diabetic); LDL 117.0 (Borderline); HDL 51.0 (Normal); TG 193.0 (Borderline); Overall Diabetic\nM7: HbA1c 6.8 (Diabetic); FBS 123.0 (Prediabetic); PPBS 135.0 (Normal); LDL 109.0 (Borderline); HDL 51.0 (Normal); TG 200.0 (High); Overall Diabetic\nM8: HbA1c 7.5 (Diabetic); FBS 173.0 (Diabetic); PPBS 241.0 (Diabetic); LDL 117.0 (Borderline); HDL 51.0 (Normal); TG 182.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q015": {
+  "patient_id": "P050",
+  "trajectory_type": "diabetic_improving",
+  "template": "q_trend",
+  "query_text": "Is my HbA1c improving over my visits?",
+  "reference": "HbA1c by month: 9.9, 9.5, 8.5, 8.2, 8, 7.4, 7.5, 7.2%. Month 8 is lower than Month 1.",
+  "query_id": "C2Q015",
+  "answer": "**Yes, your HbA1c has come down over your visits.** It went from 9.9% at Month 1 to 7.2% at Month 8. The steepest drops came in the first few months. There was one small rise at Month 7 (7.5%), followed by a further drop to 7.2% at Month 8.\n\nFor background, HbA1c is a blood test that reflects your average blood sugar over roughly the past two to three months. Lower numbers generally mean better blood sugar control.\n\nUnder this laboratory's reference ranges, a result of 6.5% or higher is classified as Diabetic. Your Month 8 HbA1c of 7.2% falls in that range, though the improvement from earlier visits is clear. Your Month 8 Fasting Blood Sugar (136.0 mg/dL) is also in the Diabetic range, so your overall glycemic status at Month 8 is listed as Diabetic.\n\nOur forecasting model estimates that your next HbA1c could be about 7.03%. This is a prediction, not a measured result, and it is an estimate rather than a certainty. Only a real lab test can confirm your actual value.\n\nPlease discuss these results and what they mean for you with your doctor.",
+  "usage": {
+   "input_tokens": 2972,
+   "output_tokens": 838
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 7.03,
+   "predicted_FBS": 132.6,
+   "predicted_PPBS": 193.5,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 9.9 (Diabetic); FBS 220.0 (Diabetic); PPBS 303.0 (Diabetic); LDL 98.0 (Optimal); HDL 51.0 (Normal); TG 158.0 (Borderline); Overall Diabetic\nM2: HbA1c 9.5 (Diabetic); FBS 196.0 (Diabetic); PPBS 303.0 (Diabetic); LDL 105.0 (Borderline); HDL 50.0 (Normal); TG 155.0 (Borderline); Overall Diabetic\nM3: HbA1c 8.5 (Diabetic); FBS 174.0 (Diabetic); PPBS 260.0 (Diabetic); LDL 109.0 (Borderline); HDL 51.0 (Normal); TG 148.0 (Normal); Overall Diabetic\nM4: HbA1c 8.2 (Diabetic); FBS 163.0 (Diabetic); PPBS 219.0 (Diabetic); LDL 106.0 (Borderline); HDL 51.0 (Normal); TG 155.0 (Borderline); Overall Diabetic\nM5: HbA1c 8.0 (Diabetic); FBS 163.0 (Diabetic); PPBS 235.0 (Diabetic); LDL 107.0 (Borderline); HDL 52.0 (Normal); TG 146.0 (Normal); Overall Diabetic\nM6: HbA1c 7.4 (Diabetic); FBS 160.0 (Diabetic); PPBS 217.0 (Diabetic); LDL 106.0 (Borderline); HDL 52.0 (Normal); TG 148.0 (Normal); Overall Diabetic\nM7: HbA1c 7.5 (Diabetic); FBS 153.0 (Diabetic); PPBS 230.0 (Diabetic); LDL 108.0 (Borderline); HDL 50.0 (Normal); TG 154.0 (Borderline); Overall Diabetic\nM8: HbA1c 7.2 (Diabetic); FBS 136.0 (Diabetic); PPBS 204.0 (Diabetic); LDL 101.0 (Borderline); HDL 49.0 (Low); TG 152.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q016": {
+  "patient_id": "P033",
+  "trajectory_type": "diabetic_improving",
+  "template": "q_fbs_change",
+  "query_text": "How did my fasting sugar change between Month 1 and Month 8?",
+  "reference": "FBS Month 1 192 mg/dL (Diabetic), Month 8 133 mg/dL (Diabetic); all months: 192, 166, 158, 145, 147, 164, 147, 133.",
+  "query_id": "C2Q016",
+  "answer": "Your fasting blood sugar (FBS) dropped from **192.0 mg/dL in Month 1 to 133.0 mg/dL in Month 8**, a decrease of **59.0 mg/dL**.\n\nThe drop wasn't steady. Readings went 192.0 (Month 1), 166.0 (Month 2), 158.0 (Month 3), 145.0 (Month 4), 147.0 (Month 5), 164.0 (Month 6), 147.0 (Month 7), and 133.0 (Month 8). Values rose again at Month 6 before falling to their lowest point at Month 8.\n\nUsing this lab's reference ranges, an FBS of 126 mg/dL or higher is classified as Diabetic. Both your Month 1 and Month 8 readings fall in that range, although the Month 8 value is lower.\n\nThe model also estimates that your next FBS could be about 137.6 mg/dL. This is a forecast based on your past trend, not a measured result, and it would need a real lab test to confirm.\n\nPlease discuss these results and what they mean for you with your doctor.",
+  "usage": {
+   "input_tokens": 2979,
+   "output_tokens": 878
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 7.42,
+   "predicted_FBS": 137.6,
+   "predicted_PPBS": 205.4,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 8.5 (Diabetic); FBS 192.0 (Diabetic); PPBS 246.0 (Diabetic); LDL 148.0 (High Risk); HDL 50.0 (Normal); TG 169.0 (Borderline); Overall Diabetic\nM2: HbA1c 8.1 (Diabetic); FBS 166.0 (Diabetic); PPBS 225.0 (Diabetic); LDL 143.0 (High Risk); HDL 48.0 (Normal); TG 175.0 (Borderline); Overall Diabetic\nM3: HbA1c 7.8 (Diabetic); FBS 158.0 (Diabetic); PPBS 232.0 (Diabetic); LDL 149.0 (High Risk); HDL 46.0 (Normal); TG 171.0 (Borderline); Overall Diabetic\nM4: HbA1c 7.5 (Diabetic); FBS 145.0 (Diabetic); PPBS 226.0 (Diabetic); LDL 152.0 (High Risk); HDL 49.0 (Normal); TG 167.0 (Borderline); Overall Diabetic\nM5: HbA1c 7.4 (Diabetic); FBS 147.0 (Diabetic); PPBS 223.0 (Diabetic); LDL 147.0 (High Risk); HDL 47.0 (Normal); TG 151.0 (Borderline); Overall Diabetic\nM6: HbA1c 7.3 (Diabetic); FBS 164.0 (Diabetic); PPBS 209.0 (Diabetic); LDL 153.0 (High Risk); HDL 49.0 (Normal); TG 152.0 (Borderline); Overall Diabetic\nM7: HbA1c 7.3 (Diabetic); FBS 147.0 (Diabetic); PPBS 223.0 (Diabetic); LDL 155.0 (High Risk); HDL 49.0 (Normal); TG 164.0 (Borderline); Overall Diabetic\nM8: HbA1c 7.3 (Diabetic); FBS 133.0 (Diabetic); PPBS 204.0 (Diabetic); LDL 163.0 (High Risk); HDL 48.0 (Normal); TG 149.0 (Normal); Overall Diabetic"
+ },
+ "C2Q017": {
+  "patient_id": "P056",
+  "trajectory_type": "diabetic_improving",
+  "template": "q_status",
+  "query_text": "Has my overall status changed during these months?",
+  "reference": "Overall status by month: Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic. Changes: none.",
+  "query_id": "C2Q017",
+  "answer": "**Short answer: No. Your overall status stayed in the same category, Diabetic, for all eight months (Month 1 through Month 8).** The lab reports don't print a category, so I applied the lab's reference ranges. Overall status is Diabetic if either HbA1c or fasting blood sugar (FBS) falls in the diabetic range. In every month, at least one of those was in that range:\n\n- **Month 1:** HbA1c 9.3%, FBS 203 mg/dL\n- **Month 2:** HbA1c 8.6%\n- **Months 3\u20138:** HbA1c between 7.1% and 7.9%, and FBS between 140 and 173 mg/dL\n\nYour numbers did improve over this period. HbA1c dropped from 9.3% to 7.3% in Month 8, with a low of 7.1% in Month 7, and FBS dropped from 203 to 148 mg/dL. Still, they stayed above the diabetic cutoffs, so the overall category didn't change.\n\nOur forecasting model estimates that your next result would also be Diabetic, with a predicted HbA1c of about 7.33%, FBS of about 146.7 mg/dL, and post-meal blood sugar of about 201.1 mg/dL. These are model estimates, not measured results, and they aren't certain. Only real lab testing can confirm them.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what next steps may be appropriate.",
+  "usage": {
+   "input_tokens": 2970,
+   "output_tokens": 1172
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 7.33,
+   "predicted_FBS": 146.7,
+   "predicted_PPBS": 201.1,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 9.3 (Diabetic); FBS 203.0 (Diabetic); PPBS 260.0 (Diabetic); LDL 116.0 (Borderline); HDL 43.0 (Normal); TG 201.0 (High); Overall Diabetic\nM2: HbA1c 8.6 (Diabetic); FBS 202.0 (Diabetic); PPBS 231.0 (Diabetic); LDL 103.0 (Borderline); HDL 46.0 (Normal); TG 190.0 (Borderline); Overall Diabetic\nM3: HbA1c 7.9 (Diabetic); FBS 173.0 (Diabetic); PPBS 212.0 (Diabetic); LDL 103.0 (Borderline); HDL 46.0 (Normal); TG 193.0 (Borderline); Overall Diabetic\nM4: HbA1c 7.6 (Diabetic); FBS 167.0 (Diabetic); PPBS 209.0 (Diabetic); LDL 98.0 (Optimal); HDL 43.0 (Normal); TG 198.0 (Borderline); Overall Diabetic\nM5: HbA1c 7.4 (Diabetic); FBS 144.0 (Diabetic); PPBS 168.0 (Prediabetic); LDL 99.0 (Optimal); HDL 44.0 (Normal); TG 191.0 (Borderline); Overall Diabetic\nM6: HbA1c 7.3 (Diabetic); FBS 150.0 (Diabetic); PPBS 196.0 (Prediabetic); LDL 100.0 (Borderline); HDL 45.0 (Normal); TG 194.0 (Borderline); Overall Diabetic\nM7: HbA1c 7.1 (Diabetic); FBS 140.0 (Diabetic); PPBS 162.0 (Prediabetic); LDL 87.0 (Optimal); HDL 47.0 (Normal); TG 184.0 (Borderline); Overall Diabetic\nM8: HbA1c 7.3 (Diabetic); FBS 148.0 (Diabetic); PPBS 194.0 (Prediabetic); LDL 95.0 (Optimal); HDL 43.0 (Normal); TG 187.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q018": {
+  "patient_id": "P052",
+  "trajectory_type": "diabetic_improving",
+  "template": "q_latest_abnormal",
+  "query_text": "Which of my values in my latest report (Month 8) are outside the normal range?",
+  "reference": "Month 8 outside normal/optimal: HbA1c 6.8 (Diabetic), FBS 143 (Diabetic), PPBS 205 (Diabetic), LDL 108 (Borderline), TG 205 (High).",
+  "query_id": "C2Q018",
+  "answer": "Based on your Month 8 report, these values fall outside the normal range, using the laboratory's reference ranges:\n\n- **HbA1c: 6.8%**, classified as **Diabetic** (6.5% or higher).\n- **Fasting Blood Sugar: 143 mg/dL**, classified as **Diabetic** (126 mg/dL or higher).\n- **Post-Prandial Blood Sugar: 205 mg/dL**, classified as **Diabetic** (200 mg/dL or higher).\n- **LDL Cholesterol: 108 mg/dL**, classified as **Borderline** (100-129 mg/dL).\n- **Triglycerides: 205 mg/dL**, classified as **High** (200 mg/dL or higher).\n\nYour **HDL Cholesterol (46 mg/dL)** is within the normal range for men, since the lab considers HDL low only below 40 mg/dL for men.\n\nThe lab's overall glycemic status for this report is **Diabetic**, because your HbA1c and fasting blood sugar both fall in the diabetic range.\n\nFor background, HbA1c reflects average blood sugar over the past few months, fasting blood sugar is measured after not eating, and post-prandial blood sugar is measured after a meal. LDL is often called \"bad\" cholesterol, and triglycerides are a type of fat in the blood.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what steps, if any, you should take.",
+  "usage": {
+   "input_tokens": 2981,
+   "output_tokens": 978
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 6.9,
+   "predicted_FBS": 147.2,
+   "predicted_PPBS": 196.9,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 8.2 (Diabetic); FBS 175.0 (Diabetic); PPBS 226.0 (Diabetic); LDL 114.0 (Borderline); HDL 51.0 (Normal); TG 190.0 (Borderline); Overall Diabetic\nM2: HbA1c 7.8 (Diabetic); FBS 175.0 (Diabetic); PPBS 216.0 (Diabetic); LDL 108.0 (Borderline); HDL 47.0 (Normal); TG 189.0 (Borderline); Overall Diabetic\nM3: HbA1c 7.4 (Diabetic); FBS 156.0 (Diabetic); PPBS 200.0 (Diabetic); LDL 109.0 (Borderline); HDL 47.0 (Normal); TG 191.0 (Borderline); Overall Diabetic\nM4: HbA1c 7.2 (Diabetic); FBS 138.0 (Diabetic); PPBS 219.0 (Diabetic); LDL 111.0 (Borderline); HDL 48.0 (Normal); TG 179.0 (Borderline); Overall Diabetic\nM5: HbA1c 7.2 (Diabetic); FBS 151.0 (Diabetic); PPBS 214.0 (Diabetic); LDL 105.0 (Borderline); HDL 47.0 (Normal); TG 199.0 (Borderline); Overall Diabetic\nM6: HbA1c 7.1 (Diabetic); FBS 132.0 (Diabetic); PPBS 187.0 (Prediabetic); LDL 103.0 (Borderline); HDL 46.0 (Normal); TG 204.0 (High); Overall Diabetic\nM7: HbA1c 6.9 (Diabetic); FBS 147.0 (Diabetic); PPBS 204.0 (Diabetic); LDL 103.0 (Borderline); HDL 47.0 (Normal); TG 202.0 (High); Overall Diabetic\nM8: HbA1c 6.8 (Diabetic); FBS 143.0 (Diabetic); PPBS 205.0 (Diabetic); LDL 108.0 (Borderline); HDL 46.0 (Normal); TG 205.0 (High); Overall Diabetic"
+ },
+ "C2Q019": {
+  "patient_id": "P018",
+  "trajectory_type": "diabetic_improving",
+  "template": "q_max_ppbs",
+  "query_text": "What was my highest post-meal sugar, and in which month?",
+  "reference": "Highest PPBS 298 mg/dL in Month 1 (Diabetic); all: 298, 264, 230, 213, 191, 180, 194, 190.",
+  "query_id": "C2Q019",
+  "answer": "Your highest post-meal blood sugar (PPBS) was **298 mg/dL, in Month 1**. Your readings then dropped over the following months, to 264 in Month 2, 230 in Month 3, 213 in Month 4, and 180 to 194 in Months 5 through 8.\n\nAccording to this laboratory's reference ranges, a post-meal reading of 200 mg/dL or higher is classified as Diabetic, so the Month 1 reading falls in that category. Your most recent reading in the report, Month 8, was 190 mg/dL, which the lab classifies as Prediabetic.\n\nPlease discuss these results with your doctor, who can explain what they mean for you.",
+  "usage": {
+   "input_tokens": 2976,
+   "output_tokens": 348
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 6.71,
+   "predicted_FBS": 134.5,
+   "predicted_PPBS": 183.8,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 9.8 (Diabetic); FBS 220.0 (Diabetic); PPBS 298.0 (Diabetic); LDL 122.0 (Borderline); HDL 47.0 (Low); TG 184.0 (Borderline); Overall Diabetic\nM2: HbA1c 8.7 (Diabetic); FBS 186.0 (Diabetic); PPBS 264.0 (Diabetic); LDL 122.0 (Borderline); HDL 46.0 (Low); TG 166.0 (Borderline); Overall Diabetic\nM3: HbA1c 7.9 (Diabetic); FBS 160.0 (Diabetic); PPBS 230.0 (Diabetic); LDL 126.0 (Borderline); HDL 48.0 (Low); TG 176.0 (Borderline); Overall Diabetic\nM4: HbA1c 7.4 (Diabetic); FBS 137.0 (Diabetic); PPBS 213.0 (Diabetic); LDL 125.0 (Borderline); HDL 47.0 (Low); TG 196.0 (Borderline); Overall Diabetic\nM5: HbA1c 7.2 (Diabetic); FBS 152.0 (Diabetic); PPBS 191.0 (Prediabetic); LDL 121.0 (Borderline); HDL 47.0 (Low); TG 170.0 (Borderline); Overall Diabetic\nM6: HbA1c 6.8 (Diabetic); FBS 140.0 (Diabetic); PPBS 180.0 (Prediabetic); LDL 116.0 (Borderline); HDL 50.0 (Normal); TG 172.0 (Borderline); Overall Diabetic\nM7: HbA1c 6.9 (Diabetic); FBS 145.0 (Diabetic); PPBS 194.0 (Prediabetic); LDL 123.0 (Borderline); HDL 47.0 (Low); TG 183.0 (Borderline); Overall Diabetic\nM8: HbA1c 6.7 (Diabetic); FBS 132.0 (Diabetic); PPBS 190.0 (Prediabetic); LDL 110.0 (Borderline); HDL 51.0 (Normal); TG 174.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q020": {
+  "patient_id": "P085",
+  "trajectory_type": "diabetic_improving",
+  "template": "q_ldl",
+  "query_text": "Has my LDL cholesterol been a concern across my visits?",
+  "reference": "LDL by month: 121, 126, 122, 116, 116, 112, 121, 120 mg/dL; classes seen: Borderline.",
+  "query_id": "C2Q020",
+  "answer": "Your LDL cholesterol was in the **Borderline** range at every visit, from Month 1 through Month 8, according to this laboratory's reference ranges. None of your readings reached the High Risk level (130 mg/dL or higher), and none fell in the Optimal range (below 100 mg/dL).\n\nYour readings ranged from 112 mg/dL (Month 6, the lowest) to 126 mg/dL (Month 2, the highest). Over the eight months the numbers moved up and down without a clear steady rise or fall. Month 8's reading was 120 mg/dL.\n\nFor background, LDL is often called \"bad\" cholesterol because high levels are linked to a greater risk of heart and blood vessel problems over time. Your report doesn't say how much this should concern you personally. Please discuss these results with your doctor, who can explain what Borderline means for you and whether any follow-up is needed.",
+  "usage": {
+   "input_tokens": 2975,
+   "output_tokens": 553
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 6.75,
+   "predicted_FBS": 126.4,
+   "predicted_PPBS": 186.5,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 9.0 (Diabetic); FBS 183.0 (Diabetic); PPBS 281.0 (Diabetic); LDL 121.0 (Borderline); HDL 41.0 (Low); TG 180.0 (Borderline); Overall Diabetic\nM2: HbA1c 8.1 (Diabetic); FBS 146.0 (Diabetic); PPBS 255.0 (Diabetic); LDL 126.0 (Borderline); HDL 40.0 (Low); TG 194.0 (Borderline); Overall Diabetic\nM3: HbA1c 7.8 (Diabetic); FBS 148.0 (Diabetic); PPBS 213.0 (Diabetic); LDL 122.0 (Borderline); HDL 39.0 (Low); TG 168.0 (Borderline); Overall Diabetic\nM4: HbA1c 7.3 (Diabetic); FBS 133.0 (Diabetic); PPBS 227.0 (Diabetic); LDL 116.0 (Borderline); HDL 41.0 (Low); TG 183.0 (Borderline); Overall Diabetic\nM5: HbA1c 6.8 (Diabetic); FBS 121.0 (Prediabetic); PPBS 186.0 (Prediabetic); LDL 116.0 (Borderline); HDL 42.0 (Low); TG 188.0 (Borderline); Overall Diabetic\nM6: HbA1c 6.6 (Diabetic); FBS 116.0 (Prediabetic); PPBS 182.0 (Prediabetic); LDL 112.0 (Borderline); HDL 41.0 (Low); TG 168.0 (Borderline); Overall Diabetic\nM7: HbA1c 6.8 (Diabetic); FBS 119.0 (Prediabetic); PPBS 203.0 (Diabetic); LDL 121.0 (Borderline); HDL 41.0 (Low); TG 180.0 (Borderline); Overall Diabetic\nM8: HbA1c 6.5 (Diabetic); FBS 114.0 (Prediabetic); PPBS 171.0 (Prediabetic); LDL 120.0 (Borderline); HDL 41.0 (Low); TG 188.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q021": {
+  "patient_id": "P038",
+  "trajectory_type": "diabetic_improving",
+  "template": "q_compare",
+  "query_text": "Compare my Month 4 and Month 8 HbA1c.",
+  "reference": "HbA1c Month 4 7.3% (Diabetic), Month 8 6.9% (Diabetic).",
+  "query_id": "C2Q021",
+  "answer": "**Month 4 HbA1c was 7.3%, and Month 8 was 6.9%.** That is a drop of 0.4 percentage points, so your HbA1c went down over those four months.\n\nUsing the laboratory's reference ranges, a value of 6.5% or higher is classed as Diabetic. Both 7.3% and 6.9% fall in that range, so the lower Month 8 value is an improvement but was still in the Diabetic range according to these thresholds.\n\nFor background, HbA1c reflects your average blood sugar over the previous few months, which is why it is used to track longer-term trends. Please discuss what these numbers mean for you and what steps to take next with your doctor.",
+  "usage": {
+   "input_tokens": 2979,
+   "output_tokens": 561
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 7.01,
+   "predicted_FBS": 146.1,
+   "predicted_PPBS": 194.2,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 9.1 (Diabetic); FBS 198.0 (Diabetic); PPBS 260.0 (Diabetic); LDL 125.0 (Borderline); HDL 41.0 (Normal); TG 162.0 (Borderline); Overall Diabetic\nM2: HbA1c 8.0 (Diabetic); FBS 176.0 (Diabetic); PPBS 227.0 (Diabetic); LDL 126.0 (Borderline); HDL 39.0 (Low); TG 152.0 (Borderline); Overall Diabetic\nM3: HbA1c 7.7 (Diabetic); FBS 159.0 (Diabetic); PPBS 202.0 (Diabetic); LDL 119.0 (Borderline); HDL 42.0 (Normal); TG 155.0 (Borderline); Overall Diabetic\nM4: HbA1c 7.3 (Diabetic); FBS 157.0 (Diabetic); PPBS 177.0 (Prediabetic); LDL 116.0 (Borderline); HDL 42.0 (Normal); TG 153.0 (Borderline); Overall Diabetic\nM5: HbA1c 6.9 (Diabetic); FBS 150.0 (Diabetic); PPBS 207.0 (Diabetic); LDL 108.0 (Borderline); HDL 38.0 (Low); TG 148.0 (Normal); Overall Diabetic\nM6: HbA1c 6.8 (Diabetic); FBS 135.0 (Diabetic); PPBS 164.0 (Prediabetic); LDL 108.0 (Borderline); HDL 39.0 (Low); TG 156.0 (Borderline); Overall Diabetic\nM7: HbA1c 7.0 (Diabetic); FBS 145.0 (Diabetic); PPBS 178.0 (Prediabetic); LDL 110.0 (Borderline); HDL 41.0 (Normal); TG 149.0 (Normal); Overall Diabetic\nM8: HbA1c 6.9 (Diabetic); FBS 145.0 (Diabetic); PPBS 184.0 (Prediabetic); LDL 110.0 (Borderline); HDL 40.0 (Normal); TG 160.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q022": {
+  "patient_id": "P012",
+  "trajectory_type": "diabetic_worsening",
+  "template": "q_trend",
+  "query_text": "Is my HbA1c improving over my visits?",
+  "reference": "HbA1c by month: 7.2, 7.4, 7.5, 7.7, 7.7, 8.2, 8.6, 8.7%. Month 8 is higher than Month 1.",
+  "query_id": "C2Q022",
+  "answer": "**No, your HbA1c has been rising, not improving, across the eight months on record.** It went from 7.2% in Month 1 to 8.7% in Month 8. The increase was gradual at first (7.2%, 7.4%, 7.5%, 7.7%, 7.7%) and then faster (8.2%, 8.6%, 8.7% in Months 6 to 8).\n\nAccording to this laboratory's reference ranges, an HbA1c of 6.5% or higher is classified as Diabetic. Every value in your reports (7.2% to 8.7%) falls in that range. Your other results follow a similar pattern: fasting and post-meal blood sugar were higher in Month 8 than in Month 1.\n\nThe forecasting model estimates that your next HbA1c could be about 8.86%. This is a prediction based on your past trend, not a measured result, and real lab testing would be needed to confirm it.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what steps may be appropriate.",
+  "usage": {
+   "input_tokens": 2973,
+   "output_tokens": 618
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 8.86,
+   "predicted_FBS": 190.4,
+   "predicted_PPBS": 264.4,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 7.2 (Diabetic); FBS 149.0 (Diabetic); PPBS 196.0 (Prediabetic); LDL 99.0 (Optimal); HDL 49.0 (Low); TG 227.0 (High); Overall Diabetic\nM2: HbA1c 7.4 (Diabetic); FBS 143.0 (Diabetic); PPBS 215.0 (Diabetic); LDL 106.0 (Borderline); HDL 47.0 (Low); TG 228.0 (High); Overall Diabetic\nM3: HbA1c 7.5 (Diabetic); FBS 164.0 (Diabetic); PPBS 226.0 (Diabetic); LDL 111.0 (Borderline); HDL 47.0 (Low); TG 234.0 (High); Overall Diabetic\nM4: HbA1c 7.7 (Diabetic); FBS 150.0 (Diabetic); PPBS 238.0 (Diabetic); LDL 107.0 (Borderline); HDL 45.0 (Low); TG 218.0 (High); Overall Diabetic\nM5: HbA1c 7.7 (Diabetic); FBS 170.0 (Diabetic); PPBS 238.0 (Diabetic); LDL 114.0 (Borderline); HDL 45.0 (Low); TG 204.0 (High); Overall Diabetic\nM6: HbA1c 8.2 (Diabetic); FBS 175.0 (Diabetic); PPBS 258.0 (Diabetic); LDL 106.0 (Borderline); HDL 45.0 (Low); TG 218.0 (High); Overall Diabetic\nM7: HbA1c 8.6 (Diabetic); FBS 195.0 (Diabetic); PPBS 251.0 (Diabetic); LDL 115.0 (Borderline); HDL 44.0 (Low); TG 225.0 (High); Overall Diabetic\nM8: HbA1c 8.7 (Diabetic); FBS 182.0 (Diabetic); PPBS 285.0 (Diabetic); LDL 107.0 (Borderline); HDL 44.0 (Low); TG 211.0 (High); Overall Diabetic"
+ },
+ "C2Q023": {
+  "patient_id": "P003",
+  "trajectory_type": "diabetic_worsening",
+  "template": "q_fbs_change",
+  "query_text": "How did my fasting sugar change between Month 1 and Month 8?",
+  "reference": "FBS Month 1 156 mg/dL (Diabetic), Month 8 178 mg/dL (Diabetic); all months: 156, 156, 179, 178, 182, 191, 183, 178.",
+  "query_id": "C2Q023",
+  "answer": "Your fasting blood sugar (FBS) rose from **156.0 mg/dL in Month 1** to **178.0 mg/dL in Month 8**, an increase of 22.0 mg/dL.\n\nThe values did not rise steadily. They were 156.0 in Months 1 and 2, 179.0 in Month 3, 178.0 in Month 4, 182.0 in Month 5, and 191.0 in Month 6, which was the highest point. They then came down to 183.0 in Month 7 and 178.0 in Month 8.\n\nUsing this laboratory's reference ranges, a fasting blood sugar of 126 mg/dL or higher is classified as Diabetic. Both your Month 1 and Month 8 values fall in that range.\n\nBased on your trend, our forecasting model estimates your next fasting blood sugar at about 181.2 mg/dL. This is a model estimate, not a measured result, and it is not certain. Only a real lab test can confirm it.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what next steps may be appropriate.",
+  "usage": {
+   "input_tokens": 2978,
+   "output_tokens": 752
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 9.25,
+   "predicted_FBS": 181.2,
+   "predicted_PPBS": 260.9,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 7.6 (Diabetic); FBS 156.0 (Diabetic); PPBS 221.0 (Diabetic); LDL 103.0 (Borderline); HDL 47.0 (Low); TG 211.0 (High); Overall Diabetic\nM2: HbA1c 7.9 (Diabetic); FBS 156.0 (Diabetic); PPBS 211.0 (Diabetic); LDL 98.0 (Optimal); HDL 46.0 (Low); TG 194.0 (Borderline); Overall Diabetic\nM3: HbA1c 8.1 (Diabetic); FBS 179.0 (Diabetic); PPBS 225.0 (Diabetic); LDL 104.0 (Borderline); HDL 49.0 (Low); TG 201.0 (High); Overall Diabetic\nM4: HbA1c 8.4 (Diabetic); FBS 178.0 (Diabetic); PPBS 247.0 (Diabetic); LDL 113.0 (Borderline); HDL 47.0 (Low); TG 208.0 (High); Overall Diabetic\nM5: HbA1c 8.4 (Diabetic); FBS 182.0 (Diabetic); PPBS 231.0 (Diabetic); LDL 104.0 (Borderline); HDL 50.0 (Normal); TG 207.0 (High); Overall Diabetic\nM6: HbA1c 9.0 (Diabetic); FBS 191.0 (Diabetic); PPBS 266.0 (Diabetic); LDL 108.0 (Borderline); HDL 48.0 (Low); TG 205.0 (High); Overall Diabetic\nM7: HbA1c 8.9 (Diabetic); FBS 183.0 (Diabetic); PPBS 260.0 (Diabetic); LDL 115.0 (Borderline); HDL 43.0 (Low); TG 210.0 (High); Overall Diabetic\nM8: HbA1c 9.1 (Diabetic); FBS 178.0 (Diabetic); PPBS 256.0 (Diabetic); LDL 112.0 (Borderline); HDL 48.0 (Low); TG 206.0 (High); Overall Diabetic"
+ },
+ "C2Q024": {
+  "patient_id": "P094",
+  "trajectory_type": "diabetic_worsening",
+  "template": "q_status",
+  "query_text": "Has my overall status changed during these months?",
+  "reference": "Overall status by month: Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic. Changes: none.",
+  "query_id": "C2Q024",
+  "answer": "**No, your overall status has not changed.** Applying the laboratory's reference ranges to each month's results, your overall glycemic status was **Diabetic in every month from Month 1 through Month 8**. The reports don't print these classifications, so this is based on the lab's rules. Your HbA1c (8.4% to 10.0%) and fasting blood sugar (164 to 200 mg/dL) were in the Diabetic range throughout, and your post-meal blood sugar (214 to 296 mg/dL) was also in the Diabetic range (200 mg/dL or higher) in every month.\n\nWhile the category stayed the same, your numbers generally rose over this period. Your HbA1c was 8.4% in Month 1 and 10.0% in Month 8, and your fasting and post-meal blood sugar readings also trended upward, with some month-to-month variation.\n\nOur forecasting model estimates that your next HbA1c would be about 10.0% and your next risk category would remain Diabetic. This is a model estimate, not a measured result, and it isn't a certainty. Only a real lab test can confirm your actual values. Please discuss these results and what they mean for your care with your doctor.",
+  "usage": {
+   "input_tokens": 2969,
+   "output_tokens": 979
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 10.0,
+   "predicted_FBS": 200.1,
+   "predicted_PPBS": 295.8,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 8.4 (Diabetic); FBS 164.0 (Diabetic); PPBS 214.0 (Diabetic); LDL 130.0 (High Risk); HDL 43.0 (Normal); TG 163.0 (Borderline); Overall Diabetic\nM2: HbA1c 8.7 (Diabetic); FBS 177.0 (Diabetic); PPBS 275.0 (Diabetic); LDL 133.0 (High Risk); HDL 40.0 (Normal); TG 167.0 (Borderline); Overall Diabetic\nM3: HbA1c 9.0 (Diabetic); FBS 171.0 (Diabetic); PPBS 252.0 (Diabetic); LDL 125.0 (Borderline); HDL 43.0 (Normal); TG 174.0 (Borderline); Overall Diabetic\nM4: HbA1c 9.1 (Diabetic); FBS 177.0 (Diabetic); PPBS 261.0 (Diabetic); LDL 122.0 (Borderline); HDL 40.0 (Normal); TG 151.0 (Borderline); Overall Diabetic\nM5: HbA1c 9.5 (Diabetic); FBS 193.0 (Diabetic); PPBS 285.0 (Diabetic); LDL 123.0 (Borderline); HDL 43.0 (Normal); TG 167.0 (Borderline); Overall Diabetic\nM6: HbA1c 9.5 (Diabetic); FBS 185.0 (Diabetic); PPBS 283.0 (Diabetic); LDL 127.0 (Borderline); HDL 38.0 (Low); TG 174.0 (Borderline); Overall Diabetic\nM7: HbA1c 9.7 (Diabetic); FBS 200.0 (Diabetic); PPBS 269.0 (Diabetic); LDL 126.0 (Borderline); HDL 38.0 (Low); TG 172.0 (Borderline); Overall Diabetic\nM8: HbA1c 10.0 (Diabetic); FBS 199.0 (Diabetic); PPBS 296.0 (Diabetic); LDL 125.0 (Borderline); HDL 40.0 (Normal); TG 178.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q025": {
+  "patient_id": "P080",
+  "trajectory_type": "diabetic_worsening",
+  "template": "q_latest_abnormal",
+  "query_text": "Which of my values in my latest report (Month 8) are outside the normal range?",
+  "reference": "Month 8 outside normal/optimal: HbA1c 8 (Diabetic), FBS 168 (Diabetic), PPBS 207 (Diabetic), LDL 124 (Borderline), HDL 35 (Low).",
+  "query_id": "C2Q025",
+  "answer": "In your Month 8 report, **four values are outside the normal range** according to the laboratory's reference ranges:\n\n- **HbA1c: 8.0%.** This is in the **Diabetic** range (6.5% or higher).\n- **Fasting Blood Sugar: 168.0 mg/dL.** This is in the **Diabetic** range (126 mg/dL or higher).\n- **Post-Prandial Blood Sugar: 207.0 mg/dL.** This is in the **Diabetic** range (200 mg/dL or higher).\n- **HDL Cholesterol: 35.0 mg/dL.** This is **Low** for a man (below 40 mg/dL).\n\nYour **LDL Cholesterol (124.0 mg/dL)** is in the **Borderline** range (100-129 mg/dL). It is not in the \"Optimal\" range, which is below 100 mg/dL. Your **Triglycerides (130.0 mg/dL)** are within the **Normal** range (below 150 mg/dL).\n\nBased on the lab's criteria, your overall glycemic status for Month 8 is **Diabetic**.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what steps, if any, are appropriate.",
+  "usage": {
+   "input_tokens": 2982,
+   "output_tokens": 836
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 8.22,
+   "predicted_FBS": 170.0,
+   "predicted_PPBS": 226.9,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 6.8 (Diabetic); FBS 135.0 (Diabetic); PPBS 168.0 (Prediabetic); LDL 130.0 (High Risk); HDL 33.0 (Low); TG 161.0 (Borderline); Overall Diabetic\nM2: HbA1c 7.2 (Diabetic); FBS 148.0 (Diabetic); PPBS 176.0 (Prediabetic); LDL 130.0 (High Risk); HDL 37.0 (Low); TG 147.0 (Normal); Overall Diabetic\nM3: HbA1c 7.4 (Diabetic); FBS 151.0 (Diabetic); PPBS 176.0 (Prediabetic); LDL 128.0 (Borderline); HDL 37.0 (Low); TG 150.0 (Borderline); Overall Diabetic\nM4: HbA1c 7.3 (Diabetic); FBS 152.0 (Diabetic); PPBS 207.0 (Diabetic); LDL 134.0 (High Risk); HDL 33.0 (Low); TG 149.0 (Normal); Overall Diabetic\nM5: HbA1c 7.5 (Diabetic); FBS 160.0 (Diabetic); PPBS 193.0 (Prediabetic); LDL 132.0 (High Risk); HDL 37.0 (Low); TG 130.0 (Normal); Overall Diabetic\nM6: HbA1c 7.6 (Diabetic); FBS 152.0 (Diabetic); PPBS 215.0 (Diabetic); LDL 132.0 (High Risk); HDL 35.0 (Low); TG 135.0 (Normal); Overall Diabetic\nM7: HbA1c 7.6 (Diabetic); FBS 153.0 (Diabetic); PPBS 195.0 (Prediabetic); LDL 133.0 (High Risk); HDL 34.0 (Low); TG 127.0 (Normal); Overall Diabetic\nM8: HbA1c 8.0 (Diabetic); FBS 168.0 (Diabetic); PPBS 207.0 (Diabetic); LDL 124.0 (Borderline); HDL 35.0 (Low); TG 130.0 (Normal); Overall Diabetic"
+ },
+ "C2Q026": {
+  "patient_id": "P084",
+  "trajectory_type": "diabetic_worsening",
+  "template": "q_max_ppbs",
+  "query_text": "What was my highest post-meal sugar, and in which month?",
+  "reference": "Highest PPBS 254 mg/dL in Month 7 (Diabetic); all: 169, 193, 208, 214, 236, 221, 254, 248.",
+  "query_id": "C2Q026",
+  "answer": "Your highest post-meal blood sugar (PPBS) was **254 mg/dL, in Month 7**.\n\nFor context, this laboratory classifies post-meal sugar of 200 mg/dL or higher as Diabetic. Your readings rose over the months, from 169 mg/dL in Month 1 to 254 mg/dL in Month 7, and Month 8 was 248 mg/dL.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what the next steps should be.",
+  "usage": {
+   "input_tokens": 2975,
+   "output_tokens": 315
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 9.13,
+   "predicted_FBS": 197.6,
+   "predicted_PPBS": 259.9,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 7.1 (Diabetic); FBS 138.0 (Diabetic); PPBS 169.0 (Prediabetic); LDL 143.0 (High Risk); HDL 37.0 (Low); TG 211.0 (High); Overall Diabetic\nM2: HbA1c 7.5 (Diabetic); FBS 146.0 (Diabetic); PPBS 193.0 (Prediabetic); LDL 136.0 (High Risk); HDL 33.0 (Low); TG 220.0 (High); Overall Diabetic\nM3: HbA1c 7.5 (Diabetic); FBS 144.0 (Diabetic); PPBS 208.0 (Diabetic); LDL 144.0 (High Risk); HDL 33.0 (Low); TG 227.0 (High); Overall Diabetic\nM4: HbA1c 8.0 (Diabetic); FBS 162.0 (Diabetic); PPBS 214.0 (Diabetic); LDL 144.0 (High Risk); HDL 32.0 (Low); TG 217.0 (High); Overall Diabetic\nM5: HbA1c 8.1 (Diabetic); FBS 167.0 (Diabetic); PPBS 236.0 (Diabetic); LDL 143.0 (High Risk); HDL 32.0 (Low); TG 231.0 (High); Overall Diabetic\nM6: HbA1c 8.3 (Diabetic); FBS 190.0 (Diabetic); PPBS 221.0 (Diabetic); LDL 155.0 (High Risk); HDL 31.0 (Low); TG 218.0 (High); Overall Diabetic\nM7: HbA1c 8.7 (Diabetic); FBS 184.0 (Diabetic); PPBS 254.0 (Diabetic); LDL 146.0 (High Risk); HDL 33.0 (Low); TG 211.0 (High); Overall Diabetic\nM8: HbA1c 8.9 (Diabetic); FBS 194.0 (Diabetic); PPBS 248.0 (Diabetic); LDL 149.0 (High Risk); HDL 33.0 (Low); TG 211.0 (High); Overall Diabetic"
+ },
+ "C2Q027": {
+  "patient_id": "P037",
+  "trajectory_type": "diabetic_worsening",
+  "template": "q_ldl",
+  "query_text": "Has my LDL cholesterol been a concern across my visits?",
+  "reference": "LDL by month: 145, 140, 148, 148, 150, 149, 144, 155 mg/dL; classes seen: High Risk.",
+  "query_id": "C2Q027",
+  "answer": "Yes. Your LDL (\"bad\") cholesterol has been in the **High Risk** range at every visit, according to this laboratory's reference ranges (130 mg/dL or higher).\n\n- **Month 1:** 145 mg/dL\n- **Month 2:** 140 mg/dL\n- **Month 3:** 148 mg/dL\n- **Month 4:** 148 mg/dL\n- **Month 5:** 150 mg/dL\n- **Month 6:** 149 mg/dL\n- **Month 7:** 144 mg/dL\n- **Month 8:** 155 mg/dL\n\nThe level stayed fairly steady in the 140s for most of the period, then rose to 155 mg/dL at Month 8, your highest reading. The lab's ranges place values below 100 mg/dL in the \"Optimal\" category and 100 to 129 mg/dL in \"Borderline,\" and none of your readings fell in either.\n\nThe forecasting model did not produce an LDL prediction, so I can't say where this number is heading. Please talk with your doctor about these results and what they mean for you.",
+  "usage": {
+   "input_tokens": 2978,
+   "output_tokens": 596
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 9.35,
+   "predicted_FBS": 201.9,
+   "predicted_PPBS": 270.7,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 7.3 (Diabetic); FBS 146.0 (Diabetic); PPBS 223.0 (Diabetic); LDL 145.0 (High Risk); HDL 43.0 (Normal); TG 145.0 (Normal); Overall Diabetic\nM2: HbA1c 7.6 (Diabetic); FBS 146.0 (Diabetic); PPBS 188.0 (Prediabetic); LDL 140.0 (High Risk); HDL 40.0 (Normal); TG 144.0 (Normal); Overall Diabetic\nM3: HbA1c 7.7 (Diabetic); FBS 140.0 (Diabetic); PPBS 199.0 (Prediabetic); LDL 148.0 (High Risk); HDL 40.0 (Normal); TG 155.0 (Borderline); Overall Diabetic\nM4: HbA1c 8.0 (Diabetic); FBS 169.0 (Diabetic); PPBS 220.0 (Diabetic); LDL 148.0 (High Risk); HDL 40.0 (Normal); TG 133.0 (Normal); Overall Diabetic\nM5: HbA1c 8.3 (Diabetic); FBS 168.0 (Diabetic); PPBS 224.0 (Diabetic); LDL 150.0 (High Risk); HDL 40.0 (Normal); TG 145.0 (Normal); Overall Diabetic\nM6: HbA1c 8.4 (Diabetic); FBS 175.0 (Diabetic); PPBS 240.0 (Diabetic); LDL 149.0 (High Risk); HDL 40.0 (Normal); TG 146.0 (Normal); Overall Diabetic\nM7: HbA1c 8.6 (Diabetic); FBS 170.0 (Diabetic); PPBS 226.0 (Diabetic); LDL 144.0 (High Risk); HDL 39.0 (Low); TG 132.0 (Normal); Overall Diabetic\nM8: HbA1c 9.1 (Diabetic); FBS 196.0 (Diabetic); PPBS 264.0 (Diabetic); LDL 155.0 (High Risk); HDL 39.0 (Low); TG 119.0 (Normal); Overall Diabetic"
+ },
+ "C2Q028": {
+  "patient_id": "P011",
+  "trajectory_type": "diabetic_worsening",
+  "template": "q_compare",
+  "query_text": "Compare my Month 4 and Month 8 HbA1c.",
+  "reference": "HbA1c Month 4 8.8% (Diabetic), Month 8 10% (Diabetic).",
+  "query_id": "C2Q028",
+  "answer": "Your HbA1c rose from **8.8% at Month 4** to **10.0% at Month 8**, an increase of **1.2 percentage points**.\n\nFor background, HbA1c is a blood test that reflects your average blood sugar over the past few months. Using this laboratory's reference ranges, a value of 6.5% or higher is classified as Diabetic. Both your Month 4 (8.8%) and Month 8 (10.0%) results fall in that range, and your Month 8 value is the higher of the two.\n\nPlease discuss these results with your doctor, who can explain what they mean for your care.",
+  "usage": {
+   "input_tokens": 2979,
+   "output_tokens": 415
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 10.09,
+   "predicted_FBS": 223.7,
+   "predicted_PPBS": 288.8,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 7.9 (Diabetic); FBS 181.0 (Diabetic); PPBS 199.0 (Prediabetic); LDL 125.0 (Borderline); HDL 51.0 (Normal); TG 178.0 (Borderline); Overall Diabetic\nM2: HbA1c 8.4 (Diabetic); FBS 167.0 (Diabetic); PPBS 231.0 (Diabetic); LDL 131.0 (High Risk); HDL 52.0 (Normal); TG 191.0 (Borderline); Overall Diabetic\nM3: HbA1c 8.4 (Diabetic); FBS 180.0 (Diabetic); PPBS 244.0 (Diabetic); LDL 127.0 (Borderline); HDL 50.0 (Normal); TG 204.0 (High); Overall Diabetic\nM4: HbA1c 8.8 (Diabetic); FBS 200.0 (Diabetic); PPBS 242.0 (Diabetic); LDL 127.0 (Borderline); HDL 51.0 (Normal); TG 193.0 (Borderline); Overall Diabetic\nM5: HbA1c 9.1 (Diabetic); FBS 205.0 (Diabetic); PPBS 246.0 (Diabetic); LDL 132.0 (High Risk); HDL 50.0 (Normal); TG 185.0 (Borderline); Overall Diabetic\nM6: HbA1c 9.4 (Diabetic); FBS 206.0 (Diabetic); PPBS 266.0 (Diabetic); LDL 137.0 (High Risk); HDL 52.0 (Normal); TG 213.0 (High); Overall Diabetic\nM7: HbA1c 9.6 (Diabetic); FBS 204.0 (Diabetic); PPBS 272.0 (Diabetic); LDL 141.0 (High Risk); HDL 50.0 (Normal); TG 202.0 (High); Overall Diabetic\nM8: HbA1c 10.0 (Diabetic); FBS 223.0 (Diabetic); PPBS 278.0 (Diabetic); LDL 132.0 (High Risk); HDL 50.0 (Normal); TG 202.0 (High); Overall Diabetic"
+ },
+ "C2Q029": {
+  "patient_id": "P027",
+  "trajectory_type": "normal_stable",
+  "template": "q_trend",
+  "query_text": "Is my HbA1c improving over my visits?",
+  "reference": "HbA1c by month: 5.5, 5.4, 5.6, 5.1, 5.3, 5.3, 5.4, 5.4%. Month 8 is lower than Month 1.",
+  "query_id": "C2Q029",
+  "answer": "Your HbA1c has stayed in the same general range across your visits, with no clear trend of improvement. Here are the readings in order:\n\n- Month 1: 5.5%\n- Month 2: 5.4%\n- Month 3: 5.6%\n- Month 4: 5.1%\n- Month 5: 5.3%\n- Month 6: 5.3%\n- Month 7: 5.4%\n- Month 8: 5.4%\n\nYour lowest reading was 5.1% in Month 4. Since then it has risen slightly and levelled off at 5.4%, which is about where it was at Month 1 (5.5%). All of your readings are below 5.7%, which this laboratory classifies as Normal.\n\nFor background, HbA1c is a blood test that reflects average blood sugar over the previous few months. Small month-to-month changes like these are common.\n\nOur forecasting model estimates your next HbA1c at about 5.41%. This is a prediction, not a measured result, and it is only an estimate, not a certainty. Only a real lab test can confirm your actual value. Please discuss your results and what they mean for you with your doctor.",
+  "usage": {
+   "input_tokens": 2970,
+   "output_tokens": 618
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 5.41,
+   "predicted_FBS": 88.2,
+   "predicted_PPBS": 136.0,
+   "predicted_status": "Normal"
+  },
+  "true_record": "M1: HbA1c 5.5 (Normal); FBS 96.0 (Normal); PPBS 129.0 (Normal); LDL 68.0 (Optimal); HDL 69.0 (Normal); TG 130.0 (Normal); Overall Normal\nM2: HbA1c 5.4 (Normal); FBS 88.0 (Normal); PPBS 123.0 (Normal); LDL 76.0 (Optimal); HDL 69.0 (Normal); TG 154.0 (Borderline); Overall Normal\nM3: HbA1c 5.6 (Normal); FBS 98.0 (Normal); PPBS 131.0 (Normal); LDL 76.0 (Optimal); HDL 69.0 (Normal); TG 150.0 (Borderline); Overall Normal\nM4: HbA1c 5.1 (Normal); FBS 78.0 (Normal); PPBS 113.0 (Normal); LDL 79.0 (Optimal); HDL 67.0 (Normal); TG 152.0 (Borderline); Overall Normal\nM5: HbA1c 5.3 (Normal); FBS 88.0 (Normal); PPBS 137.0 (Normal); LDL 88.0 (Optimal); HDL 67.0 (Normal); TG 144.0 (Normal); Overall Normal\nM6: HbA1c 5.3 (Normal); FBS 80.0 (Normal); PPBS 127.0 (Normal); LDL 86.0 (Optimal); HDL 68.0 (Normal); TG 150.0 (Borderline); Overall Normal\nM7: HbA1c 5.4 (Normal); FBS 87.0 (Normal); PPBS 113.0 (Normal); LDL 80.0 (Optimal); HDL 69.0 (Normal); TG 151.0 (Borderline); Overall Normal\nM8: HbA1c 5.4 (Normal); FBS 85.0 (Normal); PPBS 159.0 (Prediabetic); LDL 80.0 (Optimal); HDL 68.0 (Normal); TG 154.0 (Borderline); Overall Normal"
+ },
+ "C2Q030": {
+  "patient_id": "P058",
+  "trajectory_type": "normal_stable",
+  "template": "q_fbs_change",
+  "query_text": "How did my fasting sugar change between Month 1 and Month 8?",
+  "reference": "FBS Month 1 89 mg/dL (Normal), Month 8 94 mg/dL (Normal); all months: 89, 96, 82, 90, 95, 94, 88, 94.",
+  "query_id": "C2Q030",
+  "answer": "Your fasting blood sugar went up slightly, from **89.0 mg/dL in Month 1 to 94.0 mg/dL in Month 8**, an increase of 5.0 mg/dL.\n\nBoth results are in the **Normal** range. Under this laboratory's reference ranges, fasting blood sugar below 100 mg/dL is Normal. Your readings stayed below 100 at every month shown in the report. The values did move up and down over the eight months, from a low of 82.0 mg/dL in Month 3 to a high of 96.0 mg/dL in Month 2.\n\nFor background, fasting blood sugar is measured after you have not eaten for a period of time, and it gives a snapshot of your blood sugar at rest.\n\nPlease discuss these results with your doctor, who can explain what they mean for you.",
+  "usage": {
+   "input_tokens": 2978,
+   "output_tokens": 418
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 5.17,
+   "predicted_FBS": 93.7,
+   "predicted_PPBS": 129.6,
+   "predicted_status": "Normal"
+  },
+  "true_record": "M1: HbA1c 5.3 (Normal); FBS 89.0 (Normal); PPBS 153.0 (Prediabetic); LDL 76.0 (Optimal); HDL 61.0 (Normal); TG 126.0 (Normal); Overall Normal\nM2: HbA1c 5.2 (Normal); FBS 96.0 (Normal); PPBS 122.0 (Normal); LDL 77.0 (Optimal); HDL 61.0 (Normal); TG 138.0 (Normal); Overall Normal\nM3: HbA1c 5.2 (Normal); FBS 82.0 (Normal); PPBS 138.0 (Normal); LDL 79.0 (Optimal); HDL 61.0 (Normal); TG 126.0 (Normal); Overall Normal\nM4: HbA1c 5.0 (Normal); FBS 90.0 (Normal); PPBS 137.0 (Normal); LDL 82.0 (Optimal); HDL 62.0 (Normal); TG 133.0 (Normal); Overall Normal\nM5: HbA1c 5.2 (Normal); FBS 95.0 (Normal); PPBS 131.0 (Normal); LDL 86.0 (Optimal); HDL 60.0 (Normal); TG 131.0 (Normal); Overall Normal\nM6: HbA1c 5.1 (Normal); FBS 94.0 (Normal); PPBS 124.0 (Normal); LDL 84.0 (Optimal); HDL 63.0 (Normal); TG 152.0 (Borderline); Overall Normal\nM7: HbA1c 5.1 (Normal); FBS 88.0 (Normal); PPBS 132.0 (Normal); LDL 87.0 (Optimal); HDL 65.0 (Normal); TG 151.0 (Borderline); Overall Normal\nM8: HbA1c 5.2 (Normal); FBS 94.0 (Normal); PPBS 144.0 (Prediabetic); LDL 79.0 (Optimal); HDL 62.0 (Normal); TG 160.0 (Borderline); Overall Normal"
+ },
+ "C2Q031": {
+  "patient_id": "P060",
+  "trajectory_type": "normal_stable",
+  "template": "q_status",
+  "query_text": "Has my overall status changed during these months?",
+  "reference": "Overall status by month: Normal, Prediabetic, Prediabetic, Normal, Normal, Normal, Prediabetic, Normal. Changes: Month 2: Normal -> Prediabetic; Month 4: Prediabetic -> Normal; Month 7: Normal -> Prediabetic; Month 8: Prediabetic -> Normal.",
+  "query_id": "C2Q031",
+  "answer": "Yes, your overall status changed several times across the eight months. It was **Normal** in Month 1, **Prediabetic** in Months 2 and 3, **Normal** in Months 4 through 6, **Prediabetic** in Month 7, and **Normal** in Month 8.\n\nYour overall status is based on your HbA1c and fasting blood sugar (FBS) readings. In every month your HbA1c stayed in the normal range (5.0% to 5.3%). The changes came from FBS, which was in the prediabetic range (100 to 125 mg/dL) in Month 2 (102), Month 3 (100), and Month 7 (103). In the other months it was below 100 mg/dL.\n\nYour post-meal blood sugar (PPBS) readings were above the normal range (below 140 mg/dL) in Months 2 (152), 3 (145), and 8 (162). The laboratory's overall status rule doesn't include PPBS, so these readings don't affect the overall label. However, they are in the prediabetic range for that test, so you may want to ask your doctor about them.\n\nOur forecasting model estimates that your next HbA1c will be about 5.29%, your next FBS about 89.7 mg/dL, and your next PPBS about 133.9 mg/dL, with a predicted overall category of Normal. This is only an estimate, not a measured result, and it isn't a certainty. Only a real lab test can confirm your actual values.\n\nPlease discuss these results and what they mean for you with your doctor.",
+  "usage": {
+   "input_tokens": 2966,
+   "output_tokens": 1253
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 5.29,
+   "predicted_FBS": 89.7,
+   "predicted_PPBS": 133.9,
+   "predicted_status": "Normal"
+  },
+  "true_record": "M1: HbA1c 5.2 (Normal); FBS 97.0 (Normal); PPBS 136.0 (Normal); LDL 87.0 (Optimal); HDL 68.0 (Normal); TG 81.0 (Normal); Overall Normal\nM2: HbA1c 5.2 (Normal); FBS 102.0 (Prediabetic); PPBS 152.0 (Prediabetic); LDL 88.0 (Optimal); HDL 68.0 (Normal); TG 99.0 (Normal); Overall Prediabetic\nM3: HbA1c 5.2 (Normal); FBS 100.0 (Prediabetic); PPBS 145.0 (Prediabetic); LDL 91.0 (Optimal); HDL 64.0 (Normal); TG 124.0 (Normal); Overall Prediabetic\nM4: HbA1c 5.2 (Normal); FBS 87.0 (Normal); PPBS 129.0 (Normal); LDL 87.0 (Optimal); HDL 66.0 (Normal); TG 94.0 (Normal); Overall Normal\nM5: HbA1c 5.1 (Normal); FBS 92.0 (Normal); PPBS 119.0 (Normal); LDL 80.0 (Optimal); HDL 67.0 (Normal); TG 116.0 (Normal); Overall Normal\nM6: HbA1c 5.0 (Normal); FBS 89.0 (Normal); PPBS 120.0 (Normal); LDL 81.0 (Optimal); HDL 64.0 (Normal); TG 123.0 (Normal); Overall Normal\nM7: HbA1c 5.1 (Normal); FBS 103.0 (Prediabetic); PPBS 124.0 (Normal); LDL 83.0 (Optimal); HDL 65.0 (Normal); TG 127.0 (Normal); Overall Prediabetic\nM8: HbA1c 5.3 (Normal); FBS 87.0 (Normal); PPBS 162.0 (Prediabetic); LDL 80.0 (Optimal); HDL 69.0 (Normal); TG 125.0 (Normal); Overall Normal"
+ },
+ "C2Q032": {
+  "patient_id": "P017",
+  "trajectory_type": "normal_stable",
+  "template": "q_latest_abnormal",
+  "query_text": "Which of my values in my latest report (Month 8) are outside the normal range?",
+  "reference": "Month 8 outside normal/optimal: none.",
+  "query_id": "C2Q032",
+  "answer": "**None of your Month 8 values are outside the normal range** based on the reference ranges this laboratory uses.\n\n- **HbA1c (5.3%):** Normal (below 5.7%)\n- **Fasting Blood Sugar (82 mg/dL):** Normal (below 100 mg/dL)\n- **Post-Prandial Blood Sugar (127 mg/dL):** Normal (below 140 mg/dL)\n- **LDL Cholesterol (69 mg/dL):** Optimal (below 100 mg/dL)\n- **HDL Cholesterol (66 mg/dL):** Normal (for women, Low is below 50 mg/dL)\n- **Triglycerides (116 mg/dL):** Normal (below 150 mg/dL)\n\nBased on these values, your overall glycemic status for Month 8 is Normal. The report itself doesn't print these categories, so they come from the laboratory's reference ranges. Please go over your results with your doctor, who can explain what they mean for you.",
+  "usage": {
+   "input_tokens": 2980,
+   "output_tokens": 560
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 5.34,
+   "predicted_FBS": 83.3,
+   "predicted_PPBS": 128.7,
+   "predicted_status": "Normal"
+  },
+  "true_record": "M1: HbA1c 5.4 (Normal); FBS 96.0 (Normal); PPBS 130.0 (Normal); LDL 57.0 (Optimal); HDL 68.0 (Normal); TG 117.0 (Normal); Overall Normal\nM2: HbA1c 5.3 (Normal); FBS 94.0 (Normal); PPBS 113.0 (Normal); LDL 62.0 (Optimal); HDL 64.0 (Normal); TG 111.0 (Normal); Overall Normal\nM3: HbA1c 5.2 (Normal); FBS 97.0 (Normal); PPBS 125.0 (Normal); LDL 71.0 (Optimal); HDL 65.0 (Normal); TG 104.0 (Normal); Overall Normal\nM4: HbA1c 5.2 (Normal); FBS 84.0 (Normal); PPBS 126.0 (Normal); LDL 68.0 (Optimal); HDL 64.0 (Normal); TG 119.0 (Normal); Overall Normal\nM5: HbA1c 5.3 (Normal); FBS 91.0 (Normal); PPBS 114.0 (Normal); LDL 67.0 (Optimal); HDL 63.0 (Normal); TG 109.0 (Normal); Overall Normal\nM6: HbA1c 5.0 (Normal); FBS 74.0 (Normal); PPBS 143.0 (Prediabetic); LDL 72.0 (Optimal); HDL 67.0 (Normal); TG 113.0 (Normal); Overall Normal\nM7: HbA1c 5.1 (Normal); FBS 83.0 (Normal); PPBS 145.0 (Prediabetic); LDL 64.0 (Optimal); HDL 67.0 (Normal); TG 94.0 (Normal); Overall Normal\nM8: HbA1c 5.3 (Normal); FBS 82.0 (Normal); PPBS 127.0 (Normal); LDL 69.0 (Optimal); HDL 66.0 (Normal); TG 116.0 (Normal); Overall Normal"
+ },
+ "C2Q033": {
+  "patient_id": "P028",
+  "trajectory_type": "normal_stable",
+  "template": "q_max_ppbs",
+  "query_text": "What was my highest post-meal sugar, and in which month?",
+  "reference": "Highest PPBS 118 mg/dL in Month 4 (Normal); all: 112, 104, 117, 118, 114, 99, 80, 84.",
+  "query_id": "C2Q033",
+  "answer": "Your highest post-meal blood sugar (post-prandial blood sugar, measured after eating) was **118 mg/dL in Month 4**.\n\nYour other post-meal readings ranged from 80 to 117 mg/dL across the months. Under this laboratory's reference ranges, any value below 140 mg/dL is classified as Normal, so all of your post-meal readings fall in the Normal range.\n\nPlease discuss your results with your doctor, who can explain what they mean for you.",
+  "usage": {
+   "input_tokens": 2973,
+   "output_tokens": 318
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 4.99,
+   "predicted_FBS": 73.2,
+   "predicted_PPBS": 108.3,
+   "predicted_status": "Normal"
+  },
+  "true_record": "M1: HbA1c 4.8 (Normal); FBS 78.0 (Normal); PPBS 112.0 (Normal); LDL 68.0 (Optimal); HDL 70.0 (Normal); TG 126.0 (Normal); Overall Normal\nM2: HbA1c 4.9 (Normal); FBS 84.0 (Normal); PPBS 104.0 (Normal); LDL 68.0 (Optimal); HDL 67.0 (Normal); TG 126.0 (Normal); Overall Normal\nM3: HbA1c 4.9 (Normal); FBS 88.0 (Normal); PPBS 117.0 (Normal); LDL 71.0 (Optimal); HDL 65.0 (Normal); TG 125.0 (Normal); Overall Normal\nM4: HbA1c 4.9 (Normal); FBS 93.0 (Normal); PPBS 118.0 (Normal); LDL 71.0 (Optimal); HDL 68.0 (Normal); TG 131.0 (Normal); Overall Normal\nM5: HbA1c 5.0 (Normal); FBS 88.0 (Normal); PPBS 114.0 (Normal); LDL 67.0 (Optimal); HDL 65.0 (Normal); TG 127.0 (Normal); Overall Normal\nM6: HbA1c 4.8 (Normal); FBS 78.0 (Normal); PPBS 99.0 (Normal); LDL 70.0 (Optimal); HDL 70.0 (Normal); TG 124.0 (Normal); Overall Normal\nM7: HbA1c 4.7 (Normal); FBS 70.0 (Normal); PPBS 80.0 (Normal); LDL 71.0 (Optimal); HDL 68.0 (Normal); TG 117.0 (Normal); Overall Normal\nM8: HbA1c 4.9 (Normal); FBS 73.0 (Normal); PPBS 84.0 (Normal); LDL 74.0 (Optimal); HDL 67.0 (Normal); TG 109.0 (Normal); Overall Normal"
+ },
+ "C2Q034": {
+  "patient_id": "P035",
+  "trajectory_type": "normal_stable",
+  "template": "q_ldl",
+  "query_text": "Has my LDL cholesterol been a concern across my visits?",
+  "reference": "LDL by month: 89, 88, 87, 83, 85, 85, 80, 80 mg/dL; classes seen: Optimal.",
+  "query_id": "C2Q034",
+  "answer": "**No, based on your reports, LDL cholesterol has not been a concern at any of your visits.** Your LDL values for Months 1 through 8 were:\n\n- Month 1: 89 mg/dL\n- Month 2: 88 mg/dL\n- Month 3: 87 mg/dL\n- Month 4: 83 mg/dL\n- Month 5: 85 mg/dL\n- Month 6: 85 mg/dL\n- Month 7: 80 mg/dL\n- Month 8: 80 mg/dL\n\nUnder this laboratory's reference ranges, a value below 100 mg/dL is classed as \"Optimal.\" Every reading falls in that range. Your values have drifted slightly downward over the period, from 89 to 80 mg/dL, and have stayed well below the 100 mg/dL \"Borderline\" threshold.\n\nFor background, LDL is often called \"bad\" cholesterol because high levels can contribute to plaque buildup in blood vessels. Your doctor can explain what your results mean in the context of your overall health.",
+  "usage": {
+   "input_tokens": 2975,
+   "output_tokens": 545
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 5.08,
+   "predicted_FBS": 96.2,
+   "predicted_PPBS": 123.0,
+   "predicted_status": "Normal"
+  },
+  "true_record": "M1: HbA1c 4.9 (Normal); FBS 89.0 (Normal); PPBS 117.0 (Normal); LDL 89.0 (Optimal); HDL 57.0 (Normal); TG 114.0 (Normal); Overall Normal\nM2: HbA1c 5.1 (Normal); FBS 86.0 (Normal); PPBS 108.0 (Normal); LDL 88.0 (Optimal); HDL 59.0 (Normal); TG 128.0 (Normal); Overall Normal\nM3: HbA1c 5.1 (Normal); FBS 88.0 (Normal); PPBS 143.0 (Prediabetic); LDL 87.0 (Optimal); HDL 58.0 (Normal); TG 129.0 (Normal); Overall Normal\nM4: HbA1c 5.2 (Normal); FBS 87.0 (Normal); PPBS 122.0 (Normal); LDL 83.0 (Optimal); HDL 60.0 (Normal); TG 127.0 (Normal); Overall Normal\nM5: HbA1c 5.2 (Normal); FBS 103.0 (Prediabetic); PPBS 142.0 (Prediabetic); LDL 85.0 (Optimal); HDL 54.0 (Normal); TG 139.0 (Normal); Overall Prediabetic\nM6: HbA1c 5.0 (Normal); FBS 95.0 (Normal); PPBS 100.0 (Normal); LDL 85.0 (Optimal); HDL 56.0 (Normal); TG 125.0 (Normal); Overall Normal\nM7: HbA1c 4.8 (Normal); FBS 74.0 (Normal); PPBS 120.0 (Normal); LDL 80.0 (Optimal); HDL 55.0 (Normal); TG 143.0 (Normal); Overall Normal\nM8: HbA1c 5.1 (Normal); FBS 99.0 (Normal); PPBS 119.0 (Normal); LDL 80.0 (Optimal); HDL 56.0 (Normal); TG 145.0 (Normal); Overall Normal"
+ },
+ "C2Q035": {
+  "patient_id": "P068",
+  "trajectory_type": "normal_stable",
+  "template": "q_compare",
+  "query_text": "Compare my Month 4 and Month 8 HbA1c.",
+  "reference": "HbA1c Month 4 4.7% (Normal), Month 8 4.9% (Normal).",
+  "query_id": "C2Q035",
+  "answer": "Your HbA1c was **4.7% in Month 4** and **4.9% in Month 8**, a rise of 0.2 percentage points.\n\nUnder this laboratory's reference ranges, both results fall in the **Normal** range, which is below 5.7%. The change is small and stays within the Normal range.\n\nFor background, HbA1c is a blood test that reflects average blood sugar over the previous few months. Your HbA1c stayed between 4.7% and 4.9% across the months in your report. Please discuss these results with your doctor, who can explain what they mean for you.",
+  "usage": {
+   "input_tokens": 2977,
+   "output_tokens": 319
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 4.91,
+   "predicted_FBS": 86.5,
+   "predicted_PPBS": 114.2,
+   "predicted_status": "Normal"
+  },
+  "true_record": "M1: HbA1c 4.9 (Normal); FBS 89.0 (Normal); PPBS 117.0 (Normal); LDL 68.0 (Optimal); HDL 52.0 (Normal); TG 89.0 (Normal); Overall Normal\nM2: HbA1c 4.8 (Normal); FBS 86.0 (Normal); PPBS 95.0 (Normal); LDL 74.0 (Optimal); HDL 50.0 (Normal); TG 100.0 (Normal); Overall Normal\nM3: HbA1c 4.8 (Normal); FBS 86.0 (Normal); PPBS 101.0 (Normal); LDL 67.0 (Optimal); HDL 51.0 (Normal); TG 95.0 (Normal); Overall Normal\nM4: HbA1c 4.7 (Normal); FBS 75.0 (Normal); PPBS 107.0 (Normal); LDL 70.0 (Optimal); HDL 55.0 (Normal); TG 93.0 (Normal); Overall Normal\nM5: HbA1c 4.9 (Normal); FBS 75.0 (Normal); PPBS 104.0 (Normal); LDL 64.0 (Optimal); HDL 53.0 (Normal); TG 88.0 (Normal); Overall Normal\nM6: HbA1c 4.9 (Normal); FBS 100.0 (Prediabetic); PPBS 109.0 (Normal); LDL 62.0 (Optimal); HDL 52.0 (Normal); TG 98.0 (Normal); Overall Prediabetic\nM7: HbA1c 4.9 (Normal); FBS 85.0 (Normal); PPBS 124.0 (Normal); LDL 58.0 (Optimal); HDL 52.0 (Normal); TG 88.0 (Normal); Overall Normal\nM8: HbA1c 4.9 (Normal); FBS 86.0 (Normal); PPBS 111.0 (Normal); LDL 59.0 (Optimal); HDL 50.0 (Normal); TG 75.0 (Normal); Overall Normal"
+ },
+ "C2Q036": {
+  "patient_id": "P034",
+  "trajectory_type": "prediabetic_progressing",
+  "template": "q_trend",
+  "query_text": "Is my HbA1c improving over my visits?",
+  "reference": "HbA1c by month: 6.1, 6.3, 6.3, 6.6, 6.7, 6.9, 6.8, 7.1%. Month 8 is higher than Month 1.",
+  "query_id": "C2Q036",
+  "answer": "No, your HbA1c has been **rising**, not improving, across your visits. HbA1c is a measure of average blood sugar over the past few months. Higher numbers mean higher average blood sugar.\n\n| Month | HbA1c | Category (lab's ranges) |\n|---|---|---|\n| 1 | 6.1% | Prediabetic |\n| 2 | 6.3% | Prediabetic |\n| 3 | 6.3% | Prediabetic |\n| 4 | 6.6% | Diabetic |\n| 5 | 6.7% | Diabetic |\n| 6 | 6.9% | Diabetic |\n| 7 | 6.8% | Diabetic |\n| 8 | 7.1% | Diabetic |\n\nYour value went from 6.1% in Month 1 to 7.1% in Month 8. There was one small dip in Month 7 (6.9% to 6.8%), but the overall direction is upward. Your HbA1c first reached the \"Diabetic\" range in Month 4.\n\nOur forecasting model estimates that your next HbA1c could be about 7.16%. This is a prediction, not a measured result, and it is only an estimate. Real lab testing is needed to confirm it.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what steps, if any, to take next.",
+  "usage": {
+   "input_tokens": 2972,
+   "output_tokens": 912
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 7.16,
+   "predicted_FBS": 145.9,
+   "predicted_PPBS": 199.8,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 6.1 (Prediabetic); FBS 114.0 (Prediabetic); PPBS 157.0 (Prediabetic); LDL 120.0 (Borderline); HDL 40.0 (Normal); TG 188.0 (Borderline); Overall Prediabetic\nM2: HbA1c 6.3 (Prediabetic); FBS 125.0 (Prediabetic); PPBS 163.0 (Prediabetic); LDL 125.0 (Borderline); HDL 39.0 (Low); TG 189.0 (Borderline); Overall Prediabetic\nM3: HbA1c 6.3 (Prediabetic); FBS 112.0 (Prediabetic); PPBS 159.0 (Prediabetic); LDL 125.0 (Borderline); HDL 39.0 (Low); TG 182.0 (Borderline); Overall Prediabetic\nM4: HbA1c 6.6 (Diabetic); FBS 131.0 (Diabetic); PPBS 184.0 (Prediabetic); LDL 123.0 (Borderline); HDL 39.0 (Low); TG 188.0 (Borderline); Overall Diabetic\nM5: HbA1c 6.7 (Diabetic); FBS 133.0 (Diabetic); PPBS 188.0 (Prediabetic); LDL 113.0 (Borderline); HDL 38.0 (Low); TG 195.0 (Borderline); Overall Diabetic\nM6: HbA1c 6.9 (Diabetic); FBS 136.0 (Diabetic); PPBS 188.0 (Prediabetic); LDL 115.0 (Borderline); HDL 40.0 (Normal); TG 191.0 (Borderline); Overall Diabetic\nM7: HbA1c 6.8 (Diabetic); FBS 126.0 (Diabetic); PPBS 172.0 (Prediabetic); LDL 123.0 (Borderline); HDL 38.0 (Low); TG 179.0 (Borderline); Overall Diabetic\nM8: HbA1c 7.1 (Diabetic); FBS 147.0 (Diabetic); PPBS 194.0 (Prediabetic); LDL 120.0 (Borderline); HDL 37.0 (Low); TG 175.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q037": {
+  "patient_id": "P078",
+  "trajectory_type": "prediabetic_progressing",
+  "template": "q_fbs_change",
+  "query_text": "How did my fasting sugar change between Month 1 and Month 8?",
+  "reference": "FBS Month 1 90 mg/dL (Normal), Month 8 106 mg/dL (Prediabetic); all months: 90, 97, 105, 98, 115, 115, 93, 106.",
+  "query_id": "C2Q037",
+  "answer": "Your fasting blood sugar (FBS) rose from **90.0 mg/dL at Month 1** to **106.0 mg/dL at Month 8**, an increase of 16.0 mg/dL.\n\nUsing this lab's reference ranges, the Month 1 value of 90.0 is in the **Normal** range (below 100 mg/dL). The Month 8 value of 106.0 falls in the **Prediabetic** range (100-125 mg/dL).\n\nThe readings did not rise steadily. They went 90.0, 97.0, 105.0, 98.0, 115.0, 115.0, 93.0, and 106.0 across Months 1 through 8. Month 7 was the lowest since Month 1, and Month 8 was higher again.\n\nBased on your trend, our forecasting model estimates your next FBS will be about 102.0 mg/dL, which would also be in the Prediabetic range. This is only an estimate, not a measured result, and it needs to be confirmed by a real lab test.\n\nPlease discuss these results and what they mean for you with your doctor.",
+  "usage": {
+   "input_tokens": 2981,
+   "output_tokens": 621
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 6.3,
+   "predicted_FBS": 102.0,
+   "predicted_PPBS": 170.9,
+   "predicted_status": "Prediabetic"
+  },
+  "true_record": "M1: HbA1c 5.8 (Prediabetic); FBS 90.0 (Normal); PPBS 157.0 (Prediabetic); LDL 102.0 (Borderline); HDL 46.0 (Low); TG 146.0 (Normal); Overall Prediabetic\nM2: HbA1c 5.8 (Prediabetic); FBS 97.0 (Normal); PPBS 137.0 (Normal); LDL 103.0 (Borderline); HDL 47.0 (Low); TG 155.0 (Borderline); Overall Prediabetic\nM3: HbA1c 6.0 (Prediabetic); FBS 105.0 (Prediabetic); PPBS 169.0 (Prediabetic); LDL 105.0 (Borderline); HDL 43.0 (Low); TG 150.0 (Borderline); Overall Prediabetic\nM4: HbA1c 6.0 (Prediabetic); FBS 98.0 (Normal); PPBS 148.0 (Prediabetic); LDL 111.0 (Borderline); HDL 49.0 (Low); TG 154.0 (Borderline); Overall Prediabetic\nM5: HbA1c 6.1 (Prediabetic); FBS 115.0 (Prediabetic); PPBS 163.0 (Prediabetic); LDL 107.0 (Borderline); HDL 43.0 (Low); TG 162.0 (Borderline); Overall Prediabetic\nM6: HbA1c 6.1 (Prediabetic); FBS 115.0 (Prediabetic); PPBS 186.0 (Prediabetic); LDL 106.0 (Borderline); HDL 43.0 (Low); TG 155.0 (Borderline); Overall Prediabetic\nM7: HbA1c 6.1 (Prediabetic); FBS 93.0 (Normal); PPBS 164.0 (Prediabetic); LDL 111.0 (Borderline); HDL 44.0 (Low); TG 165.0 (Borderline); Overall Prediabetic\nM8: HbA1c 6.3 (Prediabetic); FBS 106.0 (Prediabetic); PPBS 167.0 (Prediabetic); LDL 112.0 (Borderline); HDL 44.0 (Low); TG 142.0 (Normal); Overall Prediabetic"
+ },
+ "C2Q038": {
+  "patient_id": "P075",
+  "trajectory_type": "prediabetic_progressing",
+  "template": "q_status",
+  "query_text": "Has my overall status changed during these months?",
+  "reference": "Overall status by month: Prediabetic, Prediabetic, Prediabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic. Changes: Month 4: Prediabetic -> Diabetic.",
+  "query_id": "C2Q038",
+  "answer": "Yes. Based on the laboratory reference ranges, your overall glycemic status changed once, from **Prediabetic** to **Diabetic**.\n\n- **Months 1\u20133:** Prediabetic. HbA1c ranged from 6.0% to 6.2%, and fasting blood sugar (FBS) ranged from 105 to 124 mg/dL.\n- **Month 4:** Diabetic. Your FBS was 136 mg/dL, which is in the diabetic range (126 mg/dL or higher). Your HbA1c of 6.4% was still in the prediabetic range, but one diabetic result is enough to change the overall status.\n- **Months 5\u20138:** Diabetic. HbA1c rose from 6.5% to 6.8%, and FBS stayed in the diabetic range.\n\nYour post-meal blood sugar (PPBS) was in the prediabetic range in most months. It reached the diabetic range (204 mg/dL) only in Month 8.\n\nOur forecasting model estimates that your next risk category would be **Diabetic**, with a predicted HbA1c of 6.8%, FBS of 135.0 mg/dL, and PPBS of 181.9 mg/dL. These are model estimates, not measured results, and they are not certain. Only real lab testing can confirm them.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what next steps may be appropriate.",
+  "usage": {
+   "input_tokens": 2969,
+   "output_tokens": 1168
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 6.8,
+   "predicted_FBS": 135.0,
+   "predicted_PPBS": 181.9,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 6.0 (Prediabetic); FBS 105.0 (Prediabetic); PPBS 176.0 (Prediabetic); LDL 105.0 (Borderline); HDL 57.0 (Normal); TG 153.0 (Borderline); Overall Prediabetic\nM2: HbA1c 6.1 (Prediabetic); FBS 115.0 (Prediabetic); PPBS 161.0 (Prediabetic); LDL 113.0 (Borderline); HDL 58.0 (Normal); TG 160.0 (Borderline); Overall Prediabetic\nM3: HbA1c 6.2 (Prediabetic); FBS 124.0 (Prediabetic); PPBS 173.0 (Prediabetic); LDL 98.0 (Optimal); HDL 56.0 (Normal); TG 161.0 (Borderline); Overall Prediabetic\nM4: HbA1c 6.4 (Prediabetic); FBS 136.0 (Diabetic); PPBS 181.0 (Prediabetic); LDL 97.0 (Optimal); HDL 54.0 (Normal); TG 150.0 (Borderline); Overall Diabetic\nM5: HbA1c 6.5 (Diabetic); FBS 134.0 (Diabetic); PPBS 169.0 (Prediabetic); LDL 93.0 (Optimal); HDL 59.0 (Normal); TG 147.0 (Normal); Overall Diabetic\nM6: HbA1c 6.6 (Diabetic); FBS 136.0 (Diabetic); PPBS 185.0 (Prediabetic); LDL 103.0 (Borderline); HDL 57.0 (Normal); TG 143.0 (Normal); Overall Diabetic\nM7: HbA1c 6.8 (Diabetic); FBS 145.0 (Diabetic); PPBS 168.0 (Prediabetic); LDL 93.0 (Optimal); HDL 60.0 (Normal); TG 140.0 (Normal); Overall Diabetic\nM8: HbA1c 6.7 (Diabetic); FBS 126.0 (Diabetic); PPBS 204.0 (Diabetic); LDL 88.0 (Optimal); HDL 58.0 (Normal); TG 140.0 (Normal); Overall Diabetic"
+ },
+ "C2Q039": {
+  "patient_id": "P053",
+  "trajectory_type": "prediabetic_progressing",
+  "template": "q_latest_abnormal",
+  "query_text": "Which of my values in my latest report (Month 8) are outside the normal range?",
+  "reference": "Month 8 outside normal/optimal: HbA1c 6.7 (Diabetic), FBS 132 (Diabetic), PPBS 185 (Prediabetic), HDL 47 (Low).",
+  "query_id": "C2Q039",
+  "answer": "In your Month 8 report, four values fall outside the normal range based on the laboratory's reference ranges:\n\n- **HbA1c: 6.7%.** This is in the \"Diabetic\" range (6.5% or higher). It reflects your average blood sugar over the past few months.\n- **Fasting Blood Sugar: 132 mg/dL.** This is in the \"Diabetic\" range (126 mg/dL or higher). It measures blood sugar after not eating.\n- **Post-Prandial Blood Sugar: 185 mg/dL.** This is in the \"Prediabetic\" range (140-199 mg/dL). It measures blood sugar after eating.\n- **HDL Cholesterol: 47 mg/dL.** For women, HDL below 50 mg/dL is classified as \"Low.\"\n\nYour LDL cholesterol (94 mg/dL, \"Optimal\") and triglycerides (145 mg/dL, \"Normal\") are within range.\n\nBased on the laboratory's rules, your overall glycemic status for Month 8 is \"Diabetic,\" because your HbA1c and fasting blood sugar both fall in the Diabetic range.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what steps, if any, are appropriate.",
+  "usage": {
+   "input_tokens": 2981,
+   "output_tokens": 922
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 6.74,
+   "predicted_FBS": 133.1,
+   "predicted_PPBS": 182.9,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 6.1 (Prediabetic); FBS 107.0 (Prediabetic); PPBS 153.0 (Prediabetic); LDL 114.0 (Borderline); HDL 45.0 (Low); TG 155.0 (Borderline); Overall Prediabetic\nM2: HbA1c 6.1 (Prediabetic); FBS 113.0 (Prediabetic); PPBS 143.0 (Prediabetic); LDL 107.0 (Borderline); HDL 47.0 (Low); TG 162.0 (Borderline); Overall Prediabetic\nM3: HbA1c 6.0 (Prediabetic); FBS 129.0 (Diabetic); PPBS 131.0 (Normal); LDL 104.0 (Borderline); HDL 48.0 (Low); TG 154.0 (Borderline); Overall Diabetic\nM4: HbA1c 6.3 (Prediabetic); FBS 127.0 (Diabetic); PPBS 169.0 (Prediabetic); LDL 104.0 (Borderline); HDL 48.0 (Low); TG 136.0 (Normal); Overall Diabetic\nM5: HbA1c 6.3 (Prediabetic); FBS 117.0 (Prediabetic); PPBS 171.0 (Prediabetic); LDL 108.0 (Borderline); HDL 47.0 (Low); TG 153.0 (Borderline); Overall Prediabetic\nM6: HbA1c 6.5 (Diabetic); FBS 124.0 (Prediabetic); PPBS 183.0 (Prediabetic); LDL 110.0 (Borderline); HDL 45.0 (Low); TG 133.0 (Normal); Overall Diabetic\nM7: HbA1c 6.5 (Diabetic); FBS 130.0 (Diabetic); PPBS 185.0 (Prediabetic); LDL 96.0 (Optimal); HDL 46.0 (Low); TG 158.0 (Borderline); Overall Diabetic\nM8: HbA1c 6.7 (Diabetic); FBS 132.0 (Diabetic); PPBS 185.0 (Prediabetic); LDL 94.0 (Optimal); HDL 47.0 (Low); TG 145.0 (Normal); Overall Diabetic"
+ },
+ "C2Q040": {
+  "patient_id": "P098",
+  "trajectory_type": "prediabetic_progressing",
+  "template": "q_max_ppbs",
+  "query_text": "What was my highest post-meal sugar, and in which month?",
+  "reference": "Highest PPBS 197 mg/dL in Month 7 (Prediabetic); all: 154, 163, 141, 140, 160, 153, 197, 181.",
+  "query_id": "C2Q040",
+  "answer": "Your highest post-meal blood sugar (PPBS) was **197 mg/dL, in Month 7**.\n\nAccording to the laboratory's reference ranges, a PPBS between 140 and 199 mg/dL is classified as Prediabetic, so the Month 7 reading falls in that range. Your most recent reading, in Month 8, was 181 mg/dL, which is also in that range.\n\nPlease talk with your doctor about what these results mean for you.",
+  "usage": {
+   "input_tokens": 2974,
+   "output_tokens": 290
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 6.26,
+   "predicted_FBS": 124.9,
+   "predicted_PPBS": 172.7,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 5.9 (Prediabetic); FBS 117.0 (Prediabetic); PPBS 154.0 (Prediabetic); LDL 128.0 (Borderline); HDL 46.0 (Low); TG 173.0 (Borderline); Overall Prediabetic\nM2: HbA1c 5.9 (Prediabetic); FBS 108.0 (Prediabetic); PPBS 163.0 (Prediabetic); LDL 122.0 (Borderline); HDL 45.0 (Low); TG 161.0 (Borderline); Overall Prediabetic\nM3: HbA1c 6.0 (Prediabetic); FBS 112.0 (Prediabetic); PPBS 141.0 (Prediabetic); LDL 122.0 (Borderline); HDL 47.0 (Low); TG 175.0 (Borderline); Overall Prediabetic\nM4: HbA1c 6.1 (Prediabetic); FBS 125.0 (Prediabetic); PPBS 140.0 (Prediabetic); LDL 124.0 (Borderline); HDL 41.0 (Low); TG 179.0 (Borderline); Overall Prediabetic\nM5: HbA1c 6.0 (Prediabetic); FBS 116.0 (Prediabetic); PPBS 160.0 (Prediabetic); LDL 123.0 (Borderline); HDL 45.0 (Low); TG 181.0 (Borderline); Overall Prediabetic\nM6: HbA1c 6.2 (Prediabetic); FBS 115.0 (Prediabetic); PPBS 153.0 (Prediabetic); LDL 125.0 (Borderline); HDL 45.0 (Low); TG 183.0 (Borderline); Overall Prediabetic\nM7: HbA1c 6.2 (Prediabetic); FBS 111.0 (Prediabetic); PPBS 197.0 (Prediabetic); LDL 130.0 (High Risk); HDL 44.0 (Low); TG 184.0 (Borderline); Overall Prediabetic\nM8: HbA1c 6.3 (Prediabetic); FBS 126.0 (Diabetic); PPBS 181.0 (Prediabetic); LDL 130.0 (High Risk); HDL 45.0 (Low); TG 188.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q041": {
+  "patient_id": "P065",
+  "trajectory_type": "prediabetic_progressing",
+  "template": "q_ldl",
+  "query_text": "Has my LDL cholesterol been a concern across my visits?",
+  "reference": "LDL by month: 107, 104, 118, 111, 115, 119, 122, 120 mg/dL; classes seen: Borderline.",
+  "query_id": "C2Q041",
+  "answer": "Your LDL cholesterol has stayed in the **Borderline** range at every visit, according to this lab's classification. It has never reached the High Risk level (130 mg/dL or higher), and it has never been in the Optimal range (below 100 mg/dL).\n\n| Month | LDL (mg/dL) | Category |\n|---|---|---|\n| 1 | 107 | Borderline |\n| 2 | 104 | Borderline |\n| 3 | 118 | Borderline |\n| 4 | 111 | Borderline |\n| 5 | 115 | Borderline |\n| 6 | 119 | Borderline |\n| 7 | 122 | Borderline |\n| 8 | 120 | Borderline |\n\nYour LDL rose fairly steadily from 104 in Month 2 to 122 in Month 7, then eased slightly to 120 in Month 8. The reports don't say what this means for your health beyond these categories.\n\nFor background, LDL is often called \"bad\" cholesterol because high levels can contribute to plaque buildup in the arteries over time. Whether your borderline readings need attention is a question for your doctor, who can weigh them alongside your other results, such as your blood sugar and triglyceride levels.",
+  "usage": {
+   "input_tokens": 2978,
+   "output_tokens": 749
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 6.46,
+   "predicted_FBS": 139.7,
+   "predicted_PPBS": 178.6,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 5.9 (Prediabetic); FBS 118.0 (Prediabetic); PPBS 160.0 (Prediabetic); LDL 107.0 (Borderline); HDL 44.0 (Normal); TG 186.0 (Borderline); Overall Prediabetic\nM2: HbA1c 5.9 (Prediabetic); FBS 124.0 (Prediabetic); PPBS 176.0 (Prediabetic); LDL 104.0 (Borderline); HDL 43.0 (Normal); TG 167.0 (Borderline); Overall Prediabetic\nM3: HbA1c 6.2 (Prediabetic); FBS 128.0 (Diabetic); PPBS 151.0 (Prediabetic); LDL 118.0 (Borderline); HDL 41.0 (Normal); TG 171.0 (Borderline); Overall Diabetic\nM4: HbA1c 6.3 (Prediabetic); FBS 128.0 (Diabetic); PPBS 150.0 (Prediabetic); LDL 111.0 (Borderline); HDL 44.0 (Normal); TG 191.0 (Borderline); Overall Diabetic\nM5: HbA1c 6.3 (Prediabetic); FBS 140.0 (Diabetic); PPBS 169.0 (Prediabetic); LDL 115.0 (Borderline); HDL 40.0 (Normal); TG 193.0 (Borderline); Overall Diabetic\nM6: HbA1c 6.3 (Prediabetic); FBS 142.0 (Diabetic); PPBS 165.0 (Prediabetic); LDL 119.0 (Borderline); HDL 41.0 (Normal); TG 183.0 (Borderline); Overall Diabetic\nM7: HbA1c 6.5 (Diabetic); FBS 132.0 (Diabetic); PPBS 181.0 (Prediabetic); LDL 122.0 (Borderline); HDL 40.0 (Normal); TG 192.0 (Borderline); Overall Diabetic\nM8: HbA1c 6.4 (Prediabetic); FBS 142.0 (Diabetic); PPBS 166.0 (Prediabetic); LDL 120.0 (Borderline); HDL 41.0 (Normal); TG 185.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q042": {
+  "patient_id": "P059",
+  "trajectory_type": "prediabetic_progressing",
+  "template": "q_compare",
+  "query_text": "Compare my Month 4 and Month 8 HbA1c.",
+  "reference": "HbA1c Month 4 6.8% (Diabetic), Month 8 7.2% (Diabetic).",
+  "query_id": "C2Q042",
+  "answer": "Your HbA1c was **6.8% at Month 4** and **7.2% at Month 8**, a rise of **0.4 percentage points**.\n\nUsing the laboratory's reference ranges, both values fall in the **Diabetic** range (6.5% or higher). The Month 4 value was already in that range, and the Month 8 value is higher.\n\nFor background, HbA1c is a blood test that reflects your average blood sugar over roughly the past two to three months. Please discuss these results and what they mean for you with your doctor.",
+  "usage": {
+   "input_tokens": 2979,
+   "output_tokens": 572
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 7.37,
+   "predicted_FBS": 146.4,
+   "predicted_PPBS": 197.9,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 6.2 (Prediabetic); FBS 121.0 (Prediabetic); PPBS 159.0 (Prediabetic); LDL 110.0 (Borderline); HDL 57.0 (Normal); TG 166.0 (Borderline); Overall Prediabetic\nM2: HbA1c 6.2 (Prediabetic); FBS 132.0 (Diabetic); PPBS 139.0 (Normal); LDL 109.0 (Borderline); HDL 56.0 (Normal); TG 151.0 (Borderline); Overall Diabetic\nM3: HbA1c 6.3 (Prediabetic); FBS 124.0 (Prediabetic); PPBS 147.0 (Prediabetic); LDL 112.0 (Borderline); HDL 56.0 (Normal); TG 159.0 (Borderline); Overall Prediabetic\nM4: HbA1c 6.8 (Diabetic); FBS 129.0 (Diabetic); PPBS 174.0 (Prediabetic); LDL 105.0 (Borderline); HDL 57.0 (Normal); TG 158.0 (Borderline); Overall Diabetic\nM5: HbA1c 6.7 (Diabetic); FBS 138.0 (Diabetic); PPBS 176.0 (Prediabetic); LDL 113.0 (Borderline); HDL 52.0 (Normal); TG 151.0 (Borderline); Overall Diabetic\nM6: HbA1c 6.9 (Diabetic); FBS 137.0 (Diabetic); PPBS 160.0 (Prediabetic); LDL 110.0 (Borderline); HDL 54.0 (Normal); TG 159.0 (Borderline); Overall Diabetic\nM7: HbA1c 7.0 (Diabetic); FBS 135.0 (Diabetic); PPBS 157.0 (Prediabetic); LDL 101.0 (Borderline); HDL 56.0 (Normal); TG 154.0 (Borderline); Overall Diabetic\nM8: HbA1c 7.2 (Diabetic); FBS 146.0 (Diabetic); PPBS 173.0 (Prediabetic); LDL 106.0 (Borderline); HDL 52.0 (Normal); TG 159.0 (Borderline); Overall Diabetic"
+ },
+ "C2Q043": {
+  "patient_id": "P100",
+  "trajectory_type": "prediabetic_stable",
+  "template": "q_trend",
+  "query_text": "Is my HbA1c improving over my visits?",
+  "reference": "HbA1c by month: 5.9, 5.9, 6, 5.9, 5.8, 5.9, 6.1, 5.9%. Month 8 is the same than Month 1.",
+  "query_id": "C2Q043",
+  "answer": "**No, your HbA1c hasn't clearly improved over your visits. It has stayed roughly the same.** Across the eight monthly reports, your HbA1c ranged from 5.8% to 6.1%:\n\n- Month 1: 5.9%\n- Month 2: 5.9%\n- Month 3: 6.0%\n- Month 4: 5.9%\n- Month 5: 5.8% (your lowest)\n- Month 6: 5.9%\n- Month 7: 6.1% (your highest)\n- Month 8: 5.9%\n\nYour most recent value (5.9%) is the same as your first. Under this laboratory's reference ranges, every reading falls in the **Prediabetic** range (5.7% to 6.4%).\n\nOur forecasting model estimates your next HbA1c at about 5.96%, which would still be in the prediabetic range. This is a model estimate, not a measured result, and it is not a certainty. Only a real lab test can confirm your actual value.\n\nPlease talk with your doctor about what these results mean for you and what next steps may be appropriate.",
+  "usage": {
+   "input_tokens": 2973,
+   "output_tokens": 727
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 5.96,
+   "predicted_FBS": 116.0,
+   "predicted_PPBS": 151.4,
+   "predicted_status": "Prediabetic"
+  },
+  "true_record": "M1: HbA1c 5.9 (Prediabetic); FBS 105.0 (Prediabetic); PPBS 172.0 (Prediabetic); LDL 126.0 (Borderline); HDL 42.0 (Normal); TG 196.0 (Borderline); Overall Prediabetic\nM2: HbA1c 5.9 (Prediabetic); FBS 110.0 (Prediabetic); PPBS 156.0 (Prediabetic); LDL 113.0 (Borderline); HDL 43.0 (Normal); TG 187.0 (Borderline); Overall Prediabetic\nM3: HbA1c 6.0 (Prediabetic); FBS 109.0 (Prediabetic); PPBS 172.0 (Prediabetic); LDL 121.0 (Borderline); HDL 41.0 (Normal); TG 174.0 (Borderline); Overall Prediabetic\nM4: HbA1c 5.9 (Prediabetic); FBS 109.0 (Prediabetic); PPBS 158.0 (Prediabetic); LDL 118.0 (Borderline); HDL 42.0 (Normal); TG 179.0 (Borderline); Overall Prediabetic\nM5: HbA1c 5.8 (Prediabetic); FBS 115.0 (Prediabetic); PPBS 157.0 (Prediabetic); LDL 110.0 (Borderline); HDL 45.0 (Normal); TG 187.0 (Borderline); Overall Prediabetic\nM6: HbA1c 5.9 (Prediabetic); FBS 116.0 (Prediabetic); PPBS 143.0 (Prediabetic); LDL 113.0 (Borderline); HDL 42.0 (Normal); TG 187.0 (Borderline); Overall Prediabetic\nM7: HbA1c 6.1 (Prediabetic); FBS 113.0 (Prediabetic); PPBS 148.0 (Prediabetic); LDL 120.0 (Borderline); HDL 43.0 (Normal); TG 188.0 (Borderline); Overall Prediabetic\nM8: HbA1c 5.9 (Prediabetic); FBS 113.0 (Prediabetic); PPBS 148.0 (Prediabetic); LDL 117.0 (Borderline); HDL 43.0 (Normal); TG 203.0 (High); Overall Prediabetic"
+ },
+ "C2Q044": {
+  "patient_id": "P016",
+  "trajectory_type": "prediabetic_stable",
+  "template": "q_fbs_change",
+  "query_text": "How did my fasting sugar change between Month 1 and Month 8?",
+  "reference": "FBS Month 1 100 mg/dL (Prediabetic), Month 8 103 mg/dL (Prediabetic); all months: 100, 106, 110, 100, 114, 96, 115, 103.",
+  "query_id": "C2Q044",
+  "answer": "Your fasting blood sugar went up slightly, from **100.0 mg/dL at Month 1** to **103.0 mg/dL at Month 8**, a rise of 3.0 mg/dL.\n\nUsing the laboratory's reference ranges, both values fall in the **Prediabetic** range (100-125 mg/dL). The Month 1 reading was just at the edge of that range, since readings below 100 mg/dL are classed as Normal.\n\nYour fasting values moved up and down over the eight months. They ranged from a low of 96.0 mg/dL (Month 6) to a high of 115.0 mg/dL (Month 7). The Month 8 value is in the middle of that range rather than at an extreme.\n\nOur forecasting model estimates that your next fasting blood sugar could be about 108.2 mg/dL. This is a prediction, not a measured result, and it is not a certainty. Only a new lab test can confirm the actual value.\n\nFor background, fasting blood sugar is measured after a period without eating, usually overnight, and it helps show how well the body manages blood sugar. Please discuss these results and what they mean for you with your doctor.",
+  "usage": {
+   "input_tokens": 2981,
+   "output_tokens": 840
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 5.94,
+   "predicted_FBS": 108.2,
+   "predicted_PPBS": 142.3,
+   "predicted_status": "Prediabetic"
+  },
+  "true_record": "M1: HbA1c 5.6 (Normal); FBS 100.0 (Prediabetic); PPBS 150.0 (Prediabetic); LDL 124.0 (Borderline); HDL 52.0 (Normal); TG 164.0 (Borderline); Overall Prediabetic\nM2: HbA1c 5.7 (Prediabetic); FBS 106.0 (Prediabetic); PPBS 158.0 (Prediabetic); LDL 117.0 (Borderline); HDL 53.0 (Normal); TG 152.0 (Borderline); Overall Prediabetic\nM3: HbA1c 5.8 (Prediabetic); FBS 110.0 (Prediabetic); PPBS 158.0 (Prediabetic); LDL 127.0 (Borderline); HDL 47.0 (Normal); TG 166.0 (Borderline); Overall Prediabetic\nM4: HbA1c 5.8 (Prediabetic); FBS 100.0 (Prediabetic); PPBS 153.0 (Prediabetic); LDL 120.0 (Borderline); HDL 47.0 (Normal); TG 148.0 (Normal); Overall Prediabetic\nM5: HbA1c 5.9 (Prediabetic); FBS 114.0 (Prediabetic); PPBS 139.0 (Normal); LDL 134.0 (High Risk); HDL 48.0 (Normal); TG 162.0 (Borderline); Overall Prediabetic\nM6: HbA1c 5.6 (Normal); FBS 96.0 (Normal); PPBS 162.0 (Prediabetic); LDL 123.0 (Borderline); HDL 48.0 (Normal); TG 155.0 (Borderline); Overall Normal\nM7: HbA1c 5.9 (Prediabetic); FBS 115.0 (Prediabetic); PPBS 147.0 (Prediabetic); LDL 124.0 (Borderline); HDL 48.0 (Normal); TG 159.0 (Borderline); Overall Prediabetic\nM8: HbA1c 5.8 (Prediabetic); FBS 103.0 (Prediabetic); PPBS 143.0 (Prediabetic); LDL 132.0 (High Risk); HDL 48.0 (Normal); TG 164.0 (Borderline); Overall Prediabetic"
+ },
+ "C2Q045": {
+  "patient_id": "P032",
+  "trajectory_type": "prediabetic_stable",
+  "template": "q_status",
+  "query_text": "Has my overall status changed during these months?",
+  "reference": "Overall status by month: Prediabetic, Prediabetic, Prediabetic, Prediabetic, Prediabetic, Prediabetic, Prediabetic, Prediabetic. Changes: none.",
+  "query_id": "C2Q045",
+  "answer": "**No, your overall glycemic status stayed the same across all eight months: Prediabetic.** Based on the lab's reference ranges, your HbA1c and fasting blood sugar were in the prediabetic range in every month, or your HbA1c was prediabetic even when fasting blood sugar was normal.\n\n- **Months 1\u20133 and 5\u20138:** HbA1c was between 5.8% and 6.0%, and fasting blood sugar was between 101 and 112 mg/dL. Both fall in the prediabetic range.\n- **Month 4:** Fasting blood sugar was 99 mg/dL, which is normal, but HbA1c was 5.8%, which is prediabetic. Because the overall status uses the higher-risk result, the overall status was still Prediabetic.\n\nYour HbA1c never reached the diabetic threshold of 6.5%, and your fasting blood sugar never reached 126 mg/dL.\n\nOur forecasting model estimates that your next result will again be in the Prediabetic category, with a predicted HbA1c of about 5.93% and a predicted fasting blood sugar of about 107 mg/dL. This is an estimate, not a measured result, and only future lab testing can confirm it.\n\nPlease discuss these results and what they mean for you with your doctor.",
+  "usage": {
+   "input_tokens": 2970,
+   "output_tokens": 1054
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 5.93,
+   "predicted_FBS": 107.0,
+   "predicted_PPBS": 146.8,
+   "predicted_status": "Prediabetic"
+  },
+  "true_record": "M1: HbA1c 5.9 (Prediabetic); FBS 101.0 (Prediabetic); PPBS 171.0 (Prediabetic); LDL 128.0 (Borderline); HDL 53.0 (Normal); TG 165.0 (Borderline); Overall Prediabetic\nM2: HbA1c 6.0 (Prediabetic); FBS 110.0 (Prediabetic); PPBS 156.0 (Prediabetic); LDL 125.0 (Borderline); HDL 54.0 (Normal); TG 176.0 (Borderline); Overall Prediabetic\nM3: HbA1c 5.8 (Prediabetic); FBS 102.0 (Prediabetic); PPBS 158.0 (Prediabetic); LDL 123.0 (Borderline); HDL 57.0 (Normal); TG 159.0 (Borderline); Overall Prediabetic\nM4: HbA1c 5.8 (Prediabetic); FBS 99.0 (Normal); PPBS 138.0 (Normal); LDL 123.0 (Borderline); HDL 52.0 (Normal); TG 163.0 (Borderline); Overall Prediabetic\nM5: HbA1c 5.9 (Prediabetic); FBS 109.0 (Prediabetic); PPBS 175.0 (Prediabetic); LDL 117.0 (Borderline); HDL 55.0 (Normal); TG 169.0 (Borderline); Overall Prediabetic\nM6: HbA1c 5.9 (Prediabetic); FBS 112.0 (Prediabetic); PPBS 160.0 (Prediabetic); LDL 123.0 (Borderline); HDL 53.0 (Normal); TG 173.0 (Borderline); Overall Prediabetic\nM7: HbA1c 5.9 (Prediabetic); FBS 109.0 (Prediabetic); PPBS 148.0 (Prediabetic); LDL 115.0 (Borderline); HDL 55.0 (Normal); TG 159.0 (Borderline); Overall Prediabetic\nM8: HbA1c 5.8 (Prediabetic); FBS 106.0 (Prediabetic); PPBS 132.0 (Normal); LDL 113.0 (Borderline); HDL 53.0 (Normal); TG 157.0 (Borderline); Overall Prediabetic"
+ },
+ "C2Q046": {
+  "patient_id": "P005",
+  "trajectory_type": "prediabetic_stable",
+  "template": "q_latest_abnormal",
+  "query_text": "Which of my values in my latest report (Month 8) are outside the normal range?",
+  "reference": "Month 8 outside normal/optimal: HbA1c 6.1 (Prediabetic), FBS 100 (Prediabetic), PPBS 153 (Prediabetic), TG 177 (Borderline).",
+  "query_id": "C2Q046",
+  "answer": "In your Month 8 report, four results fall outside the normal range set by the laboratory:\n\n- **HbA1c: 6.1%** is in the Prediabetic range (5.7-6.4%). Normal is below 5.7%.\n- **Fasting Blood Sugar: 100.0 mg/dL** is in the Prediabetic range (100-125 mg/dL). Normal is below 100 mg/dL. Your value is right at the lower edge of that range.\n- **Post-Prandial Blood Sugar: 153.0 mg/dL** is in the Prediabetic range (140-199 mg/dL). Normal is below 140 mg/dL.\n- **Triglycerides: 177.0 mg/dL** is in the Borderline range (150-199 mg/dL). Normal is below 150 mg/dL.\n\nYour other two results are within the normal range. Your **LDL cholesterol of 94.0 mg/dL** is in the Optimal range (below 100 mg/dL), and your **HDL cholesterol of 41.0 mg/dL** is considered Normal for men (it is classed as Low only below 40 mg/dL).\n\nBased on the laboratory's overall glycemic status rule, your Month 8 blood sugar results together give an overall status of **Prediabetic**.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what steps, if any, are appropriate.",
+  "usage": {
+   "input_tokens": 2983,
+   "output_tokens": 841
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 6.21,
+   "predicted_FBS": 111.5,
+   "predicted_PPBS": 162.2,
+   "predicted_status": "Prediabetic"
+  },
+  "true_record": "M1: HbA1c 6.3 (Prediabetic); FBS 130.0 (Diabetic); PPBS 177.0 (Prediabetic); LDL 117.0 (Borderline); HDL 39.0 (Low); TG 141.0 (Normal); Overall Diabetic\nM2: HbA1c 6.0 (Prediabetic); FBS 108.0 (Prediabetic); PPBS 158.0 (Prediabetic); LDL 112.0 (Borderline); HDL 37.0 (Low); TG 152.0 (Borderline); Overall Prediabetic\nM3: HbA1c 6.1 (Prediabetic); FBS 128.0 (Diabetic); PPBS 154.0 (Prediabetic); LDL 107.0 (Borderline); HDL 39.0 (Low); TG 152.0 (Borderline); Overall Diabetic\nM4: HbA1c 6.1 (Prediabetic); FBS 126.0 (Diabetic); PPBS 171.0 (Prediabetic); LDL 109.0 (Borderline); HDL 36.0 (Low); TG 156.0 (Borderline); Overall Diabetic\nM5: HbA1c 6.3 (Prediabetic); FBS 135.0 (Diabetic); PPBS 167.0 (Prediabetic); LDL 104.0 (Borderline); HDL 39.0 (Low); TG 165.0 (Borderline); Overall Diabetic\nM6: HbA1c 6.1 (Prediabetic); FBS 118.0 (Prediabetic); PPBS 160.0 (Prediabetic); LDL 96.0 (Optimal); HDL 40.0 (Normal); TG 174.0 (Borderline); Overall Prediabetic\nM7: HbA1c 6.2 (Prediabetic); FBS 118.0 (Prediabetic); PPBS 180.0 (Prediabetic); LDL 97.0 (Optimal); HDL 41.0 (Normal); TG 175.0 (Borderline); Overall Prediabetic\nM8: HbA1c 6.1 (Prediabetic); FBS 100.0 (Prediabetic); PPBS 153.0 (Prediabetic); LDL 94.0 (Optimal); HDL 41.0 (Normal); TG 177.0 (Borderline); Overall Prediabetic"
+ },
+ "C2Q047": {
+  "patient_id": "P046",
+  "trajectory_type": "prediabetic_stable",
+  "template": "q_max_ppbs",
+  "query_text": "What was my highest post-meal sugar, and in which month?",
+  "reference": "Highest PPBS 169 mg/dL in Month 5 (Prediabetic); all: 139, 127, 153, 147, 169, 135, 163, 142.",
+  "query_id": "C2Q047",
+  "answer": "Your highest post-meal blood sugar (PPBS) was **169 mg/dL, recorded in Month 5**.\n\nFor context, the laboratory's reference ranges classify a PPBS of 140-199 mg/dL as Prediabetic. Your other monthly post-meal readings ranged from 127 to 163 mg/dL, and only Month 5 was above 163. Please discuss these results with your doctor, who can explain what they mean for you.",
+  "usage": {
+   "input_tokens": 2977,
+   "output_tokens": 267
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 6.05,
+   "predicted_FBS": 99.8,
+   "predicted_PPBS": 151.2,
+   "predicted_status": "Prediabetic"
+  },
+  "true_record": "M1: HbA1c 5.6 (Normal); FBS 99.0 (Normal); PPBS 139.0 (Normal); LDL 119.0 (Borderline); HDL 47.0 (Normal); TG 205.0 (High); Overall Normal\nM2: HbA1c 5.6 (Normal); FBS 91.0 (Normal); PPBS 127.0 (Normal); LDL 114.0 (Borderline); HDL 52.0 (Normal); TG 183.0 (Borderline); Overall Normal\nM3: HbA1c 5.9 (Prediabetic); FBS 95.0 (Normal); PPBS 153.0 (Prediabetic); LDL 116.0 (Borderline); HDL 52.0 (Normal); TG 190.0 (Borderline); Overall Prediabetic\nM4: HbA1c 5.7 (Prediabetic); FBS 91.0 (Normal); PPBS 147.0 (Prediabetic); LDL 112.0 (Borderline); HDL 53.0 (Normal); TG 196.0 (Borderline); Overall Prediabetic\nM5: HbA1c 5.9 (Prediabetic); FBS 100.0 (Prediabetic); PPBS 169.0 (Prediabetic); LDL 109.0 (Borderline); HDL 53.0 (Normal); TG 187.0 (Borderline); Overall Prediabetic\nM6: HbA1c 5.8 (Prediabetic); FBS 103.0 (Prediabetic); PPBS 135.0 (Normal); LDL 114.0 (Borderline); HDL 49.0 (Normal); TG 185.0 (Borderline); Overall Prediabetic\nM7: HbA1c 5.8 (Prediabetic); FBS 96.0 (Normal); PPBS 163.0 (Prediabetic); LDL 114.0 (Borderline); HDL 50.0 (Normal); TG 161.0 (Borderline); Overall Prediabetic\nM8: HbA1c 5.9 (Prediabetic); FBS 99.0 (Normal); PPBS 142.0 (Prediabetic); LDL 111.0 (Borderline); HDL 51.0 (Normal); TG 165.0 (Borderline); Overall Prediabetic"
+ },
+ "C2Q048": {
+  "patient_id": "P049",
+  "trajectory_type": "prediabetic_stable",
+  "template": "q_ldl",
+  "query_text": "Has my LDL cholesterol been a concern across my visits?",
+  "reference": "LDL by month: 106, 104, 107, 104, 100, 105, 101, 90 mg/dL; classes seen: Borderline, Optimal.",
+  "query_id": "C2Q048",
+  "answer": "Your LDL cholesterol has been in the **borderline** range at most visits, but it has not reached the high-risk level. Using this lab's reference ranges:\n\n- **Borderline (100-129 mg/dL):** Months 1, 2, 3, 4, 5, 6, and 7 (readings of 100 to 107 mg/dL).\n- **Optimal (below 100 mg/dL):** Month 8, at 90 mg/dL. This is your lowest reading and the only one in the optimal range.\n- **High risk (130 mg/dL or higher):** None of your readings reached this level.\n\nYour readings stayed close to the 100 mg/dL boundary for most of the period, then dropped to 90 mg/dL at Month 8. Ask your doctor what this trend means for you and whether any follow-up is needed.",
+  "usage": {
+   "input_tokens": 2978,
+   "output_tokens": 613
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 5.94,
+   "predicted_FBS": 104.4,
+   "predicted_PPBS": 151.0,
+   "predicted_status": "Prediabetic"
+  },
+  "true_record": "M1: HbA1c 5.9 (Prediabetic); FBS 105.0 (Prediabetic); PPBS 151.0 (Prediabetic); LDL 106.0 (Borderline); HDL 50.0 (Normal); TG 188.0 (Borderline); Overall Prediabetic\nM2: HbA1c 5.8 (Prediabetic); FBS 102.0 (Prediabetic); PPBS 146.0 (Prediabetic); LDL 104.0 (Borderline); HDL 45.0 (Normal); TG 192.0 (Borderline); Overall Prediabetic\nM3: HbA1c 5.9 (Prediabetic); FBS 106.0 (Prediabetic); PPBS 158.0 (Prediabetic); LDL 107.0 (Borderline); HDL 50.0 (Normal); TG 176.0 (Borderline); Overall Prediabetic\nM4: HbA1c 5.9 (Prediabetic); FBS 104.0 (Prediabetic); PPBS 176.0 (Prediabetic); LDL 104.0 (Borderline); HDL 48.0 (Normal); TG 177.0 (Borderline); Overall Prediabetic\nM5: HbA1c 6.0 (Prediabetic); FBS 104.0 (Prediabetic); PPBS 148.0 (Prediabetic); LDL 100.0 (Borderline); HDL 49.0 (Normal); TG 170.0 (Borderline); Overall Prediabetic\nM6: HbA1c 5.8 (Prediabetic); FBS 114.0 (Prediabetic); PPBS 156.0 (Prediabetic); LDL 105.0 (Borderline); HDL 48.0 (Normal); TG 161.0 (Borderline); Overall Prediabetic\nM7: HbA1c 5.9 (Prediabetic); FBS 101.0 (Prediabetic); PPBS 143.0 (Prediabetic); LDL 101.0 (Borderline); HDL 47.0 (Normal); TG 161.0 (Borderline); Overall Prediabetic\nM8: HbA1c 5.9 (Prediabetic); FBS 103.0 (Prediabetic); PPBS 160.0 (Prediabetic); LDL 90.0 (Optimal); HDL 48.0 (Normal); TG 168.0 (Borderline); Overall Prediabetic"
+ },
+ "C2Q049": {
+  "patient_id": "P043",
+  "trajectory_type": "prediabetic_stable",
+  "template": "q_compare",
+  "query_text": "Compare my Month 4 and Month 8 HbA1c.",
+  "reference": "HbA1c Month 4 6.3% (Prediabetic), Month 8 6.1% (Prediabetic).",
+  "query_id": "C2Q049",
+  "answer": "Your HbA1c was **6.3% at Month 4** and **6.1% at Month 8**, a drop of 0.2 percentage points.\n\nUnder this laboratory's reference ranges, HbA1c from 5.7% to 6.4% is classified as **Prediabetic**. Both results fall in that range, so the lower Month 8 value is still in the Prediabetic category.\n\nPlease discuss what these results mean for you with your doctor.",
+  "usage": {
+   "input_tokens": 2978,
+   "output_tokens": 458
+  },
+  "model_id": "claude-haiku-5-5",
+  "trajectory": {
+   "predicted_HbA1c": 6.08,
+   "predicted_FBS": 127.3,
+   "predicted_PPBS": 159.0,
+   "predicted_status": "Diabetic"
+  },
+  "true_record": "M1: HbA1c 6.2 (Prediabetic); FBS 123.0 (Prediabetic); PPBS 186.0 (Prediabetic); LDL 123.0 (Borderline); HDL 41.0 (Normal); TG 173.0 (Borderline); Overall Prediabetic\nM2: HbA1c 6.3 (Prediabetic); FBS 108.0 (Prediabetic); PPBS 175.0 (Prediabetic); LDL 120.0 (Borderline); HDL 38.0 (Low); TG 175.0 (Borderline); Overall Prediabetic\nM3: HbA1c 6.3 (Prediabetic); FBS 126.0 (Diabetic); PPBS 174.0 (Prediabetic); LDL 122.0 (Borderline); HDL 39.0 (Low); TG 173.0 (Borderline); Overall Diabetic\nM4: HbA1c 6.3 (Prediabetic); FBS 126.0 (Diabetic); PPBS 191.0 (Prediabetic); LDL 117.0 (Borderline); HDL 41.0 (Normal); TG 164.0 (Borderline); Overall Diabetic\nM5: HbA1c 6.2 (Prediabetic); FBS 124.0 (Prediabetic); PPBS 170.0 (Prediabetic); LDL 121.0 (Borderline); HDL 40.0 (Normal); TG 170.0 (Borderline); Overall Prediabetic\nM6: HbA1c 6.0 (Prediabetic); FBS 103.0 (Prediabetic); PPBS 153.0 (Prediabetic); LDL 124.0 (Borderline); HDL 41.0 (Normal); TG 173.0 (Borderline); Overall Prediabetic\nM7: HbA1c 6.1 (Prediabetic); FBS 120.0 (Prediabetic); PPBS 164.0 (Prediabetic); LDL 117.0 (Borderline); HDL 40.0 (Normal); TG 166.0 (Borderline); Overall Prediabetic\nM8: HbA1c 6.1 (Prediabetic); FBS 127.0 (Diabetic); PPBS 163.0 (Prediabetic); LDL 127.0 (Borderline); HDL 40.0 (Normal); TG 173.0 (Borderline); Overall Diabetic"
+ }
+}

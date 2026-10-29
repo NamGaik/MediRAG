@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P022 (Female, age 58) -- Month 5.
+
+HbA1c: 6.3% (Classification: Prediabetic).
+Fasting Blood Sugar (FBS): 137.0 mg/dL (Classification: Diabetic).
+Post-Prandial Blood Sugar (PPBS): 161.0 mg/dL (Classification: Prediabetic).
+LDL Cholesterol: 97.0 mg/dL (Classification: Optimal).
+HDL Cholesterol: 45.0 mg/dL (Classification: Low).
+Triglycerides: 165.0 mg/dL (Classification: Borderline).
+
+Overall Glycemic Status: Diabetic.

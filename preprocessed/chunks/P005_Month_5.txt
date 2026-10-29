@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P005 (Male, age 62) -- Month 5.
+
+HbA1c: 6.3% (Classification: Prediabetic).
+Fasting Blood Sugar (FBS): 135.0 mg/dL (Classification: Diabetic).
+Post-Prandial Blood Sugar (PPBS): 167.0 mg/dL (Classification: Prediabetic).
+LDL Cholesterol: 104.0 mg/dL (Classification: Borderline).
+HDL Cholesterol: 39.0 mg/dL (Classification: Low).
+Triglycerides: 165.0 mg/dL (Classification: Borderline).
+
+Overall Glycemic Status: Diabetic.

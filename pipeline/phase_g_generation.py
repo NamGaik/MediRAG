@@ -37,7 +37,7 @@ from phase_j_1_trajectory_model import load_patient_sequences, predict_next_visi
 # ADJUST HERE if Anthropic releases a newer model you want to switch to.
 CLAUDE_MODEL = "claude-sonnet-5"
 
-TOP_K = 5
+TOP_K = int(os.environ.get("MEDIRAG_TOP_K", 5))   # cohort 2 (8 visits): set MEDIRAG_TOP_K=8
 SYSTEM_PROMPT = """You are a medical report explainer helping a patient understand their lab results.
 
 STRICT RULES:
@@ -65,7 +65,9 @@ def build_context_block(retrieved_chunks):
     for i, chunk in enumerate(retrieved_chunks, start=1):
         lines.append(
             f"[Chunk {i}] Patient {chunk['Patient_ID']}, {chunk['Month']} "
-            f"(Status: {chunk['Overall_Status']}, similarity: {chunk['similarity_score']}):\n"
+            f"(Status: {chunk['Overall_Status']}"
+            + (f", similarity: {chunk['similarity_score']}" if chunk.get('similarity_score') is not None else "")
+            + "):\n"
             f"{chunk['text']}\n"
         )
     return "\n".join(lines)
@@ -129,7 +131,8 @@ def get_trajectory_prediction(patient_filter, history_override=None):
     if len(complete_history) < 1:
         return None  # no complete visits available to predict from
 
-    recent_history = complete_history[-2:]  # last up to 2 COMPLETE months, matching training
+    from phase_j_1_trajectory_model import MAX_SEQ_LEN
+    recent_history = complete_history[-MAX_SEQ_LEN:]  # last complete months, matching training
 
     try:
         prediction = predict_next_visit(recent_history)

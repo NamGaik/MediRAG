@@ -187,7 +187,8 @@ def embed_query(query_text):
 # -----------------------------
 # Phase F: Retrieval
 # -----------------------------
-def retrieve_top_k(query_text, k=5, index=None, metadata=None, patient_filter=None):
+def retrieve_top_k(query_text, k=5, index=None, metadata=None, patient_filter=None,
+                   scoped_fast_path=False):
     """
     The brief's Phase F, in one function call:
         query text -> embedding -> cosine similarity search -> top-k chunks
@@ -210,6 +211,35 @@ def retrieve_top_k(query_text, k=5, index=None, metadata=None, patient_filter=No
 
     if index is None or metadata is None:
         index, metadata = load_index()
+
+    # U9 fast path: when the query is scoped to one patient and that patient
+    # has no more than k chunks, similarity ranking cannot change WHICH chunks
+    # are returned -- every one of them is returned anyway. So skip the query
+    # embedding (~90 ms of Bio_ClinicalBERT on CPU) and the FAISS search, and
+    # return the patient's chunks in chronological order. Falls back to the
+    # normal ranked search if the patient has more than k chunks.
+    # Off by default so existing benchmark prompts stay byte-identical.
+    if scoped_fast_path and patient_filter is not None:
+        own = [m for m in metadata if m.get("Patient_ID") == patient_filter]
+        if len(own) <= k:
+            def month_num(m):
+                digits = "".join(ch for ch in str(m.get("Month", "")) if ch.isdigit())
+                return int(digits) if digits else 0
+            results = []
+            for entry in sorted(own, key=month_num):
+                chunk_text = ""
+                chunk_path = entry.get("chunk_file", "")
+                if chunk_path and os.path.exists(chunk_path):
+                    with open(chunk_path, "r") as f:
+                        chunk_text = f.read()
+                results.append({
+                    "similarity_score": None,   # not ranked: all of the patient's chunks
+                    "Patient_ID": entry.get("Patient_ID"),
+                    "Month": entry.get("Month"),
+                    "Overall_Status": entry.get("Overall_Status"),
+                    "text": chunk_text,
+                })
+            return results
 
     query_vec = embed_query(query_text).reshape(1, -1)
     faiss.normalize_L2(query_vec)

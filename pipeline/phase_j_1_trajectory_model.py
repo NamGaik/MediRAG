@@ -52,7 +52,7 @@ FEATURE_COLUMNS = ["HbA1c(%)", "FBS (mg/dL)", "PPBS (mg/dL)"]
 STATUS_COLUMN = "Overall_Status"
 STATUS_CLASSES = ["Normal", "Prediabetic", "Diabetic"]
 
-MAX_SEQ_LEN = 2
+MAX_SEQ_LEN = int(os.environ.get("MEDIRAG_MAX_SEQ_LEN", 2))   # cohort 2 (8 visits): set 7
 HIDDEN_SIZE = 16
 NUM_EPOCHS = 60
 LEARNING_RATE = 0.005

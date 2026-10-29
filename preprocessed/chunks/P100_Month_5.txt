@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P100 (Male, age 48) -- Month 5.
+
+HbA1c: 5.8% (Classification: Prediabetic).
+Fasting Blood Sugar (FBS): 115.0 mg/dL (Classification: Prediabetic).
+Post-Prandial Blood Sugar (PPBS): 157.0 mg/dL (Classification: Prediabetic).
+LDL Cholesterol: 110.0 mg/dL (Classification: Borderline).
+HDL Cholesterol: 45.0 mg/dL (Classification: Normal).
+Triglycerides: 187.0 mg/dL (Classification: Borderline).
+
+Overall Glycemic Status: Prediabetic.

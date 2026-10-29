@@ -1,0 +1,473 @@
+{
+  "_produced_by": "phase_m_7_nli_baseline.py",
+  "_saved_at": "2026-10-27T08:19:52",
+  "_notes": "U7: zero-shot NLI cross-encoder baseline vs author labels",
+  "results": {
+    "run_id": 1,
+    "model": "cross-encoder/nli-deberta-v3-base",
+    "by_threshold": {
+      "0.5": {
+        "nli": {
+          "tp": 1,
+          "fp": 31,
+          "fn": 0,
+          "tn": 8,
+          "precision": 0.031,
+          "recall": 1.0,
+          "n": 40
+        },
+        "nli_routed": {
+          "tp": 1,
+          "fp": 11,
+          "fn": 0,
+          "tn": 28,
+          "precision": 0.083,
+          "recall": 1.0,
+          "n": 40
+        }
+      },
+      "0.7": {
+        "nli": {
+          "tp": 1,
+          "fp": 24,
+          "fn": 0,
+          "tn": 15,
+          "precision": 0.04,
+          "recall": 1.0,
+          "n": 40
+        },
+        "nli_routed": {
+          "tp": 1,
+          "fp": 9,
+          "fn": 0,
+          "tn": 30,
+          "precision": 0.1,
+          "recall": 1.0,
+          "n": 40
+        }
+      },
+      "0.9": {
+        "nli": {
+          "tp": 0,
+          "fp": 17,
+          "fn": 1,
+          "tn": 22,
+          "precision": 0.0,
+          "recall": 0.0,
+          "n": 40
+        },
+        "nli_routed": {
+          "tp": 0,
+          "fp": 8,
+          "fn": 1,
+          "tn": 31,
+          "precision": 0.0,
+          "recall": 0.0,
+          "n": 40
+        }
+      }
+    },
+    "rows": [
+      {
+        "label_id": "P001",
+        "query_id": "Q008",
+        "config": "full_system",
+        "error": false,
+        "n_sentences": 12,
+        "max_contra": 0.8727580904960632,
+        "max_contra_routed": 0.013365646824240685,
+        "sentences_confirmed_by_rules": 9
+      },
+      {
+        "label_id": "P003",
+        "query_id": "Q001",
+        "config": "full_system",
+        "error": false,
+        "n_sentences": 11,
+        "max_contra": 0.9594867825508118,
+        "max_contra_routed": 0.3364448547363281,
+        "sentences_confirmed_by_rules": 5
+      },
+      {
+        "label_id": "P005",
+        "query_id": "Q010",
+        "config": "full_system_corrective",
+        "error": false,
+        "n_sentences": 13,
+        "max_contra": 0.24594034254550934,
+        "max_contra_routed": 0.24594034254550934,
+        "sentences_confirmed_by_rules": 7
+      },
+      {
+        "label_id": "P006",
+        "query_id": "Q003",
+        "config": "full_system_corrective",
+        "error": false,
+        "n_sentences": 10,
+        "max_contra": 0.9204381108283997,
+        "max_contra_routed": 0.016840986907482147,
+        "sentences_confirmed_by_rules": 5
+      },
+      {
+        "label_id": "P007",
+        "query_id": "Q011",
+        "config": "standard_rag",
+        "error": false,
+        "n_sentences": 8,
+        "max_contra": 0.7797547578811646,
+        "max_contra_routed": 0.018049178645014763,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P008",
+        "query_id": "Q005",
+        "config": "standard_rag",
+        "error": true,
+        "n_sentences": 13,
+        "max_contra": 0.8780311942100525,
+        "max_contra_routed": 0.8780311942100525,
+        "sentences_confirmed_by_rules": 5
+      },
+      {
+        "label_id": "P009",
+        "query_id": "Q014",
+        "config": "standard_rag",
+        "error": false,
+        "n_sentences": 6,
+        "max_contra": 0.2804001569747925,
+        "max_contra_routed": 0.005987576209008694,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P010",
+        "query_id": "Q013",
+        "config": "standard_rag",
+        "error": false,
+        "n_sentences": 5,
+        "max_contra": 0.5412696599960327,
+        "max_contra_routed": 0.04479414224624634,
+        "sentences_confirmed_by_rules": 3
+      },
+      {
+        "label_id": "P011",
+        "query_id": "Q007",
+        "config": "standard_rag",
+        "error": false,
+        "n_sentences": 17,
+        "max_contra": 0.9351909756660461,
+        "max_contra_routed": 0.5981982946395874,
+        "sentences_confirmed_by_rules": 9
+      },
+      {
+        "label_id": "P012",
+        "query_id": "Q006",
+        "config": "full_system_corrective",
+        "error": false,
+        "n_sentences": 10,
+        "max_contra": 0.9990108013153076,
+        "max_contra_routed": 0.9990108013153076,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P013",
+        "query_id": "Q002",
+        "config": "full_system_corrective",
+        "error": false,
+        "n_sentences": 8,
+        "max_contra": 0.5099263191223145,
+        "max_contra_routed": 0.024966545403003693,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P015",
+        "query_id": "Q008",
+        "config": "standard_rag",
+        "error": false,
+        "n_sentences": 13,
+        "max_contra": 0.9147657752037048,
+        "max_contra_routed": 0.9147657752037048,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P016",
+        "query_id": "Q004",
+        "config": "standard_rag",
+        "error": false,
+        "n_sentences": 9,
+        "max_contra": 0.9987741112709045,
+        "max_contra_routed": 0.9987741112709045,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P019",
+        "query_id": "Q009",
+        "config": "full_system_corrective",
+        "error": false,
+        "n_sentences": 8,
+        "max_contra": 0.8155571222305298,
+        "max_contra_routed": 0.022479720413684845,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P021",
+        "query_id": "Q015",
+        "config": "full_system",
+        "error": false,
+        "n_sentences": 23,
+        "max_contra": 0.7662752270698547,
+        "max_contra_routed": 0.03104153834283352,
+        "sentences_confirmed_by_rules": 20
+      },
+      {
+        "label_id": "P022",
+        "query_id": "Q013",
+        "config": "full_system",
+        "error": false,
+        "n_sentences": 8,
+        "max_contra": 0.9908379912376404,
+        "max_contra_routed": 0.9908379912376404,
+        "sentences_confirmed_by_rules": 3
+      },
+      {
+        "label_id": "P023",
+        "query_id": "Q005",
+        "config": "full_system",
+        "error": false,
+        "n_sentences": 20,
+        "max_contra": 0.32475897669792175,
+        "max_contra_routed": 0.15894979238510132,
+        "sentences_confirmed_by_rules": 12
+      },
+      {
+        "label_id": "P025",
+        "query_id": "Q004",
+        "config": "full_system_corrective",
+        "error": false,
+        "n_sentences": 11,
+        "max_contra": 0.5797422528266907,
+        "max_contra_routed": 0.5797422528266907,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P026",
+        "query_id": "Q010",
+        "config": "standard_rag",
+        "error": false,
+        "n_sentences": 11,
+        "max_contra": 0.9099695682525635,
+        "max_contra_routed": 0.036420825868844986,
+        "sentences_confirmed_by_rules": 7
+      },
+      {
+        "label_id": "P028",
+        "query_id": "Q004",
+        "config": "full_system",
+        "error": false,
+        "n_sentences": 11,
+        "max_contra": 0.8164628744125366,
+        "max_contra_routed": 0.8164628744125366,
+        "sentences_confirmed_by_rules": 5
+      },
+      {
+        "label_id": "P029",
+        "query_id": "Q012",
+        "config": "standard_rag",
+        "error": false,
+        "n_sentences": 7,
+        "max_contra": 0.27028658986091614,
+        "max_contra_routed": 0.27028658986091614,
+        "sentences_confirmed_by_rules": 3
+      },
+      {
+        "label_id": "P030",
+        "query_id": "Q006",
+        "config": "standard_rag",
+        "error": false,
+        "n_sentences": 3,
+        "max_contra": 0.9909255504608154,
+        "max_contra_routed": 0.9909255504608154,
+        "sentences_confirmed_by_rules": 0
+      },
+      {
+        "label_id": "P031",
+        "query_id": "Q014",
+        "config": "full_system",
+        "error": false,
+        "n_sentences": 9,
+        "max_contra": 0.3325088620185852,
+        "max_contra_routed": 0.036202795803546906,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P032",
+        "query_id": "Q008",
+        "config": "full_system_corrective",
+        "error": false,
+        "n_sentences": 11,
+        "max_contra": 0.9415310025215149,
+        "max_contra_routed": 0.000849219795782119,
+        "sentences_confirmed_by_rules": 9
+      },
+      {
+        "label_id": "P034",
+        "query_id": "Q001",
+        "config": "standard_rag",
+        "error": false,
+        "n_sentences": 6,
+        "max_contra": 0.6855427622795105,
+        "max_contra_routed": 0.0,
+        "sentences_confirmed_by_rules": 6
+      },
+      {
+        "label_id": "P036",
+        "query_id": "Q006",
+        "config": "full_system",
+        "error": false,
+        "n_sentences": 9,
+        "max_contra": 0.9979708790779114,
+        "max_contra_routed": 0.9979708790779114,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P037",
+        "query_id": "Q001",
+        "config": "full_system_corrective",
+        "error": false,
+        "n_sentences": 9,
+        "max_contra": 0.959486722946167,
+        "max_contra_routed": 0.4200746715068817,
+        "sentences_confirmed_by_rules": 5
+      },
+      {
+        "label_id": "P039",
+        "query_id": "Q011",
+        "config": "full_system",
+        "error": false,
+        "n_sentences": 9,
+        "max_contra": 0.9348344802856445,
+        "max_contra_routed": 0.9348344802856445,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P040",
+        "query_id": "Q002",
+        "config": "full_system",
+        "error": false,
+        "n_sentences": 9,
+        "max_contra": 0.5099257826805115,
+        "max_contra_routed": 0.0809614434838295,
+        "sentences_confirmed_by_rules": 5
+      },
+      {
+        "label_id": "P042",
+        "query_id": "Q012",
+        "config": "full_system",
+        "error": false,
+        "n_sentences": 10,
+        "max_contra": 0.3868863582611084,
+        "max_contra_routed": 0.3605383634567261,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P044",
+        "query_id": "Q009",
+        "config": "full_system",
+        "error": false,
+        "n_sentences": 7,
+        "max_contra": 0.815557599067688,
+        "max_contra_routed": 0.0563647523522377,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P045",
+        "query_id": "Q003",
+        "config": "standard_rag",
+        "error": false,
+        "n_sentences": 11,
+        "max_contra": 0.9101629853248596,
+        "max_contra_routed": 0.11689766496419907,
+        "sentences_confirmed_by_rules": 6
+      },
+      {
+        "label_id": "P047",
+        "query_id": "Q015",
+        "config": "standard_rag",
+        "error": false,
+        "n_sentences": 20,
+        "max_contra": 0.9141035079956055,
+        "max_contra_routed": 0.9141035079956055,
+        "sentences_confirmed_by_rules": 13
+      },
+      {
+        "label_id": "P048",
+        "query_id": "Q009",
+        "config": "standard_rag",
+        "error": false,
+        "n_sentences": 6,
+        "max_contra": 0.8118984699249268,
+        "max_contra_routed": 0.056906457990407944,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P049",
+        "query_id": "Q005",
+        "config": "full_system_corrective",
+        "error": false,
+        "n_sentences": 12,
+        "max_contra": 0.9170030355453491,
+        "max_contra_routed": 0.01377013511955738,
+        "sentences_confirmed_by_rules": 7
+      },
+      {
+        "label_id": "P050",
+        "query_id": "Q010",
+        "config": "full_system",
+        "error": false,
+        "n_sentences": 12,
+        "max_contra": 0.07531276345252991,
+        "max_contra_routed": 0.07531276345252991,
+        "sentences_confirmed_by_rules": 7
+      },
+      {
+        "label_id": "P052",
+        "query_id": "Q003",
+        "config": "full_system",
+        "error": false,
+        "n_sentences": 11,
+        "max_contra": 0.9204382300376892,
+        "max_contra_routed": 0.019371556118130684,
+        "sentences_confirmed_by_rules": 6
+      },
+      {
+        "label_id": "P053",
+        "query_id": "Q011",
+        "config": "full_system_corrective",
+        "error": false,
+        "n_sentences": 10,
+        "max_contra": 0.5444908142089844,
+        "max_contra_routed": 0.055197231471538544,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P054",
+        "query_id": "Q007",
+        "config": "full_system",
+        "error": false,
+        "n_sentences": 13,
+        "max_contra": 0.5447512269020081,
+        "max_contra_routed": 0.06484103947877884,
+        "sentences_confirmed_by_rules": 4
+      },
+      {
+        "label_id": "P055",
+        "query_id": "Q002",
+        "config": "standard_rag",
+        "error": false,
+        "n_sentences": 5,
+        "max_contra": 0.24437470734119415,
+        "max_contra_routed": 0.0020564000587910414,
+        "sentences_confirmed_by_rules": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P016 (Male, age 47) -- Month 6.
+
+HbA1c: 5.6% (Classification: Normal).
+Fasting Blood Sugar (FBS): 96.0 mg/dL (Classification: Normal).
+Post-Prandial Blood Sugar (PPBS): 162.0 mg/dL (Classification: Prediabetic).
+LDL Cholesterol: 123.0 mg/dL (Classification: Borderline).
+HDL Cholesterol: 48.0 mg/dL (Classification: Normal).
+Triglycerides: 155.0 mg/dL (Classification: Borderline).
+
+Overall Glycemic Status: Normal.

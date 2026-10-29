@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P020 (Male, age 46) -- Month 4.
+
+HbA1c: 6.2% (Classification: Prediabetic).
+Fasting Blood Sugar (FBS): 113.0 mg/dL (Classification: Prediabetic).
+Post-Prandial Blood Sugar (PPBS): 157.0 mg/dL (Classification: Prediabetic).
+LDL Cholesterol: 109.0 mg/dL (Classification: Borderline).
+HDL Cholesterol: 37.0 mg/dL (Classification: Low).
+Triglycerides: 186.0 mg/dL (Classification: Borderline).
+
+Overall Glycemic Status: Prediabetic.

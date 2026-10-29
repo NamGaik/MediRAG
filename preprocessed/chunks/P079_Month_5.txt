@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P079 (Male, age 48) -- Month 5.
+
+HbA1c: 9.5% (Classification: Diabetic).
+Fasting Blood Sugar (FBS): 196.0 mg/dL (Classification: Diabetic).
+Post-Prandial Blood Sugar (PPBS): 297.0 mg/dL (Classification: Diabetic).
+LDL Cholesterol: 168.0 mg/dL (Classification: High Risk).
+HDL Cholesterol: 29.0 mg/dL (Classification: Low).
+Triglycerides: 252.0 mg/dL (Classification: High).
+
+Overall Glycemic Status: Diabetic.

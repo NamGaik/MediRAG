@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P010 (Female, age 48) -- Month 6.
+
+HbA1c: 7.9% (Classification: Diabetic).
+Fasting Blood Sugar (FBS): 149.0 mg/dL (Classification: Diabetic).
+Post-Prandial Blood Sugar (PPBS): 219.0 mg/dL (Classification: Diabetic).
+LDL Cholesterol: 137.0 mg/dL (Classification: High Risk).
+HDL Cholesterol: 51.0 mg/dL (Classification: Normal).
+Triglycerides: 229.0 mg/dL (Classification: High).
+
+Overall Glycemic Status: Diabetic.

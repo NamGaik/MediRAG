@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P041 (Male, age 26) -- Month 7.
+
+HbA1c: 5.0% (Classification: Normal).
+Fasting Blood Sugar (FBS): 77.0 mg/dL (Classification: Normal).
+Post-Prandial Blood Sugar (PPBS): 109.0 mg/dL (Classification: Normal).
+LDL Cholesterol: 102.0 mg/dL (Classification: Borderline).
+HDL Cholesterol: 56.0 mg/dL (Classification: Normal).
+Triglycerides: 104.0 mg/dL (Classification: Normal).
+
+Overall Glycemic Status: Normal.

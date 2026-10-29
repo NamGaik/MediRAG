@@ -1,0 +1,15 @@
+{
+  "_produced_by": "phase_m_9_scoped_fastpath.py",
+  "_saved_at": "2026-10-24T09:57:13",
+  "_notes": "U9: skip query embedding for patient-scoped retrieval",
+  "results": {
+    "queries": 59,
+    "identical_chunk_sets": 59,
+    "identical_order": 7,
+    "ranked_ms_p50": 58.0,
+    "ranked_ms_p95": 88.0,
+    "fast_ms_p50": 0.887,
+    "fast_ms_p95": 1.297,
+    "speedup_p50": 65.4
+  }
+}

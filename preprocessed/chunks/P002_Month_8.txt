@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P002 (Male, age 36) -- Month 8.
+
+HbA1c: 7.1% (Classification: Diabetic).
+Fasting Blood Sugar (FBS): 138.0 mg/dL (Classification: Diabetic).
+Post-Prandial Blood Sugar (PPBS): 193.0 mg/dL (Classification: Prediabetic).
+LDL Cholesterol: 142.0 mg/dL (Classification: High Risk).
+HDL Cholesterol: 49.0 mg/dL (Classification: Normal).
+Triglycerides: 193.0 mg/dL (Classification: Borderline).
+
+Overall Glycemic Status: Diabetic.

@@ -1,0 +1,138 @@
+{
+  "_produced_by": "phase_j_3_trajectory_v2.py",
+  "_saved_at": "2026-10-27T11:22:37",
+  "_notes": "GRU with inner-split early stopping vs persistence, linear trend, ridge",
+  "results": {
+    "setup": {
+      "pairs": 700,
+      "patients": 100,
+      "max_history": 7,
+      "max_epochs": 600,
+      "patience": 60,
+      "chosen_epochs": [
+        251,
+        217,
+        197,
+        129,
+        183
+      ],
+      "final_model_epochs": 197
+    },
+    "gru": {
+      "HbA1c(%)_MAE": {
+        "mean": 0.22029948234558105,
+        "std": 0.018302667886018753
+      },
+      "FBS (mg/dL)_MAE": {
+        "mean": 10.208786010742188,
+        "std": 0.6526875495910645
+      },
+      "PPBS (mg/dL)_MAE": {
+        "mean": 14.255041122436523,
+        "std": 1.2607191801071167
+      },
+      "risk_accuracy": {
+        "mean": 0.9057142857142857,
+        "std": 0.03870347766898306
+      },
+      "risk_macro_f1": {
+        "mean": 0.8808558048561608,
+        "std": 0.0477955425956666
+      }
+    },
+    "persistence": {
+      "HbA1c(%)_MAE": {
+        "mean": 0.22728577256202698,
+        "std": 0.015788130462169647
+      },
+      "FBS (mg/dL)_MAE": {
+        "mean": 10.862855911254883,
+        "std": 0.6777727007865906
+      },
+      "PPBS (mg/dL)_MAE": {
+        "mean": 17.239999771118164,
+        "std": 1.6257721185684204
+      },
+      "risk_accuracy": {
+        "mean": 0.9242857142857144,
+        "std": 0.026954231805876024
+      },
+      "risk_macro_f1": {
+        "mean": 0.9038401741403804,
+        "std": 0.034919442569879604
+      }
+    },
+    "linear_trend": {
+      "HbA1c(%)_MAE": {
+        "mean": 0.26671430468559265,
+        "std": 0.03555561974644661
+      },
+      "FBS (mg/dL)_MAE": {
+        "mean": 14.09571361541748,
+        "std": 1.1985801458358765
+      },
+      "PPBS (mg/dL)_MAE": {
+        "mean": 22.5964298248291,
+        "std": 2.5778331756591797
+      }
+    },
+    "ridge": {
+      "HbA1c(%)_MAE": {
+        "mean": 0.23176038265228271,
+        "std": 0.014089593663811684
+      },
+      "FBS (mg/dL)_MAE": {
+        "mean": 9.526542663574219,
+        "std": 0.8018258213996887
+      },
+      "PPBS (mg/dL)_MAE": {
+        "mean": 14.39556884765625,
+        "std": 1.2878410816192627
+      }
+    },
+    "hba1c_mae_by_trajectory": {
+      "diabetic_dyslipidemia": {
+        "gru": 0.2337702065706253,
+        "persistence": 0.18999995291233063,
+        "linear_trend": 0.23714280128479004,
+        "ridge": 0.23783588409423828
+      },
+      "diabetic_fluctuating": {
+        "gru": 0.4769532382488251,
+        "persistence": 0.4869047701358795,
+        "linear_trend": 0.6803571581840515,
+        "ridge": 0.4616219103336334
+      },
+      "diabetic_improving": {
+        "gru": 0.25361761450767517,
+        "persistence": 0.3544642925262451,
+        "linear_trend": 0.3428572118282318,
+        "ridge": 0.3005809783935547
+      },
+      "diabetic_worsening": {
+        "gru": 0.22131824493408203,
+        "persistence": 0.23877552151679993,
+        "linear_trend": 0.21683675050735474,
+        "ridge": 0.260526567697525
+      },
+      "normal_stable": {
+        "gru": 0.12751854956150055,
+        "persistence": 0.1150793805718422,
+        "linear_trend": 0.16031748056411743,
+        "ridge": 0.14352093636989594
+      },
+      "prediabetic_progressing": {
+        "gru": 0.13715481758117676,
+        "persistence": 0.1294642686843872,
+        "linear_trend": 0.1316964477300644,
+        "ridge": 0.130027174949646
+      },
+      "prediabetic_stable": {
+        "gru": 0.1659044474363327,
+        "persistence": 0.13061220943927765,
+        "linear_trend": 0.18724484741687775,
+        "ridge": 0.1526954472064972
+      }
+    }
+  }
+}

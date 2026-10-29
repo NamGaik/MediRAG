@@ -1,0 +1,61 @@
+{
+  "_produced_by": "phase_m_10_error_injection.py",
+  "_saved_at": "2026-10-26T19:38:53",
+  "_notes": "U7b: controlled error injection into correct grounded answers",
+  "results": {
+    "run_id": 1,
+    "seed": 42,
+    "cases": {
+      "original": 39,
+      "value_perturbed": 39,
+      "value_swapped": 39,
+      "label_flipped": 36,
+      "trend_reversed": 22,
+      "claim_added": 39
+    },
+    "detectors": {
+      "rule_v1": {
+        "false_alarm_rate": 0.282,
+        "detection_rate": {
+          "value_perturbed": 0.436,
+          "value_swapped": 0.282,
+          "label_flipped": 0.417,
+          "trend_reversed": 0.318,
+          "claim_added": 0.282,
+          "all": 0.349
+        }
+      },
+      "rule_v3": {
+        "false_alarm_rate": 0.103,
+        "detection_rate": {
+          "value_perturbed": 0.308,
+          "value_swapped": 0.077,
+          "label_flipped": 0.333,
+          "trend_reversed": 0.136,
+          "claim_added": 0.103,
+          "all": 0.194
+        }
+      },
+      "rule_v4": {
+        "false_alarm_rate": 0.026,
+        "detection_rate": {
+          "value_perturbed": 0.821,
+          "value_swapped": 0.103,
+          "label_flipped": 0.861,
+          "trend_reversed": 0.045,
+          "claim_added": 0.026,
+          "all": 0.394
+        }
+      }
+    },
+    "rule_v4_real_answers": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "tn": 50,
+      "precision": 0.5,
+      "recall": 0.333,
+      "n": 54
+    }
+  }
+}

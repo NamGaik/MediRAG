@@ -1,4 +1,4 @@
-# MediRAG upgrades (U1, U2, U3, U6)
+# MediRAG upgrades (U1, U2, U3, U6, U9) + lipid fix
 
 Run everything from the `MediRAG` root folder. None of these scripts call the Claude API.
 
@@ -7,6 +7,7 @@ Run everything from the `MediRAG` root folder. None of these scripts call the Cl
 | `pipeline/phase_m_2_ocr_gate.py` | OCR quality gate, evaluated on the saved OCR results | nothing extra | yes, results below |
 | `pipeline/phase_m_3_routed_verification.py` | Rule validator v3 + verifier override + ensemble vs author labels | nothing extra | yes, results below |
 | `pipeline/phase_m_6_cost_profile.py` | Tokens per configuration + rule-validator latency | nothing extra (`--with-verifier` needs `models/`) | yes, results below |
+| `pipeline/phase_m_9_scoped_fastpath.py` | U9: patient-scoped retrieval without query embedding -- latency + identical-result check | `vector_db/` + Bio_ClinicalBERT | **run it on your laptop** |
 | `pipeline/phase_m_1_leakage_audit.py` | Cross-patient leakage: unrestricted vs patient-scoped retrieval | `vector_db/` + Bio_ClinicalBERT (same as phase_ef) | **run it on your laptop** |
 
 ```powershell
@@ -14,9 +15,26 @@ python pipeline/phase_m_1_leakage_audit.py
 python pipeline/phase_m_2_ocr_gate.py
 python pipeline/phase_m_3_routed_verification.py --run-id 1
 python pipeline/phase_m_6_cost_profile.py
+python pipeline/phase_m_9_scoped_fastpath.py
 ```
 
-## Two bugs fixed
+## U9 – Scoped retrieval fast path
+`retrieve_top_k(..., scoped_fast_path=True)` skips the Bio_ClinicalBERT query embedding and FAISS
+search when a query is about one patient who has no more than k chunks, because ranking cannot change
+which chunks are returned. Chunks come back in chronological order. **Off by default**, so the
+benchmark prompts in the paper stay byte-identical. `phase_g_generation.py` now omits "similarity"
+from the prompt for unranked chunks (unchanged for ranked ones). The deployed app already builds
+context from the live record, so U9 brings the research pipeline in line with it.
+
+## Lipid fix (deployed app)
+The chat could not answer LDL / HDL / triglyceride questions -- even though the app's own suggested
+questions ask about LDL -- because the live history only held HbA1c, FBS and PPBS.
+- `backend/main.py`: lipid values are back-filled from the Excel sheet at startup (also for an older
+  saved snapshot), uploads now keep LDL/HDL/TG, and the chat context includes them with the same
+  labels as the benchmark chunks (checked: 150/150 visits identical; HDL uses each patient's gender).
+- `frontend`: the History tab shows LDL, HDL and TG.
+
+## Bugs fixed earlier
 
 - `pipeline/results_logger.py` saved results into `pipeline/results/` after the repo reorganisation. It now saves into `results/` again.
 - `backend/main.py` could not import the `phase_*` files (they moved to `pipeline/`). It also imported `phase_j_trajectory_model`, which is now `phase_j_1_trajectory_model`. Both are fixed.

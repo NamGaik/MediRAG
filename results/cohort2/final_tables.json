@@ -1,0 +1,255 @@
+{
+ "patient": {
+  "claude-haiku-5-5/full_system": {
+   "correct": 47,
+   "error": 2,
+   "no_data": 0,
+   "n": 49,
+   "ci95": [
+    0.863,
+    0.989
+   ]
+  },
+  "claude-haiku-5-5/full_system_corrective": {
+   "correct": 47,
+   "error": 0,
+   "no_data": 0,
+   "n": 47,
+   "ci95": [
+    0.924,
+    1
+   ]
+  },
+  "claude-haiku-5-5/standard_rag": {
+   "correct": 49,
+   "error": 0,
+   "no_data": 0,
+   "n": 49,
+   "ci95": [
+    0.927,
+    1.0
+   ]
+  },
+  "claude-sonnet-5/full_system": {
+   "correct": 48,
+   "error": 1,
+   "no_data": 0,
+   "n": 49,
+   "ci95": [
+    0.893,
+    0.996
+   ]
+  }
+ },
+ "paired": {
+  "haiku_standard_rag_vs_full": {
+   "n": 49,
+   "only_first_correct": 2,
+   "only_second_correct": 0,
+   "p": 0.5
+  },
+  "haiku_full_vs_corrective": {
+   "n": 47,
+   "only_first_correct": 0,
+   "only_second_correct": 2,
+   "p": 0.5
+  },
+  "haiku_full_vs_sonnet_full": {
+   "n": 49,
+   "only_first_correct": 1,
+   "only_second_correct": 2,
+   "p": 1.0
+  }
+ },
+ "traps": {
+  "claude-haiku-5-5/full_system": {
+   "safe": 67,
+   "n": 67,
+   "ci95": [
+    0.946,
+    1.0
+   ]
+  },
+  "claude-haiku-5-5/full_system_corrective": {
+   "safe": 67,
+   "n": 67,
+   "ci95": [
+    0.946,
+    1.0
+   ]
+  },
+  "claude-haiku-5-5/standard_rag": {
+   "safe": 70,
+   "n": 70,
+   "ci95": [
+    0.948,
+    1.0
+   ]
+  },
+  "claude-sonnet-5/full_system": {
+   "safe": 70,
+   "n": 70,
+   "ci95": [
+    0.948,
+    1.0
+   ]
+  }
+ },
+ "traps_by_type": {
+  "attribution": {
+   "claude-haiku-5-5/full_system": "5/5",
+   "claude-haiku-5-5/full_system_corrective": "5/5",
+   "claude-haiku-5-5/standard_rag": "5/5",
+   "claude-sonnet-5/full_system": "5/5"
+  },
+  "causation_claim": {
+   "claude-haiku-5-5/full_system": "5/5",
+   "claude-haiku-5-5/full_system_corrective": "5/5",
+   "claude-haiku-5-5/standard_rag": "5/5",
+   "claude-sonnet-5/full_system": "5/5"
+  },
+  "cross_patient": {
+   "claude-haiku-5-5/full_system": "5/5",
+   "claude-haiku-5-5/full_system_corrective": "5/5",
+   "claude-haiku-5-5/standard_rag": "5/5",
+   "claude-sonnet-5/full_system": "5/5"
+  },
+  "external_reference": {
+   "claude-haiku-5-5/full_system": "3/3",
+   "claude-haiku-5-5/full_system_corrective": "3/3",
+   "claude-haiku-5-5/standard_rag": "5/5",
+   "claude-sonnet-5/full_system": "5/5"
+  },
+  "future_prediction": {
+   "claude-haiku-5-5/full_system": "5/5",
+   "claude-haiku-5-5/full_system_corrective": "5/5",
+   "claude-haiku-5-5/standard_rag": "5/5",
+   "claude-sonnet-5/full_system": "5/5"
+  },
+  "misclassification": {
+   "claude-haiku-5-5/full_system": "5/5",
+   "claude-haiku-5-5/full_system_corrective": "5/5",
+   "claude-haiku-5-5/standard_rag": "5/5",
+   "claude-sonnet-5/full_system": "5/5"
+  },
+  "misconception": {
+   "claude-haiku-5-5/full_system": "5/5",
+   "claude-haiku-5-5/full_system_corrective": "5/5",
+   "claude-haiku-5-5/standard_rag": "5/5",
+   "claude-sonnet-5/full_system": "5/5"
+  },
+  "missing_biomarker": {
+   "claude-haiku-5-5/full_system": "5/5",
+   "claude-haiku-5-5/full_system_corrective": "5/5",
+   "claude-haiku-5-5/standard_rag": "5/5",
+   "claude-sonnet-5/full_system": "5/5"
+  },
+  "mixed_biomarker": {
+   "claude-haiku-5-5/full_system": "4/4",
+   "claude-haiku-5-5/full_system_corrective": "4/4",
+   "claude-haiku-5-5/standard_rag": "5/5",
+   "claude-sonnet-5/full_system": "5/5"
+  },
+  "multi_visit_false_premise": {
+   "claude-haiku-5-5/full_system": "5/5",
+   "claude-haiku-5-5/full_system_corrective": "5/5",
+   "claude-haiku-5-5/standard_rag": "5/5",
+   "claude-sonnet-5/full_system": "5/5"
+  },
+  "nonexistent_month": {
+   "claude-haiku-5-5/full_system": "5/5",
+   "claude-haiku-5-5/full_system_corrective": "5/5",
+   "claude-haiku-5-5/standard_rag": "5/5",
+   "claude-sonnet-5/full_system": "5/5"
+  },
+  "out_of_scope": {
+   "claude-haiku-5-5/full_system": "5/5",
+   "claude-haiku-5-5/full_system_corrective": "5/5",
+   "claude-haiku-5-5/standard_rag": "5/5",
+   "claude-sonnet-5/full_system": "5/5"
+  },
+  "unavailable_data": {
+   "claude-haiku-5-5/full_system": "5/5",
+   "claude-haiku-5-5/full_system_corrective": "5/5",
+   "claude-haiku-5-5/standard_rag": "5/5",
+   "claude-sonnet-5/full_system": "5/5"
+  },
+  "wrong_fact": {
+   "claude-haiku-5-5/full_system": "5/5",
+   "claude-haiku-5-5/full_system_corrective": "5/5",
+   "claude-haiku-5-5/standard_rag": "5/5",
+   "claude-sonnet-5/full_system": "5/5"
+  }
+ },
+ "keyword_vs_human": {
+  "kappa": 0.0,
+  "n": 274,
+  "agreement": 0.628
+ },
+ "checkers": {
+  "rule_v1": {
+   "tp": 3,
+   "fp": 57,
+   "fn": 0,
+   "tn": 134,
+   "n": 194,
+   "false_alarm_rate": 0.298,
+   "precision": 0.05,
+   "recall": 1.0
+  },
+  "rule_v3": {
+   "tp": 0,
+   "fp": 11,
+   "fn": 3,
+   "tn": 180,
+   "n": 194,
+   "false_alarm_rate": 0.058,
+   "precision": 0.0,
+   "recall": 0.0
+  },
+  "rule_v4": {
+   "tp": 1,
+   "fp": 14,
+   "fn": 2,
+   "tn": 177,
+   "n": 194,
+   "false_alarm_rate": 0.073,
+   "precision": 0.067,
+   "recall": 0.333
+  },
+  "verifier": {
+   "tp": 0,
+   "fp": 90,
+   "fn": 1,
+   "tn": 36,
+   "n": 127,
+   "false_alarm_rate": 0.714,
+   "precision": 0.0,
+   "recall": 0.0
+  },
+  "verifier_routed": {
+   "tp": 0,
+   "fp": 45,
+   "fn": 1,
+   "tn": 81,
+   "n": 127,
+   "false_alarm_rate": 0.357,
+   "precision": 0.0,
+   "recall": 0.0
+  }
+ },
+ "inter_rater": {
+  "patient/all_values_correct (yes/no)": {
+   "kappa": 1.0,
+   "n": 64
+  },
+  "patient/unsupported_claim (yes/no)": {
+   "kappa": 0.0,
+   "n": 64
+  },
+  "traps/safe (yes/no)": {
+   "kappa": 0.0,
+   "n": 94
+  }
+ }
+}

@@ -1,0 +1,164 @@
+{
+  "_produced_by": "phase_l_6_benchmark_v2.py",
+  "_saved_at": "2026-10-27T22:21:44",
+  "_notes": "v2 benchmark, automatic scoring only; human labels pending",
+  "results": {
+    "trap_safety_auto": {
+      "plain_llm": {
+        "safe": 27,
+        "n": 70,
+        "ci95": [
+          0.28,
+          0.503
+        ]
+      },
+      "standard_rag": {
+        "safe": 40,
+        "n": 70,
+        "ci95": [
+          0.455,
+          0.681
+        ]
+      },
+      "full_system": {
+        "safe": 40,
+        "n": 70,
+        "ci95": [
+          0.455,
+          0.681
+        ]
+      },
+      "full_system_corrective": {
+        "safe": 38,
+        "n": 70,
+        "ci95": [
+          0.427,
+          0.654
+        ]
+      }
+    },
+    "trap_safety_auto_by_type": {
+      "attribution": {
+        "plain_llm": "0/5",
+        "standard_rag": "0/5",
+        "full_system": "0/5",
+        "full_system_corrective": "0/5"
+      },
+      "causation_claim": {
+        "plain_llm": "0/5",
+        "standard_rag": "0/5",
+        "full_system": "0/5",
+        "full_system_corrective": "0/5"
+      },
+      "cross_patient": {
+        "plain_llm": "1/5",
+        "standard_rag": "5/5",
+        "full_system": "3/5",
+        "full_system_corrective": "3/5"
+      },
+      "external_reference": {
+        "plain_llm": "3/5",
+        "standard_rag": "4/5",
+        "full_system": "2/5",
+        "full_system_corrective": "1/5"
+      },
+      "future_prediction": {
+        "plain_llm": "4/5",
+        "standard_rag": "2/5",
+        "full_system": "5/5",
+        "full_system_corrective": "5/5"
+      },
+      "misclassification": {
+        "plain_llm": "3/5",
+        "standard_rag": "5/5",
+        "full_system": "5/5",
+        "full_system_corrective": "5/5"
+      },
+      "misconception": {
+        "plain_llm": "4/5",
+        "standard_rag": "1/5",
+        "full_system": "2/5",
+        "full_system_corrective": "2/5"
+      },
+      "missing_biomarker": {
+        "plain_llm": "0/5",
+        "standard_rag": "0/5",
+        "full_system": "1/5",
+        "full_system_corrective": "1/5"
+      },
+      "mixed_biomarker": {
+        "plain_llm": "5/5",
+        "standard_rag": "4/5",
+        "full_system": "3/5",
+        "full_system_corrective": "2/5"
+      },
+      "multi_visit_false_premise": {
+        "plain_llm": "2/5",
+        "standard_rag": "5/5",
+        "full_system": "5/5",
+        "full_system_corrective": "5/5"
+      },
+      "nonexistent_month": {
+        "plain_llm": "0/5",
+        "standard_rag": "4/5",
+        "full_system": "4/5",
+        "full_system_corrective": "4/5"
+      },
+      "out_of_scope": {
+        "plain_llm": "5/5",
+        "standard_rag": "5/5",
+        "full_system": "5/5",
+        "full_system_corrective": "5/5"
+      },
+      "unavailable_data": {
+        "plain_llm": "0/5",
+        "standard_rag": "0/5",
+        "full_system": "0/5",
+        "full_system_corrective": "0/5"
+      },
+      "wrong_fact": {
+        "plain_llm": "0/5",
+        "standard_rag": "5/5",
+        "full_system": "5/5",
+        "full_system_corrective": "5/5"
+      }
+    },
+    "rule_issues": {
+      "plain_llm": {
+        "answers_with_checkable_values": 30,
+        "total_values_checked": 39,
+        "total_issues": 39
+      },
+      "standard_rag": {
+        "answers_with_checkable_values": 90,
+        "total_values_checked": 191,
+        "total_issues": 14
+      },
+      "full_system": {
+        "answers_with_checkable_values": 88,
+        "total_values_checked": 206,
+        "total_issues": 50
+      },
+      "full_system_corrective": {
+        "answers_with_checkable_values": 81,
+        "total_values_checked": 187,
+        "total_issues": 36
+      }
+    },
+    "run_config": {
+      "run_id": 2,
+      "model": "claude-haiku-5-5",
+      "sampling": "API default; no temperature or other sampling parameter set",
+      "anthropic_sdk_version": "1.4.0",
+      "max_tokens": 800,
+      "retrieval_top_k": 8,
+      "configs": [
+        "plain_llm",
+        "standard_rag",
+        "full_system",
+        "full_system_corrective"
+      ],
+      "started": "2026-10-27 22:06:01"
+    }
+  }
+}

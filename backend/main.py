@@ -63,11 +63,16 @@ else:
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 # phase_*.py files live in pipeline/ after the repo reorganisation
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "pipeline")))
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 from phase_ef_vectorDB import load_index, retrieve_top_k
 from phase_g_generation import generate_explanation
 from phase_j_1_trajectory_model import load_patient_sequences, predict_next_visit
 from phase_i_neural_verifier import verify_answer_by_matched_chunks
+# Lipid classification + patient age/gender, reused from preprocessing so the
+# live app labels LDL/HDL/TG exactly like the benchmark chunks do.
+from phase_c_preprocessing import (classify_ldl, classify_hdl, classify_triglycerides,
+                                   load_patient_master)
 
 # -----------------------------
 # App setup
@@ -129,6 +134,44 @@ else:
     _patient_sequences = load_patient_sequences()
     _new_patients = {}
     _next_new_patient_number = 1
+
+# -----------------------------
+# Lipid backfill: load_patient_sequences() keeps only HbA1c/FBS/PPBS (it feeds
+# the GRU), so without this the chat could not answer LDL/HDL/triglyceride
+# questions. Adds the lipid values from the same Excel sheet, by visit order,
+# to every original patient -- also fixes histories loaded from an older snapshot.
+# -----------------------------
+LIPID_KEYS = {"LDL": "LDL (mg/dL)", "HDL": "HDL (mg/dL)", "Triglycerides": "Triglycerides (mg/dL)"}
+
+
+def backfill_lipids():
+    import pandas as pd
+    df = pd.read_excel(os.path.join(ROOT_DIR, "data", "Synthetic_diabetes_dataset1.xlsx"),
+                       sheet_name="Laboratory_Reports").dropna(subset=["Patient_ID"])
+    df["month_num"] = df["Month"].astype(str).str.extract(r"(\d+)")[0].astype(float)
+    filled = 0
+    for pid, group in df.sort_values(["Patient_ID", "month_num"]).groupby("Patient_ID"):
+        visits = _patient_sequences.get(pid)
+        if not visits:
+            continue
+        for visit, (_, row) in zip(visits, group.iterrows()):
+            for col, key in LIPID_KEYS.items():
+                if visit.get(key) is None and pd.notna(row.get(col)):
+                    visit[key] = float(row[col])
+                    filled += 1
+    return filled
+
+
+_patient_master = {}
+try:
+    _cwd = os.getcwd()
+    os.chdir(ROOT_DIR)                       # phase_c uses paths relative to the project root
+    _patient_master = load_patient_master()
+    print(f"[STARTUP] Lipid values backfilled: {backfill_lipids()}")
+except Exception as e:                       # never stop the app over this
+    print(f"[STARTUP] Lipid backfill skipped: {e}")
+finally:
+    os.chdir(_cwd)
 
 print("Backend ready.")
 
@@ -304,7 +347,8 @@ def get_patient_trend(patient_id: str):
             detail="Need at least 2 recorded visits to forecast a trend -- upload another report."
         )
 
-    recent_history = history[-2:]
+    from phase_j_1_trajectory_model import MAX_SEQ_LEN
+    recent_history = history[-MAX_SEQ_LEN:]
     prediction = predict_next_visit(recent_history)
     return {"patient_id": patient_id, "history": history, "prediction": prediction}
 
@@ -332,6 +376,12 @@ def normalize_marker_key(marker_text):
         return "FBS (mg/dL)"
     if "post-prandial" in m or "postprandial" in m or "(ppbs)" in m or m == "ppbs":
         return "PPBS (mg/dL)"
+    if "ldl" in m:
+        return "LDL (mg/dL)"
+    if "hdl" in m:
+        return "HDL (mg/dL)"
+    if "triglycer" in m:
+        return "Triglycerides (mg/dL)"
     return None
 
 
@@ -497,7 +547,9 @@ def build_visit_record(structured_values, text):
     (History, Trends, chat retrieval all just see a normal visit).
     Fields not found default to None rather than a fabricated number.
     """
-    record = {"HbA1c(%)": None, "FBS (mg/dL)": None, "PPBS (mg/dL)": None, "status": "Unknown"}
+    record = {"HbA1c(%)": None, "FBS (mg/dL)": None, "PPBS (mg/dL)": None,
+              "LDL (mg/dL)": None, "HDL (mg/dL)": None, "Triglycerides (mg/dL)": None,
+              "status": "Unknown"}
 
     for v in structured_values:
         key = normalize_marker_key(v["marker"])
@@ -695,6 +747,15 @@ def classify_marker(marker, value):
     return "Normal"
 
 
+def patient_gender(patient_id):
+    """Gender for the sex-specific HDL rule: Patient_Master for P001-P050,
+    the sign-up form for new patients, otherwise Unknown (male threshold)."""
+    if patient_id in _new_patients:
+        g = str(_new_patients[patient_id].get("gender", "Unknown")).strip().capitalize()
+        return g if g in ("Male", "Female") else "Unknown"
+    return str(_patient_master.get(patient_id, {}).get("Gender", "Unknown"))
+
+
 def build_chunks_from_history(patient_id, history):
     """
     Builds retrieval-equivalent chunks directly from a patient's CURRENT
@@ -719,6 +780,15 @@ def build_chunks_from_history(patient_id, history):
             lines.append(f"Fasting Blood Sugar (FBS): {fbs} mg/dL (Classification: {classify_marker('FBS', fbs)}).")
         if ppbs is not None:
             lines.append(f"Post-Prandial Blood Sugar (PPBS): {ppbs} mg/dL (Classification: {classify_marker('PPBS', ppbs)}).")
+        ldl = visit.get("LDL (mg/dL)")
+        hdl = visit.get("HDL (mg/dL)")
+        tg = visit.get("Triglycerides (mg/dL)")
+        if ldl is not None:
+            lines.append(f"LDL Cholesterol: {ldl} mg/dL (Classification: {classify_ldl(ldl)}).")
+        if hdl is not None:
+            lines.append(f"HDL Cholesterol: {hdl} mg/dL (Classification: {classify_hdl(hdl, patient_gender(patient_id))}).")
+        if tg is not None:
+            lines.append(f"Triglycerides: {tg} mg/dL (Classification: {classify_triglycerides(tg)}).")
 
         chunks.append({
             "Patient_ID": patient_id,

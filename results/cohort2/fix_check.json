@@ -1,0 +1,184 @@
+{
+ "model": "claude-haiku-5-5",
+ "max_tokens": 2000,
+ "fix1": {
+  "C2Q010": {
+   "complete": true,
+   "output_tokens": 1051,
+   "chars": 1318,
+   "answer": "**No, the overall glycemic status stayed the same.** In every month from Month 1 through Month 8, the report lists the overall glycemic status as **Diabetic**.\n\nSome individual results did change category during this period:\n\n- **Post-Prandial Blood Sugar (PPBS)** was classified as Prediabetic in Months 1, 3, 4, and 6, and as Diabetic in Months 2, 5, 7, and 8.\n- **LDL cholesterol** was High Risk in Months 1 through 5 and Month 8, and Borderline in Months 6 and 7.\n- **Triglycerides** were High in Months 1 through 5 and Month 7, and Borderline in Months 6 and 8.\n- **HDL cholesterol** was classified as Low in every month.\n\nThe numbers for HbA1c, fasting blood sugar, and PPBS generally rose over these months. For example, HbA1c went from 6.7% in Month 1 to 8.0% in Month 8, though it did not follow a straight line.\n\n**Model estimate (not a measured result):** Our trained forecasting model estimates that the next HbA1c would be about 8.11%, the next fasting blood sugar about 171.5 mg/dL, and the next PPBS about 223.9 mg/dL, with the risk category staying Diabetic. This is only a projection based on the trend so far, not a certainty. Only a real lab test can confirm these values.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what next steps may be appropriate."
+  },
+  "C2Q024": {
+   "complete": true,
+   "output_tokens": 553,
+   "chars": 666,
+   "answer": "**No, your overall glycemic status has stayed the same.** Every monthly report from Month 1 through Month 8 lists your overall status as **Diabetic**.\n\nSome of the individual numbers did rise over that period. For example, your HbA1c went from 8.4% in Month 1 to 10.0% in Month 8, and your fasting blood sugar went from 164.0 to 200.0 mg/dL. The overall label, though, did not change.\n\nThe trend model estimates that your next result would also fall in the Diabetic category, with an HbA1c around 10.0%. This is a prediction, not a measured result, and only future lab testing can confirm it. Please discuss these results and what they mean for you with your doctor."
+  },
+  "C2Q029": {
+   "complete": true,
+   "output_tokens": 905,
+   "chars": 1024,
+   "answer": "**Short answer:** Not in a clear, steady way. Your HbA1c has moved up and down, but every reading has been in the Normal range.\n\nYour HbA1c readings by month were:\n- Month 1: 5.5%\n- Month 2: 5.4%\n- Month 3: 5.6%\n- Month 4: 5.1% (lowest)\n- Month 5: 5.3%\n- Month 6: 5.3%\n- Month 7: 5.4%\n- Month 8: 5.4%\n\nYour latest reading (5.4%) is slightly lower than your first (5.5%), but the values have moved around over the visits rather than falling in a consistent direction. After the low of 5.1% in Month 4, the readings have been between 5.3% and 5.4%.\n\nFor background, HbA1c is a blood test that reflects your average blood sugar over roughly the past two to three months. Your report classifies all of your HbA1c results as Normal.\n\nOur forecasting model estimates that your next HbA1c would be about 5.41%, which is similar to your recent readings. This is a model estimate, not a measured result, and only a future lab test can confirm it.\n\nPlease discuss these trends with your doctor, who can explain what they mean for you."
+  },
+  "C2Q046": {
+   "complete": true,
+   "output_tokens": 780,
+   "chars": 1212,
+   "answer": "In your Month 8 report, the values not labeled as normal are:\n\n- **HbA1c: 6.1%**, classified as **Prediabetic**\n- **Fasting Blood Sugar: 100.0 mg/dL**, classified as **Prediabetic**\n- **Post-Prandial Blood Sugar: 153.0 mg/dL**, classified as **Prediabetic**\n- **Triglycerides: 177.0 mg/dL**, classified as **Borderline**\n\nTwo values are labeled within a healthy category:\n\n- **LDL Cholesterol: 94.0 mg/dL**, classified as **Optimal**\n- **HDL Cholesterol: 41.0 mg/dL**, classified as **Normal**\n\nYour report's overall glycemic status for Month 8 is **Prediabetic**.\n\nFor background, HbA1c reflects average blood sugar over the past few months, fasting blood sugar is measured after not eating, and post-prandial blood sugar is measured after a meal. Triglycerides are a type of fat in the blood.\n\nOur forecasting model estimates that your next HbA1c will be about 6.21%, fasting blood sugar about 111.5 mg/dL, and post-prandial blood sugar about 162.2 mg/dL, with a predicted category of Prediabetic. This is a model estimate, not a measured result, and only future lab testing can confirm it.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what steps, if any, to take."
+  },
+  "C2T011": {
+   "complete": true,
+   "output_tokens": 672,
+   "chars": 564,
+   "answer": "No, the records I have don't show an HbA1c of 7.6%. Your HbA1c values range from 4.8% to 5.2%, and all are classified as Normal. The most recent month in these records is Month 8, where your HbA1c was 5.1% (Normal).\n\nFor background, HbA1c is a blood test that reflects your average blood sugar over the past few months. Your doctor can tell you what a particular value means for you.\n\nYour 7.6% may come from a test or visit that isn't in these records, or it may be a mix-up. Please check the report from that visit or ask your doctor or lab to confirm the value."
+  },
+  "C2T016": {
+   "complete": true,
+   "output_tokens": 910,
+   "chars": 807,
+   "answer": "Our forecasting model estimates your next readings as follows. These are **predictions, not measured results**, and they may not be accurate. Only a real lab test can confirm your actual levels.\n\n- **HbA1c:** about 6.21% (predicted)\n- **Fasting blood sugar:** about 111.5 mg/dL (predicted)\n- **Post-meal blood sugar:** about 162.2 mg/dL (predicted)\n- **Predicted category:** Prediabetic\n\nFor comparison, your most recent measured results in the report (Month 8) were HbA1c 6.1%, fasting blood sugar 100.0 mg/dL, and post-meal blood sugar 153.0 mg/dL, all classified as Prediabetic. The model's predicted fasting and post-meal values are somewhat higher than these Month 8 results.\n\nPlease talk with your doctor about your results and what they mean for you, including when your next lab test should be done."
+  },
+  "C2T022": {
+   "complete": true,
+   "output_tokens": 1020,
+   "chars": 887,
+   "answer": "No, the reports show your status has changed over time. Based on the monthly reports provided:\n\n- **Months 1, 2, and 5** were classified as **Prediabetic** overall.\n- **Months 3, 4, 6, 7, and 8** were classified as **Diabetic** overall.\n\nYour most recent report (Month 8) is Diabetic, and your HbA1c rose from 6.1% in Month 1 to 6.7% in Month 8. Some individual results were classified differently from the overall status. For example, in Month 3 your HbA1c of 6.0% was classified as Prediabetic, even though your overall status that month was Diabetic.\n\nOur forecasting model estimates that your next risk category would also be Diabetic, with an HbA1c of about 6.74%. This is only an estimate based on your trend, not a measured result, and real lab testing would be needed to confirm it.\n\nPlease talk with your doctor about what these results mean for you and what steps to take next."
+  },
+  "C2T024": {
+   "complete": true,
+   "output_tokens": 686,
+   "chars": 1033,
+   "answer": "No, the reports don't show diabetes in any month. None of the eight reports (Months 1 through 8) classifies you as \"Diabetic.\"\n\n- **Normal overall:** Months 1, 2, 3, 4, 7, and 8.\n- **Prediabetic overall:** Months 5 and 6. In these months, your fasting blood sugar was classified as \"Prediabetic\" (102.0 mg/dL in Month 5 and 105.0 mg/dL in Month 6).\n- **Post-prandial blood sugar (taken after eating):** Month 4 was classified as \"Prediabetic\" at 143.0 mg/dL. All other months were classified as \"Normal.\"\n- **HbA1c:** Every month was classified as \"Normal,\" ranging from 5.0% to 5.4%.\n\nYour cholesterol results (LDL, HDL, and triglycerides) were also classified as Normal or Optimal in every month.\n\nA model trend estimate, which is a prediction and not a measured result, suggests your next risk category could be \"Normal.\" This is an estimate only, and real lab testing would be needed to confirm it.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what follow-up, if any, is appropriate."
+  },
+  "C2T025": {
+   "complete": true,
+   "output_tokens": 934,
+   "chars": 1064,
+   "answer": "**Not quite.** Your reports show that your overall status has changed over the 8 months:\n\n- **Months 1 to 4:** Overall status was **Prediabetic**.\n- **Months 5 to 8:** Overall status was **Diabetic**.\n\nSo you have been labeled diabetic for the last four months, but not for the whole period. The most recent four reports are consistent with each other, and the earlier ones were not.\n\nThe individual tests don't always match the overall label. For example, in Month 8 your HbA1c was 7.0% (Diabetic), but your post-meal blood sugar was 180.0 mg/dL (Prediabetic). In Month 7, your fasting blood sugar was 121.0 mg/dL (Prediabetic), even though your overall status was Diabetic.\n\nThe report also includes a **model estimate**, not a measured result. It predicts that your next HbA1c will be about 7.05% and that your next risk category will be Diabetic. This is a projection from your trend, not a certainty, and only a real lab test can confirm it.\n\nPlease discuss what these results mean for you, including the change from Prediabetic to Diabetic, with your doctor."
+  },
+  "C2T038": {
+   "complete": true,
+   "output_tokens": 846,
+   "chars": 1385,
+   "answer": "Your lab reports don't show a diabetes diagnosis. Every monthly summary (Months 1 through 8) lists your **Overall Glycemic Status as Normal**, and your HbA1c, which reflects average blood sugar over a longer period, was between 5.0% and 5.3%, classified as Normal each time.\n\nTwo results were classified differently. Your **post-prandial blood sugar** (measured after eating) was labeled **Prediabetic** in Month 1 (153.0 mg/dL) and Month 8 (144.0 mg/dL). The other months were Normal. The reports don't explain what caused these readings, and they don't mention exercise or any cause of diabetes.\n\nFor background, type 2 diabetes is generally linked to several factors, including genetics, body weight, age, and physical activity. Lack of exercise is one possible risk factor, but it is rarely the only cause, and I can't tell from your report whether it played any role for you.\n\nBecause your reports show normal overall results, the most useful next step is to ask your doctor to explain the two post-prandial readings and what they mean for you. Your doctor can also discuss your personal risk factors and whether exercise or other changes would help.\n\nFor what it's worth, our forecasting model estimates your next HbA1c at about 5.17% and your risk category as Normal. This is only a model estimate, not a measured result, and it would need to be confirmed by actual lab testing."
+  },
+  "C2T040": {
+   "complete": true,
+   "output_tokens": 615,
+   "chars": 939,
+   "answer": "**The report doesn't say what caused your diabetes.** It contains lab results only, with no information about your weight, body size, or other health factors, so I can't tell you whether your weight played a role.\n\nThe results do show a change over time. Months 1 through 6 and Month 4 were classified as **Prediabetic**. Months 7 and 8 were classified as **Diabetic**, with HbA1c values of 6.5% and 6.6%. The report's classifications are a summary of these measurements, and a doctor would confirm any diagnosis.\n\nFor background, in general, being overweight is one of several known risk factors for type 2 diabetes, along with age, family history, and physical activity. Often more than one factor contributes. Your doctor can look at your full history, including your weight and other health factors, to understand what may have contributed in your case.\n\nPlease discuss this question and what the results mean for you with your doctor."
+  },
+  "C2T044": {
+   "complete": true,
+   "output_tokens": 605,
+   "chars": 677,
+   "answer": "Your reports don't say anything about medication, so I can't tell you whether medication is behind your 5.9% HbA1c. Nothing in the report lists any medicines you take.\n\nYour 5.9% result appears in your Month 6 and Month 8 reports, and both classify it as **Prediabetic**. Your HbA1c readings across all eight months ranged from 5.8% to 6.2%, all in the Prediabetic classification.\n\nFor background, HbA1c is a blood test that reflects your average blood sugar level over the previous few months. Your doctor is the best person to explain what might be affecting your results, including whether any medications are relevant, and what the Prediabetic classification means for you."
+  },
+  "C2T046": {
+   "complete": true,
+   "output_tokens": 1194,
+   "chars": 1392,
+   "answer": "The report doesn't include reference values for a healthy 30-year-old, so I can't make that comparison from it. The only comparison it provides is each result's classification, such as \"Diabetic,\" \"High Risk,\" \"Low,\" or \"High.\"\n\nYour results across Months 1 to 8 (you are listed as male, age 42) are all in the categories the report labels as concerning:\n\n- **HbA1c** (a measure of average blood sugar over roughly the past few months): 8.8% to 9.4%, classified as Diabetic\n- **Fasting blood sugar:** 180 to 202 mg/dL, classified as Diabetic\n- **After-meal blood sugar:** 248 to 290 mg/dL, classified as Diabetic\n- **LDL (\"bad\") cholesterol:** 175 to 188 mg/dL, classified as High Risk\n- **HDL (\"good\") cholesterol:** 33 to 38 mg/dL, classified as Low\n- **Triglycerides** (a type of blood fat): 291 to 325 mg/dL, classified as High\n\nYour values stayed fairly steady over the eight months, with no clear improvement or worsening.\n\nFor background, a healthy adult's blood sugar and cholesterol are generally expected to fall within lower ranges than these, and the exact cutoffs depend on the laboratory and the test. Your doctor or the lab that ran these tests can show you the reference ranges they use and how your results compare with a healthy adult of any age.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what steps, if any, are appropriate."
+  },
+  "C2T047": {
+   "complete": true,
+   "output_tokens": 1063,
+   "chars": 973,
+   "answer": "Your report doesn't include a reference range for people without diabetes, so I can't give you an exact side-by-side comparison from it. For background, HbA1c is a blood test that reflects your average blood sugar over the past few months. In general, people without diabetes have HbA1c values lower than those in the diabetic range. Your lab report classifies your latest HbA1c of **9.1% (Month 8)** as **Diabetic**. Your doctor or the lab can tell you the exact non-diabetic reference range used for your test.\n\nYour HbA1c has risen steadily across the reports, from **7.3% at Month 1** to **9.1% at Month 8**, and it has been classified as Diabetic at every point shown.\n\nOur model estimates that your next HbA1c could be about **9.35%**. This is a prediction from a trend-based forecasting model, not a measured result, and it is not certain. Only a real lab test can confirm your actual value.\n\nPlease discuss these results and what they mean for you with your doctor."
+  },
+  "C2T048": {
+   "complete": true,
+   "output_tokens": 1318,
+   "chars": 1485,
+   "answer": "The report doesn't include any average values for men your age, so I can't tell you whether you're worse off than most people your age. A doctor can make that comparison using standard reference data along with your full medical history.\n\nHere is what your own results show over the 8 months:\n\n- **HbA1c** (a measure of average blood sugar over about the past few months) went from 5.9% in Months 1 and 2 to 6.4% in Month 8. It peaked at 6.5% in Month 7, which the report labels Diabetic.\n- **Fasting blood sugar** rose from 118 mg/dL in Month 1 to 142 mg/dL in Month 8, labeled Diabetic.\n- **Post-prandial blood sugar** (measured after eating) ranged from 150 to 181 mg/dL and is mostly labeled Prediabetic.\n- **LDL cholesterol** and **triglycerides** were labeled Borderline throughout. **HDL cholesterol** was labeled Normal throughout.\n- Your **overall glycemic status** was Prediabetic in Months 1 and 2 and Diabetic from Month 3 onward.\n\nThe report also lists a model estimate for your next test: an HbA1c of about 6.46%, fasting blood sugar of about 139.7 mg/dL, and a Diabetic category. This is a prediction from a forecasting model, not a measured result, and only a real lab test can confirm it.\n\nYour Month 8 report has a mix of labels, with HbA1c marked Prediabetic while fasting blood sugar and the overall status are marked Diabetic. Please ask your doctor to explain these labels and what they mean for you, and to tell you how your results compare with people your age."
+  },
+  "C2T049": {
+   "complete": true,
+   "output_tokens": 1249,
+   "chars": 1470,
+   "answer": "Your report doesn't include the reference ranges for the general population, so I can't give you exact numbers to compare against. What it does provide is a classification for each result, which is the comparison built into your report. Your most recent results (Month 8) are:\n\n- **HbA1c:** 7.2%, classified as **Diabetic**\n- **Fasting Blood Sugar:** 136.0 mg/dL, classified as **Diabetic**\n- **Post-Prandial Blood Sugar:** 204.0 mg/dL, classified as **Diabetic**\n- **LDL Cholesterol:** 101.0 mg/dL, classified as **Borderline**\n- **HDL Cholesterol:** 49.0 mg/dL, classified as **Low**\n- **Triglycerides:** 152.0 mg/dL, classified as **Borderline**\n\nYour overall glycemic status is classified as **Diabetic**. Your HbA1c has trended down over the eight months, from 9.9% in Month 1 to 7.2% in Month 8, though it is still in the Diabetic range. Your HDL was classified as Normal in Months 2 through 7 and Low in Month 8.\n\nBased on your trend, a forecasting model estimates your next HbA1c at about 7.03%, fasting blood sugar at about 132.6 mg/dL, and post-prandial blood sugar at about 193.5 mg/dL, with the next category still Diabetic. This is a model estimate, not a measured result, and only real lab testing can confirm it.\n\nTo see how your numbers compare with the general population, ask your doctor or the lab that produced the report for the reference ranges they used. Your doctor can explain what your results mean for you and what steps, if any, to take next."
+  },
+  "C2T050": {
+   "complete": true,
+   "output_tokens": 1531,
+   "chars": 1650,
+   "answer": "Your report doesn't include results from someone without diabetes, so I can't make a direct comparison. I can explain what the numbers measure and the general ranges people often use.\n\n**Your most recent results (Month 8):**\n- HbA1c (average blood sugar over about 2-3 months): 7.2%, classified as Diabetic\n- Fasting blood sugar: 146 mg/dL, classified as Diabetic\n- Post-meal blood sugar: 158 mg/dL, classified as Prediabetic\n- LDL (\"bad\") cholesterol: 117 mg/dL, Borderline\n- HDL (\"good\") cholesterol: 50 mg/dL, Normal\n- Triglycerides: 197 mg/dL, Borderline\n\n**For background, commonly used general ranges (not from your report, and lab thresholds can vary):**\n- HbA1c: below 5.7% is usually considered normal; 6.5% or higher is usually in the diabetes range.\n- Fasting blood sugar: below 100 mg/dL is usually considered normal; 126 mg/dL or higher is usually in the diabetes range.\n- Post-meal blood sugar: below 140 mg/dL is usually considered normal.\n- Triglycerides: below 150 mg/dL is usually considered normal.\n\nBy these general ranges, your HbA1c and fasting blood sugar are higher than what is typically considered normal. Your report's own classifications are what your lab used, and your doctor can explain how they apply to you.\n\n**Model estimate (not a measured result):** Based on your trend, our forecasting model estimates your next HbA1c at about 7.32%, fasting blood sugar at about 143.6 mg/dL, and post-meal blood sugar at about 193.8 mg/dL, with the category staying Diabetic. This is an estimate, not a certainty, and only a real lab test can confirm it.\n\nPlease discuss these results and what they mean for you with your doctor."
+  },
+  "C2T061": {
+   "complete": true,
+   "output_tokens": 699,
+   "chars": 707,
+   "answer": "Your report doesn't contain an HbA1c of 190. Every HbA1c result in the report is a percentage between 8.8% and 9.2%, and each one is classified as \"Diabetic.\" The most recent is 8.9% (Month 8). It's possible you're looking at a different number, or that a unit or typo is involved, so please check the original report.\n\nFor background, HbA1c is usually reported as a percentage that reflects average blood sugar over roughly the past two to three months. Because of that, a value of 190 wouldn't fit the percentage scale used in your report, so please confirm the number and its units with your doctor or the lab.\n\nYour doctor can tell you what your results mean for you and whether any follow-up is needed."
+  },
+  "C2T062": {
+   "complete": true,
+   "output_tokens": 931,
+   "chars": 1324,
+   "answer": "Your most recent HbA1c in the report is **6.9%**, not 139. The value of 139 is your **Fasting Blood Sugar (FBS)** from Month 8, measured in mg/dL. HbA1c is reported as a percentage, and FBS as mg/dL, so they are different tests.\n\n**For background:** HbA1c shows your average blood sugar over the past few months. Fasting blood sugar is a single measurement taken after you have not eaten for a while.\n\n**Your results (Month 8):**\n- HbA1c of 6.9% is classified as **Diabetic**.\n- Fasting Blood Sugar of 139.0 mg/dL is also classified as **Diabetic**.\n- Your overall glycemic status for Month 8 is **Diabetic**.\n\nYour numbers have risen over the reporting period. Your FBS was 98.0 mg/dL (Normal) in Month 3 and 139.0 mg/dL in Month 8, and your HbA1c went from 5.9% in Month 1 to 6.9% in Month 8. The report does not say whether these results are dangerous. It can only tell you how each value is classified.\n\n**Model estimate:** Based on your trend, a forecasting model estimates your next HbA1c at about 6.87% and your next FBS at about 138.2 mg/dL, with the next risk category as Diabetic. This is only an estimate, not a measured result, and real lab testing is needed to confirm it.\n\nPlease take this report to your doctor. They can explain what these results mean for your health and what steps, if any, you should take."
+  },
+  "C2T064": {
+   "complete": true,
+   "output_tokens": 1169,
+   "chars": 1192,
+   "answer": "Your report doesn't show an HbA1c of 120. HbA1c is reported as a percentage, and across Months 1 to 8 the values ranged from 5.9% to 6.5%. In the most recent report (Month 8), your HbA1c was 6.5%, classified as Diabetic.\n\nThe number 120 does appear in your report as a **fasting blood sugar** reading: 120.0 mg/dL in Month 8, classified as Prediabetic. Fasting blood sugar uses a different unit (mg/dL), so it's worth checking which result you were thinking of. If you can share where you saw the 120, I can help clarify it.\n\nFor background, HbA1c is a blood test that reflects your average blood sugar over roughly the past two to three months, while fasting blood sugar is a single measurement taken after not eating for a period of time.\n\nYour report doesn't say whether any of your results are dangerous. It lists your overall glycemic status as Diabetic for Months 6 to 8. Please talk with your doctor, who can explain what these results mean for you and what, if anything, should be done next.\n\nOur forecasting model estimates your next HbA1c at about 6.68%, still in the Diabetic range. This is only a prediction, not a measured result, and it needs to be confirmed by a real lab test."
+  },
+  "C2T065": {
+   "complete": true,
+   "output_tokens": 802,
+   "chars": 1153,
+   "answer": "Your report doesn't contain an HbA1c value of 105. The HbA1c results in your records are percentages, ranging from 6.5% to 10.0% across Months 1 to 8. Your value may have been written down incorrectly, or it may come from a different test or unit. Please check the number on your original lab report or call the lab to confirm.\n\nFor background, HbA1c is a blood test that shows your average blood sugar over roughly the past two to three months. In general, higher values mean blood sugar has been high for longer, and sustained high blood sugar can affect the body over time.\n\nYour records classify every HbA1c result as \"Diabetic.\" The highest was 10.0% at Month 1, and the lowest was 6.5% at Month 8. Your HbA1c has generally been trending downward over the months.\n\nThe model's trend estimate suggests the next HbA1c could be about 6.87%. This is a prediction from a forecasting model, not a measured result, and only a real lab test can confirm it.\n\nPlease discuss your actual HbA1c result, and whether it is dangerous for you, with your doctor. If you're unsure about the number on your report, ask them to confirm it at your next visit or sooner."
+  }
+ },
+ "fix2": {
+  "C2Q010": {
+   "problems_sent": "- LDL = 3.0: misclassification (rule label: Optimal)\n- HbA1c = 8.11: possible_fabrication (rule label: Diabetic-Moderate)",
+   "complete": true,
+   "output_tokens": 1358,
+   "answer": "Your overall glycemic status did not change. The report lists it as **\"Diabetic\"** in every month provided, from Month 1 through Month 8.\n\nSome individual results did move over that period:\n- **HbA1c** rose from 6.7% in Month 1 to 8.0% in Month 8. It was also 8.0% in Month 3. Each reading was classified as Diabetic.\n- **Fasting Blood Sugar** ranged from 139.0 mg/dL (Month 5) to 174.0 mg/dL (Month 8). Each reading was classified as Diabetic.\n- **Post-Prandial Blood Sugar** alternated between Prediabetic and Diabetic classifications. For example, it was 165.0 mg/dL in Month 1 and classified as Prediabetic, and 227.0 mg/dL in Month 7 and classified as Diabetic.\n\nOur model estimates that your next HbA1c would be about 8.11% and that the next risk category would be Diabetic. This is a prediction based on your trend, not a measured result, and it is an estimate rather than a certainty. Only a real lab test can confirm it.\n\nPlease discuss these results and their meaning for you with your doctor."
+  },
+  "C2Q037": {
+   "problems_sent": null,
+   "complete": true,
+   "output_tokens": 0,
+   "answer": "Your fasting blood sugar rose from **90.0 mg/dL at Month 1** to **106.0 mg/dL at Month 8**, an increase of 16.0 mg/dL. At Month 1 the report classified it as **Normal**, and at Month 8 it is classified as **Prediabetic**.\n\nThe change was not steady. The readings went 90.0 (Month 1), 97.0 (Month 2), 105.0 (Month 3), 98.0 (Month 4), 115.0 (Month 5), 115.0 (Month 6), 93.0 (Month 7), and 106.0 (Month 8). Your Month 5 and Month 6 readings were the highest in this period, both classified as Prediabetic.\n\nOur forecasting model estimates that your next fasting blood sugar would be about 102.0 mg/dL. This is a prediction, not a measured result, and only a real lab test can confirm it.\n\nPlease discuss these results with your doctor, who can explain what they mean for you and what steps, if any, to consider."
+  },
+  "C2Q045": {
+   "problems_sent": "- PPBS = 132.0: misclassification (rule label: Normal)",
+   "complete": true,
+   "output_tokens": 679,
+   "answer": "No, your overall status stayed the same across all the months in your report. Every report from Month 1 through Month 8 lists your \"Overall Glycemic Status\" as **Prediabetic**.\n\nSome individual readings fell into the \"Normal\" range even though the overall status did not change:\n- **Month 4:** Fasting Blood Sugar was 99.0 mg/dL (Normal) and Post-Prandial Blood Sugar was 138.0 mg/dL (Normal).\n- **Month 8:** Post-Prandial Blood Sugar was 132.0 mg/dL (Normal).\n\nYour other readings were classified as Prediabetic, and your HbA1c was Prediabetic in every month, ranging from 5.8% to 6.0%.\n\nOur forecasting model estimates that your next risk category would also be Prediabetic. This is a prediction, not a measured result, and it is not a certainty. Only new lab testing can confirm your actual status. Please discuss these results and any changes with your doctor."
+  },
+  "C2T036": {
+   "problems_sent": null,
+   "complete": true,
+   "output_tokens": 0,
+   "answer": "Your lab report doesn't say you have diabetes, and it doesn't mention stress or what caused any condition. So I can't confirm that stress is the cause.\n\nYour results for Months 1 through 8 are all classified as **Normal** overall. Your HbA1c (a measure of average blood sugar over time) ranged from 5.0% to 5.4%, and your fasting blood sugar ranged from 74 to 97 mg/dL, all classified as Normal. Your post-prandial (after-meal) blood sugar was classified as **Prediabetic** in Months 6 (143 mg/dL) and 7 (145 mg/dL), while the other months were Normal.\n\nOur forecasting model estimates that your next risk category will be Normal. This is a prediction, not a measured result, and only real lab testing can confirm it.\n\nPlease talk with your doctor about what your results mean for you, including the after-meal readings from Months 6 and 7. Your doctor can also discuss whether stress or anything else may be relevant to your health."
+  },
+  "C2T038": {
+   "problems_sent": null,
+   "complete": true,
+   "output_tokens": 0,
+   "answer": "Based on the reports you shared, you do not have a diabetes diagnosis. Your overall glycemic status is classified as **Normal** in every month from Month 1 to Month 8. Your HbA1c (a measure of average blood sugar over several months) was between 5.0% and 5.3%, classified as Normal throughout. Your fasting blood sugar was also classified as Normal in every month.\n\nYour post-prandial blood sugar (measured after eating) was classified as **Prediabetic** in Month 1 (153.0 mg/dL) and Month 8 (144.0 mg/dL), and Normal in the other months. Because the reports don't include a diagnosis or any explanation of causes, I can't tell you what, if anything, affected your blood sugar.\n\nFor background, type 2 diabetes is generally linked to several factors, including genetics, body weight, age, and physical activity levels. Lack of exercise is one recognized risk factor, but it is rarely the only cause. Your reports don't mention exercise or its effect on your results.\n\nPlease discuss your results, and any questions about causes, with your doctor. They can review your full medical history and the Month 1 "
+  },
+  "C2T045": {
+   "problems_sent": "- HbA1c = 6.31: possible_fabrication (rule label: Prediabetic)",
+   "complete": true,
+   "output_tokens": 751,
+   "answer": "The lab report doesn't say whether medication is the cause of your HbA1c of 6.3%. It contains only lab values and classifications, with no information about medications, so I can't tell you whether they are a factor.\n\nYour Month 8 report lists your HbA1c as 6.3%, classified as Prediabetic. For background, HbA1c is a blood test that reflects your average blood sugar over the past two to three months. In general, several things can influence blood sugar levels, including medications, diet, activity, and illness, but I can't say which, if any, apply to you.\n\nYour doctor has your medication history and can tell you whether it may be contributing to your results. Please bring this question to them."
+  },
+  "C2T055": {
+   "problems_sent": null,
+   "complete": true,
+   "output_tokens": 0,
+   "answer": "No, not at every visit. Your HbA1c rose at each check from Month 1 through Month 7, but it dipped slightly at Month 8:\n\n- Month 1: 6.0%\n- Month 2: 6.1%\n- Month 3: 6.2%\n- Month 4: 6.4%\n- Month 5: 6.5%\n- Month 6: 6.6%\n- Month 7: 6.8%\n- Month 8: 6.7%\n\nHbA1c is a measure of average blood sugar over a few months. Your report classifies it as Prediabetic at Months 1 through 4, and as Diabetic from Month 5 on. Your overall glycemic status changed from Prediabetic (Months 1\u20133) to Diabetic (Months 4\u20138).\n\nThe report also includes a model-generated estimate, which is not a measured result. The model predicts your next HbA1c could be about 6.8%, with a predicted category of Diabetic. This is only a forecast based on your trend, not a certainty, and only a real lab test can confirm it.\n\nPlease talk with your doctor about what these results mean for you and what the next steps should be."
+  }
+ },
+ "summary": {
+  "fix1_redone": 21,
+  "fix1_complete": 21,
+  "fix2_v1_regenerations": 38,
+  "fix2_v1_incomplete_after": 16,
+  "fix2_v4_regenerations": 7,
+  "fix2_v4_incomplete_after": 0
+ }
+}

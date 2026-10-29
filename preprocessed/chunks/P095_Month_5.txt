@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P095 (Female, age 71) -- Month 5.
+
+HbA1c: 7.4% (Classification: Diabetic).
+Fasting Blood Sugar (FBS): 160.0 mg/dL (Classification: Diabetic).
+Post-Prandial Blood Sugar (PPBS): 201.0 mg/dL (Classification: Diabetic).
+LDL Cholesterol: 132.0 mg/dL (Classification: High Risk).
+HDL Cholesterol: 41.0 mg/dL (Classification: Low).
+Triglycerides: 153.0 mg/dL (Classification: Borderline).
+
+Overall Glycemic Status: Diabetic.

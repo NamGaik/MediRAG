@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P030 (Male, age 48) -- Month 7.
+
+HbA1c: 7.5% (Classification: Diabetic).
+Fasting Blood Sugar (FBS): 148.0 mg/dL (Classification: Diabetic).
+Post-Prandial Blood Sugar (PPBS): 217.0 mg/dL (Classification: Diabetic).
+LDL Cholesterol: 132.0 mg/dL (Classification: High Risk).
+HDL Cholesterol: 42.0 mg/dL (Classification: Normal).
+Triglycerides: 185.0 mg/dL (Classification: Borderline).
+
+Overall Glycemic Status: Diabetic.

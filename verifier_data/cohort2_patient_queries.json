@@ -1,0 +1,394 @@
+[
+ {
+  "patient_id": "P014",
+  "trajectory_type": "diabetic_dyslipidemia",
+  "template": "q_trend",
+  "query_text": "Is my HbA1c improving over my visits?",
+  "reference": "HbA1c by month: 8.3, 8.5, 8.2, 8.8, 8.4, 8.7, 8.9, 8.8%. Month 8 is higher than Month 1.",
+  "query_id": "C2Q001"
+ },
+ {
+  "patient_id": "P081",
+  "trajectory_type": "diabetic_dyslipidemia",
+  "template": "q_fbs_change",
+  "query_text": "How did my fasting sugar change between Month 1 and Month 8?",
+  "reference": "FBS Month 1 208 mg/dL (Diabetic), Month 8 223 mg/dL (Diabetic); all months: 208, 213, 216, 221, 214, 229, 204, 223.",
+  "query_id": "C2Q002"
+ },
+ {
+  "patient_id": "P087",
+  "trajectory_type": "diabetic_dyslipidemia",
+  "template": "q_status",
+  "query_text": "Has my overall status changed during these months?",
+  "reference": "Overall status by month: Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic. Changes: none.",
+  "query_id": "C2Q003"
+ },
+ {
+  "patient_id": "P007",
+  "trajectory_type": "diabetic_dyslipidemia",
+  "template": "q_latest_abnormal",
+  "query_text": "Which of my values in my latest report (Month 8) are outside the normal range?",
+  "reference": "Month 8 outside normal/optimal: HbA1c 8.9 (Diabetic), FBS 174 (Diabetic), PPBS 245 (Diabetic), LDL 175 (High Risk), HDL 42 (Low), TG 287 (High).",
+  "query_id": "C2Q004"
+ },
+ {
+  "patient_id": "P072",
+  "trajectory_type": "diabetic_dyslipidemia",
+  "template": "q_max_ppbs",
+  "query_text": "What was my highest post-meal sugar, and in which month?",
+  "reference": "Highest PPBS 288 mg/dL in Month 5 (Diabetic); all: 273, 275, 284, 247, 288, 281, 272, 261.",
+  "query_id": "C2Q005"
+ },
+ {
+  "patient_id": "P039",
+  "trajectory_type": "diabetic_dyslipidemia",
+  "template": "q_ldl",
+  "query_text": "Has my LDL cholesterol been a concern across my visits?",
+  "reference": "LDL by month: 147, 153, 150, 144, 152, 147, 147, 148 mg/dL; classes seen: High Risk.",
+  "query_id": "C2Q006"
+ },
+ {
+  "patient_id": "P066",
+  "trajectory_type": "diabetic_dyslipidemia",
+  "template": "q_compare",
+  "query_text": "Compare my Month 4 and Month 8 HbA1c.",
+  "reference": "HbA1c Month 4 9.4% (Diabetic), Month 8 9.4% (Diabetic).",
+  "query_id": "C2Q007"
+ },
+ {
+  "patient_id": "P097",
+  "trajectory_type": "diabetic_fluctuating",
+  "template": "q_trend",
+  "query_text": "Is my HbA1c improving over my visits?",
+  "reference": "HbA1c by month: 8.9, 8.7, 7.8, 7.7, 8.2, 8.8, 8.5, 7.8%. Month 8 is lower than Month 1.",
+  "query_id": "C2Q008"
+ },
+ {
+  "patient_id": "P019",
+  "trajectory_type": "diabetic_fluctuating",
+  "template": "q_fbs_change",
+  "query_text": "How did my fasting sugar change between Month 1 and Month 8?",
+  "reference": "FBS Month 1 173 mg/dL (Diabetic), Month 8 159 mg/dL (Diabetic); all months: 173, 173, 174, 149, 171, 169, 170, 159.",
+  "query_id": "C2Q009"
+ },
+ {
+  "patient_id": "P054",
+  "trajectory_type": "diabetic_fluctuating",
+  "template": "q_status",
+  "query_text": "Has my overall status changed during these months?",
+  "reference": "Overall status by month: Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic. Changes: none.",
+  "query_id": "C2Q010"
+ },
+ {
+  "patient_id": "P099",
+  "trajectory_type": "diabetic_fluctuating",
+  "template": "q_latest_abnormal",
+  "query_text": "Which of my values in my latest report (Month 8) are outside the normal range?",
+  "reference": "Month 8 outside normal/optimal: HbA1c 8.2 (Diabetic), FBS 194 (Diabetic), PPBS 261 (Diabetic), LDL 126 (Borderline), HDL 44 (Low), TG 205 (High).",
+  "query_id": "C2Q011"
+ },
+ {
+  "patient_id": "P045",
+  "trajectory_type": "diabetic_fluctuating",
+  "template": "q_max_ppbs",
+  "query_text": "What was my highest post-meal sugar, and in which month?",
+  "reference": "Highest PPBS 298 mg/dL in Month 2 (Diabetic); all: 202, 298, 235, 215, 217, 242, 240, 244.",
+  "query_id": "C2Q012"
+ },
+ {
+  "patient_id": "P042",
+  "trajectory_type": "diabetic_fluctuating",
+  "template": "q_ldl",
+  "query_text": "Has my LDL cholesterol been a concern across my visits?",
+  "reference": "LDL by month: 133, 132, 134, 130, 129, 127, 132, 133 mg/dL; classes seen: Borderline, High Risk.",
+  "query_id": "C2Q013"
+ },
+ {
+  "patient_id": "P008",
+  "trajectory_type": "diabetic_fluctuating",
+  "template": "q_compare",
+  "query_text": "Compare my Month 4 and Month 8 HbA1c.",
+  "reference": "HbA1c Month 4 8.2% (Diabetic), Month 8 7.5% (Diabetic).",
+  "query_id": "C2Q014"
+ },
+ {
+  "patient_id": "P050",
+  "trajectory_type": "diabetic_improving",
+  "template": "q_trend",
+  "query_text": "Is my HbA1c improving over my visits?",
+  "reference": "HbA1c by month: 9.9, 9.5, 8.5, 8.2, 8, 7.4, 7.5, 7.2%. Month 8 is lower than Month 1.",
+  "query_id": "C2Q015"
+ },
+ {
+  "patient_id": "P033",
+  "trajectory_type": "diabetic_improving",
+  "template": "q_fbs_change",
+  "query_text": "How did my fasting sugar change between Month 1 and Month 8?",
+  "reference": "FBS Month 1 192 mg/dL (Diabetic), Month 8 133 mg/dL (Diabetic); all months: 192, 166, 158, 145, 147, 164, 147, 133.",
+  "query_id": "C2Q016"
+ },
+ {
+  "patient_id": "P056",
+  "trajectory_type": "diabetic_improving",
+  "template": "q_status",
+  "query_text": "Has my overall status changed during these months?",
+  "reference": "Overall status by month: Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic. Changes: none.",
+  "query_id": "C2Q017"
+ },
+ {
+  "patient_id": "P052",
+  "trajectory_type": "diabetic_improving",
+  "template": "q_latest_abnormal",
+  "query_text": "Which of my values in my latest report (Month 8) are outside the normal range?",
+  "reference": "Month 8 outside normal/optimal: HbA1c 6.8 (Diabetic), FBS 143 (Diabetic), PPBS 205 (Diabetic), LDL 108 (Borderline), TG 205 (High).",
+  "query_id": "C2Q018"
+ },
+ {
+  "patient_id": "P018",
+  "trajectory_type": "diabetic_improving",
+  "template": "q_max_ppbs",
+  "query_text": "What was my highest post-meal sugar, and in which month?",
+  "reference": "Highest PPBS 298 mg/dL in Month 1 (Diabetic); all: 298, 264, 230, 213, 191, 180, 194, 190.",
+  "query_id": "C2Q019"
+ },
+ {
+  "patient_id": "P085",
+  "trajectory_type": "diabetic_improving",
+  "template": "q_ldl",
+  "query_text": "Has my LDL cholesterol been a concern across my visits?",
+  "reference": "LDL by month: 121, 126, 122, 116, 116, 112, 121, 120 mg/dL; classes seen: Borderline.",
+  "query_id": "C2Q020"
+ },
+ {
+  "patient_id": "P038",
+  "trajectory_type": "diabetic_improving",
+  "template": "q_compare",
+  "query_text": "Compare my Month 4 and Month 8 HbA1c.",
+  "reference": "HbA1c Month 4 7.3% (Diabetic), Month 8 6.9% (Diabetic).",
+  "query_id": "C2Q021"
+ },
+ {
+  "patient_id": "P012",
+  "trajectory_type": "diabetic_worsening",
+  "template": "q_trend",
+  "query_text": "Is my HbA1c improving over my visits?",
+  "reference": "HbA1c by month: 7.2, 7.4, 7.5, 7.7, 7.7, 8.2, 8.6, 8.7%. Month 8 is higher than Month 1.",
+  "query_id": "C2Q022"
+ },
+ {
+  "patient_id": "P003",
+  "trajectory_type": "diabetic_worsening",
+  "template": "q_fbs_change",
+  "query_text": "How did my fasting sugar change between Month 1 and Month 8?",
+  "reference": "FBS Month 1 156 mg/dL (Diabetic), Month 8 178 mg/dL (Diabetic); all months: 156, 156, 179, 178, 182, 191, 183, 178.",
+  "query_id": "C2Q023"
+ },
+ {
+  "patient_id": "P094",
+  "trajectory_type": "diabetic_worsening",
+  "template": "q_status",
+  "query_text": "Has my overall status changed during these months?",
+  "reference": "Overall status by month: Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic. Changes: none.",
+  "query_id": "C2Q024"
+ },
+ {
+  "patient_id": "P080",
+  "trajectory_type": "diabetic_worsening",
+  "template": "q_latest_abnormal",
+  "query_text": "Which of my values in my latest report (Month 8) are outside the normal range?",
+  "reference": "Month 8 outside normal/optimal: HbA1c 8 (Diabetic), FBS 168 (Diabetic), PPBS 207 (Diabetic), LDL 124 (Borderline), HDL 35 (Low).",
+  "query_id": "C2Q025"
+ },
+ {
+  "patient_id": "P084",
+  "trajectory_type": "diabetic_worsening",
+  "template": "q_max_ppbs",
+  "query_text": "What was my highest post-meal sugar, and in which month?",
+  "reference": "Highest PPBS 254 mg/dL in Month 7 (Diabetic); all: 169, 193, 208, 214, 236, 221, 254, 248.",
+  "query_id": "C2Q026"
+ },
+ {
+  "patient_id": "P037",
+  "trajectory_type": "diabetic_worsening",
+  "template": "q_ldl",
+  "query_text": "Has my LDL cholesterol been a concern across my visits?",
+  "reference": "LDL by month: 145, 140, 148, 148, 150, 149, 144, 155 mg/dL; classes seen: High Risk.",
+  "query_id": "C2Q027"
+ },
+ {
+  "patient_id": "P011",
+  "trajectory_type": "diabetic_worsening",
+  "template": "q_compare",
+  "query_text": "Compare my Month 4 and Month 8 HbA1c.",
+  "reference": "HbA1c Month 4 8.8% (Diabetic), Month 8 10% (Diabetic).",
+  "query_id": "C2Q028"
+ },
+ {
+  "patient_id": "P027",
+  "trajectory_type": "normal_stable",
+  "template": "q_trend",
+  "query_text": "Is my HbA1c improving over my visits?",
+  "reference": "HbA1c by month: 5.5, 5.4, 5.6, 5.1, 5.3, 5.3, 5.4, 5.4%. Month 8 is lower than Month 1.",
+  "query_id": "C2Q029"
+ },
+ {
+  "patient_id": "P058",
+  "trajectory_type": "normal_stable",
+  "template": "q_fbs_change",
+  "query_text": "How did my fasting sugar change between Month 1 and Month 8?",
+  "reference": "FBS Month 1 89 mg/dL (Normal), Month 8 94 mg/dL (Normal); all months: 89, 96, 82, 90, 95, 94, 88, 94.",
+  "query_id": "C2Q030"
+ },
+ {
+  "patient_id": "P060",
+  "trajectory_type": "normal_stable",
+  "template": "q_status",
+  "query_text": "Has my overall status changed during these months?",
+  "reference": "Overall status by month: Normal, Prediabetic, Prediabetic, Normal, Normal, Normal, Prediabetic, Normal. Changes: Month 2: Normal -> Prediabetic; Month 4: Prediabetic -> Normal; Month 7: Normal -> Prediabetic; Month 8: Prediabetic -> Normal.",
+  "query_id": "C2Q031"
+ },
+ {
+  "patient_id": "P017",
+  "trajectory_type": "normal_stable",
+  "template": "q_latest_abnormal",
+  "query_text": "Which of my values in my latest report (Month 8) are outside the normal range?",
+  "reference": "Month 8 outside normal/optimal: none.",
+  "query_id": "C2Q032"
+ },
+ {
+  "patient_id": "P028",
+  "trajectory_type": "normal_stable",
+  "template": "q_max_ppbs",
+  "query_text": "What was my highest post-meal sugar, and in which month?",
+  "reference": "Highest PPBS 118 mg/dL in Month 4 (Normal); all: 112, 104, 117, 118, 114, 99, 80, 84.",
+  "query_id": "C2Q033"
+ },
+ {
+  "patient_id": "P035",
+  "trajectory_type": "normal_stable",
+  "template": "q_ldl",
+  "query_text": "Has my LDL cholesterol been a concern across my visits?",
+  "reference": "LDL by month: 89, 88, 87, 83, 85, 85, 80, 80 mg/dL; classes seen: Optimal.",
+  "query_id": "C2Q034"
+ },
+ {
+  "patient_id": "P068",
+  "trajectory_type": "normal_stable",
+  "template": "q_compare",
+  "query_text": "Compare my Month 4 and Month 8 HbA1c.",
+  "reference": "HbA1c Month 4 4.7% (Normal), Month 8 4.9% (Normal).",
+  "query_id": "C2Q035"
+ },
+ {
+  "patient_id": "P034",
+  "trajectory_type": "prediabetic_progressing",
+  "template": "q_trend",
+  "query_text": "Is my HbA1c improving over my visits?",
+  "reference": "HbA1c by month: 6.1, 6.3, 6.3, 6.6, 6.7, 6.9, 6.8, 7.1%. Month 8 is higher than Month 1.",
+  "query_id": "C2Q036"
+ },
+ {
+  "patient_id": "P078",
+  "trajectory_type": "prediabetic_progressing",
+  "template": "q_fbs_change",
+  "query_text": "How did my fasting sugar change between Month 1 and Month 8?",
+  "reference": "FBS Month 1 90 mg/dL (Normal), Month 8 106 mg/dL (Prediabetic); all months: 90, 97, 105, 98, 115, 115, 93, 106.",
+  "query_id": "C2Q037"
+ },
+ {
+  "patient_id": "P075",
+  "trajectory_type": "prediabetic_progressing",
+  "template": "q_status",
+  "query_text": "Has my overall status changed during these months?",
+  "reference": "Overall status by month: Prediabetic, Prediabetic, Prediabetic, Diabetic, Diabetic, Diabetic, Diabetic, Diabetic. Changes: Month 4: Prediabetic -> Diabetic.",
+  "query_id": "C2Q038"
+ },
+ {
+  "patient_id": "P053",
+  "trajectory_type": "prediabetic_progressing",
+  "template": "q_latest_abnormal",
+  "query_text": "Which of my values in my latest report (Month 8) are outside the normal range?",
+  "reference": "Month 8 outside normal/optimal: HbA1c 6.7 (Diabetic), FBS 132 (Diabetic), PPBS 185 (Prediabetic), HDL 47 (Low).",
+  "query_id": "C2Q039"
+ },
+ {
+  "patient_id": "P098",
+  "trajectory_type": "prediabetic_progressing",
+  "template": "q_max_ppbs",
+  "query_text": "What was my highest post-meal sugar, and in which month?",
+  "reference": "Highest PPBS 197 mg/dL in Month 7 (Prediabetic); all: 154, 163, 141, 140, 160, 153, 197, 181.",
+  "query_id": "C2Q040"
+ },
+ {
+  "patient_id": "P065",
+  "trajectory_type": "prediabetic_progressing",
+  "template": "q_ldl",
+  "query_text": "Has my LDL cholesterol been a concern across my visits?",
+  "reference": "LDL by month: 107, 104, 118, 111, 115, 119, 122, 120 mg/dL; classes seen: Borderline.",
+  "query_id": "C2Q041"
+ },
+ {
+  "patient_id": "P059",
+  "trajectory_type": "prediabetic_progressing",
+  "template": "q_compare",
+  "query_text": "Compare my Month 4 and Month 8 HbA1c.",
+  "reference": "HbA1c Month 4 6.8% (Diabetic), Month 8 7.2% (Diabetic).",
+  "query_id": "C2Q042"
+ },
+ {
+  "patient_id": "P100",
+  "trajectory_type": "prediabetic_stable",
+  "template": "q_trend",
+  "query_text": "Is my HbA1c improving over my visits?",
+  "reference": "HbA1c by month: 5.9, 5.9, 6, 5.9, 5.8, 5.9, 6.1, 5.9%. Month 8 is the same than Month 1.",
+  "query_id": "C2Q043"
+ },
+ {
+  "patient_id": "P016",
+  "trajectory_type": "prediabetic_stable",
+  "template": "q_fbs_change",
+  "query_text": "How did my fasting sugar change between Month 1 and Month 8?",
+  "reference": "FBS Month 1 100 mg/dL (Prediabetic), Month 8 103 mg/dL (Prediabetic); all months: 100, 106, 110, 100, 114, 96, 115, 103.",
+  "query_id": "C2Q044"
+ },
+ {
+  "patient_id": "P032",
+  "trajectory_type": "prediabetic_stable",
+  "template": "q_status",
+  "query_text": "Has my overall status changed during these months?",
+  "reference": "Overall status by month: Prediabetic, Prediabetic, Prediabetic, Prediabetic, Prediabetic, Prediabetic, Prediabetic, Prediabetic. Changes: none.",
+  "query_id": "C2Q045"
+ },
+ {
+  "patient_id": "P005",
+  "trajectory_type": "prediabetic_stable",
+  "template": "q_latest_abnormal",
+  "query_text": "Which of my values in my latest report (Month 8) are outside the normal range?",
+  "reference": "Month 8 outside normal/optimal: HbA1c 6.1 (Prediabetic), FBS 100 (Prediabetic), PPBS 153 (Prediabetic), TG 177 (Borderline).",
+  "query_id": "C2Q046"
+ },
+ {
+  "patient_id": "P046",
+  "trajectory_type": "prediabetic_stable",
+  "template": "q_max_ppbs",
+  "query_text": "What was my highest post-meal sugar, and in which month?",
+  "reference": "Highest PPBS 169 mg/dL in Month 5 (Prediabetic); all: 139, 127, 153, 147, 169, 135, 163, 142.",
+  "query_id": "C2Q047"
+ },
+ {
+  "patient_id": "P049",
+  "trajectory_type": "prediabetic_stable",
+  "template": "q_ldl",
+  "query_text": "Has my LDL cholesterol been a concern across my visits?",
+  "reference": "LDL by month: 106, 104, 107, 104, 100, 105, 101, 90 mg/dL; classes seen: Borderline, Optimal.",
+  "query_id": "C2Q048"
+ },
+ {
+  "patient_id": "P043",
+  "trajectory_type": "prediabetic_stable",
+  "template": "q_compare",
+  "query_text": "Compare my Month 4 and Month 8 HbA1c.",
+  "reference": "HbA1c Month 4 6.3% (Prediabetic), Month 8 6.1% (Prediabetic).",
+  "query_id": "C2Q049"
+ }
+]

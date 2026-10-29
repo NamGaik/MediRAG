@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P088 (Male, age 39) -- Month 5.
+
+HbA1c: 8.7% (Classification: Diabetic).
+Fasting Blood Sugar (FBS): 161.0 mg/dL (Classification: Diabetic).
+Post-Prandial Blood Sugar (PPBS): 243.0 mg/dL (Classification: Diabetic).
+LDL Cholesterol: 107.0 mg/dL (Classification: Borderline).
+HDL Cholesterol: 36.0 mg/dL (Classification: Low).
+Triglycerides: 212.0 mg/dL (Classification: High).
+
+Overall Glycemic Status: Diabetic.

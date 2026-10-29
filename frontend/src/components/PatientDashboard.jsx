@@ -213,7 +213,7 @@ function HistoryPanel({ patientId }) {
   return (
     <div className="visit-list">
       {history.map((visit, i) => (
-        <div className="visit-row" key={i}>
+        <div className="visit-row visit-row--full" key={i}>
           <span className="visit-month">Month {i + 1}</span>
           <span>
             <span className="metric-label">HbA1c</span>
@@ -226,6 +226,18 @@ function HistoryPanel({ patientId }) {
           <span>
             <span className="metric-label">PPBS</span>
             <span className="metric-value">{visit['PPBS (mg/dL)'] ?? '—'} mg/dL</span>
+          </span>
+          <span>
+            <span className="metric-label">LDL</span>
+            <span className="metric-value">{visit['LDL (mg/dL)'] ?? '—'} mg/dL</span>
+          </span>
+          <span>
+            <span className="metric-label">HDL</span>
+            <span className="metric-value">{visit['HDL (mg/dL)'] ?? '—'} mg/dL</span>
+          </span>
+          <span>
+            <span className="metric-label">TG</span>
+            <span className="metric-value">{visit['Triglycerides (mg/dL)'] ?? '—'} mg/dL</span>
           </span>
           <StatusPill status={visit.status} />
         </div>

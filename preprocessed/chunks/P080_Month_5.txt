@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P080 (Male, age 54) -- Month 5.
+
+HbA1c: 7.5% (Classification: Diabetic).
+Fasting Blood Sugar (FBS): 160.0 mg/dL (Classification: Diabetic).
+Post-Prandial Blood Sugar (PPBS): 193.0 mg/dL (Classification: Prediabetic).
+LDL Cholesterol: 132.0 mg/dL (Classification: High Risk).
+HDL Cholesterol: 37.0 mg/dL (Classification: Low).
+Triglycerides: 130.0 mg/dL (Classification: Normal).
+
+Overall Glycemic Status: Diabetic.

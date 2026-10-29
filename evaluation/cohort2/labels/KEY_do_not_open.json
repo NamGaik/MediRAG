@@ -1,0 +1,2378 @@
+{
+ "runs": {
+  "2": "claude-haiku-5-5",
+  "3": "claude-sonnet-5"
+ },
+ "key": {
+  "P001": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q028",
+   "config": "full_system"
+  },
+  "P002": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q012",
+   "config": "full_system"
+  },
+  "P003": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q018",
+   "config": "standard_rag"
+  },
+  "P004": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q022",
+   "config": "full_system"
+  },
+  "P005": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q048",
+   "config": "full_system"
+  },
+  "P006": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q012",
+   "config": "standard_rag"
+  },
+  "P007": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q004",
+   "config": "full_system"
+  },
+  "P008": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q044",
+   "config": "full_system"
+  },
+  "P009": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q011",
+   "config": "full_system"
+  },
+  "P010": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q010",
+   "config": "full_system"
+  },
+  "P011": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q024",
+   "config": "full_system_corrective"
+  },
+  "P012": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q029",
+   "config": "standard_rag"
+  },
+  "P013": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q025",
+   "config": "standard_rag"
+  },
+  "P014": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q001",
+   "config": "full_system_corrective"
+  },
+  "P015": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q023",
+   "config": "full_system"
+  },
+  "P016": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q023",
+   "config": "standard_rag"
+  },
+  "P017": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q041",
+   "config": "full_system"
+  },
+  "P018": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q019",
+   "config": "full_system"
+  },
+  "P019": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q022",
+   "config": "full_system"
+  },
+  "P020": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q010",
+   "config": "full_system"
+  },
+  "P021": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q031",
+   "config": "full_system"
+  },
+  "P022": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q047",
+   "config": "full_system"
+  },
+  "P023": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q006",
+   "config": "full_system"
+  },
+  "P024": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q041",
+   "config": "full_system"
+  },
+  "P025": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q009",
+   "config": "full_system"
+  },
+  "P026": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q009",
+   "config": "full_system"
+  },
+  "P027": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q025",
+   "config": "full_system"
+  },
+  "P028": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q015",
+   "config": "full_system"
+  },
+  "P029": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q034",
+   "config": "full_system"
+  },
+  "P030": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q043",
+   "config": "full_system_corrective"
+  },
+  "P031": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q048",
+   "config": "standard_rag"
+  },
+  "P032": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q047",
+   "config": "full_system"
+  },
+  "P033": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q039",
+   "config": "full_system"
+  },
+  "P034": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q013",
+   "config": "full_system"
+  },
+  "P035": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q037",
+   "config": "full_system"
+  },
+  "P036": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q015",
+   "config": "full_system"
+  },
+  "P037": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q042",
+   "config": "standard_rag"
+  },
+  "P038": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q016",
+   "config": "full_system"
+  },
+  "P039": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q036",
+   "config": "full_system"
+  },
+  "P040": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q003",
+   "config": "standard_rag"
+  },
+  "P041": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q003",
+   "config": "full_system"
+  },
+  "P042": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q041",
+   "config": "standard_rag"
+  },
+  "P043": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q011",
+   "config": "standard_rag"
+  },
+  "P044": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q043",
+   "config": "standard_rag"
+  },
+  "P045": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q046",
+   "config": "full_system"
+  },
+  "P046": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q003",
+   "config": "full_system"
+  },
+  "P047": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q017",
+   "config": "full_system"
+  },
+  "P048": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q038",
+   "config": "full_system"
+  },
+  "P049": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q027",
+   "config": "full_system"
+  },
+  "P050": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q037",
+   "config": "full_system"
+  },
+  "P051": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q020",
+   "config": "full_system"
+  },
+  "P052": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q024",
+   "config": "full_system"
+  },
+  "P053": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q036",
+   "config": "full_system_corrective"
+  },
+  "P054": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q040",
+   "config": "full_system"
+  },
+  "P055": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q036",
+   "config": "standard_rag"
+  },
+  "P056": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q033",
+   "config": "full_system"
+  },
+  "P057": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q014",
+   "config": "full_system"
+  },
+  "P058": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q038",
+   "config": "full_system"
+  },
+  "P059": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q042",
+   "config": "full_system"
+  },
+  "P060": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q012",
+   "config": "full_system"
+  },
+  "P061": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q030",
+   "config": "standard_rag"
+  },
+  "P062": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q024",
+   "config": "standard_rag"
+  },
+  "P063": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q007",
+   "config": "standard_rag"
+  },
+  "P064": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q027",
+   "config": "standard_rag"
+  },
+  "P065": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q028",
+   "config": "standard_rag"
+  },
+  "P066": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q049",
+   "config": "full_system_corrective"
+  },
+  "P067": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q026",
+   "config": "full_system"
+  },
+  "P068": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q017",
+   "config": "standard_rag"
+  },
+  "P069": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q031",
+   "config": "full_system"
+  },
+  "P070": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q022",
+   "config": "standard_rag"
+  },
+  "P071": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q019",
+   "config": "full_system"
+  },
+  "P072": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q001",
+   "config": "standard_rag"
+  },
+  "P073": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q023",
+   "config": "full_system"
+  },
+  "P074": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q034",
+   "config": "full_system"
+  },
+  "P075": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q001",
+   "config": "full_system"
+  },
+  "P076": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q026",
+   "config": "standard_rag"
+  },
+  "P077": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q020",
+   "config": "standard_rag"
+  },
+  "P078": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q008",
+   "config": "full_system"
+  },
+  "P079": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q045",
+   "config": "standard_rag"
+  },
+  "P080": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q008",
+   "config": "standard_rag"
+  },
+  "P081": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q035",
+   "config": "full_system"
+  },
+  "P082": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q033",
+   "config": "full_system"
+  },
+  "P083": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q046",
+   "config": "full_system"
+  },
+  "P084": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q031",
+   "config": "standard_rag"
+  },
+  "P085": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q014",
+   "config": "full_system"
+  },
+  "P086": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q038",
+   "config": "standard_rag"
+  },
+  "P087": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q030",
+   "config": "full_system"
+  },
+  "P088": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q017",
+   "config": "full_system"
+  },
+  "P089": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q047",
+   "config": "standard_rag"
+  },
+  "P090": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q017",
+   "config": "full_system_corrective"
+  },
+  "P091": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q007",
+   "config": "full_system"
+  },
+  "P092": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q002",
+   "config": "full_system"
+  },
+  "P093": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q049",
+   "config": "full_system"
+  },
+  "P094": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q014",
+   "config": "standard_rag"
+  },
+  "P095": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q028",
+   "config": "full_system"
+  },
+  "P096": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q004",
+   "config": "full_system"
+  },
+  "P097": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q013",
+   "config": "full_system"
+  },
+  "P098": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q029",
+   "config": "full_system"
+  },
+  "P099": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q029",
+   "config": "full_system"
+  },
+  "P100": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q032",
+   "config": "standard_rag"
+  },
+  "P101": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q035",
+   "config": "full_system"
+  },
+  "P102": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q045",
+   "config": "full_system"
+  },
+  "P103": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q042",
+   "config": "full_system"
+  },
+  "P104": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q005",
+   "config": "full_system"
+  },
+  "P105": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q005",
+   "config": "standard_rag"
+  },
+  "P106": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q034",
+   "config": "standard_rag"
+  },
+  "P107": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q016",
+   "config": "standard_rag"
+  },
+  "P108": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q010",
+   "config": "full_system_corrective"
+  },
+  "P109": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q002",
+   "config": "full_system"
+  },
+  "P110": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q006",
+   "config": "standard_rag"
+  },
+  "P111": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q032",
+   "config": "full_system"
+  },
+  "P112": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q022",
+   "config": "full_system_corrective"
+  },
+  "P113": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q024",
+   "config": "full_system"
+  },
+  "P114": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q021",
+   "config": "full_system"
+  },
+  "P115": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q016",
+   "config": "full_system"
+  },
+  "P116": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q006",
+   "config": "full_system"
+  },
+  "P117": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q030",
+   "config": "full_system"
+  },
+  "P118": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q015",
+   "config": "full_system_corrective"
+  },
+  "P119": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q027",
+   "config": "full_system"
+  },
+  "P120": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q020",
+   "config": "full_system"
+  },
+  "P121": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q004",
+   "config": "standard_rag"
+  },
+  "P122": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q044",
+   "config": "full_system_corrective"
+  },
+  "P123": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q049",
+   "config": "full_system"
+  },
+  "P124": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q011",
+   "config": "full_system"
+  },
+  "P125": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q001",
+   "config": "full_system"
+  },
+  "P126": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q049",
+   "config": "standard_rag"
+  },
+  "P127": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q044",
+   "config": "full_system"
+  },
+  "P128": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q015",
+   "config": "standard_rag"
+  },
+  "P129": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q036",
+   "config": "full_system"
+  },
+  "P130": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q043",
+   "config": "full_system"
+  },
+  "P131": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q008",
+   "config": "full_system"
+  },
+  "P132": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q019",
+   "config": "standard_rag"
+  },
+  "P133": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q044",
+   "config": "standard_rag"
+  },
+  "P134": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q005",
+   "config": "full_system"
+  },
+  "P135": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q045",
+   "config": "full_system"
+  },
+  "P136": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q025",
+   "config": "full_system"
+  },
+  "P137": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q040",
+   "config": "standard_rag"
+  },
+  "P138": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q039",
+   "config": "standard_rag"
+  },
+  "P139": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q018",
+   "config": "full_system"
+  },
+  "P140": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q026",
+   "config": "full_system"
+  },
+  "P141": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q018",
+   "config": "full_system"
+  },
+  "P142": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q048",
+   "config": "full_system"
+  },
+  "P143": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q032",
+   "config": "full_system"
+  },
+  "P144": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q029",
+   "config": "full_system_corrective"
+  },
+  "P145": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q009",
+   "config": "standard_rag"
+  },
+  "P146": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q035",
+   "config": "standard_rag"
+  },
+  "P147": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q039",
+   "config": "full_system"
+  },
+  "P148": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q009",
+   "config": "full_system_corrective"
+  },
+  "P149": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q033",
+   "config": "standard_rag"
+  },
+  "P150": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q031",
+   "config": "full_system_corrective"
+  },
+  "P151": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q021",
+   "config": "standard_rag"
+  },
+  "P152": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q040",
+   "config": "full_system"
+  },
+  "P153": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q043",
+   "config": "full_system"
+  },
+  "P154": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q045",
+   "config": "full_system_corrective"
+  },
+  "P155": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q021",
+   "config": "full_system"
+  },
+  "P156": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q046",
+   "config": "standard_rag"
+  },
+  "P157": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q037",
+   "config": "standard_rag"
+  },
+  "P158": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q002",
+   "config": "standard_rag"
+  },
+  "P159": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q010",
+   "config": "standard_rag"
+  },
+  "P160": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2Q007",
+   "config": "full_system"
+  },
+  "P161": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2Q013",
+   "config": "standard_rag"
+  },
+  "T001": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T002",
+   "config": "full_system"
+  },
+  "T002": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T056",
+   "config": "standard_rag"
+  },
+  "T003": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T054",
+   "config": "full_system_corrective"
+  },
+  "T004": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T036",
+   "config": "full_system"
+  },
+  "T005": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T066",
+   "config": "full_system"
+  },
+  "T006": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T007",
+   "config": "full_system"
+  },
+  "T007": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T015",
+   "config": "full_system_corrective"
+  },
+  "T008": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T013",
+   "config": "standard_rag"
+  },
+  "T009": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T045",
+   "config": "full_system"
+  },
+  "T010": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T062",
+   "config": "full_system"
+  },
+  "T011": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T042",
+   "config": "full_system_corrective"
+  },
+  "T012": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T004",
+   "config": "full_system"
+  },
+  "T013": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T025",
+   "config": "full_system"
+  },
+  "T014": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T047",
+   "config": "full_system"
+  },
+  "T015": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T068",
+   "config": "full_system"
+  },
+  "T016": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T045",
+   "config": "standard_rag"
+  },
+  "T017": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T012",
+   "config": "full_system"
+  },
+  "T018": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T011",
+   "config": "standard_rag"
+  },
+  "T019": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T064",
+   "config": "full_system"
+  },
+  "T020": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T025",
+   "config": "standard_rag"
+  },
+  "T021": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T010",
+   "config": "standard_rag"
+  },
+  "T022": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T028",
+   "config": "full_system"
+  },
+  "T023": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T042",
+   "config": "full_system"
+  },
+  "T024": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T013",
+   "config": "full_system"
+  },
+  "T025": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T048",
+   "config": "standard_rag"
+  },
+  "T026": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T017",
+   "config": "full_system"
+  },
+  "T027": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T014",
+   "config": "full_system"
+  },
+  "T028": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T056",
+   "config": "full_system"
+  },
+  "T029": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T061",
+   "config": "full_system"
+  },
+  "T030": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T047",
+   "config": "standard_rag"
+  },
+  "T031": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T068",
+   "config": "full_system"
+  },
+  "T032": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T014",
+   "config": "standard_rag"
+  },
+  "T033": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T039",
+   "config": "full_system"
+  },
+  "T034": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T026",
+   "config": "standard_rag"
+  },
+  "T035": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T013",
+   "config": "full_system"
+  },
+  "T036": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T034",
+   "config": "full_system"
+  },
+  "T037": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T041",
+   "config": "full_system"
+  },
+  "T038": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T040",
+   "config": "standard_rag"
+  },
+  "T039": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T050",
+   "config": "standard_rag"
+  },
+  "T040": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T056",
+   "config": "full_system"
+  },
+  "T041": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T014",
+   "config": "full_system"
+  },
+  "T042": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T041",
+   "config": "standard_rag"
+  },
+  "T043": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T032",
+   "config": "standard_rag"
+  },
+  "T044": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T013",
+   "config": "full_system_corrective"
+  },
+  "T045": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T060",
+   "config": "full_system"
+  },
+  "T046": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T062",
+   "config": "standard_rag"
+  },
+  "T047": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T049",
+   "config": "full_system"
+  },
+  "T048": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T025",
+   "config": "full_system"
+  },
+  "T049": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T033",
+   "config": "full_system"
+  },
+  "T050": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T066",
+   "config": "full_system_corrective"
+  },
+  "T051": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T035",
+   "config": "full_system"
+  },
+  "T052": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T037",
+   "config": "full_system"
+  },
+  "T053": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T068",
+   "config": "full_system_corrective"
+  },
+  "T054": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T045",
+   "config": "full_system_corrective"
+  },
+  "T055": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T024",
+   "config": "full_system"
+  },
+  "T056": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T044",
+   "config": "full_system"
+  },
+  "T057": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T004",
+   "config": "standard_rag"
+  },
+  "T058": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T042",
+   "config": "full_system"
+  },
+  "T059": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T008",
+   "config": "full_system"
+  },
+  "T060": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T035",
+   "config": "standard_rag"
+  },
+  "T061": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T004",
+   "config": "full_system"
+  },
+  "T062": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T018",
+   "config": "standard_rag"
+  },
+  "T063": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T051",
+   "config": "full_system"
+  },
+  "T064": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T036",
+   "config": "standard_rag"
+  },
+  "T065": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T015",
+   "config": "standard_rag"
+  },
+  "T066": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T011",
+   "config": "full_system_corrective"
+  },
+  "T067": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T031",
+   "config": "full_system"
+  },
+  "T068": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T048",
+   "config": "full_system"
+  },
+  "T069": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T030",
+   "config": "full_system"
+  },
+  "T070": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T027",
+   "config": "full_system"
+  },
+  "T071": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T002",
+   "config": "standard_rag"
+  },
+  "T072": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T069",
+   "config": "full_system"
+  },
+  "T073": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T039",
+   "config": "standard_rag"
+  },
+  "T074": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T067",
+   "config": "full_system_corrective"
+  },
+  "T075": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T001",
+   "config": "standard_rag"
+  },
+  "T076": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T029",
+   "config": "full_system"
+  },
+  "T077": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T020",
+   "config": "full_system"
+  },
+  "T078": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T052",
+   "config": "full_system"
+  },
+  "T079": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T032",
+   "config": "full_system"
+  },
+  "T080": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T019",
+   "config": "full_system_corrective"
+  },
+  "T081": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T027",
+   "config": "full_system"
+  },
+  "T082": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T009",
+   "config": "standard_rag"
+  },
+  "T083": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T003",
+   "config": "full_system"
+  },
+  "T084": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T066",
+   "config": "full_system"
+  },
+  "T085": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T054",
+   "config": "full_system"
+  },
+  "T086": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T021",
+   "config": "full_system"
+  },
+  "T087": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T019",
+   "config": "full_system"
+  },
+  "T088": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T024",
+   "config": "standard_rag"
+  },
+  "T089": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T031",
+   "config": "standard_rag"
+  },
+  "T090": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T010",
+   "config": "full_system"
+  },
+  "T091": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T067",
+   "config": "full_system"
+  },
+  "T092": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T060",
+   "config": "standard_rag"
+  },
+  "T093": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T019",
+   "config": "full_system"
+  },
+  "T094": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T021",
+   "config": "full_system"
+  },
+  "T095": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T068",
+   "config": "standard_rag"
+  },
+  "T096": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T066",
+   "config": "standard_rag"
+  },
+  "T097": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T005",
+   "config": "full_system"
+  },
+  "T098": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T036",
+   "config": "full_system"
+  },
+  "T099": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T064",
+   "config": "full_system"
+  },
+  "T100": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T017",
+   "config": "full_system"
+  },
+  "T101": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T048",
+   "config": "full_system"
+  },
+  "T102": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T046",
+   "config": "full_system"
+  },
+  "T103": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T049",
+   "config": "full_system"
+  },
+  "T104": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T001",
+   "config": "full_system"
+  },
+  "T105": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T007",
+   "config": "full_system"
+  },
+  "T106": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T026",
+   "config": "full_system"
+  },
+  "T107": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T043",
+   "config": "standard_rag"
+  },
+  "T108": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T062",
+   "config": "full_system"
+  },
+  "T109": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T012",
+   "config": "full_system_corrective"
+  },
+  "T110": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T029",
+   "config": "standard_rag"
+  },
+  "T111": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T037",
+   "config": "full_system_corrective"
+  },
+  "T112": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T061",
+   "config": "standard_rag"
+  },
+  "T113": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T040",
+   "config": "full_system"
+  },
+  "T114": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T058",
+   "config": "full_system"
+  },
+  "T115": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T024",
+   "config": "full_system"
+  },
+  "T116": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T053",
+   "config": "standard_rag"
+  },
+  "T117": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T069",
+   "config": "standard_rag"
+  },
+  "T118": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T026",
+   "config": "full_system"
+  },
+  "T119": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T032",
+   "config": "full_system"
+  },
+  "T120": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T006",
+   "config": "full_system"
+  },
+  "T121": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T038",
+   "config": "full_system"
+  },
+  "T122": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T057",
+   "config": "full_system"
+  },
+  "T123": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T006",
+   "config": "full_system"
+  },
+  "T124": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T070",
+   "config": "standard_rag"
+  },
+  "T125": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T031",
+   "config": "full_system"
+  },
+  "T126": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T058",
+   "config": "full_system"
+  },
+  "T127": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T016",
+   "config": "full_system"
+  },
+  "T128": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T064",
+   "config": "standard_rag"
+  },
+  "T129": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T054",
+   "config": "standard_rag"
+  },
+  "T130": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T040",
+   "config": "full_system"
+  },
+  "T131": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T009",
+   "config": "full_system"
+  },
+  "T132": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T055",
+   "config": "full_system"
+  },
+  "T133": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T022",
+   "config": "full_system"
+  },
+  "T134": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T060",
+   "config": "full_system"
+  },
+  "T135": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T046",
+   "config": "standard_rag"
+  },
+  "T136": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T018",
+   "config": "full_system_corrective"
+  },
+  "T137": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T038",
+   "config": "standard_rag"
+  },
+  "T138": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T005",
+   "config": "standard_rag"
+  },
+  "T139": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T050",
+   "config": "full_system"
+  },
+  "T140": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T061",
+   "config": "full_system"
+  },
+  "T141": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T052",
+   "config": "full_system"
+  },
+  "T142": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T016",
+   "config": "full_system"
+  },
+  "T143": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T039",
+   "config": "full_system"
+  },
+  "T144": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T041",
+   "config": "full_system"
+  },
+  "T145": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T059",
+   "config": "full_system"
+  },
+  "T146": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T042",
+   "config": "standard_rag"
+  },
+  "T147": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T051",
+   "config": "standard_rag"
+  },
+  "T148": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T034",
+   "config": "standard_rag"
+  },
+  "T149": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T067",
+   "config": "standard_rag"
+  },
+  "T150": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T037",
+   "config": "standard_rag"
+  },
+  "T151": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T022",
+   "config": "standard_rag"
+  },
+  "T152": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T041",
+   "config": "full_system_corrective"
+  },
+  "T153": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T053",
+   "config": "full_system"
+  },
+  "T154": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T020",
+   "config": "standard_rag"
+  },
+  "T155": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T065",
+   "config": "full_system"
+  },
+  "T156": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T028",
+   "config": "standard_rag"
+  },
+  "T157": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T017",
+   "config": "full_system_corrective"
+  },
+  "T158": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T059",
+   "config": "standard_rag"
+  },
+  "T159": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T012",
+   "config": "full_system"
+  },
+  "T160": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T057",
+   "config": "standard_rag"
+  },
+  "T161": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T063",
+   "config": "standard_rag"
+  },
+  "T162": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T034",
+   "config": "full_system"
+  },
+  "T163": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T005",
+   "config": "full_system"
+  },
+  "T164": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T008",
+   "config": "standard_rag"
+  },
+  "T165": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T035",
+   "config": "full_system"
+  },
+  "T166": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T070",
+   "config": "full_system"
+  },
+  "T167": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T070",
+   "config": "full_system"
+  },
+  "T168": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T022",
+   "config": "full_system"
+  },
+  "T169": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T016",
+   "config": "standard_rag"
+  },
+  "T170": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T043",
+   "config": "full_system"
+  },
+  "T171": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T052",
+   "config": "full_system_corrective"
+  },
+  "T172": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T044",
+   "config": "full_system"
+  },
+  "T173": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T046",
+   "config": "full_system"
+  },
+  "T174": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T069",
+   "config": "full_system"
+  },
+  "T175": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T030",
+   "config": "standard_rag"
+  },
+  "T176": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T067",
+   "config": "full_system"
+  },
+  "T177": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T054",
+   "config": "full_system"
+  },
+  "T178": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T049",
+   "config": "standard_rag"
+  },
+  "T179": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T006",
+   "config": "standard_rag"
+  },
+  "T180": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T028",
+   "config": "full_system"
+  },
+  "T181": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T011",
+   "config": "full_system"
+  },
+  "T182": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T029",
+   "config": "full_system"
+  },
+  "T183": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T050",
+   "config": "full_system"
+  },
+  "T184": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T065",
+   "config": "full_system"
+  },
+  "T185": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T030",
+   "config": "full_system"
+  },
+  "T186": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T018",
+   "config": "full_system"
+  },
+  "T187": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T001",
+   "config": "full_system"
+  },
+  "T188": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T063",
+   "config": "full_system"
+  },
+  "T189": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T021",
+   "config": "standard_rag"
+  },
+  "T190": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T015",
+   "config": "full_system"
+  },
+  "T191": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T007",
+   "config": "standard_rag"
+  },
+  "T192": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T050",
+   "config": "full_system_corrective"
+  },
+  "T193": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T033",
+   "config": "standard_rag"
+  },
+  "T194": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T038",
+   "config": "full_system"
+  },
+  "T195": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T065",
+   "config": "standard_rag"
+  },
+  "T196": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T023",
+   "config": "full_system"
+  },
+  "T197": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T043",
+   "config": "full_system"
+  },
+  "T198": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T053",
+   "config": "full_system"
+  },
+  "T199": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T003",
+   "config": "standard_rag"
+  },
+  "T200": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T052",
+   "config": "standard_rag"
+  },
+  "T201": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T011",
+   "config": "full_system"
+  },
+  "T202": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T063",
+   "config": "full_system_corrective"
+  },
+  "T203": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T023",
+   "config": "standard_rag"
+  },
+  "T204": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T024",
+   "config": "full_system_corrective"
+  },
+  "T205": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T009",
+   "config": "full_system"
+  },
+  "T206": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T057",
+   "config": "full_system"
+  },
+  "T207": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T033",
+   "config": "full_system"
+  },
+  "T208": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T003",
+   "config": "full_system"
+  },
+  "T209": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T063",
+   "config": "full_system"
+  },
+  "T210": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T018",
+   "config": "full_system"
+  },
+  "T211": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T023",
+   "config": "full_system"
+  },
+  "T212": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T012",
+   "config": "standard_rag"
+  },
+  "T213": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T002",
+   "config": "full_system"
+  },
+  "T214": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T020",
+   "config": "full_system_corrective"
+  },
+  "T215": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T053",
+   "config": "full_system_corrective"
+  },
+  "T216": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T051",
+   "config": "full_system_corrective"
+  },
+  "T217": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T019",
+   "config": "standard_rag"
+  },
+  "T218": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T016",
+   "config": "full_system_corrective"
+  },
+  "T219": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T051",
+   "config": "full_system"
+  },
+  "T220": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T047",
+   "config": "full_system"
+  },
+  "T221": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T008",
+   "config": "full_system"
+  },
+  "T222": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T059",
+   "config": "full_system"
+  },
+  "T223": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T070",
+   "config": "full_system_corrective"
+  },
+  "T224": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T055",
+   "config": "full_system"
+  },
+  "T225": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T045",
+   "config": "full_system"
+  },
+  "T226": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T027",
+   "config": "standard_rag"
+  },
+  "T227": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T044",
+   "config": "standard_rag"
+  },
+  "T228": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T010",
+   "config": "full_system"
+  },
+  "T229": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T055",
+   "config": "standard_rag"
+  },
+  "T230": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T015",
+   "config": "full_system"
+  },
+  "T231": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T058",
+   "config": "standard_rag"
+  },
+  "T232": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T020",
+   "config": "full_system"
+  },
+  "T233": {
+   "run_id": 3,
+   "model": "claude-sonnet-5",
+   "query_id": "C2T037",
+   "config": "full_system"
+  },
+  "T234": {
+   "run_id": 2,
+   "model": "claude-haiku-5-5",
+   "query_id": "C2T017",
+   "config": "standard_rag"
+  }
+ }
+}

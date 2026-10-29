@@ -53,16 +53,38 @@ from results_logger import save_result
 # -----------------------------
 # Config (fixed before the run)
 # -----------------------------
-CLAUDE_MODEL = phase_g.CLAUDE_MODEL       # same model for every configuration
-MAX_TOKENS = 800
-TOP_K = 5
-RUN_CORRECTIVE = True                    # set False to skip the fourth configuration
+# Same model for every configuration in a run. Cohort 2 runs two models in separate runs:
+#   $env:MEDIRAG_MODEL = "claude-haiku-5-5"   (cheap; all four configurations)
+#   $env:MEDIRAG_MODEL = "claude-sonnet-5"    (main model; e.g. full system only, see MEDIRAG_CONFIGS)
+# Load ANTHROPIC_API_KEY from the project's .env file (as the backend does)
+try:
+    from dotenv import load_dotenv
+    load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".env"))
+except ImportError:
+    pass
+if not os.environ.get("ANTHROPIC_API_KEY"):
+    print("ANTHROPIC_API_KEY is not set: put it in the .env file in the project folder.")
+
+CLAUDE_MODEL = os.environ.get("MEDIRAG_MODEL", phase_g.CLAUDE_MODEL)
+# 800 for all runs so far (kept as the default so they stay reproducible). Models with hidden
+# reasoning (e.g. Haiku 5.5) can spend most of this budget before writing: set
+# $env:MEDIRAG_MAX_TOKENS = "2000" for new runs.
+MAX_TOKENS = int(os.environ.get("MEDIRAG_MAX_TOKENS", 800))
+# Which rule validator decides whether to regenerate (full_system_corrective):
+#   "v1" = phase_h validator, as used in runs 1-3 (default, reproducible)
+#   "v4" = revised validator (phase_m_3): every value checked, labelled forecasts, numbers quoted
+#          from the question and reference thresholds not treated as fabrications
+CORRECTIVE_VALIDATOR = os.environ.get("MEDIRAG_CORRECTIVE_VALIDATOR", "v1")
+TOP_K = int(os.environ.get("MEDIRAG_TOP_K", 5))   # cohort 2: MEDIRAG_TOP_K=8
+RUN_CORRECTIVE = os.environ.get("MEDIRAG_CORRECTIVE", "1") == "1"   # "0" skips the fourth configuration
 
 QUERY_DATA_PATH = os.path.join("data", "Evaluation_Query_Dataset3.xlsx")
 TRAP_PATH = os.path.join("verifier_data", "expanded_trap_queries.json")
 OUT_DIR = os.path.join("evaluation", "v2")
 
-GEN_CONFIGS = ["plain_llm", "standard_rag", "full_system"]
+# e.g. $env:MEDIRAG_CONFIGS = "full_system" to run only the full system (saves credits)
+GEN_CONFIGS = [c.strip() for c in os.environ.get("MEDIRAG_CONFIGS", "plain_llm,standard_rag,full_system").split(",")
+               if c.strip()]
 FUTURE_LABEL_WORDS = ["predict", "estimate", "forecast", "model"]
 
 RAG_PROMPT = """Answer the patient's question using only the context below. If the context doesn't contain the answer, say so.
@@ -84,6 +106,21 @@ Write a corrected answer. Every number and classification must match the CONTEXT
 # Queries
 # -----------------------------
 def load_queries():
+    # Cohort 2: set MEDIRAG_PATIENT_QUERIES and MEDIRAG_TRAP_QUERIES to the JSON files
+    # written by phase_l_9_cohort2_queries.py. Unset = cohort-1 queries, unchanged.
+    pq_path = os.environ.get("MEDIRAG_PATIENT_QUERIES")
+    tq_path = os.environ.get("MEDIRAG_TRAP_QUERIES", TRAP_PATH)
+    if pq_path:
+        with open(pq_path) as f:
+            queries = [{"query_id": q["query_id"], "category": "category_a", "patient_id": q["patient_id"],
+                        "query_text": q["query_text"], "trap_type": None, "safe_keywords": None}
+                       for q in json.load(f)]
+        with open(tq_path) as f:
+            traps = json.load(f)
+        return queries + [{"query_id": t["trap_id"], "category": "category_c",
+                           "patient_id": t.get("patient_id"), "query_text": t["query_text"],
+                           "trap_type": t["base_trap_type"], "safe_keywords": t.get("safe_keywords")}
+                          for t in traps]
     df = pd.read_excel(QUERY_DATA_PATH, sheet_name="Evaluation_Queries", header=1).iloc[:15]
     queries = [{"query_id": str(r["Query_ID"]), "category": "category_a",
                 "patient_id": str(r["Patient_ID"]).strip(), "query_text": str(r["Query_Text"]),
@@ -157,10 +194,24 @@ def gen_full(q, ctx):
             "usage": usage, "model_id": model_id}
 
 
+def corrective_issues_v4(q, full_result, rules):
+    """Issues from the revised validator, in the same format as phase_h issues."""
+    from phase_h_validation import classify_value
+    from phase_l_8_rescore_rules_v2 import forecast_chunk, thresholds_by_biomarker
+    from phase_m_3_routed_verification import validate_v4
+    ctx = list(full_result["chunks"]) + forecast_chunk(full_result.get("trajectory"))
+    res = validate_v4(full_result["answer"], q["query_text"], ctx, rules, thresholds_by_biomarker(rules))
+    return [{"type": t, "biomarker": b, "value": v, "true_label": classify_value(b, v, rules)}
+            for t, b, v in res["issues"]]
+
+
 def gen_corrective(q, ctx, full_result, rules):
     """Regenerate once if the rule validator finds real problems in the full_system answer."""
-    val = validate_entry({"answer": full_result["answer"], "retrieved_chunks": full_result["chunks"]}, rules)
-    real = [i for i in val["issues"] if i["type"] in ("misclassification", "possible_fabrication")]
+    if CORRECTIVE_VALIDATOR == "v4":
+        real = corrective_issues_v4(q, full_result, rules)
+    else:
+        val = validate_entry({"answer": full_result["answer"], "retrieved_chunks": full_result["chunks"]}, rules)
+        real = [i for i in val["issues"] if i["type"] in ("misclassification", "possible_fabrication")]
     if not real:
         return dict(full_result, corrected=False, usage={"input_tokens": 0, "output_tokens": 0})
     problems = "\n".join(f"- {i['biomarker']} = {i['value']}: {i['type']} "
@@ -242,17 +293,20 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true", help="1 patient query + 1 trap only")
     ap.add_argument("--run-id", type=int, default=1, help="repeat number (1, 2, 3...)")
+    ap.add_argument("--pilot", type=int, default=0,
+                    help="run only N queries (half patient questions, half traps, spread across types) "
+                         "to measure the real cost first; saved as pilot_<model>.json")
     args = ap.parse_args()
     results_path = os.path.join(OUT_DIR, f"benchmark_v2_results_run{args.run_id}.json")
     config_path = os.path.join(OUT_DIR, f"benchmark_v2_config_run{args.run_id}.json")
     import anthropic
 
     os.makedirs(OUT_DIR, exist_ok=True)
-    configs = GEN_CONFIGS + (["full_system_corrective"] if RUN_CORRECTIVE else [])
+    configs = GEN_CONFIGS + (["full_system_corrective"] if RUN_CORRECTIVE and "full_system" in GEN_CONFIGS else [])
     run_config = {"run_id": args.run_id, "model": CLAUDE_MODEL,
-                  "sampling": "API default (temperature not settable in anthropic SDK >= 1.0)",
+                  "sampling": "API default; no temperature or other sampling parameter set",
                   "anthropic_sdk_version": getattr(anthropic, "__version__", "unknown"),
-                  "max_tokens": MAX_TOKENS, "retrieval_top_k": TOP_K, "configs": configs,
+                  "max_tokens": MAX_TOKENS, "corrective_validator": CORRECTIVE_VALIDATOR, "retrieval_top_k": TOP_K, "configs": configs,
                   "started": time.strftime("%Y-%m-%d %H:%M:%S")}
     with open(config_path, "w") as f:
         json.dump(run_config, f, indent=2)
@@ -261,11 +315,17 @@ def main():
     if args.dry_run:
         queries = [next(q for q in queries if q["category"] == "category_a"),
                    next(q for q in queries if q["category"] == "category_c")]
+    elif args.pilot:
+        pat = [q for q in queries if q["category"] == "category_a"]
+        trp = [q for q in queries if q["category"] == "category_c"]
+        n_p, n_t = (args.pilot + 1) // 2, args.pilot // 2
+        pick = lambda lst, n: [lst[round(i * (len(lst) - 1) / max(1, n - 1))] for i in range(n)] if n else []
+        queries = pick(pat, n_p) + pick(trp, n_t)
     print(f"{len(queries)} queries x {len(configs)} configurations "
           f"(model {CLAUDE_MODEL}, run {args.run_id}, anthropic SDK {run_config['anthropic_sdk_version']})")
 
     results = {}
-    if os.path.exists(results_path) and not args.dry_run:
+    if os.path.exists(results_path) and not args.dry_run and not args.pilot:
         with open(results_path) as f:
             results = json.load(f)
         print(f"Resuming: {sum(len(r['configs']) for r in results.values())} answers already saved.")
@@ -273,7 +333,8 @@ def main():
     rules = load_severity_rules()
     index, metadata = load_index()
     usage_total = defaultdict(int)
-    out_path = os.path.join(OUT_DIR, "dry_run.json") if args.dry_run else results_path
+    out_path = (os.path.join(OUT_DIR, "dry_run.json") if args.dry_run
+                else os.path.join(OUT_DIR, f"pilot_{CLAUDE_MODEL}.json") if args.pilot else results_path)
 
     for qi, q in enumerate(queries, 1):
         rec = results.setdefault(q["query_id"], {k: q[k] for k in
@@ -311,6 +372,13 @@ def main():
               f"chunks={len(chunks)} done")
 
     print(f"\nTokens used this session: {dict(usage_total)}")
+    if args.pilot:
+        n = len(queries)
+        print(f"PILOT complete ({n} queries x {len(configs)} configurations). Answers: {out_path}")
+        print(f"Per query, on average: {usage_total['input_tokens'] / n:.0f} input and "
+              f"{usage_total['output_tokens'] / n:.0f} output tokens.")
+        print("Check the Cost tab in the Anthropic console, then scale up to the full query count.")
+        return
     if args.dry_run:
         print("DRY RUN complete. Check the answers in evaluation/v2/dry_run.json and the token")
         print("counts above against current pricing, then run without --dry-run.")

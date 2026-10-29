@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P070 (Male, age 39) -- Month 8.
+
+HbA1c: 4.8% (Classification: Normal).
+Fasting Blood Sugar (FBS): 74.0 mg/dL (Classification: Normal).
+Post-Prandial Blood Sugar (PPBS): 124.0 mg/dL (Classification: Normal).
+LDL Cholesterol: 100.0 mg/dL (Classification: Borderline).
+HDL Cholesterol: 65.0 mg/dL (Classification: Normal).
+Triglycerides: 60.0 mg/dL (Classification: Normal).
+
+Overall Glycemic Status: Normal.

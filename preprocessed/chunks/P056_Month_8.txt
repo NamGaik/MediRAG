@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P056 (Male, age 44) -- Month 8.
+
+HbA1c: 7.3% (Classification: Diabetic).
+Fasting Blood Sugar (FBS): 148.0 mg/dL (Classification: Diabetic).
+Post-Prandial Blood Sugar (PPBS): 194.0 mg/dL (Classification: Prediabetic).
+LDL Cholesterol: 95.0 mg/dL (Classification: Optimal).
+HDL Cholesterol: 43.0 mg/dL (Classification: Normal).
+Triglycerides: 187.0 mg/dL (Classification: Borderline).
+
+Overall Glycemic Status: Diabetic.

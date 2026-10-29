@@ -27,6 +27,7 @@ Output:
     results/benchmark_v2/routed_verification_run1.json
 """
 import argparse
+import glob
 import json
 import os
 import re
@@ -47,7 +48,7 @@ CHUNK_DIR = os.path.join("preprocessed", "chunks")
 PLAUSIBLE = {"HbA1c": (3.0, 20.0), "FBS": (20, 800), "PPBS": (20, 900),
              "LDL": (10, 500), "HDL": (5, 200), "TG": (20, 3000)}
 FORECAST_WORDS = re.compile(r"predict|forecast|estimate|projected|risk category", re.I)
-MONTH_IN_CLAIM = re.compile(r"month\s*(\d)", re.I)
+MONTH_IN_CLAIM = re.compile(r"month\s*(\d+)", re.I)
 # F4 was tested and is OFF by default: in the ablation it removed the only true
 # detection (a trend sentence that wrongly implied earlier values were diabetic-range).
 DEFAULT_FIXES = ("F1", "F2", "F3")
@@ -55,12 +56,11 @@ DEFAULT_FIXES = ("F1", "F2", "F3")
 
 def patient_chunks(pid):
     out = []
-    for m in (1, 2, 3):
-        p = os.path.join(CHUNK_DIR, f"{pid}_Month_{m}.txt")
-        if os.path.exists(p):
-            with open(p) as f:
-                out.append({"month": m, "text": f.read()})
-    return out
+    for path in glob.glob(os.path.join(CHUNK_DIR, f"{pid}_Month_*.txt")):
+        m = int(re.search(r"_Month_(\d+)\.txt$", path).group(1))
+        with open(path) as f:
+            out.append({"month": m, "text": f.read()})
+    return sorted(out, key=lambda c: c["month"])
 
 
 def label_before_next_number(context):
@@ -221,3 +221,65 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# ---------------------------------------------------------------------------
+# v4 (added with U7b): WIDER VALUE COVERAGE.
+# The original extractor checks only the FIRST number after each biomarker
+# name, inside the same sentence. Answers often list several visits under one
+# name ("HbA1c:\n- Month 1: 6.1% (Prediabetic)\n- Month 2: 6.3% ..."), so most
+# values were never checked. v4 checks EVERY plausible number between a
+# biomarker name and the next one (up to 400 characters), and reads each
+# value's label only up to the next number on the same line.
+# ---------------------------------------------------------------------------
+from phase_h_validation import ALIAS_PATTERN, BIOMARKER_ALIASES, MONTH_BEFORE
+
+WINDOW_CHARS = 400
+
+
+def extract_all_mentions(text):
+    mentions, hits, last_end = [], list(ALIAS_PATTERN.finditer(text)), -100
+    for i, hit in enumerate(hits):
+        if hit.start() - last_end <= 3:            # "Fasting Blood Sugar (FBS)"
+            last_end = hit.end()
+            continue
+        last_end = hit.end()
+        b = BIOMARKER_ALIASES[hit.group(1).lower()]
+        j = i + 1
+        while j < len(hits) and hits[j].start() - hits[j - 1].end() <= 3:
+            j += 1
+        stop = min(hits[j].start() if j < len(hits) else len(text), hit.end() + WINDOW_CHARS)
+        lo, hi = PLAUSIBLE.get(b, (float("-inf"), float("inf")))
+        nums = [n for n in NUMBER_PATTERN.finditer(text, hit.end(), stop)
+                if not MONTH_BEFORE.search(text[max(0, n.start() - 8):n.start()])
+                and lo <= float(n.group(1)) <= hi]
+        for k, n in enumerate(nums):
+            line_end = text.find("\n", n.end())
+            ctx_end = min(x for x in (nums[k + 1].start() if k + 1 < len(nums) else len(text),
+                                      line_end if line_end != -1 else len(text), stop))
+            mentions.append({"biomarker": b, "value": float(n.group(1)), "context": text[n.end():ctx_end]})
+    return mentions
+
+
+def validate_v4(answer, query_text, ctx, rules, thresholds):
+    """validate_v3 (F1-F3) applied to every value found by extract_all_mentions."""
+    has_ctx = any(c.get("text") for c in ctx)
+    q_numbers = {float(n) for n in NUMBER_PATTERN.findall(query_text or "")}
+    issues, checked = [], 0
+    for m in extract_all_mentions(answer):
+        b, v = m["biomarker"], m["value"]
+        true_label = classify_value(b, v, rules)
+        if true_label is None:
+            continue
+        checked += 1
+        if not value_appears_in_context(b, v, ctx):
+            if (not has_ctx or round(v, 2) in thresholds[b.lower()]
+                    or any(abs(v - n) < 1e-6 for n in q_numbers)):
+                continue
+            issues.append(("possible_fabrication", b, v)); continue
+        if FORECAST_WORDS.search(m["context"]):
+            continue
+        claimed = extract_claimed_label(m["context"])
+        if claimed is not None and broad_category(claimed) != broad_category(true_label):
+            issues.append(("misclassification", b, v))
+    return {"checked": checked, "issues": issues}

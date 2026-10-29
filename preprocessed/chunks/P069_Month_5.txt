@@ -1,0 +1,10 @@
+Laboratory Report Summary for Patient P069 (Male, age 40) -- Month 5.
+
+HbA1c: 4.8% (Classification: Normal).
+Fasting Blood Sugar (FBS): 90.0 mg/dL (Classification: Normal).
+Post-Prandial Blood Sugar (PPBS): 124.0 mg/dL (Classification: Normal).
+LDL Cholesterol: 94.0 mg/dL (Classification: Optimal).
+HDL Cholesterol: 60.0 mg/dL (Classification: Normal).
+Triglycerides: 101.0 mg/dL (Classification: Normal).
+
+Overall Glycemic Status: Normal.

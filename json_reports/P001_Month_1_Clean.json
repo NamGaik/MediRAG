@@ -1,10 +1,1 @@
-{
-  "Patient_ID": "P001",
-  "Month": "Month_1",
-  "HbA1c": "5.2",
-  "FBS": "72",
-  "PPBS": "107.",
-  "LDL": "77",
-  "HDL": "57.0",
-  "Triglycerides": "99.0"
-}
+{"Patient_ID": "P001", "Month": "Month_1", "HbA1c": "7.8", "FBS": "146", "PPBS": "214", "LDL": "125", "HDL": "45", "Triglycerides": "173"}

@@ -598,6 +598,18 @@ input, select {
   font-size: 14.5px;
 }
 
+.visit-row--full {
+  grid-template-columns: 90px repeat(6, minmax(70px, 1fr)) auto;
+  column-gap: 8px;
+}
+
+@media (max-width: 720px) {
+  .visit-row--full {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 8px;
+  }
+}
+
 .visit-row:last-child {
   border-bottom: none;
 }

@@ -13,7 +13,7 @@ So cohort 2 runs in its own **copy** of the project. Your main folder stays unto
 ## One-time setup (PowerShell)
 
 ```powershell
-cd C:\Users\Ashish\OneDrive\Desktop\TS
+cd <folder that contains MediRAG>
 # 1. copy the whole project (including the code changes from this zip)
 Copy-Item -Recurse MediRAG MediRAG_cohort2
 cd MediRAG_cohort2

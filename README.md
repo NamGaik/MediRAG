@@ -70,7 +70,7 @@ Not included (too large; recreated by running the pipeline): `vector_db/`, `embe
 
 ## Setup
 
-Requires Python <!-- TODO: version, e.g. 3.10 -->.
+Requires Python 3 (package versions are pinned in `requirements.txt`).
 
 ```bash
 git clone https://github.com/NamGaik/MediRAG.git
@@ -98,7 +98,7 @@ Always run from the project root, e.g. `python pipeline/phase_c_preprocessing.py
 | Step | Script | What it does |
 | --- | --- | --- |
 | A | `generate_reports.py` | Generates the synthetic lab reports |
-| A | `convert_and_degrade.py` | <!-- TODO: one line --> |
+| A | `convert_and_degrade.py` | Converts report PDFs to clean PNG images and makes degraded copies that imitate phone photos |
 | B | `ocr_extract_and_evaluate.py` | OCR on report images/PDFs and extraction accuracy |
 | C | `phase_c_preprocessing.py` | Cleans records, normalises units, writes one chunk per patient-month |
 | D | `phase_d_1_embedding.py` | Embeds the chunks |
@@ -107,19 +107,19 @@ Always run from the project root, e.g. `python pipeline/phase_c_preprocessing.py
 | G | `phase_g_generation.py` | Generates answers with Claude using the grounding prompt |
 | H | `phase_h_validation.py` | Rule-based validation against ADA/WHO severity rules |
 | I | `phase_i_neural_verifier.py` | Builds synthetic faithful/hallucinated pairs and fine-tunes Bio_ClinicalBERT as a verifier (slow on CPU) |
-| I | `phase_i_2_verifier_audit.py` | <!-- TODO: one line --> |
+| I | `phase_i_2_verifier_audit.py` | Audits the trained verifier: both-class metrics, leakage check and an out-of-template test (no retraining) |
 | J | `phase_j_1_trajectory_model.py` | Trains the next-visit GRU; 5-fold patient-grouped CV against a persistence baseline |
-| J | `phase_j_2_baselines.py` | <!-- TODO: one line --> |
+| J | `phase_j_2_baselines.py` | Persistence and other simple baselines on the same patient-grouped 5-fold setup |
 | K | `phase_k_explainability.py` | Integrated Gradients for the GRU (one patient and whole cohort); verifier attention |
 | L | `phase_l_1_trap_expansion.py` | Expands the trap queries to 50 (10 types x 5) |
 | L | `phase_l_6_benchmark_v2.py` | Main benchmark (see Evaluation). **Makes paid API calls - run with `--dry-run` first** |
-| L | other `phase_l_*` scripts | <!-- TODO: say which are current and which are superseded --> |
+| L | other `phase_l_*` scripts | Labelling, rescoring and cohort-2 query/label scripts; `archive/` holds superseded versions |
 
 Start the web app:
 
 ```bash
-# TODO: backend start command, e.g. uvicorn backend.main:app --reload
-# TODO: frontend start command, e.g. cd frontend && npm install && npm start
+uvicorn backend.main:app --reload
+cd frontend && npm install && npm run dev
 ```
 
 ---
@@ -139,7 +139,7 @@ The rule validator and neural verifier are then applied to every saved answer as
 
 Other evaluations: OCR extraction accuracy (phase B), label-stripped embedding check (D2), verifier validation metrics (I), and GRU vs persistence MAE and risk accuracy (J).
 
-<!-- TODO: add final results tables once numbers are confirmed -->
+Final results tables are in the paper; the saved metrics behind them are in `results/`.
 
 ---
 

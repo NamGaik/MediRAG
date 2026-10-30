@@ -143,6 +143,31 @@ Final results tables are in the paper; the saved metrics behind them are in `res
 
 ---
 
+## Cohort 2 (100 patients x 8 visits)
+
+Cohort 2 runs in a separate copy of the project, so cohort-1 outputs are not overwritten.
+
+```bash
+python pipeline/generate_cohort_v2.py            # writes data/Synthetic_diabetes_dataset2.xlsx
+# copy it over data/Synthetic_diabetes_dataset1.xlsx in the copy, then:
+python pipeline/excel_to_json_reports.py         # structured records, no OCR
+python pipeline/phase_c_preprocessing.py         # 800 chunks
+python pipeline/phase_d_1_embedding.py
+python pipeline/phase_ef_vectorDB.py             # delete any old vector_db/ first
+python pipeline/phase_j_1_trajectory_model.py
+python pipeline/phase_j_3_trajectory_v2.py
+python pipeline/phase_l_9_cohort2_queries.py     # 49 patient questions, 70 traps
+```
+
+Environment variables for cohort 2: `MEDIRAG_TOP_K=8`, `MEDIRAG_MAX_SEQ_LEN=7`,
+`MEDIRAG_PATIENT_QUERIES=verifier_data/cohort2_patient_queries.json`,
+`MEDIRAG_TRAP_QUERIES=verifier_data/cohort2_trap_queries.json`.
+Benchmark runs also read `MEDIRAG_MODEL`, `MEDIRAG_CONFIGS` and `MEDIRAG_CORRECTIVE`
+(`claude-haiku-5-5` with all four configurations, and `claude-sonnet-5` with the full system, were used).
+Without these variables the code behaves as for cohort 1.
+
+---
+
 ## Team
 
 Namrata Gaikwad, Nehal Kongwad, Sakshi Nikam
